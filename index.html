@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Squad Fiscal — Dashboard Metanet</title>
+  <!-- Google Fonts Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Folha de estilos vanilla customizada -->
+  <link rel="stylesheet" href="style.css?v=1.4.1">
+</head>
+<body>
+
+  <!-- Overlay de Upload / Boas-vindas (Ativado caso fetch automático falhe devido a CORS/Local) -->
+  <div id="upload-overlay" class="upload-overlay hidden">
+    <div class="upload-card">
+      <div class="upload-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+      </div>
+      <h2>Carregar Dados da Squad Fiscal</h2>
+      <p>Tentamos localizar os arquivos CSV no diretório do projeto automaticamente, mas as restrições do seu navegador (CORS) bloquearam o acesso local.</p>
+      <p class="highlight">Arraste os <strong>10 arquivos CSV</strong> exportados ou clique no botão abaixo para selecioná-los de uma vez:</p>
+      
+      <div class="drop-zone" id="drop-zone">
+        <span>Arraste os arquivos aqui ou clique para navegar...</span>
+        <input type="file" id="csv-file-input" multiple accept=".csv" class="hidden-input">
+      </div>
+
+      <div class="file-list-preview" id="file-list-preview">
+        <!-- Lista de arquivos selecionados e status de importação -->
+      </div>
+
+      <button id="btn-confirm-upload" class="btn btn-primary" disabled>Iniciar Dashboard</button>
+      
+      <div class="help-section">
+        <h3>Arquivos Necessários (UTF-8, vírgula):</h3>
+        <div class="help-grid">
+          <span>1. fiscal-workitems.csv</span>
+          <span>2. fiscal-tasks.csv</span>
+          <span>3. fiscal-transicoes.csv</span>
+          <span>4. fiscal-tempo-coluna.csv</span>
+          <span>5. fiscal-entregas.csv</span>
+          <span>6. fiscal-bugs.csv</span>
+          <span>7. fiscal-metricas-periodo.csv</span>
+          <span>8. fiscal-column-map.csv</span>
+          <span>9. fiscal-tags.csv</span>
+          <span>10. fiscal-pessoa-papel.csv</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Estrutura Principal do Dashboard -->
+  <div class="app-layout">
+    
+    <!-- Sidebar / Navegação Lateral -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-logo">SF</div>
+        <div class="brand-text">
+          <h1>Squad Fiscal</h1>
+          <span>Gestão & Fluxo</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <button class="nav-item active" data-page="overview">
+          <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+          Visão Geral
+        </button>
+        <button class="nav-item admin-only" data-page="flow">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          Fluxo e Gargalos
+        </button>
+        <button class="nav-item admin-only" data-page="deliveries">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Entregas e Produtividade
+        </button>
+        <button class="nav-item" data-page="capacity">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Time e Capacidade
+        </button>
+        <button class="nav-item" data-page="quality">
+          <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg>
+          Qualidade e Bugs
+        </button>
+        <button class="nav-item admin-only" data-page="alerts">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          Sinalizações e Alertas
+        </button>
+        <button class="nav-item" data-page="atendimentos">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Atendimentos
+        </button>
+        <button class="nav-item" data-page="drilldown">
+          <svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          Detalhamento (Drill)
+        </button>
+      </nav>
+
+      <div class="sidebar-auth" style="margin: 10px 16px; display: flex; align-items: center; justify-content: center; padding: 10px; border-radius: 8px; background: rgba(255, 255, 255, 0.05); cursor: pointer;" id="btn-admin-login">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <span style="font-size: 0.85rem; font-weight: 500;">Acesso Gestor</span>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="update-status">
+          <div class="pulse-indicator" style="background-color: #3b82f6; box-shadow: 0 0 8px #3b82f6;"></div>
+          <div>
+            <p id="lbl-connection-status">Conectando...</p>
+            <span id="txt-last-execution">Carregando...</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Área de Conteúdo Principal -->
+    <main class="main-content">
+      
+      <!-- Top Bar com Filtros Globais -->
+      <header class="top-bar">
+        <div class="header-title">
+          <h2 id="page-title">Visão Geral</h2>
+          <p id="page-subtitle">Principais KPIs operacionais da Squad Fiscal</p>
+        </div>
+
+        <div class="filters-container" style="display: flex; align-items: center; gap: 8px;">
+          <!-- Botão para Alternar Tema Claro/Escuro -->
+          <button id="btn-toggle-theme" class="btn" title="Alternar Tema Claro/Escuro" style="width: 40px; height: 40px; border-radius: 8px; padding: 0; display: flex; align-items: center; justify-content: center; background-color: var(--bg-panel); border: 1px solid var(--border-color); color: var(--text-muted); cursor: pointer; transition: var(--transition-smooth);">
+            <!-- Sol para modo claro -->
+            <svg class="icon theme-icon-sun hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <!-- Lua para modo escuro -->
+            <svg class="icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+
+          <button id="btn-toggle-filters" class="btn btn-filter">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+            Filtros Globais
+            <span id="badge-active-filters" class="filter-count hidden">0</span>
+          </button>
+          
+          <!-- Filtros Expansíveis -->
+          <div id="filter-panel" class="filter-panel hidden">
+            <div class="filter-grid">
+              
+              <!-- Filtro de Datas -->
+              <div class="filter-group">
+                <label for="filter-date-range">Período (Fechamento/Criação)</label>
+                <select id="filter-date-range" class="filter-select">
+                  <option value="all">Toda a base (Histórico Completo)</option>
+                  <option value="7">Últimos 7 dias</option>
+                  <option value="15">Últimos 15 dias</option>
+                  <option value="30" selected>Últimos 30 dias</option>
+                  <option value="60">Últimos 60 dias</option>
+                  <option value="90">Últimos 90 dias</option>
+                  <option value="this-month">Este mês</option>
+                  <option value="last-month">Mês anterior</option>
+                  <option value="this-year">Este ano</option>
+                  <option value="last-year">Ano passado</option>
+                </select>
+              </div>
+
+              <!-- Filtro de Tipo -->
+              <div class="filter-group">
+                <label for="filter-wi-type">Tipo de Item</label>
+                <select id="filter-wi-type" class="filter-select">
+                  <option value="all" selected>Todos os Tipos (excl. Tasks)</option>
+                  <option value="User Story">User Story</option>
+                  <option value="Bug">Bug</option>
+                </select>
+              </div>
+
+              <!-- Filtro de Etapa do Fluxo -->
+              <div class="filter-group">
+                <label for="filter-flow-type">Etapa do Fluxo</label>
+                <select id="filter-flow-type" class="filter-select">
+                  <option value="all" selected>Todos os Fluxos</option>
+                  <option value="fila">Fila (Espera)</option>
+                  <option value="trabalho">Trabalho (Ativo)</option>
+                  <option value="handoff">Handoff (Revisões/Testes)</option>
+                  <option value="pre_release">Pronto para Release</option>
+                  <option value="done">Concluído</option>
+                </select>
+              </div>
+
+              <!-- Filtro de Iteration -->
+              <div class="filter-group">
+                <label for="filter-iteration">Sprint (IterationPath)</label>
+                <select id="filter-iteration" class="filter-select">
+                  <option value="all" selected>Todas as Sprints</option>
+                  <!-- Injetado via JS -->
+                </select>
+              </div>
+
+              <!-- Filtro de Responsável -->
+              <div class="filter-group">
+                <label for="filter-assignee">Responsável Principal</label>
+                <select id="filter-assignee" class="filter-select">
+                  <option value="all" selected>Todos os Colaboradores</option>
+                  <!-- Injetado via JS -->
+                </select>
+              </div>
+
+              <!-- Filtro de QA -->
+              <div class="filter-group">
+                <label for="filter-qa">Analista de QA (pessoa_papel)</label>
+                <select id="filter-qa" class="filter-select">
+                  <option value="all" selected>Todos os QAs</option>
+                  <!-- Injetado via JS -->
+                </select>
+              </div>
+
+              <!-- Filtro de Tag -->
+              <div class="filter-group">
+                <label>Tags</label>
+                <div class="multiselect-combo" id="tag-multiselect-combo">
+                  <button type="button" class="multiselect-trigger" id="tag-combo-trigger">Todas as Tags</button>
+                  <div class="multiselect-panel" id="tag-combo-panel">
+                    <div class="multiselect-panel-header">
+                      <label class="filter-checklist-item">
+                        <input type="checkbox" id="tag-select-all" checked>
+                        <span>Selecionar Todos</span>
+                      </label>
+                    </div>
+                    <div class="multiselect-panel-body" id="filter-tag-checklist">
+                      <!-- Injetado via JS como checkboxes -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="filter-actions">
+              <button id="btn-clear-filters" class="btn btn-outline">Limpar Filtros</button>
+              <button id="btn-apply-filters" class="btn btn-primary">Aplicar Filtros</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Containers de Página -->
+      <div class="page-container">
+        
+        <!-- PÁGINA 1: VISÃO GERAL -->
+        <section id="page-overview" class="page-section">
+          
+          <!-- Cabeçalho da Visão Geral: Período e Sincronização -->
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 24px; gap: 15px;">
+            <!-- Período Analisado Banner -->
+            <div class="overview-period-banner" style="margin-bottom: 0;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <span id="txt-overview-period">Período Analisado: de --/--/---- a --/--/----</span>
+            </div>
+            
+            <!-- Botão de Sincronização -->
+            <button id="btn-sync-azure" class="btn btn-primary" title="Sincronizar dados em tempo real com o Azure DevOps">
+              <svg class="sync-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px; transition: transform 1s linear;"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+              <span>Sincronizar com Azure</span>
+            </button>
+          </div>          <div class="kpi-grid">
+            <div class="kpi-card kpi-purple cursor-pointer" id="card-kpi-wip" title="Quantidade de Work Items atualmente em andamento (não concluídos, excluindo o estado Concluído/Closed)">
+              <div class="kpi-icon icon-purple">WIP</div>
+              <div class="kpi-content">
+                <h3>WIP Ativo</h3>
+                <div class="kpi-value" id="kpi-wip">-</div>
+                <p class="kpi-meta" id="kpi-wip-change">Trabalho em andamento</p>
+              </div>
+            </div>
+
+            <div class="kpi-card kpi-emerald cursor-pointer" id="card-kpi-deliveries" title="Total de Work Items concluídos nas últimas semanas">
+              <div class="kpi-icon icon-emerald">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <div class="kpi-content">
+                <h3>Entregas Recentes</h3>
+                <div class="kpi-value" id="kpi-deliveries">-</div>
+                <p class="kpi-meta">Itens concluídos (US + Bug) no período</p>
+              </div>
+            </div>
+
+            <div class="kpi-card kpi-rose cursor-pointer" id="card-kpi-bugs-closed" title="Quantidade total de bugs concluídos (fechados ou em coluna Concluído) no período analisado">
+              <div class="kpi-icon icon-rose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M9 11l3 3L22 4"/></svg>
+              </div>
+              <div class="kpi-content">
+                <h3>Bugs Concluídos</h3>
+                <div class="kpi-value" id="kpi-bugs-closed">-</div>
+                <p class="kpi-meta" id="kpi-bugs-closed-meta">Bugs no período</p>
+              </div>
+            </div>
+
+            <div class="kpi-card kpi-rose text-danger cursor-pointer" id="card-kpi-bugs-open" title="Quantidade total de bugs abertos no momento, independentemente da idade">
+              <div class="kpi-icon icon-rose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg>
+              </div>
+              <div class="kpi-content">
+                <h3>Bugs Abertos</h3>
+                <div class="kpi-value" id="kpi-bugs-open">-</div>
+                <p class="kpi-meta" id="kpi-bugs-critical">0 de severidade alta</p>
+              </div>
+            </div>
+
+            <div class="kpi-card kpi-cyan" title="Métrica de Qualidade Fiscal: (Bugs Fechados 30d + Bugs Abertos Totais) / User Stories na Base. Dados extraídos de fiscal-metricas-periodo.csv">
+              <div class="kpi-icon icon-cyan">%</div>
+              <div class="kpi-content" style="flex: 1; min-width: 0;">
+                <h3>Bug Rate Geral</h3>
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <div class="kpi-value" id="kpi-bug-rate">-</div>
+                  <div id="kpi-bug-rate-trend" style="font-size: 1rem; font-weight: 700; display: flex; align-items: center; gap: 4px;"></div>
+                </div>
+                <p class="kpi-meta">Bugs vs User Stories</p>
+              </div>
+            </div>
+
+            <div class="kpi-card kpi-purple cursor-pointer" id="card-kpi-atendimentos" title="Quantidade total de atendimentos concluídos no período e soma das horas de CompletedWork">
+              <div class="kpi-icon icon-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div class="kpi-content">
+                <h3>Atendimentos</h3>
+                <div class="kpi-value" id="kpi-atendimentos-count">-</div>
+                <p class="kpi-meta" id="kpi-atendimentos-hours">0h totalizadas</p>
+              </div>
+            </div>
+
+            <div class="kpi-card kpi-blue" title="Tempo total médio (dias) desde a criação até a conclusão do item fiscal">
+              <div class="kpi-icon icon-blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="kpi-content">
+                <h3>Lead Time Médio</h3>
+                <div class="kpi-value" id="kpi-lead-time">-</div>
+                <p class="kpi-meta">dias do início ao fim</p>
+              </div>
+            </div>
+
+            <div class="kpi-card kpi-amber" title="Tempo ativo médio (dias) desde a primeira alteração para o estado Active até a conclusão">
+              <div class="kpi-icon icon-amber">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+              </div>
+              <div class="kpi-content">
+                <h3>Cycle Time Médio</h3>
+                <div class="kpi-value" id="kpi-cycle-time">-</div>
+                <p class="kpi-meta">dias em desenvolvimento ativo</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid de Gráficos Principais -->
+          <div class="dashboard-grid">
+            <!-- Gráfico 1: WIP por BoardColumn -->
+            <div class="panel">
+              <div class="panel-header">
+                <h3>WIP por Coluna do Board</h3>
+                <span class="badge badge-purple">Snapshot Ativo</span>
+              </div>
+              <div class="panel-body chart-container" id="chart-wip-column">
+                <!-- SVG Dinâmico -->
+              </div>
+            </div>
+
+            <!-- Gráfico 2: Throughput Semanal -->
+            <div class="panel">
+              <div class="panel-header">
+                <h3>Throughput Semanal (Vazão de Entregas)</h3>
+                <span class="badge badge-emerald">Janela Histórica</span>
+              </div>
+              <div class="panel-body chart-container" id="chart-throughput-weekly">
+                <!-- SVG Dinâmico -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Rodapé do Overview: Alertas e Carga Rápida -->
+          <div class="dashboard-grid grid-1-3">
+            <!-- Bugs por Severidade -->
+            <div class="panel">
+              <div class="panel-header">
+                <h3>Bugs Abertos por Severidade</h3>
+              </div>
+              <div class="panel-body text-center" id="bugs-severity-split">
+                <!-- Injetado via JS -->
+              </div>
+            </div>
+
+            <!-- Alertas Operacionais Críticos -->
+            <div class="panel cursor-pointer" id="panel-overview-alerts" title="Clique para ver o painel completo de alertas" style="transition: var(--transition-smooth);">
+              <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center;">
+                <h3>Alertas Operacionais Críticos</h3>
+                <span class="badge badge-rose" id="lbl-overview-alerts-badge">Ação Necessária</span>
+              </div>
+              <div class="panel-body">
+                <div class="responsive-table-container">
+                  <table class="data-table table-condensed">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Item</th>
+                        <th>Alerta</th>
+                        <th>Severidade</th>
+                        <th>Responsável</th>
+                        <th>Detalhes</th>
+                      </tr>
+                    </thead>
+                    <tbody id="table-overview-alerts">
+                      <!-- Injetado via JS -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Top 20 Itens com Maior Envelhecimento (Dias em Aberto) -->
+          <div class="panel" style="margin-top: 20px;">
+            <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center;">
+              <h3>Top 20 Itens com Maior Envelhecimento (Dias em Aberto)</h3>
+              <span class="badge badge-rose" id="lbl-aging-total-count">0 Itens em Foco</span>
+            </div>
+            <div class="panel-body">
+              <div class="responsive-table-container">
+                <table class="data-table table-condensed">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Título</th>
+                      <th>Tipo</th>
+                      <th>Coluna Atual</th>
+                      <th>Responsável</th>
+                      <th>Dias em Aberto</th>
+                    </tr>
+                  </thead>
+                  <tbody id="table-overview-aging-wip">
+                    <!-- Injetado via JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- PÁGINA 2: FLUXO E GARGALOS -->
+        <section id="page-flow" class="page-section hidden">
+          <div class="alert alert-info">
+            <svg class="icon-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            <strong>Análise de Gargalos:</strong> Esta página identifica em quais colunas os itens fiscais passam mais tempo parados (Fila) ou aguardando homologação (Handoff), ajudando a melhorar o tempo de ciclo geral da equipe.
+          </div>
+
+          <!-- Grid com Top Colunas -->
+          <!-- Grid com Top Colunas e Paralisação -->
+          <div class="dashboard-grid">
+            <!-- Top 5 Colunas por Tempo Médio -->
+            <div class="panel">
+              <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center;">
+                <h3>Tempo Médio Gasto por Coluna (Dias)</h3>
+                <span id="badge-flow-column-filter" class="badge badge-purple" style="display: none; cursor: pointer;" title="Clique para limpar o filtro de coluna">Filtro Ativo ×</span>
+              </div>
+              <div class="panel-body chart-container-large" id="chart-flow-avg-time">
+                <!-- SVG Injetado Dinamicamente -->
+              </div>
+            </div>
+
+            <!-- Right Column Wrapper -->
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+              <!-- Itens Paralisados (Donut) -->
+              <div class="panel" style="margin-bottom: 0;">
+                <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center;">
+                  <h3>Itens Paralisados vs Ativos</h3>
+                  <button id="btn-clear-paralizados" class="btn btn-outline" style="font-size: 0.75rem; padding: 4px 8px; height: auto;">Limpar Filtro</button>
+                </div>
+                <div class="panel-body" style="display: flex; flex-direction: column; gap: 12px;">
+                  <div style="display: flex; align-items: center; justify-content: center; gap: 16px;">
+                    <div id="chart-flow-paralizacao-donut" style="flex: 0 0 280px; height: 280px; position: relative;">
+                      <!-- SVG Injetado via JS -->
+                    </div>
+                    <div id="flow-paralizacao-legend" style="flex: 1; text-align: left; display: flex; flex-direction: column; gap: 8px; justify-content: center;">
+                      <!-- Detalhes injetados via JS -->
+                    </div>
+                  </div>
+                  <div id="flow-paralizacao-footer" style="border-top: 1px solid var(--border-color); padding-top: 12px; text-align: center;">
+                    <!-- Info Atualmente parados -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- PDF-3/Item2: Ranking de Causas de Bloqueio -->
+              <div class="panel" style="margin-top: 0; margin-bottom: 0;">
+                <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center;">
+                  <h3>Ranking de Causas de Bloqueio (Tempo Total Acumulado)</h3>
+                  <span class="badge badge-rose" id="lbl-blocking-causes-total">0h total</span>
+                </div>
+                <div class="panel-body" id="chart-flow-blocking-causes" style="padding-top: 16px; min-height: 200px;">
+                  <!-- SVG injetado via JS -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Distribuição do Tempo por Tipo de Fluxo (Fila vs Trabalho vs Handoff) -->
+          <div class="panel">
+            <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center;">
+              <h3>Eficiência do Fluxo (Distribuição de Tempo por Tipo de Fluxo)</h3>
+              <span id="badge-flow-type-filter" class="badge badge-purple" style="display: none; cursor: pointer;" title="Clique para limpar o filtro de tipo de fluxo">Filtro Ativo ×</span>
+            </div>
+            <div class="panel-body text-center">
+              <div id="chart-flow-efficiency-bar">
+                <!-- Barra empilhada injetada via JS -->
+              </div>
+              <div class="efficiency-details" id="flow-efficiency-legend">
+                <!-- Detalhes injetados via JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Tabela de Itens Ativos (WIP Detalhado com Horas na Coluna) -->
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Detalhe do WIP em Andamento (Itens Ativos no Fluxo)</h3>
+              <span class="badge badge-blue" id="lbl-flow-wip-count">0 itens</span>
+            </div>
+            <div class="panel-body">
+              <div class="responsive-table-container">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Título</th>
+                      <th>Tipo</th>
+                      <th>Coluna Atual</th>
+                      <th>Tipo do Fluxo</th>
+                      <th>Responsável</th>
+                      <th>Horas na Coluna Atual</th>
+                      <th>Dias Total Aberto</th>
+                    </tr>
+                  </thead>
+                  <tbody id="table-flow-wip">
+                    <!-- Injetado via JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- PÁGINA 3: ENTREGAS E DESEMPENHO -->
+        <section id="page-deliveries" class="page-section hidden">
+          
+          <!-- Metricas de Previsibilidade (Média, Mediana, P85) -->
+          <div class="kpi-small-grid">
+            <!-- Linha 1: Lead Time e Vazão -->
+            <div class="kpi-card">
+              <div class="kpi-content">
+                <h3>Lead Time Médio</h3>
+                <div class="kpi-value value-large" id="lbl-deliv-avg-lead">-</div>
+                <p class="kpi-meta">Tempo médio desde criação</p>
+              </div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-content">
+                <h3>Lead Time Mediana</h3>
+                <div class="kpi-value value-large" id="lbl-deliv-med-lead">-</div>
+                <p class="kpi-meta">50% das entregas fecham em menos</p>
+              </div>
+            </div>
+            <div class="kpi-card" title="85% das entregas são resolvidas dentro deste número de dias. Excelente para promessas de prazo realistas.">
+              <div class="kpi-content">
+                <h3>Lead Time P85 <span class="badge badge-rose">SLA Real</span></h3>
+                <div class="kpi-value value-large text-warning" id="lbl-deliv-p85-lead">-</div>
+                <p class="kpi-meta">Previsibilidade segura de 85%</p>
+              </div>
+            </div>
+            <div class="kpi-card kpi-emerald" title="Vazão média semanal de entregas concluídas no período analisado">
+              <div class="kpi-content">
+                <h3>Vazão Média</h3>
+                <div class="kpi-value value-large text-emerald" id="lbl-deliv-avg-throughput">-</div>
+                <p class="kpi-meta">Entregas por semana (média)</p>
+              </div>
+            </div>
+
+            <!-- Linha 2: Cycle Time e Paralisados -->
+            <div class="kpi-card">
+              <div class="kpi-content">
+                <h3>Cycle Time Médio</h3>
+                <div class="kpi-value value-large" id="lbl-deliv-avg-cycle">-</div>
+                <p class="kpi-meta">Tempo médio de trabalho ativo</p>
+              </div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-content">
+                <h3>Cycle Time Mediana</h3>
+                <div class="kpi-value value-large" id="lbl-deliv-med-cycle">-</div>
+                <p class="kpi-meta">50% do trabalho ativo fecha em menos</p>
+              </div>
+            </div>
+            <div class="kpi-card" title="85% das tarefas têm o desenvolvimento ativo concluído dentro deste período de dias.">
+              <div class="kpi-content">
+                <h3>Cycle Time P85</h3>
+                <div class="kpi-value value-large text-warning" id="lbl-deliv-p85-cycle">-</div>
+                <p class="kpi-meta">Previsibilidade segura de 85%</p>
+              </div>
+            </div>
+            <div class="kpi-card cursor-pointer" id="card-kpi-deliv-paralizado" title="Clique para filtrar itens que tiveram paralisações.">
+              <div class="kpi-content">
+                <h3>Total Paralisado</h3>
+                <div class="kpi-value value-large text-danger" id="lbl-deliv-total-paralizado">-</div>
+                <p class="kpi-meta" id="lbl-deliv-total-paralizado-sub">0h de paralisação</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Volumetria de entregas, Composição, Volume, Throughput e Distribuição -->
+          <div class="dashboard-grid">
+            <div class="panel">
+              <div class="panel-header">
+                <h3>Composição Bugs vs User Stories</h3>
+                <span id="badge-composition-filter" class="badge badge-rose" style="display: none; cursor: pointer;" title="Clique para limpar o filtro de tipo">Filtro Ativo ×</span>
+              </div>
+              <div class="panel-body chart-container" id="chart-deliveries-composition">
+                <!-- SVG de Rosca injetado via JS -->
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-header">
+                <h3>Volume de Entregas por Colaborador no Fechamento</h3>
+              </div>
+              <div class="panel-body chart-container" id="chart-deliveries-by-person">
+                <!-- SVG dinâmico -->
+              </div>
+            </div>
+
+            <div class="panel" style="grid-column: 1 / -1;">
+              <div class="panel-header">
+                <h3>Volume de Entregas por Colaborador (Fechamento de Subtasks)</h3>
+              </div>
+              <div class="panel-body chart-container" id="chart-deliveries-by-person-tasks" style="min-height: 250px;">
+                <!-- SVG dinâmico -->
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <h3>Throughput por Colaborador</h3>
+                <div style="display: flex; gap: 6px;">
+                  <button id="btn-throughput-weekly" class="btn btn-sm btn-quick-filter active" style="padding: 3px 8px; font-size: 0.72rem;">Semanal</button>
+                  <button id="btn-throughput-monthly" class="btn btn-sm btn-quick-filter" style="padding: 3px 8px; font-size: 0.72rem;">Mensal</button>
+                </div>
+              </div>
+              <div class="panel-body chart-container" id="chart-throughput-by-person">
+                <!-- SVG dinâmico -->
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-header">
+                <h3>Distribuição Lead Time vs Cycle Time (Frequência por Faixa de Dias)</h3>
+              </div>
+              <div class="panel-body chart-container" id="chart-deliveries-distribution">
+                <!-- Gráfico de barras de distribuição por faixas (ex: 0-5 dias, 5-10 dias, etc.) -->
+              </div>
+            </div>
+          </div>
+
+          <!-- KPI de Gaps (Migrado de Alertas) -->
+          <div class="kpi-small-grid" style="margin-bottom: 20px;">
+            <div class="kpi-card kpi-cyan" id="card-kpi-productivity-gaps" style="cursor: pointer;" title="Total de colaboradores com gap de produtividade no período">
+              <div class="kpi-content">
+                <h3>Gaps Produtividade</h3>
+                <div class="kpi-value value-large text-info" id="kpi-productivity-gaps-count">0</div>
+                <p class="kpi-meta">Desvios de horas/entrega</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Painel de Tempos por Colaborador (Atividade, Inatividade, Retrabalho) -->
+          <div class="panel" id="panel-collaborator-times" style="margin-bottom: 20px;">
+            <div class="panel-header">
+              <h3>Tempos por Colaborador (Atividade, Inatividade e Retrabalho)</h3>
+            </div>
+            <div class="panel-body chart-container" id="chart-collaborator-times">
+              <canvas id="canvas-collaborator-times" style="max-height: 400px; width: 100%;"></canvas>
+            </div>
+          </div>
+
+          <!-- Painel de Gaps de Produtividade (Tabela/Cards) (Migrado de Alertas) -->
+          <div class="panel" id="panel-productivity-gaps" style="margin-bottom: 20px;">
+            <div class="panel-header">
+              <h3>Produtividade do Time (Horas Disponíveis vs. Realizadas nas Tasks)</h3>
+              <span class="badge badge-cyan" id="lbl-productivity-period">Últimos 30 Dias</span>
+            </div>
+            <div class="panel-body">
+              <div class="responsive-table-container">
+                <table class="data-table" id="table-productivity-gaps">
+                  <thead>
+                    <tr>
+                      <th>Colaborador</th>
+                      <th>Dias Úteis no Período</th>
+                      <th>Horas Disponíveis (8h/dia)</th>
+                      <th>Horas Realizadas (Concluído)</th>
+                      <th>Diferença / Desvio (Gap)</th>
+                      <th>Desempenho de Lançamento</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tbody-productivity-gaps">
+                    <!-- Injetado dinamicamente via JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tabela Mestre de Entregas -->
+          <div class="panel">
+            <div class="panel-header">
+              <h3 id="lbl-deliveries-table-title">Lista Mestre de Entregas Concluídas no Período</h3>
+              <div class="panel-actions">
+                <span class="badge badge-emerald" id="lbl-deliveries-total-count">0 entregues</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="responsive-table-container">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Título</th>
+                      <th>Tipo</th>
+                      <th>Data de Fechamento</th>
+                      <th>Responsável no Fechamento</th>
+                      <th>Lead Time (Dias)</th>
+                      <th>Cycle Time (Dias)</th>
+                    </tr>
+                  </thead>
+                  <tbody id="table-deliveries-list">
+                    <!-- Injetado via JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- PÁGINA 4: TIME E CAPACIDADE -->
+        <section id="page-capacity" class="page-section hidden">
+          <div class="alert alert-info">
+            <svg class="icon-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            <strong>Carga de Trabalho & Tasks Filhas:</strong> Nem todo Work Item possui tasks em nossa base (a relação é de LEFT JOIN). O gráfico de esforço planejado vs real considerará estritamente os itens com tasks vinculadas, enquanto a seção de carga geral computará todo o WIP ativo por desenvolvedor.
+          </div>
+
+          <div class="dashboard-grid">
+            <!-- WIP por Responsável (Work Items não finalizados) -->
+            <div class="panel">
+              <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <h3>Carga de Trabalho Atual (WIP Ativo por Responsável)</h3>
+                <span id="badge-capacity-person-filter" class="badge badge-purple" style="display: none; cursor: pointer;" title="Clique para limpar o filtro de responsável">Filtro Ativo ×</span>
+              </div>
+              <div class="panel-body chart-container" id="chart-capacity-wip-person">
+                <!-- SVG Dinâmico -->
+              </div>
+            </div>
+
+            <!-- Mix de Atividade das Tasks filhas -->
+            <div class="panel">
+              <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <h3>Mix de Atividades nas Tasks Filhas</h3>
+                <div style="display: flex; gap: 8px; align-items: center;">
+                  <span id="lbl-capacity-tasks-total" class="badge badge-emerald">0 Tasks</span>
+                  <span id="badge-capacity-activity-filter" class="badge badge-purple" style="display: none; cursor: pointer;" title="Clique para limpar o filtro de atividade">Filtro Ativo ×</span>
+                </div>
+              </div>
+              <div class="panel-body chart-container" id="chart-capacity-task-activities">
+                <!-- SVG Dinâmico da rosca de atividades -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Painel: Horas por responsável e Activity -->
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Horas por responsável e Activity</h3>
+            </div>
+            <div class="panel-body">
+              <div id="capacity-hours-legend" style="display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 20px; font-size: 0.85rem; justify-content: flex-start; align-items: center; padding: 10px; background-color: hsla(252, 31%, 6%, 0.2); border-radius: 6px; border: 1px solid var(--border-color);">
+                <!-- Legenda de Atividades dinamicamente preenchida -->
+              </div>
+              <div id="capacity-hours-grid">
+                <!-- Cards dos responsáveis dinamicamente preenchidos -->
+              </div>
+            </div>
+          </div>
+
+          <!-- PDF-1/Item3: Horas Dev vs Testando por Tipo de WI -->
+          <div class="panel" style="margin-top: 0;">
+            <div class="panel-header">
+              <h3>Horas Dev vs Testando por Tipo de Work Item</h3>
+              <span class="badge badge-blue" title="Baseado nas Activities das Tasks filhas vinculadas">Tasks com CompletedWork</span>
+            </div>
+            <div class="panel-body chart-container" id="chart-capacity-dev-vs-test">
+              <!-- SVG injetado via JS -->
+            </div>
+          </div>
+
+          <!-- Tabela de Horas Planejadas vs Realizadas (Original Estimate vs Completed Work) -->
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Esforço de Tasks Planejado vs Realizado por Work Item</h3>
+              <span class="badge badge-purple" id="lbl-capacity-coverage">Cobertura de Tasks: -</span>
+            </div>
+            <div class="panel-body">
+              <div class="responsive-table-container">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>ID Pai</th>
+                      <th>Título do Item Pai</th>
+                      <th>Responsável</th>
+                      <th>Status Geral</th>
+                      <th>Quantidade de Tasks</th>
+                      <th>Esforço Planejado (Estimativa Original)</th>
+                      <th>Trabalho Concluído (Horas)</th>
+                      <th>Divergências / Avisos</th>
+                      <th>Status das Tasks</th>
+                    </tr>
+                  </thead>
+                  <tbody id="table-capacity-hours-list">
+                    <!-- Injetado via JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+
+        </section>
+
+        <!-- PÁGINA 5: QUALIDADE (BUGS) -->
+        <section id="page-quality" class="page-section hidden">
+          
+          <div class="alert alert-danger">
+            <svg class="icon-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            <strong>Regras Operacionais para Bugs:</strong> Exibimos todos os bugs atualmente em aberto independentemente do tempo em que estão criados, enquanto os bugs fechados são computados estritamente na janela operacional de 30 dias.
+          </div>
+
+          <!-- MD-6: Painel de alerta - Bugs sem Responsável -->
+          <div class="panel" id="panel-bugs-sem-resp" style="display:none; margin-bottom: 16px; border-left: 3px solid var(--color-warning);">
+            <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center;">
+              <h3 style="display:flex; align-items:center; gap:8px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" style="color:var(--color-warning)"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Bugs Sem Responsável Identificado
+              </h3>
+              <span class="badge badge-amber" id="lbl-bugs-sem-resp-count">0 bugs</span>
+            </div>
+            <div class="panel-body">
+              <div class="responsive-table-container">
+                <table class="data-table table-condensed">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Título</th>
+                      <th>Coluna Atual</th>
+                      <th>Estado</th>
+                      <th>Dias em Aberto</th>
+                      <th>Situação</th>
+                    </tr>
+                  </thead>
+                  <tbody id="table-bugs-sem-resp">
+                    <!-- Injetado via JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Métricas e Fórmulas de Qualidade -->
+          <div class="dashboard-grid grid-1-3">
+            <div class="panel card-gradient-rose">
+              <div class="panel-body">
+                <h4 style="opacity: 0.8; margin-bottom: 8px;">Explicação do Bug Rate</h4>
+                <div class="formula-box">
+                  <span class="numerator">Bugs Fechados (30d) + Bugs Abertos (All-Time)</span>
+                  <hr class="formula-line">
+                  <span class="denominator">User Stories Concluídas (30d)</span>
+                </div>
+                <p style="font-size: 0.8rem; line-height: 1.4; opacity: 0.9; margin-top: 15px;">
+                  Calculado dinamicamente para medir a taxa de erro introduzida por história de usuário desenvolvida no período operacional da equipe fiscal.
+                </p>
+                <div style="margin-top: 20px; font-weight: 600; font-size: 1rem; display: flex; flex-direction: column; gap: 4px;">
+                  <span style="opacity: 0.8; font-size: 0.95rem;">Bug Rate</span>
+                  <span id="lbl-quality-formula-pct" class="text-danger" style="font-size: 1.8rem; font-weight: 800; line-height: 1.1; color: var(--color-danger);">-</span>
+                  <span id="lbl-quality-formula-desc" style="font-size: 0.72rem; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">Fator Atual: - Bugs / - Stories</span>
+                </div>
+                
+                <div style="margin-top: 20px; padding-top: 15px; border-top: 1px dashed rgba(255,255,255,0.15); font-weight: 600; font-size: 1rem; display: flex; flex-direction: column; gap: 4px;">
+                  <span style="opacity: 0.8; font-size: 0.95rem;">MTTR Médio de Bugs</span>
+                  <span id="lbl-quality-mttr" class="text-warning" style="font-size: 1.8rem; font-weight: 800; line-height: 1.1; color: var(--color-warning);">-</span>
+                  <span id="lbl-quality-mttr-sub" style="font-size: 0.72rem; font-weight: 500; color: var(--text-muted);"></span>
+                  <span style="font-size: 0.72rem; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">Mean Time to Resolution</span>
+                  <div style="margin-top: 8px; font-size: 0.8rem; color: var(--text-muted); line-height: 1.4;">
+                    <div id="lbl-quality-mttr-min">Menor: -</div>
+                    <div id="lbl-quality-mttr-max">Maior: -</div>
+                  </div>
+                </div>
+
+                <!-- PDF-2/Item1: Bug → US via !BUG -->
+                <div style="margin-top: 20px; padding-top: 15px; border-top: 1px dashed rgba(255,255,255,0.15); display: flex; flex-direction: column; gap: 4px;">
+                  <span style="opacity: 0.8; font-size: 0.95rem; font-weight: 600;">Taxa Bug → User Story</span>
+                  <div style="display:flex; align-items:baseline; gap:8px;">
+                    <span id="lbl-quality-bug-to-us-rate" style="font-size: 1.8rem; font-weight: 800; line-height: 1.1; color: hsl(38,95%,60%);">-</span>
+                    <span id="lbl-quality-bug-to-us-abs" style="font-size:0.8rem; opacity:0.75;"></span>
+                  </div>
+                  <span style="font-size: 0.72rem; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">Cards com !BUG convertidos a US</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Gráfico Bugs Abertos vs Fechados nos 30d + KPIs PRR -->
+            <div class="panel">
+              <div class="panel-header">
+                <h3>Bugs Abertos Totais vs Fechados Recentes (Últimos 30 Dias)</h3>
+              </div>
+              <div class="panel-body chart-container" id="chart-quality-bugs-comparison" style="height:520px;">
+                <!-- SVG dinâmico -->
+              </div>
+            </div>
+          </div>
+
+          <!-- NOVO: Gráficos Adicionais por Severidade (Pizza) e Tags (Barras Horizontais) -->
+          <div class="dashboard-grid" style="margin-top: 10px;">
+            <!-- Painel 1: Pizza/Rosca de Severidade -->
+            <div class="panel">
+              <div class="panel-header">
+                <h3>Distribuição por Severidade</h3>
+                <span id="badge-bugs-severity-filter" class="badge badge-rose" style="display: none; cursor: pointer;" title="Clique para limpar o filtro de severidade">Filtro Ativo ×</span>
+              </div>
+              <div class="panel-body chart-container" id="chart-bugs-severity-pizza">
+                <!-- SVG Pizza/Rosca de Severidade -->
+              </div>
+            </div>
+
+            <!-- Painel 2: Barras de Tags -->
+            <div class="panel">
+              <div class="panel-header">
+                <h3>Distribuição por Tags Operacionais</h3>
+                <span id="badge-bugs-tags-filter" class="badge badge-purple" style="display: none; cursor: pointer;" title="Clique para limpar o filtro de tags">Filtro Ativo ×</span>
+              </div>
+              <div class="panel-body chart-container" id="chart-bugs-tags-bar">
+                <!-- SVG Barras de Tags -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Filtros de Tabela Rápidos por Severidade/Prioridade -->
+          <div class="filter-row-quick">
+            <button class="btn btn-sm btn-quick-filter active" data-severity="all">Todas as Severidades</button>
+            <button class="btn btn-sm btn-quick-filter" data-severity="crítico">Crítico / Bloqueador</button>
+            <button class="btn btn-sm btn-quick-filter" data-severity="medium">Médio (Medium)</button>
+            <button class="btn btn-sm btn-quick-filter" data-severity="baixa">Baixa / Indefinida</button>
+          </div>
+
+          <!-- Tabela Mestre de Bugs -->
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Fila de Bugs Operacionais da Squad Fiscal</h3>
+              <span class="badge badge-rose" id="lbl-quality-bugs-count">0 bugs</span>
+            </div>
+            <div class="panel-body">
+              <div class="responsive-table-container">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Título</th>
+                      <th>Coluna do Board</th>
+                      <th>Responsável</th>
+                      <th>Severidade</th>
+                      <th>Dias em Aberto / Resolução</th>
+                      <th>Lead até PRR</th>
+                    </tr>
+                  </thead>
+                  <tbody id="table-quality-bugs-list">
+                    <!-- Injetado via JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- PÁGINA 8: SINALIZAÇÕES E ALERTAS -->
+        <section id="page-alerts" class="page-section hidden">
+          <div class="alert alert-info">
+            <svg class="icon-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            <strong>Painel de Alertas e Sinalizações:</strong> Este painel monitora gargalos, desvios de estimativa de esforço, atrasos e gaps de produtividade do time com base nas regras de negócio.
+          </div>
+
+          <!-- Cards de Resumo de Alertas -->
+          <div class="kpi-grid">
+            <div class="kpi-card kpi-purple" id="card-kpi-total-alerts" style="cursor: pointer;" title="Total de alertas operacionais ativos">
+              <div class="kpi-icon icon-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+              </div>
+              <div class="kpi-content">
+                <h3>Total de Alertas</h3>
+                <div class="kpi-value" id="kpi-total-alerts">0</div>
+                <p class="kpi-meta">Sinalizações ativas</p>
+              </div>
+            </div>
+
+            <div class="kpi-card kpi-rose text-danger" id="card-kpi-blocker-alerts" style="cursor: pointer;" title="Impedimentos Ativos (Sinal Vermelho - Blocker)">
+              <div class="kpi-icon icon-rose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg>
+              </div>
+              <div class="kpi-content">
+                <h3>Impedidos (Blocker)</h3>
+                <div class="kpi-value" id="kpi-blocker-alerts">0</div>
+                <p class="kpi-meta">Vermelho (Ação Imediata)</p>
+              </div>
+            </div>
+
+            <div class="kpi-card kpi-amber" id="card-kpi-critical-alerts" style="cursor: pointer; border-left-color: hsl(22, 95%, 50%);" title="Alertas Críticos (Sinal Laranja - Critical)">
+              <div class="kpi-icon" style="background-color: hsla(22, 95%, 50%, 0.15); color: hsl(22, 95%, 55%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <div class="kpi-content">
+                <h3>Críticos</h3>
+                <div class="kpi-value" id="kpi-critical-alerts" style="color: hsl(22, 95%, 55%);">0</div>
+                <p class="kpi-meta">Laranja (Prioridade Alta)</p>
+              </div>
+            </div>
+
+            <div class="kpi-card kpi-amber" id="card-kpi-warning-alerts" style="cursor: pointer;" title="Alertas de atenção (Sinal Amarelo - Warning)">
+              <div class="kpi-icon icon-amber">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+              </div>
+              <div class="kpi-content">
+                <h3>Atenção</h3>
+                <div class="kpi-value" id="kpi-warning-alerts">0</div>
+                <p class="kpi-meta">Amarelo (Médio Risco)</p>
+              </div>
+            </div>
+
+            <div class="kpi-card kpi-blue" id="card-kpi-info-alerts" style="cursor: pointer; border-left-color: hsl(210, 90%, 55%);" title="Informações e Observações (Sinal Azul - Info)">
+              <div class="kpi-icon" style="background-color: hsla(210, 90%, 55%, 0.15); color: hsl(210, 90%, 60%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              </div>
+              <div class="kpi-content">
+                <h3>Info</h3>
+                <div class="kpi-value" id="kpi-info-alerts" style="color: hsl(210, 90%, 60%);">0</div>
+                <p class="kpi-meta">Azul (Observações)</p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Abas para navegar entre Alertas e Produtividade e Filtro de Tipo -->
+          <div class="filter-row-quick" style="margin-top: 20px; display: flex; align-items: center; flex-wrap: wrap; gap: 8px;">
+            <button class="btn btn-sm btn-quick-filter active" id="btn-tab-alerts-all" data-alert-tab="all">Todos os Alertas</button>
+            <button class="btn btn-sm btn-quick-filter" id="btn-tab-alerts-blocker" data-alert-tab="blocker">🛑 Impedidos</button>
+            <button class="btn btn-sm btn-quick-filter" id="btn-tab-alerts-critical" data-alert-tab="critical">🟠 Críticos</button>
+            <button class="btn btn-sm btn-quick-filter" id="btn-tab-alerts-warning" data-alert-tab="warning">🟡 Atenção</button>
+            <button class="btn btn-sm btn-quick-filter" id="btn-tab-alerts-info" data-alert-tab="info">🔵 Info</button>
+            <div style="border-left: 1px solid var(--border-light); height: 24px; margin: 0 8px;"></div>
+            <select id="filter-alert-wi-type" class="btn btn-sm btn-quick-filter" style="cursor: pointer; appearance: auto;">
+              <option value="all">Todos os Tipos de WI</option>
+              <option value="Bug">Bug</option>
+              <option value="User Story">User Story</option>
+              <option value="Feature">Feature</option>
+              <option value="Atendimento">Atendimento</option>
+              <option value="Task">Task</option>
+            </select>
+            <div style="border-left: 1px solid var(--border-light); height: 24px; margin: 0 8px;"></div>
+            <select id="filter-alert-assignee" class="btn btn-sm btn-quick-filter" style="cursor: pointer; appearance: auto;">
+              <option value="all">Todos os Responsáveis</option>
+              <!-- Injetado via JS -->
+            </select>
+            <div style="border-left: 1px solid var(--border-light); height: 24px; margin: 0 8px;"></div>
+            <div class="multiselect-combo" id="alert-rule-multiselect-combo" style="position: relative; z-index: 50;">
+              <button type="button" class="multiselect-trigger btn btn-sm btn-quick-filter" id="alert-rule-combo-trigger" style="min-width: 160px; background: var(--bg-surface); border: 1px solid var(--border-light);">Tipos de Alerta (Todos)</button>
+              <div class="multiselect-panel" id="alert-rule-combo-panel" style="position: absolute; top: 100%; left: 0; min-width: 200px; margin-top: 4px;">
+                <div class="multiselect-panel-header">
+                  <label class="filter-checklist-item">
+                    <input type="checkbox" id="alert-rule-select-all" checked>
+                    <span>Selecionar Todos</span>
+                  </label>
+                </div>
+                <div class="multiselect-panel-body" id="filter-alert-rule-checklist">
+                  <!-- Injetado via JS -->
+                </div>
+              </div>
+            </div>
+            <div style="border-left: 1px solid var(--border-light); height: 24px; margin: 0 8px;"></div>
+            <button class="btn btn-sm btn-quick-filter active" id="btn-toggle-unvalidated-only"
+                    title="Mostrar apenas alertas ainda não validados">✅ Não Validados</button>
+            <button class="btn btn-sm btn-quick-filter" id="btn-toggle-validated-only"
+                    title="Mostrar apenas alertas já validados">✅ Validados</button>
+          </div>
+
+          <!-- Tabela de Alertas Ativos -->
+          <div class="panel" id="panel-alerts-table">
+            <div class="panel-header">
+              <h3>Lista de Alertas Ativos</h3>
+              <span class="badge badge-purple" id="lbl-alerts-table-count">0 alertas</span>
+            </div>
+            <div class="panel-body">
+              <div class="responsive-table-container">
+                <table class="data-table" id="table-alerts-list">
+                  <thead>
+                    <tr>
+                      <th data-sort="id" class="sortable-header" style="cursor: pointer; user-select: none;">ID <span class="sort-icon"></span></th>
+                      <th data-sort="title" class="sortable-header" style="cursor: pointer; user-select: none;">Título / Item <span class="sort-icon"></span></th>
+                      <th>Tipo de Alerta</th>
+                      <th data-sort="severity" class="sortable-header" style="cursor: pointer; user-select: none;">Severidade <span class="sort-icon"></span></th>
+                      <th data-sort="assignee" class="sortable-header" style="cursor: pointer; user-select: none;">Responsável <span class="sort-icon"></span></th>
+                      <th>Métrica / Detalhes</th>
+                      <th style="width: 60px; text-align: center;" title="Marcar alerta como validado">✔</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tbody-alerts-list">
+                    <!-- Injetado dinamicamente via JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Sessão: Mapa de Retransições Recentes (Retrabalho) -->
+          <div class="panel" style="margin-top: 20px;">
+            <div class="panel-header">
+              <h3>Mapa de Retransições Recentes (Frequência de Retrabalho De -> Para)</h3>
+              <button class="btn btn-sm btn-quick-filter active" id="btn-toggle-unvalidated-retrans"
+                      title="Mostrar apenas retransições ainda não validadas">✅ Não Validados</button>
+              <button class="btn btn-sm btn-quick-filter" id="btn-toggle-validated-retrans"
+                      title="Mostrar apenas retransições já validadas">✅ Validados</button>
+            </div>
+            <div class="panel-body">
+              <div class="transition-map-container" id="flow-transition-timeline">
+                <!-- Timeline de fluxos retrabalhados -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Sessão: Análise de Fluxo Anormal (Colunas Puladas) -->
+          <div class="panel" style="margin-top: 20px;">
+            <div class="panel-header">
+              <h3>Fluxo Anormal (Etapas Puladas)</h3>
+              <button class="btn btn-sm btn-quick-filter active" id="btn-toggle-unvalidated-skipped"
+                      title="Mostrar apenas fluxos anormais ainda não validados">✅ Não Validados</button>
+              <button class="btn btn-sm btn-quick-filter" id="btn-toggle-validated-skipped"
+                      title="Mostrar apenas fluxos anormais já validados">✅ Validados</button>
+            </div>
+            <div class="panel-body">
+              <div class="transition-map-container" id="flow-skipped-timeline">
+                <!-- Timeline de fluxos anormais -->
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- PÁGINA 7: ATENDIMENTOS -->
+        <section id="page-atendimentos" class="page-section hidden">
+          <div class="alert alert-info">
+            <svg class="icon-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            <strong>Dados de Atendimentos Concluídos:</strong> Esta página lista todos os chamados de atendimento finalizados no período selecionado, detalhando responsáveis, números e o esforço computado (CompletedWork).
+          </div>
+
+          <!-- Tabela Mestre de Atendimentos -->
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Lista de Atendimentos Concluídos no Período</h3>
+              <div class="panel-actions">
+                <span class="badge badge-purple" id="lbl-atendimentos-total-count">0 atendimentos</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="responsive-table-container">
+                <table class="data-table" id="table-atendimentos-list">
+                  <thead>
+                    <!-- Injetado dinamicamente com sorting e filtering via JS -->
+                  </thead>
+                  <tbody>
+                    <!-- Injetado via JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PÁGINA 6: DETALHE (DRILL-DOWN) -->
+        <section id="page-drilldown" class="page-section hidden">
+          
+          <!-- Seleção e Busca de Work Item -->
+          <div class="search-panel panel">
+            <div class="panel-body">
+              <div class="search-group">
+                <label for="txt-search-wi">Buscar Work Item (Digite ID ou palavras do Título):</label>
+                <div class="search-input-wrapper">
+                  <input type="text" id="txt-search-wi" placeholder="Ex: 13344 ou MDF-e..." autocomplete="off">
+                  <button id="btn-clear-search" class="btn-clear-search hidden">×</button>
+                  <div id="search-suggest-dropdown" class="suggest-dropdown hidden">
+                    <!-- Sugestões injetadas via JS -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Painel de Detalhes do Work Item (Visível após seleção) -->
+          <div id="drilldown-display-container" class="hidden">
+            
+            <!-- Cabeçalho do Item Selecionado -->
+            <div class="drilldown-header panel">
+              <div class="drill-header-top">
+                <span id="drill-wi-id" class="wi-id-badge">ID 0000</span>
+                <span id="drill-wi-type" class="badge">Tipo</span>
+                <span id="drill-wi-state" class="badge">Estado</span>
+                <span id="drill-wi-column" class="badge">Coluna</span>
+              </div>
+              <h2 id="drill-wi-title">Título do Work Item Selecionado</h2>
+              <div class="drill-meta-grid">
+                <div>
+                  <strong>Área:</strong> <span id="drill-wi-area">-</span>
+                </div>
+                <div>
+                  <strong>Sprint (Iteration):</strong> <span id="drill-wi-iteration">-</span>
+                </div>
+                <div>
+                  <strong>Responsável:</strong> <span id="drill-wi-assignee">-</span>
+                </div>
+                <div>
+                  <strong>QA:</strong> <span id="drill-wi-qa">-</span>
+                </div>
+                <div>
+                  <strong>Criado Por:</strong> <span id="drill-wi-creator">-</span>
+                </div>
+                <div>
+                  <strong>Prioridade/Severidade:</strong> <span id="drill-wi-priority-sev">-</span>
+                </div>
+                <div>
+                  <strong>Data de Criação:</strong> <span id="drill-wi-created-date">-</span>
+                </div>
+                <div>
+                  <strong>Data de Alteração:</strong> <span id="drill-wi-altered-date">-</span>
+                </div>
+              </div>
+              
+              <div class="drill-tags-container" id="drill-wi-tags-list">
+                <!-- Tags badges -->
+              </div>
+            </div>
+
+            <!-- Meio do Drill down: Tempos em Coluna & Timeline de Transições -->
+            <div class="dashboard-grid">
+              
+              <!-- Histórico de Tempo em Cada Coluna -->
+              <div class="panel">
+                <div class="panel-header">
+                  <h3>Tempo Gasto em Cada Etapa do Board (Tempo por Coluna)</h3>
+                </div>
+                <div class="panel-body" id="drill-tempo-coluna-container">
+                  <!-- Barras de tempo injetadas via JS -->
+                </div>
+              </div>
+
+              <!-- Histórico Recente de Transições (Timeline de Eventos) -->
+              <div class="panel">
+                <div class="panel-header">
+                  <h3>Histórico de Transições e Movimentações Recentes</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="timeline" id="drill-transitions-timeline">
+                    <!-- Timeline estruturada via JS -->
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Novo card: Histórico de Paralisações (Exibido apenas quando houver paralisações) -->
+            <div id="drill-paralisacoes-panel" class="panel hidden" style="margin-top: 20px;">
+              <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center;">
+                <h3>Histórico de Paralisações</h3>
+                <span class="badge badge-rose" id="lbl-drill-paralisacoes-total" style="font-weight: 600;">0d 0h paralisado</span>
+              </div>
+              <div class="panel-body">
+                <div class="timeline" id="drill-paralisacoes-timeline">
+                  <!-- Timeline estruturada via JS -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Fundo do Drill-down: Tasks Filhas -->
+            <div class="panel">
+              <div class="panel-header">
+                <h3>Subtasks Filhas Vinculadas</h3>
+              </div>
+              <div class="panel-body">
+                <div class="responsive-table-container">
+                  <table class="data-table">
+                    <thead>
+                      <tr>
+                        <th>ID da Task</th>
+                        <th>Título da Task</th>
+                        <th>Estado</th>
+                        <th>Responsável</th>
+                        <th>Atividade (Activity)</th>
+                        <th>Estimativa Original (Horas)</th>
+                        <th>Trabalho Concluído (Horas)</th>
+                        <th>Criada em</th>
+                        <th>Última Alteração</th>
+                      </tr>
+                    </thead>
+                    <tbody id="table-drill-tasks">
+                      <!-- Tasks injetadas ou mensagem de "Sem tasks" -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Mensagem Inicial (Exibida antes da seleção do WI) -->
+          <div id="drilldown-placeholder" class="panel text-center placeholder-panel">
+            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+            <h3>Nenhum Work Item Selecionado</h3>
+            <p>Selecione um item fiscal digitando seu ID ou título na barra de busca acima para visualizar o drill-down completo das transições, tempos em coluna e subtasks vinculadas.</p>
+          </div>
+
+        </section>
+
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Modal de Sincronização / Inserção do PAT Azure -->
+  <div id="sync-modal" class="modal-overlay hidden">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Sincronizar com Azure DevOps</h3>
+        <button id="btn-close-sync-modal" class="btn" style="padding: 4px; background: none; border: none; color: var(--text-muted); font-size: 1.5rem; cursor: pointer; line-height: 1;">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Esta operação irá sincronizar os dados do dashboard em tempo real com a API do Azure DevOps.</p>
+        
+        <div class="modal-instructions">
+          <strong>Como gerar seu Personal Access Token (PAT):</strong>
+          <ol>
+            <li>No Azure DevOps, clique no ícone de configurações de usuário (canto superior direito) e selecione <strong>Personal Access Tokens</strong>.</li>
+            <li>Clique em <strong>New Token</strong>.</li>
+            <li>Dê um nome (ex: <code>Squad Fiscal Dashboard</code>) e defina a expiração.</li>
+            <li>Em <em>Scopes</em>, marque a opção <strong>Custom Defined</strong>.</li>
+            <li>Role até a seção <strong>Work Items</strong> e marque a permissão <strong>Read</strong> (Leitura).</li>
+            <li>Clique em <strong>Create</strong> e copie o token gerado.</li>
+          </ol>
+        </div>
+
+        <div class="modal-form-group">
+          <label for="txt-azure-pat">Personal Access Token (PAT)</label>
+          <input type="password" id="txt-azure-pat" class="modal-input" placeholder="Cole seu token aqui...">
+          <span style="font-size: 0.75rem; color: var(--text-muted);" id="lbl-pat-status">Carregando status do token...</span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="btn-cancel-sync" class="btn btn-outline">Cancelar</button>
+        <button id="btn-confirm-sync" class="btn btn-primary">Confirmar e Sincronizar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Detalhes de Paralisação -->
+  <div id="blocking-details-modal" class="modal-overlay hidden">
+    <div class="modal-card" style="max-width: 800px; width: 90%;">
+      <div class="modal-header">
+        <h3 id="blocking-modal-title">Detalhes de Paralisação</h3>
+        <button id="btn-close-blocking-modal" class="btn" style="padding: 4px; background: none; border: none; color: var(--text-muted); font-size: 1.5rem; cursor: pointer; line-height: 1;">&times;</button>
+      </div>
+      <div class="modal-body" style="max-height: 50vh; overflow-y: auto;">
+        <table class="data-table" style="width: 100%;">
+          <thead>
+            <tr>
+              <th style="width: 80px; cursor: pointer; user-select: none;" onclick="sortBlockingModal('id')">ID <span id="sort-icon-id" style="font-size: 0.8em; color: var(--text-muted);">&#9662;</span></th>
+              <th style="width: 100px; cursor: pointer; user-select: none;" onclick="sortBlockingModal('type')">Tipo <span id="sort-icon-type" style="font-size: 0.8em; color: var(--text-muted);"></span></th>
+              <th style="cursor: pointer; user-select: none;" onclick="sortBlockingModal('title')">Título <span id="sort-icon-title" style="font-size: 0.8em; color: var(--text-muted);"></span></th>
+              <th style="text-align: right; width: 120px; cursor: pointer; user-select: none;" onclick="sortBlockingModal('hours')">Duração <span id="sort-icon-hours" style="font-size: 0.8em; color: var(--text-muted);"></span></th>
+              <th style="text-align: center; width: 100px; cursor: pointer; user-select: none;" onclick="sortBlockingModal('isActive')">Ativo <span id="sort-icon-isActive" style="font-size: 0.8em; color: var(--text-muted);"></span></th>
+            </tr>
+          </thead>
+          <tbody id="blocking-modal-tbody">
+            <!-- Renderizado via JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Detalhes do Alerta (Tempo e Concorrência) -->
+  <div id="alert-details-modal" class="modal-overlay hidden">
+    <div class="modal-card" style="max-width: 800px; width: 90%;">
+      <div class="modal-header">
+        <h3 id="alert-modal-title">Detalhes do Alerta</h3>
+        <button id="btn-close-alert-modal" class="btn" style="padding: 4px; background: none; border: none; color: var(--text-muted); font-size: 1.5rem; cursor: pointer; line-height: 1;">&times;</button>
+      </div>
+      <div class="modal-body" style="max-height: 70vh; overflow-y: auto; padding: 16px;">
+        <div id="alert-modal-summary" style="margin-bottom: 20px; background-color: var(--bg-color); padding: 12px; border-radius: 4px; border: 1px solid var(--border-light);">
+          <!-- Preenchido via JS -->
+        </div>
+        
+        <div id="alert-modal-tasks-summary" style="margin-bottom: 24px; display: none;">
+          <h4 style="margin-bottom: 12px;">Resumo de Tasks (Esforço Estimado vs Apontado)</h4>
+          <div id="alert-modal-tasks-content" style="display: flex; gap: 16px; flex-wrap: wrap;">
+            <!-- Preenchido via JS -->
+          </div>
+          <div id="alert-modal-tasks-details" style="margin-top: 16px; max-height: 200px; overflow-y: auto; border: 1px solid var(--border-light); border-radius: 4px;">
+            <table class="data-table" style="width: 100%; font-size: 0.85rem; margin: 0;">
+              <thead style="position: sticky; top: 0; z-index: 1; background-color: var(--bg-color);">
+                <tr>
+                  <th style="padding: 8px;">Task</th>
+                  <th style="padding: 8px;">Atividade</th>
+                  <th style="padding: 8px;">Responsável</th>
+                  <th style="text-align: right; padding: 8px;">Estimado</th>
+                  <th style="text-align: right; padding: 8px;">Lançado</th>
+                </tr>
+              </thead>
+              <tbody id="alert-modal-tasks-details-tbody">
+                <!-- Preenchido via JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <h4 style="margin-bottom: 12px;">Quadro de Contexto (Outros WIs atendidos no período)</h4>
+        <table class="data-table" style="width: 100%;">
+          <thead>
+            <tr>
+              <th style="width: 100px;">ID</th>
+              <th>Título</th>
+              <th style="width: 180px;">Coluna(s)</th>
+              <th style="text-align: right; width: 140px;">Tempo de Interseção</th>
+            </tr>
+          </thead>
+          <tbody id="alert-modal-concurrent-tbody">
+            <!-- Renderizado via JS -->
+          </tbody>
+        </table>
+        <div id="alert-modal-no-concurrent" class="hidden" style="text-align: center; color: var(--text-muted); padding: 20px 0;">
+          Nenhum outro WI atendido pelo mesmo responsável durante este período.
+        </div>
+
+        <div id="alert-modal-pauses-section" style="margin-top: 24px; display: none;">
+          <h4 style="margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            Histórico de Paralisações
+            <span id="alert-modal-pauses-total" style="font-size: 0.85rem; font-weight: normal; background: var(--bg-color); padding: 2px 8px; border-radius: 12px; color: var(--text-muted); border: 1px solid var(--border-light);"></span>
+          </h4>
+          <div id="alert-modal-pauses-timeline" style="border-left: 2px solid var(--border-light); margin-left: 8px; padding-left: 16px;">
+            <!-- Renderizado via JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Detalhes de Produtividade -->
+  <div id="productivity-details-modal" class="modal-overlay hidden">
+    <div class="modal-card" style="max-width: 800px; width: 90%;">
+      <div class="modal-header">
+        <h3 id="productivity-modal-title">Detalhes de Produtividade</h3>
+        <button id="btn-close-productivity-modal" class="btn" style="padding: 4px; background: none; border: none; color: var(--text-muted); font-size: 1.5rem; cursor: pointer; line-height: 1;">&times;</button>
+      </div>
+      <div class="modal-body" style="max-height: 50vh; overflow-y: auto; padding: 10px;">
+        <table class="data-table" style="width: 100%;">
+          <thead>
+            <tr>
+              <th style="width: 80px; cursor: pointer; user-select: none;" onclick="sortProductivityDetailsModal('id')">ID <span id="sort-prod-icon-id" style="font-size: 0.8em; color: var(--text-muted);"></span></th>
+              <th style="width: 120px; cursor: pointer; user-select: none;" onclick="sortProductivityDetailsModal('type')">Tipo <span id="sort-prod-icon-type" style="font-size: 0.8em; color: var(--text-muted);"></span></th>
+              <th style="cursor: pointer; user-select: none;" onclick="sortProductivityDetailsModal('title')">Título <span id="sort-prod-icon-title" style="font-size: 0.8em; color: var(--text-muted);"></span></th>
+              <th style="text-align: right; width: 120px; cursor: pointer; user-select: none;" onclick="sortProductivityDetailsModal('hours')">Horas <span id="sort-prod-icon-hours" style="font-size: 0.8em; color: var(--text-muted);"></span></th>
+              <th style="text-align: center; width: 140px; cursor: pointer; user-select: none;" onclick="sortProductivityDetailsModal('date')">Data Conclusão <span id="sort-prod-icon-date" style="font-size: 0.8em; color: var(--text-muted);">&#9662;</span></th>
+            </tr>
+          </thead>
+          <tbody id="productivity-modal-tbody">
+            <!-- Renderizado via JS -->
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer" style="justify-content: space-between;">
+        <div style="font-size: 0.85rem; color: var(--text-muted);" id="productivity-modal-info">Mostrando 0 de 0</div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          <button id="btn-prod-modal-prev" class="btn btn-secondary" onclick="changeProductivityDetailsPage(-1)">Anterior</button>
+          <span id="productivity-modal-page" style="font-size: 0.9rem; font-weight: 500;">Pág 1</span>
+          <button id="btn-prod-modal-next" class="btn btn-secondary" onclick="changeProductivityDetailsPage(1)">Próxima</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script principal do dashboard -->
+  <script src="app.js?v=1.4.4"></script>
+</body>
+</html>

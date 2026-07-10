@@ -1,0 +1,33 @@
+---
+description: Context policy for safe retrieval, chunking and isolation in the legacy ERP.
+globs:
+  - "**/*.cs"
+  - "**/*.csproj"
+  - "**/*.xml"
+  - "**/*.sql"
+alwaysApply: false
+---
+
+# Context Policy 
+
+Load context incrementally:
+
+1. classify task and risk;
+2. read relevant discovery docs;
+3. inspect target symbol/file;
+4. inspect contracts and interfaces;
+5. inspect consumers;
+6. inspect SQL/XSD/NT/tests when applicable;
+7. summarize evidence and gaps.
+
+Do not load large hubs as isolated context for modifications.
+
+Hubs requiring expanded context:
+
+- `ControllerView`;
+- `RepositorioComum`;
+- `Business`;
+- `MetaDOCe`;
+- `MetaServerGlobal`;
+- `EspecificacaoGeral`.
+

@@ -1,0 +1,177 @@
+Cards finalizados no mês
+
+Tipo
+
+User Story
+Bug
+Atendimento
+Total
+
+Total % do total Horas Dev Implementando Horas Testando
+126,65 h
+79,65 h
+0 h
+206,30 h
+
+334,42 h
+96,38 h
+55,48 h
+486,28 h
+
+53,66%
+23,17%
+23,17%
+100%
+
+44
+19
+19
+82 cards
+
+Consolidado por colaborador
+(Desenvolvimento + QA)
+
+Colaborador
+
+Julio Andreata
+Fabio Nobre
+Ivan Pionelli Junior
+Leandro Andrade
+Demais colaboradores
+
+Estimate Dev Implementando
+81,12 h
+46,50 h
+16,72 h
+0,58 h
+...
+
+11 h
+22 h
+8 h
+0 h
+...
+
+Testando
+46,05 h
+51,88 h
+29,70 h
+67,32 h
+...
+
+Tempo gasto por Status
+Os maiores consumidores de tempo foram:
+
+Status
+
+Tempo
+Aguardando retorno de parceiro externo 116,45 h
+51,28 h
+Retorno solicitante
+50,37 h
+Aguardando Revisão
+41,97 h
+Parou para fazer outro ticket
+31,23 h
+Aguardando PO
+...
+Demais status
+
+Total de Bugs: 35
+
+Bugs alterados para User Story: 16
+
+Percentual: 45,71%
+
+Resumo da coluna "Fato Causa Ação"
+Os registros apontam principalmente para:
+
+• melhorias de especificação 
+• correções de entendimento de regra fiscal 
+•
+• necessidade de maior validação antes do desenvolvimento 
+• ajustes em requisitos após testes 
+
+refinamentos insuficientes 
+
+Em geral, predominam causas relacionadas ao processo de definição do requisito, e não problemas 
+técnicos de implementação.
+
+CardsEmColunas (Snapshots diários)
+Foram identificados:
+
+• 19 coletas diárias 
+• 117 registros de cards 
+• Snapshot diário às aproximadamente 08:30
+
+Distribuição do WIP 
+
+Coluna
+Dev Implementando
+Fazendo Análise
+Testando
+
+Registros
+62
+28
+26
+
+Coluna com maior concentração Dev Implementando
+Segunda maior concentração
+Menor concentração
+
+Fazendo Análise
+Testando
+
+Gargalos observados
+Os snapshots mostram que:
+
+• desenvolvimento permaneceu como principal concentração de trabalho durante praticamente
+
+todo o mês; 
+
+• análise manteve volume relativamente constante; 
+•
+
+teste apresentou fila menor que desenvolvimento, indicando boa capacidade do QA em 
+absorver demandas; 
+
+• diversos cards permaneceram vários dias consecutivos na mesma coluna, sugerindo itens de 
+
+maior complexidade ou bloqueados.
+
+Informações gerenciais relevantes
+
+Indicador
+
+Observação
+
+WIP predominante Desenvolvimento
+Fluxo
+QA
+Desenvolvimento Principal gargalo operacional
+Balanceamento
+
+Estável durante o mês
+Não apresentou acúmulo excessivo
+
+Há oportunidade de reduzir WIP em desenvolvimento
+
+Resumo Executivo (1 minuto)
+
+• 82 cards foram concluídos no mês. 
+• 54% das entregas foram User Stories. 
+• Bugs representaram 23% das entregas. 
+• Foram consumidas aproximadamente 486 horas de desenvolvimento e 206 horas de testes.
+• 45% dos bugs acabaram sendo convertidos em User Stories, indicando forte ocorrência de 
+
+mudanças de escopo ou refinamento insuficiente. 
+
+• O principal gargalo de espera, espera por parceiros externos, solicitantes e revisões. 
+• Nos snapshots diários, o WIP concentrou-se em Desenvolvimento, sugerindo que essa 
+
+etapa é o maior limitador do fluxo da equipe. 
+
+• O setor de QA apresentou fila relativamente controlada, sem sinais de acúmulo significativo.
+
+

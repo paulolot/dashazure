@@ -1,0 +1,925 @@
+Id,Tag
+226,DBA
+230,Sped
+238,Prioridade Rodrigo
+255,Estabilidade
+259,Estabilidade
+263,Prioridade Rodrigo
+266,Estabilidade
+269,Contingência
+270,Estabilidade
+271,Usabilidade
+272,Estabilidade
+273,Auditoria
+273,Cacique
+280,Cacique
+280,Estabilidade
+292,Estabilidade
+292,Melhoria
+300,Cacique - Lista
+300,Estabilidade
+301,B.I
+302,B.I
+376,Cacique Lista 2
+376,Performance
+378,Cacique Lista 2
+378,Performance
+381,Cacique Lista 2
+381,Performance
+382,Cacique Lista 2
+382,Performance
+383,Cacique Lista 2
+383,Performance
+385,Performance
+386,Cacique Lista 2
+386,Performance
+387,Cacique Lista 2
+387,Performance
+388,Cacique Lista 2
+388,Performance
+391,Cacique Lista 2
+391,Performance
+624,Auditoria
+624,Cacique
+956,Cacique
+956,Carga de Movimentação
+961,Tulio
+962,Tulio
+976,Melhoria
+980,Tulio
+1035,B.I
+1036,B.I
+1037,B.I
+1038,B.I
+1040,B.I
+1054,Estabilidade
+1054,Usabilidade
+1133,Cacique
+1133,Estoque
+1138,Tulio
+1223,Arquitetura
+1223,consultoria
+1224,Arquitetura
+1224,consultoria
+1227,Arquitetura
+1227,consultoria
+1240,Alfa 09.11.2024 R. 03.11.2024
+1240,Cacique
+1240,Preço
+1318,Melhoria
+1318,Performance
+1325,Cacique
+1325,Gerenciamento DFe
+1329,Estabilidade
+1372,Arquitetura
+1372,consultoria
+1374,Arquitetura
+1374,consultoria
+1407,Melhoria
+1411,Arquitetura
+1411,consultoria
+1411,MetaServerGlobal
+1416,Comprovante Entrega
+1416,FORTES
+1416,Prioridade Ricardo
+1418,Melhoria
+1427,Arquitetura
+1427,MetaImportador
+1428,Arquitetura
+1429,Arquitetura
+1438,Arquitetura
+1438,consultoria
+1671,Contingência
+1744,Melhoria
+1745,Melhoria
+1757,Melhoria
+1775,Ipiranga
+1775,Melhoria
+1775,Usabilidade
+1874,!BUG
+1893,Tulio
+1923,!BUG
+1947,B.I
+1979,Teste Unitário
+2005,Cacique
+2005,Preço
+2006,B.I
+2034,B.I
+2040,B.I
+2115,Distribuidoras
+2115,Ipiranga
+2115,Prioridade Ricardo
+2134,B.I
+2140,QA BUG
+2149,B.I
+2150,B.I
+2189,Arquitetura
+2310,!BUG
+2313,consultoria
+2313,Melhoria
+2363,Extra
+2363,Prioridade Ricardo
+2363,Tulio
+2516,Logon
+2516,Melhoria
+2516,Performance
+2518,Logon
+2518,Melhoria
+2518,Performance
+2520,Logon
+2520,Melhoria
+2520,Performance
+2521,Logon
+2521,Melhoria
+2521,Performance
+2530,Api
+2530,Melhoria
+2530,Performance
+2531,Api
+2531,Melhoria
+2531,Performance
+2532,Api
+2532,Melhoria
+2532,Performance
+2533,Api
+2533,Melhoria
+2533,Performance
+2534,Api
+2534,Melhoria
+2534,Performance
+2538,Logon
+2538,Melhoria
+2538,Performance
+2540,Melhoria
+2540,Performance
+2542,Melhoria
+2542,Performance
+2544,Melhoria
+2544,Performance
+2546,Melhoria
+2546,Performance
+2547,Melhoria
+2547,Performance
+2548,Melhoria
+2548,Performance
+2549,Melhoria
+2549,Performance
+2550,Melhoria
+2550,Performance
+2551,Melhoria
+2551,Performance
+2552,Melhoria
+2552,Performance
+2553,Melhoria
+2553,Performance
+2554,Melhoria
+2554,Performance
+2555,Melhoria
+2555,Performance
+2556,Melhoria
+2556,Performance
+2557,Melhoria
+2557,Performance
+2558,Melhoria
+2558,Performance
+2559,Melhoria
+2559,Performance
+2560,Melhoria
+2560,Performance
+2561,Melhoria
+2561,Performance
+2562,Melhoria
+2562,Performance
+2563,Melhoria
+2563,Performance
+2564,Melhoria
+2564,Performance
+2565,Melhoria
+2565,Performance
+2566,Melhoria
+2566,Performance
+2567,Melhoria
+2567,Performance
+2568,Melhoria
+2568,Performance
+2569,Melhoria
+2569,Performance
+2570,Melhoria
+2570,Performance
+2571,Melhoria
+2571,Performance
+2572,Melhoria
+2572,Performance
+2573,Melhoria
+2573,Performance
+2574,Melhoria
+2574,Performance
+2575,Melhoria
+2575,Performance
+2576,Melhoria
+2576,Performance
+2577,Melhoria
+2577,Performance
+2578,Melhoria
+2578,Performance
+2579,Melhoria
+2579,Performance
+2580,Melhoria
+2580,Performance
+2581,Melhoria
+2581,Performance
+2582,Melhoria
+2582,Performance
+2583,Melhoria
+2583,Performance
+2584,Melhoria
+2584,Performance
+2585,Melhoria
+2585,Performance
+2586,Melhoria
+2586,Performance
+2587,Melhoria
+2587,Performance
+2588,Melhoria
+2588,Performance
+2589,Melhoria
+2589,Performance
+2590,Melhoria
+2590,Performance
+2591,Melhoria
+2591,Performance
+2593,Melhoria
+2593,Performance
+2594,Melhoria
+2594,Performance
+2595,Melhoria
+2595,Performance
+2596,Melhoria
+2596,Performance
+2597,Melhoria
+2597,Performance
+2598,Melhoria
+2598,Performance
+2599,Melhoria
+2599,Performance
+2600,Melhoria
+2600,Performance
+2601,Melhoria
+2601,Performance
+2603,Melhoria
+2603,Performance
+2606,Melhoria
+2606,Performance
+2607,Melhoria
+2607,Performance
+2608,Melhoria
+2608,Performance
+2609,Melhoria
+2609,Performance
+2610,Melhoria
+2610,Performance
+2611,Melhoria
+2611,Performance
+2612,Melhoria
+2612,Performance
+2613,Melhoria
+2613,Performance
+2614,Melhoria
+2614,Performance
+2615,Melhoria
+2615,Performance
+2616,Melhoria
+2616,Performance
+2617,Logon
+2617,Melhoria
+2617,Performance
+2626,B.I
+2666,Estabilidade
+2695,Melhoria
+2695,Performance
+2700,Melhoria
+2734,Melhoria
+2770,Melhoria
+2770,Performance
+2797,Melhoria
+2797,Usabilidade
+2822,Melhoria
+2823,Cacique
+2823,Script
+2858,Melhoria
+2858,Usabilidade
+2859,Melhoria
+2869,!BUG
+2917,Problema
+2984,Melhoria
+3030,Melhoria
+3082,Melhoria
+3091,Melhoria
+3215,Orçamento
+3244,Melhoria
+3411,Reforma Tributária
+3412,Reforma Tributária
+3413,Reforma Tributária
+3414,Reforma Tributária
+3416,Reforma Tributária
+3488,Melhoria
+3627,Cacique
+3627,TicketLog
+3629,Boxter
+3629,Compliance
+3639,Estoque
+3639,Melhoria
+3639,Usabilidade
+3651,Configuração
+3652,Relatórios
+3653,Cadastros
+3653,Validações
+3654,CT-e
+3655,Sped
+3656,Manifestação
+3657,Sped
+3658,Custo
+3658,Inventário
+3659,Cacique
+3659,TicketLog
+3660,Cacique
+3660,Emissão de NFe
+3661,Preço
+3661,Teste Geral
+3662,Cadastros
+3662,Teste Geral
+3664,Cacique
+3664,Preço
+3665,CT-e
+3666,Cacique
+3666,Contingência
+3666,Emissão de NFe
+3666,Problemas Crônicos
+3668,Produção
+3668,Teste Geral
+3671,Produção
+3671,Teste Geral
+3672,Estoque
+3672,Teste Geral
+3674,Auditoria
+3684,Cadastros
+3684,Teste Geral
+3687,Gerenciamento DFe
+3687,Teste Geral
+3688,Relatórios
+3689,MDFe
+3689,Teste Geral
+3690,Gerenciamento DFe
+3690,Teste Geral
+3691,CT-e
+3691,Teste Geral
+3692,Ferramentas
+3692,Tulio
+3693,Melhoria
+3693,Preço
+3694,Preço
+3694,Tulio
+3695,Produção
+3707,Dúvida
+3736,B.I
+3744,B.I
+3745,B.I
+3797,Melhoria
+3797,Performance
+3827,Boxter
+3828,Boxter
+3909,Melhoria
+3915,Melhoria
+3944,B.I
+3951,B.I
+4021,B.I
+4159,B.I
+4273,B.I
+4285,Custo
+4286,Emissão de NFe
+4287,NFe/NFCe
+4289,Cadastros
+4291,NFe/NFCe
+4291,Script
+4292,NFe/NFCe
+4293,NFe/NFCe
+4303,Melhoria
+4303,Performance
+4303,Tuning
+4388,B.I
+4410,Compliance
+4424,B.I
+4553,MetaImportador
+4554,Cadastros
+4554,Emissão de NFe
+4567,Melhoria
+4621,Reforma Tributária
+4625,Reforma Tributária
+4640,Reforma Tributária
+4646,Cacique
+4671,Melhoria
+4682,Composto
+4682,Melhoria
+4682,Usabilidade
+4783,Melhoria
+4789,Reforma Tributária
+4827,Nota Técnica
+4874,Reforma Tributária
+4939,Contingência
+4942,Teste Geral
+4943,CT-e
+4943,Teste Geral
+4944,Relatórios
+5069,B.I
+5104,Reforma Tributária
+5141,Reforma Tributária
+5191,Retenção Imposto
+5193,Reforma Tributária
+5227,Nota Técnica
+5233,Contingência
+5233,NFe/NFCe
+5291,NFe/NFCe
+5334,Cadastros
+5334,Melhoria
+5389,CT-e
+5421,B.I
+5567,Melhoria
+5568,Imposto
+5568,Retenção Imposto
+5579,Fiscal
+5579,Teste Automatizado
+5585,Fiscal
+5585,Teste Automatizado
+5588,Fiscal
+5588,Teste Automatizado
+5594,Fiscal
+5594,Teste Automatizado
+5595,Fiscal
+5595,Teste Automatizado
+5596,Fiscal
+5596,Teste Automatizado
+5736,Reforma Tributária
+5832,Preço
+6047,Nota Técnica
+6047,Sped
+6143,NeverStop
+6393,Cadastros
+6497,Reforma Tributária
+6498,Reforma Tributária
+6500,Reforma Tributária
+6502,Reforma Tributária
+6503,Reforma Tributária
+6506,Reforma Tributária
+6507,Reforma Tributária
+6508,Reforma Tributária
+6509,Reforma Tributária
+6510,Reforma Tributária
+6608,NFSe Nacional
+6608,Reforma Tributária
+6716,CT-e
+6748,EstoqueOffline
+6748,Melhoria
+6845,TicketLog
+6846,Cadastros
+6848,Cacique
+6848,Script
+6861,NFSe Nacional
+6933,NFSe Nacional
+6934,NFSe Nacional
+6938,NFSe
+7302,Reforma Tributária
+7303,Reforma Tributária
+7311,Reforma Tributária
+7314,Contingência
+7314,Emissão de NFe
+7314,Problemas Crônicos
+7347,MetaServerGlobal
+7390,Melhoria
+7502,Contingência
+7504,Emissão de NFe
+7504,Problemas Crônicos
+7555,Melhoria
+7564,Reforma Tributária
+7623,NFSe
+7636,Melhoria
+7637,Melhoria
+7671,Compliance
+7785,Nota Técnica
+7785,Reforma Tributária
+7859,Arquitetura
+7863,Reforma Tributária
+7921,B.I
+7967,Fiscal
+7967,Teste Automatizado
+7968,Fiscal
+7968,Teste Automatizado
+7969,Fiscal
+7969,Teste Automatizado
+7970,Fiscal
+7970,Teste Automatizado
+7971,Fiscal
+7971,Teste Automatizado
+7972,Fiscal
+7972,Teste Automatizado
+7973,Fiscal
+7973,Teste Automatizado
+7974,Fiscal
+7974,Teste Automatizado
+7975,Fiscal
+7975,Teste Automatizado
+8059,AlertasDFe
+8059,NeverStop
+8165,Melhoria
+8178,Reforma Tributária
+8180,Reforma Tributária
+8192,Reforma Tributária
+8193,Reforma Tributária
+8243,Melhoria
+8244,Reforma Tributária
+8252,Melhoria
+8253,Reforma Tributária
+8283,Melhoria
+8284,Melhoria
+8285,Melhoria
+8286,Melhoria
+8287,Melhoria
+8288,Melhoria
+8289,Melhoria
+8290,Melhoria
+8291,Melhoria
+8292,Melhoria
+8293,Melhoria
+8294,Melhoria
+8295,Melhoria
+8296,Melhoria
+8297,Melhoria
+8298,Melhoria
+8299,Melhoria
+8300,Melhoria
+8301,Melhoria
+8302,Melhoria
+8303,Melhoria
+8304,Melhoria
+8305,Melhoria
+8306,Melhoria
+8307,Melhoria
+8308,Melhoria
+8309,Melhoria
+8310,Melhoria
+8453,Reforma Tributária
+8474,Melhoria
+8474,Performance
+8492,Nota Técnica
+8493,Cache
+8588,B.I
+8618,Reforma Tributária
+8648,Melhoria
+8648,Performance
+8805,Reforma Tributária
+8806,Reforma Tributária
+8938,Melhoria
+9009,Pipeline
+9010,Pipeline
+9011,Pipeline
+9012,Pipeline
+9013,Pipeline
+9589,Melhoria
+9785,Reforma Tributária
+10242,Atualizador automático
+10274,Melhoria
+10274,Preço
+10458,B.I
+10505,NFSe Nacional
+10522,NFSe Nacional
+10588,Fiscal
+10588,Teste Automatizado
+10589,Fiscal
+10589,Teste Automatizado
+10590,Fiscal
+10590,Teste Automatizado
+10602,Reforma Tributária
+10612,Reforma Tributária
+10657,B.I
+10816,Melhoria
+11318,Teste Automatizado
+11321,Teste Automatizado
+11324,Teste Automatizado
+11325,Teste Automatizado
+11326,Teste Automatizado
+11327,Teste Automatizado
+11328,Teste Automatizado
+11329,Teste Automatizado
+11335,Teste Automatizado
+11336,Teste Automatizado
+11387,Teste Automatizado
+11516,Compliance
+11793,Débito Técnico
+12024,NFSe Nacional
+12321,Débito Técnico
+12321,Melhoria
+13077,Atualizador automático
+13078,Atualizador automático
+13122,Contingência
+13232,Cacique
+13232,Melhoria
+13327,Atualizador automático
+13686,Arquitetura
+13686,MetaServerGlobal
+13859,Integracao Organiza
+13860,Integracao Organiza
+13925,Contingência
+13985,Atualizador automático
+14000,B.I
+14192,Integracao Organiza
+14235,Atualizador automático
+14236,Atualizador automático
+14354,Cacique
+14354,Prioridade - Suporte
+14360,Arquitetura
+14360,Atualizador automático
+14421,Arquitetura
+14421,Contingência
+14421,Melhoria
+14421,NeverStop
+14424,Atualizador automático
+14424,Melhoria
+14461,CT-e
+14461,Melhoria
+14463,Auditoria
+14463,Melhoria
+14475,MetaServerGlobal
+14476,MetaServerGlobal
+14482,MetaServerGlobal
+14573,Atualizador automático
+14613,Melhoria
+14614,Melhoria
+14626,Nota Técnica
+14826,Atualizador automático
+14828,Atualizador automático
+14829,Atualizador automático
+14884,Atualizador automático
+14885,Atualizador automático
+14886,Atualizador automático
+14888,Atualizador automático
+14889,Atualizador automático
+14891,Atualizador automático
+14897,Atualizador automático
+14898,Atualizador automático
+14899,Atualizador automático
+14900,Atualizador automático
+14901,Atualizador automático
+14902,Atualizador automático
+14903,Atualizador automático
+14998,Melhoria
+15137,Versionamento Sistema
+15139,Versionamento Sistema
+15140,Versionamento Sistema
+15278,Arquitetura
+15278,Versionamento Sistema
+15279,Arquitetura
+15279,Versionamento Sistema
+15281,Arquitetura
+15281,Versionamento Sistema
+15285,Arquitetura
+15285,Versionamento Sistema
+15286,Arquitetura
+15286,Versionamento Sistema
+15287,Arquitetura
+15287,Versionamento Sistema
+15288,Arquitetura
+15288,Versionamento Sistema
+15290,Arquitetura
+15290,Versionamento Sistema
+15291,Arquitetura
+15291,Versionamento Sistema
+15292,Arquitetura
+15292,Versionamento Sistema
+15570,Observabilidade
+15571,Observabilidade
+15572,Observabilidade
+15573,Observabilidade
+15574,Observabilidade
+15575,Observabilidade
+15576,Observabilidade
+15856,Reforma Tributária
+16071,Nota Técnica
+16224,Débito Técnico
+16225,Débito Técnico
+16227,Débito Técnico
+16228,Débito Técnico
+16290,Reforma Tributária
+16552,Débito Técnico
+16554,Débito Técnico
+16555,Débito Técnico
+16556,Débito Técnico
+16556,Observabilidade
+16576,Débito Técnico
+16759,Melhoria
+17046,Teste Automatizado
+17047,Teste Automatizado
+17048,Teste Automatizado
+17049,Teste Automatizado
+17050,Teste Automatizado
+17051,Teste Automatizado
+17052,Teste Automatizado
+17053,Teste Automatizado
+17054,Teste Automatizado
+17182,Entra em vigor em 01/07/2026
+17371,B.I
+17387,B.I
+17410,Nota Técnica
+17428,Legado
+17429,Legado
+17508,!BUG
+17759,!BUG
+17759,TechLead
+17764,!Reproduce
+17764,Legado
+17768,!BUG
+17804,I.A
+17805,I.A
+17807,I.A
+17811,I.A
+17812,I.A
+17813,I.A
+17814,I.A
+17815,I.A
+18035,Legado
+18037,!BUG
+18037,Legado
+18177,!BUG
+18231,Cacique
+18246,Impeditivo release
+18256,!BUG
+18257,!Reproduce
+18257,Legado
+18258,Legado
+18259,!BUG
+18260,!BUG
+18278,Legado
+18342,Legado
+18448,GeradoPorUS
+18500,!BUG
+18500,!Reproduce
+18500,Cacique
+18539,GeradoPorUS
+18539,Impeditivo release
+18539,Teste Automatizado
+18603,Reforma Tributária
+18642,Legado
+18676,Legado
+18686,Predecessor Card Vendas
+18720,Script
+18723,Script
+18856,!BUG
+19063,GeradoPorUS
+19150,Atendimento Suporte
+19209,!BUG
+19209,Cacique
+19213,!BUG
+19213,Ciapetro
+19214,GeradoPorUS
+19215,!BUG
+19231,Reforma Tributária
+19232,Reforma Tributária
+19233,Reforma Tributária
+19247,!BUG
+19370,Cacique
+19374,Legado
+19566,Replicação Oficial
+19632,GeradoPorUS
+19634,Cacique
+19764,Nota Técnica
+19764,NT 2026.002
+19884,Alfanumerico
+19886,Alfanumerico
+19887,Alfanumerico
+19947,Integracao Organiza
+19983,Reforma Tributária
+19984,Reforma Tributária
+19985,Reforma Tributária
+20064,Nota Técnica
+20064,NT 2026.002
+20111,B.I
+20429,Compliance
+20429,Melhoria
+20429,Performance
+20539,Reforma Tributária
+20540,Reforma Tributária
+20611,Cacique
+20645,Legado
+20681,Atualizador automático
+20713,Cacique
+20713,Importação
+20713,NFe
+20713,SO660407
+20848,GeradoPorUS
+20924,Melhoria
+21012,Legado
+21080,Entrada de Mercadorias
+21080,ICMS ST
+21080,Melhoria
+21133,Outra Squad
+21152,Débito Técnico
+21152,Teste Unitário
+21431,Observabilidade
+21654,Melhoria de Produto
+21774,I.A
+21849,Cacique
+21849,Legado
+13861,Integracao Organiza
+19229,Reforma Tributária
+20712,Cacique
+20712,Importação
+20712,NFe
+20743,Melhoria de Produto
+21132,Legado
+21494,Legado
+21852,GeradoPorUS
+22331,Interno
+6504,Reforma Tributária
+9943,Nota Débito
+9943,Reforma Tributária
+12228,Nota Débito
+12228,Reforma Tributária
+12333,Nota Débito
+12333,Reforma Tributária
+12682,Reforma Tributária
+13862,Integracao Organiza
+13863,Integracao Organiza
+13864,Integracao Organiza
+15480,Prioridade Fiscal
+15480,Reforma Tributária
+17324,Débito Técnico
+17920,Integracao Organiza
+17952,Débito Técnico
+17952,Melhoria
+18524,Nota Técnica
+19061,Cacique
+19230,Reforma Tributária
+19234,Reforma Tributária
+19235,Reforma Tributária
+19236,Reforma Tributária
+19630,Melhoria Suporte
+19631,!BUG
+19631,!Reproduce
+19631,Débito Técnico
+19758,Nota Técnica
+19758,NT 2026.002
+19759,Nota Técnica
+19759,NT 2026.002
+19760,Nota Técnica
+19760,NT 2026.002
+19761,Nota Técnica
+19761,NT 2026.002
+19765,Nota Técnica
+19765,NT 2026.002
+19766,Nota Técnica
+19766,NT 2026.002
+19767,Nota Técnica
+19767,NT 2026.002
+19769,Nota Técnica
+19769,NT 2026.002
+19770,Nota Técnica
+19770,NT 2026.002
+19948,Integracao Organiza
+19949,Integracao Organiza
+19950,Integracao Organiza
+19951,Integracao Organiza
+19952,Integracao Organiza
+20056,Nota Técnica
+20056,NT 2026.002
+20211,Entrada
+20211,Legado
+20298,Legado
+20609,Cacique
+20756,!BUG
+20831,!BUG
+21135,GeradoPorUS
+21162,CIOT
+21171,CIOT
+21180,CIOT
+21189,CIOT
+21198,CIOT
+21207,CIOT
+21216,CIOT
+21225,CIOT
+21234,CIOT
+21243,CIOT
+21305,CIOT
+21314,CIOT
+21325,Reforma Tributária
+21414,GeradoPorUS
+21575,GeradoPorUS
+21869,Outra Squad
+21962,Obrigação Fiscal
+22054,Legado
+22354,GeradoPorUS
+22354,Impeditivo release
+22354,Interno
+22354,Observabilidade
+22354,PDV
+22375,GeradoPorUS
+22375,Impeditivo release
+22377,!BUG
+22407,!BUG

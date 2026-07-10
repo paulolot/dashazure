@@ -1,0 +1,7 @@
+StatusValor,ContaParalizacao,Categoria,Descricao,Ordem
+Aguardando a correção do Dev,Nao,interno,Revisão,1
+Aguardando Conclusão de outro Card,Nao,interno,Aguardando,2
+Aguardando retorno de parceiro externo,Nao,externo,Aguardando,3
+Aguardando Revisão,Nao,interno,Revisão,4
+Parou para fazer outro ticket,Nao,interno,Interrupção,5
+Retorno solicitante,Sim,externo,Paralizado,6

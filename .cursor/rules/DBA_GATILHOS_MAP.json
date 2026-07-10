@@ -1,0 +1,229 @@
+{
+  "version": "1.0",
+  "description": "Matriz 1:1 gatilhos DBA ↔ exemplos. Fonte operacional: DBA_GATILHOS.md + DBA_EXEMPLOS.md. Legado: DBA_RULES.md.",
+  "totalGatilhos": 25,
+  "regrasComplementares": ["R01"],
+  "fusoes": {
+    "G18": ["Scripts de Banco em C#", "Refatoração de Legado"]
+  },
+  "gatilhos": [
+    {
+      "id": "G01",
+      "nome": "SQL Inline em C#",
+      "severidade": "CRITICO",
+      "exemplo_ref": "G01",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["SELECT", "INSERT", "UPDATE", "DELETE", "Query(", "Execute(", "CommandText"]
+    },
+    {
+      "id": "G02",
+      "nome": "CommandType Omitido",
+      "severidade": "CRITICO",
+      "exemplo_ref": "G02",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["Query(", "Execute(", "QueryFirst", "commandType ausente"]
+    },
+    {
+      "id": "G03",
+      "nome": "NHibernate SQL Nativo",
+      "severidade": "CRITICO",
+      "exemplo_ref": "G03",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["CreateSQLQuery", "CreateQuery"]
+    },
+    {
+      "id": "G04",
+      "nome": "Concatenação de SQL",
+      "severidade": "CRITICO",
+      "exemplo_ref": "G04",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["string.Format", "$\"", " + ", "sp_executesql"]
+    },
+    {
+      "id": "G05",
+      "nome": "Loops com I/O de Banco",
+      "severidade": "CRITICO",
+      "exemplo_ref": "G05",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["foreach", "for (", "while (", "Query(", "Execute("]
+    },
+    {
+      "id": "G06",
+      "nome": "Tabelas Temporárias Ineficientes",
+      "severidade": "ATENCAO",
+      "exemplo_ref": "G06",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["DECLARE @", "TABLE"]
+    },
+    {
+      "id": "G07",
+      "nome": "Gestão de #Temp Tables",
+      "severidade": "ATENCAO",
+      "exemplo_ref": "G07",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["CREATE TABLE #", "DROP TABLE #"]
+    },
+    {
+      "id": "G08",
+      "nome": "Controle de Fluxo Inseguro (WHILE)",
+      "severidade": "CRITICO",
+      "exemplo_ref": "G08",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["WHILE (", "THROW", "SET @Indice"]
+    },
+    {
+      "id": "G09",
+      "nome": "Dimensionamento de Tipos",
+      "severidade": "ATENCAO",
+      "exemplo_ref": "G09",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["VARCHAR(MAX)", "NVARCHAR(MAX)"]
+    },
+    {
+      "id": "G10",
+      "nome": "Uso de SELECT *",
+      "severidade": "ATENCAO",
+      "exemplo_ref": "G10",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["SELECT *"]
+    },
+    {
+      "id": "G11",
+      "nome": "Predicados Não SARGáveis",
+      "severidade": "ATENCAO",
+      "exemplo_ref": "G11",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["CONVERT(", "YEAR(", "MONTH(", "LEFT(", "WHERE"]
+    },
+    {
+      "id": "G12",
+      "nome": "NOLOCK sem Justificativa",
+      "severidade": "ATENCAO",
+      "exemplo_ref": "G12",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["NOLOCK"]
+    },
+    {
+      "id": "G13",
+      "nome": "Lógica em Tabelas",
+      "severidade": "CRITICO",
+      "exemplo_ref": "G13",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["AS (", "PERSISTED", "ALTER TABLE"]
+    },
+    {
+      "id": "G14",
+      "nome": "Operações sem Filtro",
+      "severidade": "CRITICO",
+      "exemplo_ref": "G14",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["UPDATE", "DELETE", "WHERE ausente"]
+    },
+    {
+      "id": "G15",
+      "nome": "Idempotência DDL",
+      "severidade": "CRITICO",
+      "exemplo_ref": "G15",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["CREATE PROCEDURE", "CREATE TABLE", "IF OBJECT_ID", "IF EXISTS"]
+    },
+    {
+      "id": "G16",
+      "nome": "Transações de Longa Duração",
+      "severidade": "CRITICO",
+      "exemplo_ref": "G16",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["BeginTransaction", "BEGIN TRAN", "httpClient", "PostAsync"]
+    },
+    {
+      "id": "G17",
+      "nome": "DDL em Transação de Negócio",
+      "severidade": "CRITICO",
+      "exemplo_ref": "G17",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["BEGIN TRAN", "ALTER TABLE", "ENABLE TRIGGER"]
+    },
+    {
+      "id": "G18",
+      "nome": "Scripts SQL em .cs / legado",
+      "severidade": "CRITICO",
+      "exemplo_ref": "G18",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["CREATE PROCEDURE", "CREATE FUNCTION", "AtualizacaoBD/Classes"],
+      "nota": "Funde Scripts de Banco em C# + Refatoração de Legado"
+    },
+    {
+      "id": "G19",
+      "nome": "Configuração de Projeto (csproj)",
+      "severidade": "CRITICO",
+      "exemplo_ref": "G19",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["EmbeddedResource", "atualizacao-bd", "ScriptAutomatico"]
+    },
+    {
+      "id": "G20",
+      "nome": "Sincronização de GUID",
+      "severidade": "CRITICO",
+      "exemplo_ref": "G20",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["Guid", "guid="]
+    },
+    {
+      "id": "G21",
+      "nome": "Uso de TVP",
+      "severidade": "CRITICO",
+      "exemplo_ref": "G21",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["READONLY", "AddTable", "VARCHAR(MAX)", "FN_SIS_Array"]
+    },
+    {
+      "id": "G22",
+      "nome": "FN_SIS_Array e similares",
+      "severidade": "CRITICO",
+      "exemplo_ref": "G22",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["FN_SIS_Array", "FN_SYS_ARRAY", "JOIN", "IN (SELECT"]
+    },
+    {
+      "id": "G23",
+      "nome": "Encapsulamento de Types",
+      "severidade": "ATENCAO",
+      "exemplo_ref": "G23",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["CREATE TYPE", "DROP TYPE"]
+    },
+    {
+      "id": "G24",
+      "nome": "Enums/constantes em SQL sem identificação",
+      "severidade": "ATENCAO",
+      "exemplo_ref": "G24",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["Status =", "TipoDocumento =", "literais mágicos"]
+    },
+    {
+      "id": "G25",
+      "nome": "Validação DBA (TRIGGER/INDEX)",
+      "severidade": "CRITICO",
+      "exemplo_ref": "G25",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["CREATE TRIGGER", "CREATE INDEX", "CREATE NONCLUSTERED"]
+    }
+  ],
+  "complementares": [
+    {
+      "id": "R01",
+      "nome": "Timeout explícito Dapper → SP",
+      "severidade": "ATENCAO",
+      "exemplo_ref": "R01",
+      "coberturaExemplo": "completa",
+      "padroesDiff": ["StoredProcedure", "commandTimeout ausente"]
+    }
+  ],
+  "exemplosOrfaos": [],
+  "testePatch19636": {
+    "patch": ".cursor/tmp/review-19636-7267.patch",
+    "disparados": ["G04", "G15", "G18", "G20", "G21", "G22"],
+    "naoDisparados_exemplosNaoLidos": ["G03", "G12", "G16", "G25"],
+    "complementares": { "R01": "PASS (commandTimeout presente)" }
+  }
+}

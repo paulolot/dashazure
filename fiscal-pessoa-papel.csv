@@ -1,0 +1,636 @@
+Id,Pessoa,Papel
+206,Rodolfo Caceraghi dos Santos,Dev
+227,Paulo A. Lot,Dev
+230,Julio Andreata,Dev
+238,Paulo A. Lot,Dev
+240,Luiz Fernando Rodrigues Pereira,Dev
+255,Fabio Nobre,Dev
+259,Ivan Pionelli Junior,Dev
+263,Ivan Pionelli Junior,Dev
+266,Ivan Pionelli Junior,Dev
+267,Ivan Pionelli Junior,Dev
+269,Ivan Pionelli Junior,Dev
+271,Ivan Pionelli Junior,Dev
+272,Ivan Pionelli Junior,Dev
+275,Ivan Pionelli Junior,Dev
+280,Luiz Fernando Rodrigues Pereira,Dev
+282,Luiz Fernando Rodrigues Pereira,Dev
+284,Luiz Fernando Rodrigues Pereira,Dev
+288,Luiz Fernando Rodrigues Pereira,Dev
+289,Luiz Fernando Rodrigues Pereira,Dev
+291,Luiz Fernando Rodrigues Pereira,Dev
+292,Saulo Lima,Dev
+294,Bruno Friedrich Raquel,Dev
+300,Gabriel Seiji,Dev
+301,fabricio.sena,Dev
+302,fabricio.sena,Dev
+303,Luiz Fernando Rodrigues Pereira,Dev
+376,Julio Andreata,Dev
+376,Julio Andreata,QA
+378,Fabio Nobre,Dev
+381,Julio Andreata,Dev
+382,Ivan Pionelli Junior,Dev
+383,Bruno Friedrich Raquel,Dev
+385,Ivan Pionelli Junior,Dev
+386,Fabio Nobre,Dev
+387,Ivan Pionelli Junior,Dev
+388,Ivan Pionelli Junior,Dev
+391,Julio Andreata,Dev
+444,Julio Andreata,Dev
+449,Ivan Pionelli Junior,Dev
+454,Julio Andreata,Dev
+457,Julio Andreata,Dev
+458,Ivan Pionelli Junior,Dev
+459,Julio Andreata,Dev
+464,Julio Andreata,Dev
+465,Julio Andreata,Dev
+466,Julio Andreata,Dev
+467,Julio Andreata,Dev
+780,Paulo A. Lot,Dev
+781,Paulo A. Lot,Dev
+961,Luiz Fernando Rodrigues Pereira,Dev
+962,Ivan Pionelli Junior,Dev
+976,Paulo A. Lot,Dev
+980,Paulo A. Lot,Dev
+1035,fabricio.sena,Dev
+1036,fabricio.sena,Dev
+1037,fabricio.sena,Dev
+1038,fabricio.sena,Dev
+1040,fabricio.sena,Dev
+1054,Paulo A. Lot,Dev
+1138,Ivan Pionelli Junior,Dev
+1223,Paulo A. Lot,Dev
+1224,Paulo A. Lot,Dev
+1227,Paulo A. Lot,Dev
+1240,Luiz Fernando Rodrigues Pereira,Dev
+1240,Paulo A. Lot,QA
+1308,Luiz Fernando Rodrigues Pereira,Dev
+1318,Paulo A. Lot,Dev
+1328,Paulo A. Lot,Dev
+1329,Luiz Fernando Rodrigues Pereira,Dev
+1365,Paulo A. Lot,Dev
+1365,leonardo.santos,QA
+1372,Paulo A. Lot,Dev
+1374,Paulo A. Lot,Dev
+1407,Paulo A. Lot,Dev
+1411,Paulo A. Lot,Dev
+1416,Julio Andreata,Dev
+1418,Paulo A. Lot,Dev
+1427,Rodolfo Caceraghi dos Santos,Dev
+1428,Rodolfo Caceraghi dos Santos,Dev
+1429,Rodolfo Caceraghi dos Santos,Dev
+1438,Rodolfo Caceraghi dos Santos,Dev
+1524,Julio Andreata,Dev
+1656,Luiz Fernando Rodrigues Pereira,Dev
+1824,Paulo A. Lot,Dev
+1874,Julio Andreata,Dev
+1878,Paulo A. Lot,Dev
+1879,Ivan Pionelli Junior,Dev
+1893,Ivan Pionelli Junior,Dev
+1923,Ivan Pionelli Junior,Dev
+1925,Ivan Pionelli Junior,Dev
+1947,fabricio.sena,Dev
+1965,Paulo A. Lot,Dev
+1965,Luiz Antonio,QA
+1979,Rodolfo Caceraghi dos Santos,Dev
+1979,leonardo.santos,QA
+2005,Luiz Fernando Rodrigues Pereira,Dev
+2006,fabricio.sena,Dev
+2025,Luiz Fernando Rodrigues Pereira,Dev
+2025,Paulo A. Lot,QA
+2034,fabricio.sena,Dev
+2040,fabricio.sena,Dev
+2049,Paulo A. Lot,Dev
+2115,Ivan Pionelli Junior,Dev
+2115,Rodolfo Caceraghi dos Santos,QA
+2134,fabricio.sena,Dev
+2140,leonardo.araujo,QA
+2149,fabricio.sena,Dev
+2150,fabricio.sena,Dev
+2189,Paulo A. Lot,Dev
+2310,Julio Andreata,Dev
+2313,Luiz Fernando Rodrigues Pereira,Dev
+2363,Julio Andreata,Dev
+2402,Paulo A. Lot,Dev
+2406,Bruno Friedrich Raquel,Dev
+2516,Paulo A. Lot,Dev
+2518,Paulo A. Lot,Dev
+2520,Paulo A. Lot,Dev
+2521,Paulo A. Lot,Dev
+2530,Paulo A. Lot,Dev
+2531,Paulo A. Lot,Dev
+2532,Paulo A. Lot,Dev
+2533,Paulo A. Lot,Dev
+2534,Paulo A. Lot,Dev
+2538,Paulo A. Lot,Dev
+2540,Paulo A. Lot,Dev
+2542,Paulo A. Lot,Dev
+2544,Paulo A. Lot,Dev
+2546,Paulo A. Lot,Dev
+2547,Paulo A. Lot,Dev
+2548,Paulo A. Lot,Dev
+2549,Paulo A. Lot,Dev
+2550,Paulo A. Lot,Dev
+2551,Paulo A. Lot,Dev
+2552,Paulo A. Lot,Dev
+2553,Paulo A. Lot,Dev
+2554,Paulo A. Lot,Dev
+2555,Paulo A. Lot,Dev
+2556,Paulo A. Lot,Dev
+2557,Paulo A. Lot,Dev
+2558,Paulo A. Lot,Dev
+2559,Paulo A. Lot,Dev
+2560,Paulo A. Lot,Dev
+2561,Paulo A. Lot,Dev
+2562,Paulo A. Lot,Dev
+2563,Paulo A. Lot,Dev
+2564,Paulo A. Lot,Dev
+2565,Paulo A. Lot,Dev
+2566,Paulo A. Lot,Dev
+2567,Paulo A. Lot,Dev
+2568,Paulo A. Lot,Dev
+2569,Paulo A. Lot,Dev
+2570,Paulo A. Lot,Dev
+2571,Paulo A. Lot,Dev
+2572,Paulo A. Lot,Dev
+2573,Paulo A. Lot,Dev
+2574,Paulo A. Lot,Dev
+2575,Paulo A. Lot,Dev
+2576,Paulo A. Lot,Dev
+2577,Paulo A. Lot,Dev
+2578,Paulo A. Lot,Dev
+2579,Paulo A. Lot,Dev
+2580,Paulo A. Lot,Dev
+2581,Paulo A. Lot,Dev
+2582,Paulo A. Lot,Dev
+2583,Paulo A. Lot,Dev
+2584,Paulo A. Lot,Dev
+2585,Paulo A. Lot,Dev
+2586,Paulo A. Lot,Dev
+2587,Paulo A. Lot,Dev
+2588,Paulo A. Lot,Dev
+2589,Paulo A. Lot,Dev
+2590,Paulo A. Lot,Dev
+2591,Paulo A. Lot,Dev
+2593,Paulo A. Lot,Dev
+2594,Paulo A. Lot,Dev
+2595,Paulo A. Lot,Dev
+2596,Paulo A. Lot,Dev
+2597,Paulo A. Lot,Dev
+2598,Paulo A. Lot,Dev
+2599,Paulo A. Lot,Dev
+2600,Paulo A. Lot,Dev
+2601,Paulo A. Lot,Dev
+2603,Paulo A. Lot,Dev
+2606,Paulo A. Lot,Dev
+2607,Paulo A. Lot,Dev
+2608,Paulo A. Lot,Dev
+2609,Paulo A. Lot,Dev
+2610,Paulo A. Lot,Dev
+2611,Paulo A. Lot,Dev
+2612,Paulo A. Lot,Dev
+2613,Paulo A. Lot,Dev
+2614,Paulo A. Lot,Dev
+2615,Paulo A. Lot,Dev
+2616,Paulo A. Lot,Dev
+2617,Paulo A. Lot,Dev
+2626,fabricio.sena,Dev
+2666,Paulo A. Lot,Dev
+2695,Paulo A. Lot,Dev
+2700,Paulo A. Lot,Dev
+2734,Paulo A. Lot,Dev
+2770,Paulo A. Lot,Dev
+2797,Paulo A. Lot,Dev
+2822,Rodolfo Caceraghi dos Santos,Dev
+2823,Ivan Pionelli Junior,Dev
+2858,Paulo A. Lot,Dev
+2859,Paulo A. Lot,Dev
+2860,Paulo A. Lot,Dev
+2861,Julio Andreata,Dev
+2869,Paulo A. Lot,Dev
+2896,Ivan Pionelli Junior,Dev
+2917,Paulo A. Lot,Dev
+2984,Paulo A. Lot,Dev
+3028,Paulo A. Lot,Dev
+3030,Paulo A. Lot,Dev
+3068,Ivan Pionelli Junior,Dev
+3072,Ivan Pionelli Junior,Dev
+3091,Rodolfo Caceraghi dos Santos,Dev
+3215,Julio Andreata,Dev
+3235,Luiz Fernando Rodrigues Pereira,Dev
+3244,Rodolfo Caceraghi dos Santos,Dev
+3411,Julio Andreata,Dev
+3413,Leandro Andrade,Dev
+3414,Leandro Andrade,Dev
+3488,Julio Andreata,Dev
+3627,Julio Andreata,Dev
+3629,Julio Andreata,Dev
+3654,Rodolfo Caceraghi dos Santos,Dev
+3665,Rodolfo Caceraghi dos Santos,Dev
+3666,Rodolfo Caceraghi dos Santos,Dev
+3666,Fabio Nobre,QA
+3667,Ivan Pionelli Junior,Dev
+3682,Julio Andreata,Dev
+3736,fabricio.sena,Dev
+3744,fabricio.sena,Dev
+3745,fabricio.sena,Dev
+3770,Bruno Friedrich Raquel,Dev
+3827,Paulo A. Lot,Dev
+3828,Paulo A. Lot,Dev
+3915,Rodolfo Caceraghi dos Santos,Dev
+3944,fabricio.sena,Dev
+4019,Luiz Fernando Rodrigues Pereira,Dev
+4021,Rodolfo Caceraghi dos Santos,Dev
+4159,fabricio.sena,Dev
+4273,fabricio.sena,Dev
+4388,Paulo A. Lot,Dev
+4410,Julio Andreata,Dev
+4554,Rodolfo Caceraghi dos Santos,Dev
+4567,Rodolfo Caceraghi dos Santos,Dev
+4621,Rodolfo Caceraghi dos Santos,Dev
+4625,Fabio Nobre,Dev
+4640,Julio Andreata,Dev
+4671,Julio Andreata,Dev
+4783,Julio Andreata,Dev
+4827,Rodolfo Caceraghi dos Santos,Dev
+4939,Fabio Nobre,Dev
+4939,Leandro Andrade,QA
+4944,Luiz Fernando Rodrigues Pereira,Dev
+5069,fabricio.sena,Dev
+5104,Paulo A. Lot,Dev
+5191,Rodolfo Caceraghi dos Santos,Dev
+5233,Ivan Pionelli Junior,Dev
+5291,Paulo A. Lot,Dev
+5334,Luiz Fernando Rodrigues Pereira,Dev
+5421,fabricio.sena,Dev
+5568,Rodolfo Caceraghi dos Santos,Dev
+5649,fabricio.sena,Dev
+5736,Julio Andreata,Dev
+6143,Paulo A. Lot,Dev
+6393,Luiz Fernando Rodrigues Pereira,Dev
+6393,Bruno Friedrich Raquel,QA
+6496,Paulo A. Lot,Dev
+6498,Ivan Pionelli Junior,Dev
+6500,Ivan Pionelli Junior,Dev
+6502,Ivan Pionelli Junior,Dev
+6503,Ivan Pionelli Junior,Dev
+6506,Ivan Pionelli Junior,Dev
+6608,Julio Andreata,Dev
+6716,Rodolfo Caceraghi dos Santos,Dev
+6861,Julio Andreata,Dev
+6933,Julio Andreata,Dev
+6934,Julio Andreata,Dev
+6938,Julio Andreata,Dev
+7314,Fabio Nobre,Dev
+7314,Ivan Pionelli Junior,QA
+7347,Luiz Fernando Rodrigues Pereira,Dev
+7504,Fabio Nobre,Dev
+7504,Julio Andreata,QA
+7545,Ivan Pionelli Junior,Dev
+7546,maykon.elias,Dev
+8197,maykon.elias,Dev
+8251,Ivan Pionelli Junior,Dev
+8253,Paulo A. Lot,Dev
+8266,Paulo A. Lot,Dev
+8424,Ivan Pionelli Junior,Dev
+8433,Julio Andreata,Dev
+8453,Paulo A. Lot,Dev
+8474,Julio Andreata,Dev
+8588,fabricio.sena,Dev
+8596,Paulo A. Lot,Dev
+8648,Julio Andreata,Dev
+8823,Paulo A. Lot,Dev
+9785,Paulo A. Lot,Dev
+9857,Rodolfo Caceraghi dos Santos,Dev
+10243,Paulo A. Lot,Dev
+10245,Paulo A. Lot,Dev
+10246,Gabriel Seiji,Dev
+10505,Julio Andreata,Dev
+10522,Julio Andreata,Dev
+10522,Fabio Nobre,QA
+10602,Paulo A. Lot,Dev
+10612,Ivan Pionelli Junior,Dev
+10612,Leandro Andrade,QA
+10816,Julio Andreata,Dev
+10929,Ivan Pionelli Junior,Dev
+11157,Paulo A. Lot,Dev
+11324,William Nascimento,Dev
+11336,William Nascimento,Dev
+11387,Rodolfo Caceraghi dos Santos,Dev
+11406,Fabio Nobre,Dev
+11516,Julio Andreata,Dev
+11793,Paulo A. Lot,Dev
+11886,Rodolfo Caceraghi dos Santos,Dev
+12024,Julio Andreata,Dev
+12173,maykon.elias,Dev
+13122,Paulo A. Lot,Dev
+13859,maykon.elias,Dev
+13859,Rodolfo Caceraghi dos Santos,QA
+13860,maykon.elias,Dev
+13860,Julio Andreata,QA
+13925,Rodolfo Caceraghi dos Santos,Dev
+13925,Ivan Pionelli Junior,QA
+14192,maykon.elias,Dev
+14192,Julio Andreata,QA
+14293,Ivan Pionelli Junior,Dev
+14424,maykon.elias,Dev
+14613,Julio Andreata,Dev
+14614,Julio Andreata,Dev
+15570,Luiz Fernando Rodrigues Pereira,Dev
+15571,Luiz Fernando Rodrigues Pereira,Dev
+15572,Luiz Fernando Rodrigues Pereira,Dev
+15573,Luiz Fernando Rodrigues Pereira,Dev
+15574,Luiz Fernando Rodrigues Pereira,Dev
+15575,Luiz Fernando Rodrigues Pereira,Dev
+15576,Luiz Fernando Rodrigues Pereira,Dev
+15584,Rodolfo Caceraghi dos Santos,Dev
+16274,Rodolfo Caceraghi dos Santos,Dev
+16274,Julio Andreata,QA
+16367,Rodolfo Caceraghi dos Santos,Dev
+16368,Rodolfo Caceraghi dos Santos,Dev
+16759,Julio Andreata,Dev
+16961,Julio Andreata,Dev
+16961,Ivan Pionelli Junior,QA
+17046,maykon.elias,Dev
+17047,maykon.elias,Dev
+17048,maykon.elias,Dev
+17049,maykon.elias,Dev
+17050,maykon.elias,Dev
+17051,maykon.elias,Dev
+17052,maykon.elias,Dev
+17053,maykon.elias,Dev
+17054,maykon.elias,Dev
+17182,Julio Andreata,Dev
+17182,Fabio Nobre,QA
+17371,maykon.elias,Dev
+17371,Ivan Pionelli Junior,QA
+17387,maykon.elias,Dev
+17387,Ivan Pionelli Junior,QA
+17410,Leandro Andrade,Dev
+17410,Fabio Nobre,QA
+17428,Rodolfo Caceraghi dos Santos,Dev
+17428,Leandro Andrade,QA
+17429,Fabio Nobre,Dev
+17429,Leandro Andrade,QA
+17508,Rodolfo Caceraghi dos Santos,Dev
+17508,Ivan Pionelli Junior,QA
+17759,Luiz Fernando Rodrigues Pereira,Dev
+17764,maykon.elias,Dev
+17764,Fabio Nobre,QA
+17768,Julio Andreata,Dev
+17768,Fabio Nobre,QA
+17769,Fabio Nobre,Dev
+17769,Leandro Andrade,QA
+17804,Julio Andreata,Dev
+17805,Julio Andreata,Dev
+17807,Julio Andreata,Dev
+17811,Julio Andreata,Dev
+17812,Julio Andreata,Dev
+17814,maykon.elias,Dev
+17815,Julio Andreata,Dev
+18022,Rodolfo Caceraghi dos Santos,Dev
+18022,Fabio Nobre,QA
+18035,Rodolfo Caceraghi dos Santos,Dev
+18035,Fabio Nobre,QA
+18037,Luiz Fernando Rodrigues Pereira,Dev
+18167,maykon.elias,Dev
+18167,Leandro Andrade,QA
+18177,Rodolfo Caceraghi dos Santos,Dev
+18177,Fabio Nobre,QA
+18231,Ivan Pionelli Junior,Dev
+18231,Rodolfo Caceraghi dos Santos,QA
+18246,Ivan Pionelli Junior,Dev
+18256,Fabio Nobre,Dev
+18256,Rodolfo Caceraghi dos Santos,QA
+18257,maykon.elias,Dev
+18257,Leandro Andrade,QA
+18258,Fabio Nobre,Dev
+18258,Ivan Pionelli Junior,QA
+18259,Fabio Nobre,Dev
+18260,maykon.elias,Dev
+18260,Leandro Andrade,QA
+18278,Fabio Nobre,Dev
+18278,Leandro Andrade,QA
+18337,maykon.elias,Dev
+18342,Ivan Pionelli Junior,Dev
+18342,Julio Andreata,QA
+18448,maykon.elias,Dev
+18448,Rodolfo Caceraghi dos Santos,QA
+18465,Paulo A. Lot,Dev
+18466,Paulo A. Lot,Dev
+18467,Paulo A. Lot,Dev
+18468,Paulo A. Lot,Dev
+18469,Paulo A. Lot,Dev
+18471,Ivan Pionelli Junior,Dev
+18472,Ivan Pionelli Junior,Dev
+18473,Ivan Pionelli Junior,Dev
+18474,Paulo A. Lot,Dev
+18500,Rodolfo Caceraghi dos Santos,Dev
+18500,Julio Andreata,QA
+18539,Ivan Pionelli Junior,Dev
+18539,maykon.elias,QA
+18603,Julio Andreata,Dev
+18642,maykon.elias,Dev
+18642,Fabio Nobre,QA
+18676,maykon.elias,Dev
+18676,Julio Andreata,QA
+18686,Rodolfo Caceraghi dos Santos,Dev
+18686,Julio Andreata,QA
+18720,Julio Andreata,Dev
+18723,Julio Andreata,Dev
+18768,Ivan Pionelli Junior,Dev
+18836,Julio Andreata,Dev
+18856,Luiz Fernando Rodrigues Pereira,Dev
+18932,maykon.elias,Dev
+19063,Paulo A. Lot,Dev
+19063,Paulo A. Lot,QA
+19150,Julio Andreata,Dev
+19152,maykon.elias,Dev
+19209,Ivan Pionelli Junior,Dev
+19213,Ivan Pionelli Junior,Dev
+19214,Fabio Nobre,Dev
+19214,Julio Andreata,QA
+19215,Ivan Pionelli Junior,Dev
+19231,Ivan Pionelli Junior,Dev
+19232,Ivan Pionelli Junior,Dev
+19233,Julio Andreata,Dev
+19233,Fabio Nobre,QA
+19247,Rodolfo Caceraghi dos Santos,Dev
+19247,Fabio Nobre,QA
+19251,maykon.elias,Dev
+19290,Fabio Nobre,Dev
+19290,Paulo A. Lot,QA
+19354,Ivan Pionelli Junior,Dev
+19370,Luiz Fernando Rodrigues Pereira,Dev
+19374,Ivan Pionelli Junior,Dev
+19374,Fabio Nobre,QA
+19566,Paulo A. Lot,Dev
+19566,Paulo A. Lot,QA
+19613,maykon.elias,Dev
+19613,Rodolfo Caceraghi dos Santos,QA
+19632,maykon.elias,Dev
+19632,Ivan Pionelli Junior,QA
+19771,maykon.elias,Dev
+19884,Paulo A. Lot,Dev
+19884,Ivan Pionelli Junior,QA
+19886,Paulo A. Lot,Dev
+19886,Ivan Pionelli Junior,QA
+19887,Paulo A. Lot,Dev
+19887,Ivan Pionelli Junior,QA
+19947,maykon.elias,Dev
+19983,Ivan Pionelli Junior,Dev
+19984,Ivan Pionelli Junior,Dev
+19985,Ivan Pionelli Junior,Dev
+20064,Diogo M. Fontolan,Dev
+20111,maykon.elias,Dev
+20121,Ivan Pionelli Junior,Dev
+20429,Julio Andreata,Dev
+20453,Fabio Nobre,Dev
+20482,maykon.elias,Dev
+20483,Luiz Fernando Rodrigues Pereira,Dev
+20517,Paulo A. Lot,Dev
+20539,Ivan Pionelli Junior,Dev
+20540,Ivan Pionelli Junior,Dev
+20578,Rodolfo Caceraghi dos Santos,Dev
+20578,Ivan Pionelli Junior,QA
+20581,Luiz Fernando Rodrigues Pereira,Dev
+20584,Rodolfo Caceraghi dos Santos,Dev
+20611,Ivan Pionelli Junior,Dev
+20645,Fabio Nobre,Dev
+20645,maykon.elias,QA
+20681,maykon.elias,Dev
+20747,Paulo A. Lot,Dev
+20747,Luiz Fernando Rodrigues Pereira,QA
+20776,maykon.elias,Dev
+20777,maykon.elias,Dev
+20848,Ivan Pionelli Junior,Dev
+20848,Rodolfo Caceraghi dos Santos,QA
+20870,maykon.elias,Dev
+20924,Julio Andreata,Dev
+21012,Ivan Pionelli Junior,Dev
+21012,Fabio Nobre,QA
+21080,Ivan Pionelli Junior,Dev
+21109,Luiz Fernando Rodrigues Pereira,Dev
+21133,Ivan Pionelli Junior,Dev
+21152,Luiz Fernando Rodrigues Pereira,Dev
+21431,Luiz Fernando Rodrigues Pereira,Dev
+21445,Julio Andreata,Dev
+21485,Rodolfo Caceraghi dos Santos,Dev
+21485,Julio Andreata,QA
+21516,maykon.elias,Dev
+21518,Julio Andreata,Dev
+21760,Rodolfo Caceraghi dos Santos,Dev
+21774,Paulo A. Lot,Dev
+21849,Rodolfo Caceraghi dos Santos,Dev
+21849,Ivan Pionelli Junior,QA
+21851,Diogo M. Fontolan,Dev
+13861,maykon.elias,Dev
+13861,Julio Andreata,QA
+19229,Rodolfo Caceraghi dos Santos,Dev
+19229,Julio Andreata,QA
+20712,Ivan Pionelli Junior,Dev
+20743,Ivan Pionelli Junior,Dev
+21132,Julio Andreata,Dev
+21132,Ivan Pionelli Junior,QA
+21494,Ivan Pionelli Junior,Dev
+21494,Julio Andreata,QA
+21852,Paulo A. Lot,Dev
+21852,Ivan Pionelli Junior,QA
+22296,Ivan Pionelli Junior,Dev
+22331,Luiz Fernando Rodrigues Pereira,Dev
+6504,Fabio Nobre,Dev
+6504,Rodolfo Caceraghi dos Santos,QA
+9943,Ivan Pionelli Junior,Dev
+12228,Ivan Pionelli Junior,Dev
+13862,maykon.elias,Dev
+13862,Julio Andreata,QA
+13863,maykon.elias,Dev
+13863,Julio Andreata,QA
+13864,maykon.elias,Dev
+13864,Julio Andreata,QA
+17920,maykon.elias,Dev
+17920,Julio Andreata,QA
+18220,Rodolfo Caceraghi dos Santos,Dev
+18220,Fabio Nobre,QA
+18857,Julio Andreata,Dev
+18857,Rodolfo Caceraghi dos Santos,QA
+19230,Fabio Nobre,Dev
+19230,Rodolfo Caceraghi dos Santos,QA
+19234,Fabio Nobre,Dev
+19234,Julio Andreata,QA
+19235,Rodolfo Caceraghi dos Santos,Dev
+19235,Fabio Nobre,QA
+19236,Ivan Pionelli Junior,Dev
+19372,Ivan Pionelli Junior,Dev
+19758,Ivan Pionelli Junior,Dev
+19759,Ivan Pionelli Junior,Dev
+19760,Ivan Pionelli Junior,Dev
+19761,Ivan Pionelli Junior,Dev
+19765,Ivan Pionelli Junior,Dev
+19766,Ivan Pionelli Junior,Dev
+19767,Ivan Pionelli Junior,Dev
+19769,Ivan Pionelli Junior,Dev
+19770,Ivan Pionelli Junior,Dev
+19948,maykon.elias,Dev
+19948,Julio Andreata,QA
+19949,maykon.elias,Dev
+19949,Julio Andreata,QA
+19950,maykon.elias,Dev
+19951,maykon.elias,Dev
+19952,maykon.elias,Dev
+20056,Ivan Pionelli Junior,Dev
+20056,Fabio Nobre,QA
+20211,Julio Andreata,Dev
+20211,Rodolfo Caceraghi dos Santos,QA
+20298,Rodolfo Caceraghi dos Santos,Dev
+20298,Julio Andreata,QA
+20609,Luiz Fernando Rodrigues Pereira,Dev
+20756,Rodolfo Caceraghi dos Santos,Dev
+20756,Julio Andreata,QA
+20831,Rodolfo Caceraghi dos Santos,Dev
+20831,Ivan Pionelli Junior,QA
+21135,Julio Andreata,Dev
+21135,Rodolfo Caceraghi dos Santos,QA
+21162,Luiz Fernando Rodrigues Pereira,Dev
+21162,Rodolfo Caceraghi dos Santos,QA
+21171,Luiz Fernando Rodrigues Pereira,Dev
+21180,Luiz Fernando Rodrigues Pereira,Dev
+21189,Luiz Fernando Rodrigues Pereira,Dev
+21198,Luiz Fernando Rodrigues Pereira,Dev
+21207,Luiz Fernando Rodrigues Pereira,Dev
+21216,Luiz Fernando Rodrigues Pereira,Dev
+21225,Luiz Fernando Rodrigues Pereira,Dev
+21234,Luiz Fernando Rodrigues Pereira,Dev
+21243,Luiz Fernando Rodrigues Pereira,Dev
+21305,Luiz Fernando Rodrigues Pereira,Dev
+21314,Luiz Fernando Rodrigues Pereira,Dev
+21325,Fabio Nobre,Dev
+21325,Rodolfo Caceraghi dos Santos,QA
+21414,Ivan Pionelli Junior,Dev
+21414,Rodolfo Caceraghi dos Santos,QA
+21575,Ivan Pionelli Junior,Dev
+21575,Julio Andreata,QA
+21600,Ivan Pionelli Junior,Dev
+21850,Diogo M. Fontolan,Dev
+21869,Rodolfo Caceraghi dos Santos,Dev
+21869,Ivan Pionelli Junior,QA
+21962,Paulo A. Lot,Dev
+21962,Rodolfo Caceraghi dos Santos,QA
+22054,Rodolfo Caceraghi dos Santos,Dev
+22054,Fabio Nobre,QA
+22055,Rodolfo Caceraghi dos Santos,Dev
+22055,Ivan Pionelli Junior,QA
+22172,Paulo A. Lot,Dev
+22287,Ivan Pionelli Junior,Dev
+22299,Luiz Fernando Rodrigues Pereira,Dev
+22354,Luiz Fernando Rodrigues Pereira,Dev
+22354,Fabio Nobre,QA
+22375,Rodolfo Caceraghi dos Santos,Dev
+22375,Fabio Nobre,QA
+22377,Rodolfo Caceraghi dos Santos,Dev
+22377,Fabio Nobre,QA
+22378,Paulo A. Lot,Dev
+22383,Ivan Pionelli Junior,Dev
+22508,Paulo A. Lot,Dev
+22510,Julio Andreata,Dev
+22515,Paulo A. Lot,Dev

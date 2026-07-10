@@ -1,0 +1,554 @@
+Id,Responsavel,Descricao,Numero,CompletedWork,ClosedDate
+18337,maykon.elias,,,,2026-05-25T19:09:42.187Z
+18932,maykon.elias,,,,2026-06-02T17:41:41.04Z
+19150,Julio Andreata,,,,2026-06-02T18:25:13.013Z
+19152,maykon.elias,,,,2026-06-03T18:03:00.21Z
+19251,maykon.elias,,,,2026-06-05T17:42:49.71Z
+19771,maykon.elias,,,,2026-06-09T18:26:00.9Z
+20453,Fabio Nobre,"Para processo de nota de entrada, caso cliente esteja com as seguintes configurações, ao realizar nota de entrada, sistema zera alíquota e valor, mas mantem base de cálculo (creditavel), este fluxo esta correto?
+https://discord.com/channels/1417558395036373095/1516174586079744122/1516175752696168550 Henrique Freintas17:16As17:44 ",,,2026-06-15T21:00:54.517Z
+20482,maykon.elias,,,,2026-06-16T14:16:41.11Z
+20776,maykon.elias,@Luis Sanches&nbsp;relatou um problema em um cliente onde não aparecia mais as maquinas no portal. Foi constatado que estava com um &quot;V&quot; na frente da versão atual 3.4.5 ,,,2026-06-19T18:27:48.097Z
+20777,maykon.elias,"As releases que estamos liberando está precisando colocar uma DLL e um exe na pasta do metapista para manter a compatibilidade com a automação horustech com firmaware mais antigo. Nos links normais que passamos aos representantes @Diogo M. Fontolan  está sempre alterando porém, quando a pipe cria esse replace manual não acontece.Parece que foi ajustado pelo vendas, porém precisa colocar essa dll nos artefatos que foi gerado.Será feito replace manual e será feito o upload manual novamente.  ",,,2026-06-19T19:28:11.533Z
+20870,maykon.elias,,,,2026-06-23T18:17:20.63Z
+21445,Julio Andreata,,,,2026-06-26T19:52:03.573Z
+21516,maykon.elias,,,,2026-07-01T11:39:19.36Z
+20609,Luiz Fernando Rodrigues Pereira,"Copied from Repro Steps when changed from Bug to AtendimentoRelease: Alfa 03/03/2026 - revisado em 12/03/2026 Nome/Razão Social do Cliente: Cacique Matriz CNPJ: 06656656000143 Base Global [Cacique]:&nbsp;https://mega.nz/folder/G6wGBSSB#dah9y6xsacly8KdzW_VgBA Release + Pack de DLL atual:&nbsp;https://mega.nz/folder/fyIFka6I#u1Is6YAEUc76uAl91KSh5Q  Menu do Sistema: &gt; Estoque &gt; Entrada de mercadorias. Descrição da Situação: &gt; Cliente comprou produto de importação e não conseguiu fazer a nota pelo sistema, então o contador fez por fora, precisa de uma forma de dar entrada nessa nota. &gt; Preciso dar entrada nessa nota ou emitir a mesma pelo sistema.&nbsp;  Análises Preliminares: &gt; Tentativa de montar a nota para emissão dentro do sistema, mas os valores não batem. &gt; Tentativa de entrada manual, falta campos de importação para preencher; &gt; Tentativa de entrada via XML, como o emissor e a própria empresa e o destinatário é a importação, o sistema dispara msg que o XML não é da empresa logada. &gt; Validado via duvidas com o N3:&nbsp;https://discord.com/channels/1417558395036373095/1513955686751535164 Evidências:&nbsp;(Prints, acesso ao cliente e banco de dados se necessário): &gt; XML em anexo  &gt; NFE emitida:&nbsp;   &gt; Imposto de importação:     &gt; Na emissão tem os campos de importação, porem mesmo preenchendo, não soma no total da nota:    RETORNO DO N3:   Lucas Marquini - Suporte N316/06/2026 15:58Ação interna&nbsp;  2 Boa tarde! Release do cliente: &nbsp;Alfa R12-03 Release do teste: master Link base de dados: Pode ser usado qualquer base para testes Menu Sistema: Metaposto &gt; Fiscal &gt; Emissão &nbsp;NFE &nbsp;&gt; Tipo operação/Compra para Comercialização/ Fluxo: Entrada  Fato: Por outro sistema, o cliente meta saiu como emitente de uma nfe que ele comprou &nbsp;de um &nbsp;fornecedor que é de outro país, com isso ele precisa dar entrada nessa nota em fluxo saída. Temos o fluxo do sistema para dar entrada nessa nota de importação, porém ao salvar ou salvar/processar não grava as informações de imposto II de importação.  Causa: Ao incluir o imposto importação no item e dar F3 ele soma ao total da nota, mas ao salvar ou salvar/processar &nbsp;ele retira &nbsp;as informações inseridas de base e valor imposto importação. Com isso ele diminui do total da nota e emite sem o imposto no xml. Vi que ele não esta gravando no banco de dados as informações referente ao imposto II. Tabela: FAT_ItemDocumentoFiscalImpostoII  Ação: Enviando ao Dev. Fiscal para correção da situação, que persistam o valor de impostoII informado no item da nota ao salvar/processar, somando ao total da nota e saia impresso no xml da nota. Não teve solução pontual aplicada no cliente.  Obs:Vimos que os dados informados ne aba do item da nota tambem não fica gravado ao dar F3 e retornar ao item.     Evidências: Segue xml em anexo;  namespace MetaDOCe.Meta.Tributacao.CalculoImposto.OperacoesItem.II public class CalculoIITributado : ICalculoII public void CalcularII        Na tabela fat_documentofiscal o valor total da nota ficou o que seria o correto, somando o imposto de importação do item.     ",660407,,2026-06-18T18:55:20.967Z
+22172,Paulo A. Lot,"# Plano de Migração e Rollback — Portal do Contador
+https://dev.azure.com/metanetsistema/Metanet/_workitems/edit/20581#30506534
+  
+
+## 1. Escopo e classificação de risco
+
+  
+
+| Item | Detalhe |
+
+|------|---------|
+
+| **Servidor origem** | `172.16.63.8` |
+
+| **Aplicação** | Portal do Contador (API .NET Core 3.1 + front-end React) |
+
+| **Banco** | MongoDB `PORTAL_CONTADOR` (local no servidor) |
+
+| **Arquivos** | `C:\Arquivos` (GED/zip das solicitações) |
+
+| **Risco operacional** | **Alto** — indisponibilidade afeta contadores e integrações MetaPosto |
+
+| **Janela recomendada** | Fora do horário comercial (noite/fim de semana) |
+
+  
+
+**Evidência no ecossistema MetaPosto:** o MetaServerGlobal consome a API via `apicontador.metaposto.com.br` (configurável em `configuracao-portal.xml`), com fallback para `http://172.16.63.8:91/api/v1/` em caso de 404. O serviço `ServicoSubirArquivosFiscaisGED` faz polling a cada 30s (depois 180s) para envio de arquivos fiscais.
+
+  
+
+---
+
+  
+
+## 2. Componentes a migrar
+
+  
+
+| # | Componente | Ação |
+
+|---|------------|------|
+
+| 1 | API `PortalContadorAPI` | Publicar no servidor destino (IIS/Kestrel) |
+
+| 2 | Front-end React | Build + deploy (estático ou IIS) |
+
+| 3 | MongoDB `PORTAL_CONTADOR` | Backup + restore (`mongodump`/`mongorestore`) |
+
+| 4 | `C:\Arquivos` | Cópia integral (robocopy) |
+
+| 5 | Runtime .NET Core 3.1 | Instalar no destino |
+
+| 6 | MongoDB Community | Instalar e configurar no destino |
+
+| 7 | Configs sensíveis | JWT secret, SMTP, connection string, path arquivos |
+
+| 8 | DNS | `apicontador.*` e `portalcontador.*` |
+
+| 9 | CORS | `portalcontador.metaposto.com.br`, `portalcontador.metanetsistemas.com.br`, `portalcontador.netlify.app` |
+
+| 10 | Certificado SSL/TLS | Se HTTPS em produção |
+
+| 11 | Firewall/rede | Portas API, Mongo (se remoto), acesso MetaPosto → API |
+
+  
+
+### Stack técnica (confirmada)
+
+  
+
+- API em .NET Core 3.1 (`netcoreapp3.1`) — front-end React
+
+- Persistência MongoDB (`MongoDB.Driver 2.19.0`), banco `PORTAL_CONTADOR`, conexão `mongodb://localhost:27017`
+
+- Autenticação JWT (Bearer) e e-mails via MimeKit
+
+- Armazenamento físico em `C:\Arquivos` (documentos GED/zip)
+
+- `BackgroundService` (`ServicoRemoverArquivoAntigo`) — execução ~20h, remove arquivos com mais de 60 dias
+
+- Coleções Mongo: `Contadores`, `Estabelecimentos`, `Solicitacoes`, `Notificacao`, `LogAPI`, `UsuarioLogin`
+
+  
+
+---
+
+  
+
+## 3. Pré-requisitos (antes da janela)
+
+  
+
+### 3.1 Inventário no servidor origem (`172.16.63.8`)
+
+  
+
+- [ ] Caminho de publicação da API (site IIS, app pool, porta — evidência: fallback usa porta **91**)
+
+- [ ] Caminho do build React
+
+- [ ] `appsettings.json` / `appsettings.Production.json` (connection string, JWT, SMTP, `C:\Arquivos`)
+
+- [ ] Versão MongoDB instalada
+
+- [ ] Tamanho do banco `PORTAL_CONTADOR` e de `C:\Arquivos`
+
+- [ ] Tarefas agendadas / Windows Service da API
+
+- [ ] Certificados SSL vinculados
+
+  
+
+### 3.2 Preparar servidor destino
+
+  
+
+- [ ] Windows Server com espaço em disco ≥ origem + 30%
+
+- [ ] .NET Core 3.1 Hosting Bundle
+
+- [ ] MongoDB (mesma major version, se possível)
+
+- [ ] IIS configurado (se for o padrão atual)
+
+- [ ] Pasta `C:\Arquivos` criada com mesmas permissões (conta do app pool)
+
+- [ ] Acesso de rede: MetaPosto → API, contadores → front-end
+
+  
+
+### 3.3 Teste em ambiente paralelo (recomendado)
+
+  
+
+1. Restaurar cópia do Mongo + arquivos no destino
+
+2. Subir API/FE apontando para cópia local
+
+3. Testar com hosts file ou DNS interno de teste
+
+4. Validar login JWT, upload/download, listagem de solicitações, e-mail
+
+  
+
+### 3.4 Comunicação
+
+  
+
+- [ ] Avisar suporte e equipe fiscal sobre janela e possível indisponibilidade
+
+- [ ] Definir responsáveis: execução, validação, rollback, DNS
+
+  
+
+---
+
+  
+
+## 4. Plano de migração (janela de corte)
+
+  
+
+**Duração estimada:** 2–4 h (depende do volume de `C:\Arquivos`).
+
+  
+
+### Fase 0 — Congelamento (T-30 min)
+
+  
+
+| Passo | Ação |
+
+|-------|------|
+
+| 0.1 | Colocar aviso de manutenção no portal (se possível) |
+
+| 0.2 | Parar API no origem (evita escrita durante backup) |
+
+| 0.3 | Parar `ServicoRemoverArquivoAntigo` / app pool |
+
+| 0.4 | Registrar timestamp do congelamento |
+
+  
+
+&gt; Durante a parada, o MetaServerGlobal continuará tentando chamar a API (erros nos logs). Esperado — não corrompe dados.
+
+  
+
+### Fase 1 — Backup origem (T0)
+
+  
+
+- Backup MongoDB (`mongodump --db PORTAL_CONTADOR`)
+
+- Cópia `C:\Arquivos` (robocopy)
+
+- Validar integridade (contagem de documentos por coleção + tamanho dos arquivos)
+
+- Guardar backup fora do servidor origem
+
+  
+
+### Fase 2 — Restore no destino (T0 + 30 min)
+
+  
+
+| Passo | Ação |
+
+|-------|------|
+
+| 2.1 | `mongorestore` do dump em `PORTAL_CONTADOR` |
+
+| 2.2 | Copiar `C:\Arquivos` para o destino (mesmo path recomendado) |
+
+| 2.3 | Publicar API com configs de produção |
+
+| 2.4 | Connection string: `mongodb://localhost:27017` (ou host dedicado) |
+
+| 2.5 | Replicar JWT secret **idêntico** ao origem |
+
+| 2.6 | Deploy do React com URL da API correta |
+
+| 2.7 | Configurar CORS |
+
+| 2.8 | Subir API e validar health local |
+
+  
+
+### Fase 3 — Validação interna (antes do DNS)
+
+  
+
+| Teste | Critério de sucesso |
+
+|-------|---------------------|
+
+| Login contador | JWT emitido e aceito |
+
+| Listar estabelecimentos | Dados do Mongo visíveis |
+
+| Download documento antigo | Arquivo em `C:\Arquivos` acessível |
+
+| Upload novo documento | Gravado em disco + Mongo |
+
+| E-mail de notificação | Envio SMTP OK |
+
+| API v1 endpoints MetaPosto | Endpoints críticos respondem 200 |
+
+| BackgroundService | Registrado e rodando |
+
+  
+
+**Endpoints críticos para MetaPosto:**
+
+  
+
+- `POST .../contador/inserir`
+
+- `POST .../estabelecimento/inserir`
+
+- `GET .../solicitacao/obter-solicitacoes-processamento`
+
+- `PUT .../solicitacao/uploadArquivo`
+
+- `POST .../solicitacao/uploadArquivoAutomatico`
+
+- `PUT .../solicitacao/alterar-solicitacao/{id}`
+
+  
+
+### Fase 4 — Cutover DNS (T0 + 1h30)
+
+  
+
+| Registro | Ação |
+
+|----------|------|
+
+| `apicontador.metaposto.com.br` | Apontar para IP do servidor destino |
+
+| `portalcontador.metaposto.com.br` | Apontar para destino |
+
+| `portalcontador.metanetsistemas.com.br` | Idem |
+
+  
+
+- TTL baixo (300s) configurado **48h antes** da migração
+
+- Aguardar propagação (5–30 min)
+
+- Testar de máquina externa
+
+  
+
+### Fase 5 — Validação pós-cutover
+
+  
+
+| Área | Validação |
+
+|------|-----------|
+
+| Portal (browser) | Login, navegação, download de documento histórico |
+
+| API pública | Testes nos endpoints acima |
+
+| MetaServerGlobal | Logs `ServicoSubirArquivosFiscaisGED` sem erros de conexão |
+
+| Integração GED | Solicitação processada ponta a ponta |
+
+| SSL | Certificado válido em HTTPS |
+
+  
+
+### Fase 6 — Estabilização (T0 + 2h)
+
+  
+
+- Monitorar logs API + Mongo por 1–2 h
+
+- Confirmar com suporte: zero chamados críticos
+
+- Manter servidor origem **ligado mas API parada** por 48–72 h (janela de rollback)
+
+- Após estabilização: descomissionar origem
+
+  
+
+---
+
+  
+
+## 5. Plano de rollback
+
+  
+
+### 5.1 Quando acionar
+
+  
+
+- Login JWT falha em massa
+
+- Documentos históricos inacessíveis
+
+- API retorna 5xx de forma persistente
+
+- MetaServerGlobal não consegue enviar/receber solicitações
+
+- Perda/corrupção de dados detectada
+
+  
+
+**Prazo decisão:** até 2 h após cutover DNS.
+
+  
+
+### 5.2 Procedimento
+
+  
+
+| Passo | Ação | Tempo est. |
+
+|-------|------|------------|
+
+| R1 | Comunicar rollback ao time | Imediato |
+
+| R2 | **Reverter DNS** para `172.16.63.8` | 5–30 min |
+
+| R3 | Subir API/app pool no servidor origem | 5 min |
+
+| R4 | Validar login, download, endpoints | 15 min |
+
+| R5 | Se origem alterado: restaurar Mongo + `C:\Arquivos` do backup | 30–60 min |
+
+| R6 | Confirmar MetaServerGlobal (logs) | 15 min |
+
+| R7 | Post-mortem antes de nova tentativa | — |
+
+  
+
+### 5.3 Pontos críticos
+
+  
+
+1. **DNS é o rollback mais rápido** — desde que origem não tenha sido desligado
+
+2. **Não desligar origem** até 72 h após migração bem-sucedida
+
+3. **JWT secret:** rollback de DNS resolve se origem mantém secret original
+
+4. **Dados escritos no destino durante cutover:** avaliar reconciliação manual
+
+  
+
+---
+
+  
+
+## 6. Impacto em sistemas integrados
+
+  
+
+| Sistema | Impacto | Ação necessária |
+
+|---------|---------|-----------------|
+
+| **MetaServerGlobal** (`ServicoSubirArquivosFiscaisGED`) | Indisponível durante parada; retoma após DNS | Nenhuma se DNS `apicontador.*` mantido |
+
+| **Agendamentos** (`TarefaProcessarSolicitacoesPortalContadorNovo`) | Mesmo cenário | Verificar `configuracao-portal.xml` |
+
+| **Clientes com IP hardcoded** | Falham após migração | Inventariar deploys com `172.16.63.8:91` |
+
+| **Contadores (browser)** | Indisponível na janela | Comunicação prévia |
+
+| **LogAPI / Atualizador** | Usam `apicontador.metaposto.com.br` | Sem mudança se DNS OK |
+
+  
+
+---
+
+  
+
+## 7. Riscos e mitigações
+
+  
+
+| Risco | Prob. | Impacto | Mitigação |
+
+|-------|-------|---------|-----------|
+
+| Perda de arquivos em `C:\Arquivos` | Baixa | Crítico | Robocopy com log + validação |
+
+| Dump Mongo incompleto | Baixa | Crítico | Validar contagem por coleção |
+
+| JWT secret diferente | Média | Alto | Copiar secret do origem |
+
+| TTL DNS alto | Média | Médio | Reduzir TTL 48h antes |
+
+| .NET 3.1 EOL | Alta | Médio | Upgrade pós-migração para .NET 6/8 LTS |
+
+| Escrita durante backup | Média | Alto | Parar API antes do dump |
+
+| Path de arquivos diferente | Média | Alto | Manter `C:\Arquivos` ou atualizar config |
+
+  
+
+---
+
+  
+
+## 8. Cronograma sugerido
+
+  
+
+| Quando | Atividade |
+
+|--------|-----------|
+
+| D-7 | Inventário completo + sizing destino |
+
+| D-3 | Migração seca (cópia + testes em paralelo) |
+
+| D-2 | Reduzir TTL DNS para 300s |
+
+| D-1 | Backup full de validação |
+
+| **D0 — 22h** | Fase 0–6 (migração) |
+
+| D+1 | Monitoramento + origem em standby |
+
+| D+3 | Descomissionar origem (se estável) |
+
+| D+30 | Avaliar upgrade .NET Core 3.1 → LTS |
+
+  
+
+---
+
+  
+
+## 9. Critérios de sucesso (go-live)
+
+  
+
+- [ ] Portal acessível via `portalcontador.metaposto.com.br`
+
+- [ ] API respondendo via `apicontador.metaposto.com.br`
+
+- [ ] Login e download de documento **anterior à migração** funcionando
+
+- [ ] Nova solicitação criada e processada com sucesso
+
+- [ ] MetaServerGlobal sem erros de integração por ≥ 2 h
+
+- [ ] Nenhum chamado crítico de contador sem acesso a documentos
+
+- [ ] Servidor origem preservado em standby por 72 h
+
+  
+
+---
+
+  
+
+## 10. Pendências para fechar antes da execução
+
+  
+
+1. IP/hostname do **servidor destino**
+
+2. Porta exata da API em produção (91? 443? outra?)
+
+3. Front-end: IIS, Netlify ou ambos?
+
+4. Configuração SMTP (servidor, credenciais)
+
+5. Volume total de `C:\Arquivos` e do Mongo (estimar tempo de cópia)
+
+6. Se há load balancer ou apenas DNS direto
+
+7. Inventário de clientes com `configuracao-portal.xml` apontando para IP
+
+  
+
+---
+
+  
+
+## Resumo executivo
+
+  
+
+Migração coordenada de **API + MongoDB + arquivos em disco**. Rollback mais seguro: **reverter DNS** para `172.16.63.8` enquanto origem intacto. Integração MetaPosto depende do DNS `apicontador.metaposto.com.br`. Executar fora do horário comercial, com backup validado e teste em paralelo antes do dia D.
+
+  
+
+&gt; **Runbook operacional** (comandos PowerShell e checklist imprimível) publicado na **Discussion** deste card",,,2026-07-08T13:48:12.553Z
+22378,Paulo A. Lot,"Copied from Repro Steps when changed from Bug to AtendimentoBoa tarde!  Considerações para desenvolvimento.  Título PDV - NFC-e permanece pendente após rejeição 290 (&quot;Certificado Assinatura inválido&quot;), embora o documento já esteja autorizado na SEFAZ Classificação Tipo de Work Item:&nbsp;☑ Dúvida / Análise Técnica Justificativa O problema apresenta recorrência, porém ainda não possui fluxo reproduzível nem causa raiz identificada. Os testes realizados em ambiente restaurado não reproduziram o comportamento, e as validações executadas na máquina do cliente descartaram alterações locais conhecidas (DLLs ou arquivos auxiliares), sem identificar a origem da inconsistência. Descrição Resumida Em determinadas situações, uma NFC-e emitida em contingência permanece pendente no PDV apresentando a rejeição&nbsp;290 – Certificado Assinatura inválido, mesmo já estando autorizada na SEFAZ. Descrição Completa No chamado&nbsp;663664, foi identificado que uma NFC-e em contingência permaneceu pendente no módulo emissor do PDV retornando a rejeição: Código 290 – Certificado Assinatura inválido Entretanto, durante a investigação verificou-se que o documento já estava regularmente autorizado na SEFAZ-GO. Ao restaurar a base do cliente em ambiente local utilizando a&nbsp;branch master (Oficial Rev. 07/07/2026), o documento foi reprocessado normalmente através do botão&nbsp;Play, sendo autorizado sem ocorrência da rejeição. Na máquina do cliente, executando a&nbsp;release Oficial 14/04/2026 – Rev. 03/06/2026, o mesmo procedimento continuava retornando a rejeição 290, e os registros da tabela: [Fiscal.DFe.NFe].DocumentoXmlGenericonão eram atualizados, embora a autorização já existisse na SEFAZ.Também foi validado que não existiam DLLs modificadas nem arquivos auxiliares (.txt,&nbsp;.nfe&nbsp;ou&nbsp;.nfce) adicionados ou alterados no ambiente do cliente, descartando uma possível influência desses artefatos.Evidências LevantadasValidação 1Ambiente restaurado localmente. (bakup:&nbsp;https://mega.nz/folder/av4wSYoQ#5DaO6RySjnwvJ7n1uw6GHA)Resultado:NFC-e Série 105Número 10510Id 319083Reprocessada pelo botão&nbsp;Play.Resultado:Documento autorizado com sucesso.Validação 2Mesmo procedimento realizado na máquina do cliente.Resultado:Rejeição 290 permaneceu sendo apresentada.A tabela&nbsp;DocumentoXmlGenerico&nbsp;não foi atualizada.O documento já constava autorizado na SEFAZ.Validação 3Realizada conferência do ambiente da máquina do cliente.Resultado:Não foram identificadas DLLs alteradas.Não existiam arquivos&nbsp;.txt,&nbsp;.nfe&nbsp;ou&nbsp;.nfce&nbsp;adicionais que justificassem o comportamento.Impacto no Negócio☑ Impacto operacional relevanteDescrição do ImpactoA divergência entre o estado registrado na SEFAZ e o estado persistido no PDV exige intervenção manual para sincronização das informações fiscais, gerando retrabalho operacional.Probabilidade de Ocorrência☑ ImprovávelJustificativaAté o momento não foi possível reproduzir a situação em ambiente controlado nem identificar um fluxo determinístico que provoque a falha.Gravidade do Impacto☑ TolerávelJustificativaExiste procedimento técnico para sincronização do documento sem necessidade de nova emissão da NFC-e.Existe Workaround?☑ SimProcedimento de ContornoColetar os dados da NFC-e autorizada em ambiente funcional e atualizar a base do PDV utilizando o script:SO663664_2-PDV_SolucaoPontual.sqlEvidências Anexadas☑ Consultas SQL☑ Script de correçãoArquivosSO663664_1-PDV_Consultas.sqlSO663664_2-PDV_SolucaoPontual.sqlSituação AtualFoi confirmada uma inconsistência entre:Situação registrada na SEFAZ (documento autorizado);Situação registrada no PDV (documento pendente com rejeição 290).Até o momento não foi possível determinar:qual fluxo provoca a inconsistência;por que o PDV deixa de atualizar a tabela&nbsp;DocumentoXmlGenerico;por que o comportamento ocorre apenas em determinados ambientes.As validações também descartaram alterações conhecidas no ambiente do cliente, como DLLs ou arquivos auxiliares modificados.Recomendação Final☑ Solicitar Análise TécnicaPróximos PassosInstrumentar o fluxo de autorização da NFC-e com logs adicionais.Registrar detalhadamente todas as etapas de atualização da tabela&nbsp;DocumentoXmlGenerico.Comparar a execução entre ambiente restaurado e ambiente do cliente.Verificar possíveis diferenças de configuração, bibliotecas carregadas e fluxo de comunicação com a SEFAZ.Após obtenção de um cenário reproduzível e identificação da causa raiz, reclassificar o chamado como Bug, caso a falha seja confirmada.Ação ExecutadaAção PontualAtualização manual dos dados da NFC-e autorizada na base do PDV utilizando o script:SO663664_2-PDV_SolucaoPontual.sqlAção DefinitivaEncaminhamento ao Desenvolvimento, conforme alinhamento com a Gerência de Suporte, para investigação da recorrência e avaliação da inclusão de logs e melhorias no fluxo.Timeline SugeridoPriorizar a investigação técnica devido à recorrência do cenário, mantendo a classificação como&nbsp;Dúvida / Análise Técnica&nbsp;até que exista reprodução controlada e causa raiz comprovada.",663664,2.0,2026-07-09T18:15:38.17Z

@@ -1,0 +1,1 @@
+py sync_devops.py && py server.py

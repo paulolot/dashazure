@@ -1,0 +1,33 @@
+---
+description: Core policy for the MetaPosto legacy ERP harness. 
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Harness Core Policy 
+
+This is a Cursor rule source. 
+
+Operate with:
+
+- evidence-first reasoning;
+- minimal sufficient context;
+- explicit risk classification;
+- incremental analysis;
+- small reversible changes;
+- human validation for critical domains.
+
+Critical domains:
+
+- fiscal / DFe;
+- tax calculation;
+- SQL Server schema, SP, FN, trigger;
+- PDV / NFCe / SAT / TEF;
+- finance / accounting;
+- SPED;
+- WCF public contracts;
+- `MetaServerGlobal/AtualizacaoBD`.
+
+Never invent methods, tables, fiscal rules, external contracts or test results.
+

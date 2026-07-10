@@ -1,0 +1,225 @@
+ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork,DataCriacao,DataAlteracao
+13344,16328,Criar um novo relatorio,Closed,,,,,2026-04-29T11:37:22.333Z,2026-05-12T23:06:49.353Z
+13344,16329,Validar o novo relatorio,Closed,,,,,2026-04-29T11:37:40.46Z,2026-04-30T10:55:35.23Z
+6499,16376,Análise Para Desenvolvimento do Evento,Closed,Ivan Pionelli Junior,,6,5,2026-04-29T19:20:28.44Z,2026-04-30T10:37:01.437Z
+6499,16377,Desenvolvimento do Evento,Closed,Fabio Nobre,,12,,2026-04-29T19:20:42.07Z,2026-05-14T14:37:55.03Z
+6499,16378,Revisão de Código do PR,Closed,Luiz Fernando Rodrigues Pereira,,2,,2026-04-29T19:20:55.533Z,2026-05-06T13:57:07.94Z
+16340,16482,Revisar e ajustar plano de acao e estimativas da User Story,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2,2,2026-05-04T17:31:08.03Z,2026-05-12T10:43:56.22Z
+16340,16483,Definir contratos de paginação do cache de parceiros (entrada/saída),Closed,Rodolfo Caceraghi dos Santos,Development,3,5,2026-05-04T17:32:26.48Z,2026-05-15T22:45:36.06Z
+16340,16484,Implementar no Global leitura paginada do cache com política de performance segura,Closed,Rodolfo Caceraghi dos Santos,Development,4,4,2026-05-04T17:34:30.847Z,2026-05-15T22:45:36.06Z
+16340,16485,Expor nova operação executável pelo pipeline HTTP existente (callback),Closed,Rodolfo Caceraghi dos Santos,Deployment,2,2,2026-05-04T17:35:37.467Z,2026-05-15T22:45:36.06Z
+16340,16486,Consumir cache paginado no MetaNet e montar lista completa para fluxo atual,Closed,Rodolfo Caceraghi dos Santos,Deployment,4,4,2026-05-04T17:36:35.56Z,2026-05-15T22:45:36.06Z
+16340,16487,Realizar code review da implementacao,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,2,1,2026-05-04T17:37:22.28Z,2026-05-12T18:21:37.14Z
+16340,16488,Executar testes de qualidade e validar comportamento da funcionalidade,Closed,Leandro Andrade,Testing,2,,2026-05-04T17:38:39.46Z,2026-05-13T12:49:26.49Z
+16495,16562,Consolidar diagnóstico técnico e critérios de aceite no card,Closed,Luiz Fernando Rodrigues Pereira,,2,2,2026-05-05T17:29:55.41Z,2026-05-05T17:30:39.91Z
+16495,16563,Criar script gerenciado idempotente para garantir coluna obrigatória,Closed,Fabio Nobre,,1,,2026-05-05T17:30:48.267Z,2026-05-06T13:44:47.783Z
+16495,16564,Executar validação técnica em base limpa e base legada,Closed,Fabio Nobre,,2,,2026-05-05T17:32:29.997Z,2026-05-06T13:45:14.42Z
+16495,16565,Realizar code review da implementacao,Closed,Luiz Fernando Rodrigues Pereira,,1,,2026-05-05T17:32:55.753Z,2026-05-07T12:19:17.87Z
+16495,16566,Executar testes de qualidade e validar comportamento da funcionalidade,Closed,maykon.elias,,2,,2026-05-05T17:33:29.16Z,2026-05-08T21:13:34.18Z
+16292,16586,1 - Analise,Closed,Siryus Canuto,,,,2026-05-05T20:53:26.093Z,2026-05-05T20:56:57.347Z
+16292,16587,2 - Desenvolvimento,Closed,Siryus Canuto,,,,2026-05-05T20:53:37.17Z,2026-05-07T18:53:41.433Z
+16292,16588,3 - Teste,Closed,Siryus Canuto,,,,2026-05-05T20:53:47.6Z,2026-05-06T20:26:44.89Z
+16468,16623,Revisar e ajustar plano de acao e estimativas da User Story,Closed,Luiz Fernando Rodrigues Pereira,,2,1,2026-05-06T13:47:55.193Z,2026-05-06T13:55:41.95Z
+16468,16624,Consolidar regra funcional e critérios de aceite da devolução por configuração,Closed,Julio Andreata,,2,2,2026-05-06T13:48:59.813Z,2026-05-12T11:30:24.287Z
+16468,16625,Implementar aplicação da configuração no fluxo de geração de referenciamento da NFe de devolução,Closed,Julio Andreata,,3,3,2026-05-06T13:50:22.627Z,2026-05-12T11:30:30.83Z
+16468,16627,Remover estratégia de contorno operacional (arquivo/DLL) da proposta definitiva,Closed,Julio Andreata,,2,2,2026-05-06T13:51:37.413Z,2026-05-12T11:30:37.337Z
+16468,16628,Validar comportamento em homologação com cenário representativo da rejeição 545,Closed,,,3,,2026-05-06T13:52:11.823Z,2026-05-12T11:30:19.867Z
+16468,16629,Realizar code review da implementacao,New,Luiz Fernando Rodrigues Pereira,,1,,2026-05-06T13:52:42.537Z,2026-05-06T13:52:59.173Z
+16468,16630,Executar testes de qualidade e validar comportamento da funcionalidade,New,Fabio Nobre,,4,,2026-05-06T13:53:09.817Z,2026-05-12T10:46:20.47Z
+16572,16673,Analise,Closed,Fabio Nobre,,,,2026-05-06T17:24:48.087Z,2026-05-06T17:28:18.06Z
+16572,16674,Programacao,Closed,Fabio Nobre,,,,2026-05-06T17:24:51.5Z,2026-05-06T17:28:18.46Z
+16572,16675,Revisão de Codigo,Closed,Luiz Fernando Rodrigues Pereira,,,,2026-05-06T17:25:01.213Z,2026-05-07T12:19:24.283Z
+16622,16683,Revisar e ajustar plano de acao e estimativas da User Story,Closed,Luiz Fernando Rodrigues Pereira,TechnicalValidation,1,,2026-05-06T18:43:57.27Z,2026-05-06T18:59:52.19Z
+16622,16684,Tratar documento do emitente (CNPJ e CPF) na modelagem da NF-e processada,Closed,Julio Andreata,Development,2,2,2026-05-06T18:44:57.477Z,2026-05-12T11:29:48.9Z
+16622,16685,Ajustar fluxo de DANFe e comparações com cadastro da empresa para emitente PF,Closed,Julio Andreata,Development,2,2,2026-05-06T18:47:15.28Z,2026-05-12T11:29:57.143Z
+16622,16686,Realizar code review da implementacao,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1,,2026-05-06T18:48:08.503Z,2026-05-08T13:55:11.007Z
+16622,16687,Executar testes de qualidade e validar comportamento da funcionalidade,New,Leandro Andrade,Testing,2,,2026-05-06T18:48:47.613Z,2026-05-08T13:55:20.173Z
+16621,16767,Revisar e ajustar plano de acao e estimativas da User Story,Closed,Luiz Fernando Rodrigues Pereira,TechnicalValidation,2,,2026-05-07T17:03:32.593Z,2026-05-08T13:55:54.883Z
+16743,16871,Revisar e ajustar plano de acao e estimativas da User Story,Closed,Luiz Fernando Rodrigues Pereira,TechnicalValidation,2,1,2026-05-08T13:43:06.453Z,2026-05-08T19:30:02.203Z
+16743,16872,Confirmar janela de impacto a partir do card 15215,Closed,Julio Andreata,Requirements,1,0.5,2026-05-08T13:47:35.763Z,2026-05-08T20:18:40.083Z
+16743,16874,Ajustar regra de obrigatoriedade da ChaveAcesso na carga de NFC-e,Closed,Julio Andreata,Development,2,1,2026-05-08T13:48:14.643Z,2026-05-08T20:14:57.743Z
+16743,16875,Gerar script de saneamento em massa no Global para registros sem ChaveAcesso,Closed,Julio Andreata,Development,2,1,2026-05-08T13:48:45.637Z,2026-05-08T20:15:01.96Z
+16743,16876,Gerar script no PDV para recarga de documentos emitidos apos a data base,Closed,Julio Andreata,Development,2,1,2026-05-08T13:50:05.51Z,2026-05-08T20:15:40.96Z
+16743,16877,Atualizar documentacao operacional e comunicacao de contingencia,Closed,Julio Andreata,Documentation,1,1,2026-05-08T13:50:30.573Z,2026-05-08T20:15:45.61Z
+16743,16878,Realizar code review da implementacao,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,2,,2026-05-08T13:51:02.393Z,2026-05-08T19:27:04.773Z
+16743,16879,Executar testes de qualidade e validar comportamento da funcionalidade,Closed,Paulo A. Lot,Testing,3,1,2026-05-08T13:51:42.643Z,2026-05-08T19:34:04.803Z
+16734,16896,Revisar e ajustar plano de acao e estimativas da User Story,Closed,Luiz Fernando Rodrigues Pereira,TechnicalValidation,2,2,2026-05-08T18:42:25.697Z,2026-05-08T18:51:31.183Z
+16734,16899,Persistir status efetivo da emissão (protocolo com fallback no envelope) nos fluxos de dados temporários do emissor,Closed,Julio Andreata,Development,3,3,2026-05-08T18:45:22.093Z,2026-05-12T19:23:34.36Z
+16734,16900,Exibir ao operador rejeição SEFAZ real na emissão FS-DA quando houver retorno de negócio no protocolo,Closed,Julio Andreata,Development,3,4,2026-05-08T18:48:46.84Z,2026-05-12T19:23:49.42Z
+16734,16902,Realizar code review da implementacao,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1,,2026-05-08T18:49:55.79Z,2026-05-13T12:13:01.02Z
+16734,16903,Executar testes de qualidade e validar comportamento da funcionalidade,Closed,Rodolfo Caceraghi dos Santos,Testing,3,3,2026-05-08T18:50:33.927Z,2026-05-14T12:13:40.173Z
+17004,17043,Realizar code review da implementação,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-05-12T10:58:05.917Z,2026-05-13T12:15:21.42Z
+17004,17044,Realizar correção conforme orientado,New,maykon.elias,Development,2,,2026-05-12T10:58:53.05Z,2026-05-12T10:59:06.71Z
+16466,17058,Realizar code review da implementacao,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,,1,2026-05-12T11:58:24.22Z,2026-05-12T18:26:04.833Z
+17003,17080,1 - Criar e ajustar plano de ação e estimativas da User Story,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2,1,2026-05-12T14:50:05.953Z,2026-05-12T15:04:23.967Z
+17003,17081,2 - Investigar causa raiz e contrato de parâmetros do ajuste de estoque na alteração rápida,Closed,Rodolfo Caceraghi dos Santos,Development,2,2,2026-05-12T14:57:07.047Z,2026-05-12T19:03:55.143Z
+17003,17082,2 - Corrigir abertura do ajuste de estoque a partir da alteração rápida sem exceção ao usuário,Closed,Rodolfo Caceraghi dos Santos,Development,3,3,2026-05-12T14:57:59.733Z,2026-05-15T22:45:36.06Z
+17003,17083,3 - Regressão e validação de aceite do fluxo,Closed,,TechnicalValidation,1,1,2026-05-12T14:59:15.553Z,2026-05-13T12:24:17.457Z
+17003,17084,4 - Realizar code review da implementação,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,2,1,2026-05-12T15:00:45.67Z,2026-05-13T14:55:52.317Z
+17003,17085,5 - Testes de Qualidade (QA),Closed,Fabio Nobre,Testing,3,3,2026-05-12T15:01:30.077Z,2026-05-13T19:21:09.12Z
+16340,17092,Revisão,Closed,Rodolfo Caceraghi dos Santos,,,2,2026-05-12T17:10:21.113Z,2026-05-15T22:45:36.06Z
+13789,17112,1 - Criar e ajustar plano de ação e estimativas da User Story,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2,2,2026-05-12T19:05:33.397Z,2026-05-12T19:13:13Z
+13789,17113,2 - Tratar nulidade e robustez no fluxo de conversão / formatação relacionada ao pagamento de frete do MDF-e,Closed,Fabio Nobre,Development,2,2,2026-05-12T19:06:37.37Z,2026-05-14T11:14:27.29Z
+13789,17114,3 - Eliminar conflito numérico no enum de comandos de menu (MDF-e vs. preço promocional) e validar montagem do menu,Closed,Fabio Nobre,Development,1,1,2026-05-12T19:08:16.007Z,2026-05-14T11:17:06.977Z
+13789,17115,4 - Regressão e validação de aceite do fluxo,Closed,Fabio Nobre,TechnicalValidation,2,2,2026-05-12T19:09:26Z,2026-05-14T11:18:59.38Z
+13789,17116,5 - Realizar code review da implementação,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1,1,2026-05-12T19:10:29.637Z,2026-05-14T12:37:18.463Z
+13789,17117,6 - Testes de Qualidade (QA),Closed,Rodolfo Caceraghi dos Santos,Testing,3,3,2026-05-12T19:11:08.52Z,2026-05-15T11:44:47.3Z
+15821,17120,1- Criar e ajustar plano de ação e estimativas da User Story,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2,1,2026-05-12T19:27:06.69Z,2026-05-12T19:52:13.757Z
+15821,17122,2 - Diagnosticar causa raiz da exceção ao pressionar ESC na conciliação pedido/nota,Closed,Julio Andreata,Development,2,2,2026-05-12T19:42:21.24Z,2026-05-13T14:25:39.89Z
+15821,17123,3- Implementar correção estável do fluxo ESC/fechamento com editores de data mascarados,Closed,Julio Andreata,Development,4,3,2026-05-12T19:48:08.703Z,2026-05-13T14:25:44.553Z
+15821,17124,4 - Regressão e validação de aceite do fluxo,Closed,Julio Andreata,TechnicalValidation,2,2,2026-05-12T19:49:13.78Z,2026-05-13T14:25:52.46Z
+15821,17125,5- Realizar code review da implementação,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1,1,2026-05-12T19:50:18.867Z,2026-05-13T18:42:42.49Z
+15821,17126,6- Testes de Qualidade (QA),New,,Testing,3,,2026-05-12T19:50:58.927Z,2026-05-13T19:44:59.973Z
+16466,17153,Teste,Closed,Fabio Nobre,,2,2,2026-05-13T11:48:51.133Z,2026-05-13T11:49:05.913Z
+17004,17180,Testes,Closed,Rodolfo Caceraghi dos Santos,,1,1,2026-05-13T12:49:42.47Z,2026-05-13T13:56:02.07Z
+14001,17191,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2,2,2026-05-13T13:30:58.633Z,2026-05-13T17:27:01.907Z
+14001,17192,2. Development,Closed,Fabio Nobre,Development,4,4,2026-05-13T13:30:58.89Z,2026-05-14T17:51:01.247Z
+14001,17193,3. TechnicalValidation,Closed,Fabio Nobre,TechnicalValidation,3,3,2026-05-13T13:30:59.117Z,2026-05-14T19:57:05.077Z
+14001,17194,4. Documentation - Documentação de implementações na Wiki,Closed,Fabio Nobre,Documentation,2,2,2026-05-13T13:30:59.343Z,2026-05-15T13:13:09.03Z
+14001,17195,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,2,1,2026-05-13T13:30:59.58Z,2026-05-18T12:09:20.533Z
+14001,17196,6. Testing,Closed,,Testing,4,,2026-05-13T13:30:59.81Z,2026-05-19T12:05:43.18Z
+17248,17280,1 - Analisar problema,Closed,Leandro Andrade,,2,,2026-05-13T23:56:00.517Z,2026-05-14T01:18:03.35Z
+17248,17281,2 - Realizar Ajuste,Closed,Leandro Andrade,,2,,2026-05-13T23:56:09.26Z,2026-05-21T14:09:58.727Z
+17248,17282,3 - Definir Roteiro de Testes,Closed,Leandro Andrade,,0.5,,2026-05-13T23:56:29.573Z,2026-05-14T01:18:04.48Z
+17248,17283,0 - Restauração da base do cliente,Closed,Leandro Andrade,,0.5,,2026-05-14T00:38:57.103Z,2026-05-14T01:17:59.5Z
+17248,17284,4 - Code Review,Closed,Luiz Fernando Rodrigues Pereira,,1,1,2026-05-14T00:40:23.95Z,2026-05-14T12:37:07.26Z
+17248,17285,5 - Tests,Closed,Rodolfo Caceraghi dos Santos,,3,3,2026-05-14T00:40:32.59Z,2026-05-14T18:21:42.083Z
+17269,17288,Ajustar função do sped,Closed,Julio Andreata,Development,1,1,2026-05-14T10:43:20.573Z,2026-05-14T14:34:33.883Z
+17269,17289,Realizar code review,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1,1,2026-05-14T10:43:26.24Z,2026-05-14T18:46:05.967Z
+17269,17290,Testes,Closed,Leandro Andrade,Testing,,,2026-05-14T10:44:30.693Z,2026-05-17T17:45:08.473Z
+15627,17298,Executar script corretivo para ajuste de registros fiscais já gravados incorretamente.,Closed,Leandro Andrade,Development,1,,2026-05-14T11:38:02.283Z,2026-05-17T18:42:32.89Z
+15627,17299,Revisao de codigo,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,,1,2026-05-14T11:40:48.377Z,2026-05-18T19:25:42.34Z
+15227,17315,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2,2,2026-05-14T13:24:51.89Z,2026-05-14T14:13:12.357Z
+15227,17316,2. Development,Closed,Julio Andreata,Development,4,,2026-05-14T13:24:52.147Z,2026-05-14T18:25:54.247Z
+15227,17317,3. TechnicalValidation,Closed,Julio Andreata,TechnicalValidation,2,2,2026-05-14T13:24:52.4Z,2026-05-14T18:26:15.85Z
+15227,17318,4. Documentation - Documentação de implementações na Wiki,Closed,Julio Andreata,Documentation,1,1,2026-05-14T13:24:52.707Z,2026-05-14T18:28:13.793Z
+15227,17319,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1,1,2026-05-14T13:24:52.943Z,2026-05-14T18:50:31.877Z
+15227,17320,6. Testing,Closed,,Testing,3,1,2026-05-14T13:24:53.163Z,2026-05-15T11:02:15.44Z
+17272,17342,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2,2,2026-05-14T16:58:59.04Z,2026-05-14T17:06:45.117Z
+17272,17343,2. Development,Closed,Julio Andreata,Development,4,4,2026-05-14T16:58:59.27Z,2026-05-15T19:32:45.923Z
+17272,17344,3. TechnicalValidation,Closed,Julio Andreata,TechnicalValidation,,3,2026-05-14T16:58:59.607Z,2026-05-15T19:32:54.457Z
+17272,17345,4. Documentation - Documentação de implementações na Wiki,Closed,Julio Andreata,Documentation,,1,2026-05-14T16:58:59.87Z,2026-05-15T19:32:55.203Z
+17272,17346,5. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,1,,2026-05-14T16:59:00.19Z,2026-05-14T17:02:37.79Z
+17272,17347,6. Testing,Closed,,Testing,3,,2026-05-14T16:59:00.45Z,2026-05-18T22:46:39.21Z
+17274,17364,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2,2,2026-05-14T18:27:40.877Z,2026-05-14T18:35:46.513Z
+17274,17365,2. Development,Closed,Rodolfo Caceraghi dos Santos,Development,4,4,2026-05-14T18:27:41.123Z,2026-05-20T00:53:44.187Z
+17274,17366,3. TechnicalValidation,Closed,Rodolfo Caceraghi dos Santos,TechnicalValidation,1,1,2026-05-14T18:27:41.37Z,2026-05-15T20:50:39.707Z
+17274,17367,4. Documentation - Documentação de implementações na Wiki,Closed,,Documentation,1,6,2026-05-14T18:27:41.65Z,2026-05-18T21:00:54.337Z
+17274,17368,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1,1,2026-05-14T18:27:41.92Z,2026-05-19T15:00:50.27Z
+17274,17369,6. Testing,Closed,,Testing,3,3,2026-05-14T18:27:42.14Z,2026-05-21T18:20:21.103Z
+17337,17373,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2,,2026-05-14T18:55:45.48Z,2026-05-15T17:46:48.217Z
+17337,17374,2. Development,Closed,Fabio Nobre,Development,3,3,2026-05-14T18:55:45.71Z,2026-05-18T14:52:21.55Z
+17337,17375,3. TechnicalValidation,Closed,Fabio Nobre,TechnicalValidation,2,2,2026-05-14T18:55:45.937Z,2026-05-18T13:29:42.94Z
+17337,17376,4. Documentation - Documentação de implementações na Wiki,Closed,Fabio Nobre,Documentation,1,1,2026-05-14T18:55:46.217Z,2026-05-18T14:51:49.433Z
+17337,17377,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1,1,2026-05-14T18:55:46.437Z,2026-05-19T15:12:35.687Z
+17337,17378,6. Testing,Closed,Rodolfo Caceraghi dos Santos,Testing,2,4,2026-05-14T18:55:46.67Z,2026-05-19T19:07:05.1Z
+17245,17380,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2,2,2026-05-14T19:03:44.7Z,2026-05-15T13:07:48.597Z
+17245,17381,2. Development,Closed,Fabio Nobre,Development,4,,2026-05-14T19:03:45.097Z,2026-05-19T13:45:42.117Z
+17245,17382,3. TechnicalValidation,Closed,Fabio Nobre,TechnicalValidation,2,2,2026-05-14T19:03:45.52Z,2026-05-19T18:56:31.817Z
+17245,17383,4. Documentation - Documentação de implementações na Wiki,Closed,Fabio Nobre,Documentation,1,1,2026-05-14T19:03:45.737Z,2026-05-19T18:55:21.95Z
+17245,17384,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1,1,2026-05-14T19:03:46.033Z,2026-05-19T15:12:21.227Z
+17245,17385,6. Testing,Closed,,Testing,,4,2026-05-14T19:03:46.367Z,2026-05-21T18:20:32.26Z
+17428,17520,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,1,1,2026-05-18T13:01:41.6Z,2026-05-18T13:16:49.373Z
+17428,17521,2. Development,Closed,Rodolfo Caceraghi dos Santos,Development,4,4,2026-05-18T13:01:41.813Z,2026-05-20T19:58:23.023Z
+17428,17522,3. TechnicalValidation,Closed,Rodolfo Caceraghi dos Santos,TechnicalValidation,2,3,2026-05-18T13:01:42.03Z,2026-05-20T19:58:23.023Z
+17428,17523,4. Documentation - Documentação de implementações na Wiki,Closed,Rodolfo Caceraghi dos Santos,Documentation,1,1,2026-05-18T13:01:42.247Z,2026-05-20T19:29:22.877Z
+17428,17524,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1,1,2026-05-18T13:01:42.57Z,2026-05-21T14:49:05.687Z
+17428,17525,6. Testing,New,,Testing,3,,2026-05-18T13:01:42.803Z,2026-05-22T00:58:19.383Z
+17429,17661,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,1,1,2026-05-18T13:35:18.077Z,2026-05-21T19:05:12.403Z
+17429,17662,2. Development,Closed,Fabio Nobre,Development,4,4,2026-05-18T13:35:18.39Z,2026-05-21T19:05:12.403Z
+17429,17663,3. TechnicalValidation,Closed,Fabio Nobre,TechnicalValidation,3,3,2026-05-18T13:35:18.607Z,2026-05-21T19:05:12.403Z
+17429,17664,4. Documentation - Documentação de implementações na Wiki,Closed,Fabio Nobre,Documentation,1,1,2026-05-18T13:35:18.86Z,2026-05-21T19:05:12.403Z
+17429,17665,5. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,1,,2026-05-18T13:35:19.063Z,2026-05-21T19:05:12.403Z
+17429,17666,6. Testing,New,,Testing,3,,2026-05-18T13:35:19.317Z,2026-05-21T19:05:12.403Z
+13925,17669,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,1,1,2026-05-18T13:50:41.853Z,2026-05-18T18:57:34.91Z
+13925,17670,2. Development,New,,Development,,,2026-05-18T13:50:42.063Z,2026-05-18T13:59:15.253Z
+13925,17671,3. TechnicalValidation,New,Luiz Fernando Rodrigues Pereira,TechnicalValidation,,,2026-05-18T13:50:42.29Z,2026-05-18T13:50:42.29Z
+13925,17672,4. Documentation - Documentação de implementações na Wiki,New,,Documentation,1,,2026-05-18T13:50:42.493Z,2026-05-18T14:48:28.307Z
+13925,17673,5. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,1,,2026-05-18T13:50:42.747Z,2026-05-18T14:48:43.043Z
+13925,17674,6. Testing,New,,Testing,2,,2026-05-18T13:50:42.96Z,2026-05-18T14:48:54.03Z
+4288,17713,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2,2,2026-05-18T16:56:21.887Z,2026-05-18T18:51:01.623Z
+4288,17714,2. Development,Closed,Fabio Nobre,Development,4,4,2026-05-18T16:56:22.15Z,2026-05-20T17:25:03.713Z
+4288,17715,3. TechnicalValidation,Closed,Fabio Nobre,TechnicalValidation,1,1,2026-05-18T16:56:22.4Z,2026-05-20T18:58:01.84Z
+4288,17716,4. Documentation - Documentação de implementações na Wiki,Closed,Fabio Nobre,Documentation,1,0.5,2026-05-18T16:56:22.73Z,2026-05-20T17:52:41.877Z
+4288,17717,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1,1,2026-05-18T16:56:23.067Z,2026-05-21T18:05:56.423Z
+4288,17718,6. Testing,Closed,,Testing,,3,2026-05-18T16:56:23.35Z,2026-05-22T02:13:14.613Z
+17759,17822,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,1,1,2026-05-19T14:03:29.28Z,2026-05-20T14:53:13.28Z
+17759,17823,2. Development - Diferença de Custo no Relatório 024 vs Fechamento Contábil,New,,Development,6,,2026-05-19T14:03:29.583Z,2026-05-19T15:51:02.843Z
+17759,17824,3. TechnicalValidation,New,,TechnicalValidation,2,,2026-05-19T14:03:29.8Z,2026-05-19T14:16:50.67Z
+17759,17825,4. Documentation - Documentação de implementações na Wiki,New,,Documentation,1,,2026-05-19T14:03:30.01Z,2026-05-19T14:16:54.387Z
+17759,17826,5. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,1,,2026-05-19T14:03:30.23Z,2026-05-20T14:53:20.56Z
+17759,17827,6. Testing,New,,Testing,2,,2026-05-19T14:03:30.44Z,2026-05-19T14:17:09.473Z
+4939,17837,1. Requirements,Closed,Ivan Pionelli Junior,,1,1,2026-05-19T14:16:42.54Z,2026-05-19T14:23:52.85Z
+4939,17838,2. Development,Closed,Fabio Nobre,,4,4,2026-05-19T14:18:04.377Z,2026-05-19T17:25:30.03Z
+4939,17839,3. TechnicalValidation,Closed,Fabio Nobre,,1,1,2026-05-19T14:18:12.79Z,2026-05-19T18:55:38.373Z
+4939,17840,4. Documentation - Documentação de implementações na Wiki,Closed,Fabio Nobre,,1,,2026-05-19T14:18:23.38Z,2026-05-19T20:15:44.09Z
+4939,17841,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,,1,1,2026-05-19T14:18:30.97Z,2026-05-20T12:24:10.28Z
+4939,17842,6. Testing,New,Leandro Andrade,,,,2026-05-19T14:18:43.593Z,2026-05-22T02:25:28.52Z
+17508,17855,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2,2,2026-05-19T17:28:33.44Z,2026-05-22T04:17:10.46Z
+17508,17856,2. Development,Closed,Rodolfo Caceraghi dos Santos,Development,5,8,2026-05-19T17:28:33.72Z,2026-05-21T21:27:26.853Z
+17508,17857,3. TechnicalValidation,New,,TechnicalValidation,3,,2026-05-19T17:28:33.933Z,2026-05-19T17:42:27.413Z
+17508,17858,4. Documentation - Documentação de implementações na Wiki,New,,Documentation,1,,2026-05-19T17:28:34.13Z,2026-05-19T17:42:38.533Z
+17508,17859,5. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,1,,2026-05-19T17:28:34.34Z,2026-05-19T17:42:45.52Z
+17508,17860,6. Testing,New,,Testing,3,,2026-05-19T17:28:34.573Z,2026-05-19T17:43:06.663Z
+17760,17881,1. Requirements,Closed,Fabio Nobre,,1,1,2026-05-19T21:12:02.94Z,2026-05-19T21:19:48.127Z
+17760,17882,2. Development,Closed,Fabio Nobre,,1,1,2026-05-19T21:12:22.857Z,2026-05-19T21:26:19.753Z
+17760,17883,3. TechnicalValidation,Closed,Fabio Nobre,,1,1,2026-05-19T21:12:30.69Z,2026-05-19T21:44:47.303Z
+17760,17884,4. Documentation - Documentação de implementações na Wiki,Closed,Fabio Nobre,,,,2026-05-19T21:12:46.317Z,2026-05-20T00:49:57.51Z
+17760,17885,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,,1,1,2026-05-19T21:12:55.17Z,2026-05-20T12:23:21.423Z
+17760,17886,6. Testing,New,Julio Andreata,,2,,2026-05-19T21:13:12.077Z,2026-05-20T13:37:42.373Z
+17768,17925,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2,2,2026-05-20T17:49:16.41Z,2026-05-20T18:02:41.223Z
+17768,17926,2. Development,New,,Development,5,,2026-05-20T17:49:16.7Z,2026-05-20T18:00:41.43Z
+17768,17927,3. TechnicalValidation,New,,TechnicalValidation,3,,2026-05-20T17:49:16.887Z,2026-05-20T18:01:02.91Z
+17768,17928,4. Documentation - Documentação de implementações na Wiki,New,,Documentation,2,,2026-05-20T17:49:17.11Z,2026-05-20T18:01:54.387Z
+17768,17929,5. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,1,,2026-05-20T17:49:17.303Z,2026-05-20T18:02:05.243Z
+17768,17930,6. Testing,New,,Testing,3,,2026-05-20T17:49:17.63Z,2026-05-20T18:02:29.84Z
+17769,17942,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2,2,2026-05-20T18:56:09.79Z,2026-05-20T19:20:06.967Z
+17769,17943,2. Development,New,Fabio Nobre,Development,4,,2026-05-20T18:56:10.01Z,2026-05-21T17:23:46.917Z
+17769,17944,3. TechnicalValidation,New,,TechnicalValidation,2,,2026-05-20T18:56:10.207Z,2026-05-20T19:20:37.307Z
+17769,17945,4. Documentation - Documentação de implementações na Wiki,New,,Documentation,1,,2026-05-20T18:56:10.41Z,2026-05-20T19:20:45.107Z
+17769,17946,5. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,1,,2026-05-20T18:56:10.61Z,2026-05-20T19:20:54.187Z
+17769,17947,6. Testing,New,,Testing,2,,2026-05-20T18:56:10.813Z,2026-05-20T19:21:01.953Z
+17770,18028,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,3,2,2026-05-21T17:22:48.553Z,2026-05-21T17:28:36.777Z
+17770,18029,2. Development,New,,Development,4,,2026-05-21T17:22:48.777Z,2026-05-21T17:27:02.013Z
+17770,18030,3. TechnicalValidation,New,Luiz Fernando Rodrigues Pereira,TechnicalValidation,,,2026-05-21T17:22:48.98Z,2026-05-21T17:22:48.98Z
+17770,18031,4. Documentation - Documentação de implementações na Wiki,New,,Documentation,1,,2026-05-21T17:22:49.217Z,2026-05-21T17:27:28.163Z
+17770,18032,5. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,1,,2026-05-21T17:22:49.593Z,2026-05-21T17:27:35.623Z
+17770,18033,6. Testing,New,,Testing,2,,2026-05-21T17:22:49.81Z,2026-05-21T17:28:23.127Z
+17429,18070,5.6 Pos CodeReview,New,,,1,1,2026-05-21T19:05:08.963Z,2026-05-22T11:04:03.53Z
+18022,18074,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,1,1,2026-05-21T19:35:11.467Z,2026-05-21T19:47:24.073Z
+18022,18075,2. Development,Closed,Rodolfo Caceraghi dos Santos,Development,5,5,2026-05-21T19:35:11.753Z,2026-05-22T14:57:47.6Z
+18022,18076,3. TechnicalValidation,Closed,Rodolfo Caceraghi dos Santos,TechnicalValidation,3,4,2026-05-21T19:35:12.02Z,2026-05-22T14:58:59.703Z
+18022,18077,4. Documentation - Documentação de implementações na Wiki,New,,Documentation,1,,2026-05-21T19:35:12.273Z,2026-05-21T19:46:46.643Z
+18022,18078,5. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,1,,2026-05-21T19:35:12.54Z,2026-05-21T19:46:54.633Z
+18022,18079,6. Testing,New,,Testing,3,,2026-05-21T19:35:12.76Z,2026-05-21T19:47:11.58Z
+18035,18168,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2,2,2026-05-22T14:38:17.82Z,2026-05-22T14:50:20.33Z
+18035,18169,2. Development,New,,Development,5,,2026-05-22T14:38:18.09Z,2026-05-22T14:48:34.87Z
+18035,18170,3. TechnicalValidation,New,,TechnicalValidation,2,,2026-05-22T14:38:18.323Z,2026-05-22T14:49:13.397Z
+18035,18171,4. Documentation - Documentação de implementações na Wiki,New,,Documentation,1,,2026-05-22T14:38:18.54Z,2026-05-22T14:49:25.363Z
+18035,18172,5. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,1,,2026-05-22T14:38:18.757Z,2026-05-22T14:49:31.857Z
+18035,18173,6. Testing,New,,Testing,3,,2026-05-22T14:38:18.98Z,2026-05-22T14:49:41.423Z
+17182,18176,2. Desenvolvimento — POC API imex-corp-impressao (DANFSe NT 008/2026),New,,Development,5,,2026-05-22T14:47:56.173Z,2026-05-22T14:50:38.703Z
+15053,15368,Registro de Informações Complementares - Ajuste do C110,Closed,,,,,2026-04-08T16:50:32.043Z,2026-04-27T21:52:46.227Z
+15053,15370,Operações com alíquota zero / isenção,Closed,,,,,2026-04-08T16:56:30.75Z,2026-04-14T18:12:17.003Z
+16621,16768,Mapear fluxo real de status 105 ate estado terminal,New,Fabio Nobre,Deployment,3,,2026-05-07T17:04:40.207Z,2026-05-11T17:49:15.233Z
+16621,16769,Ajustar consolidacao de retorno final apos lote em processamento,New,,Deployment,4,,2026-05-07T17:05:47.28Z,2026-05-07T17:06:49.283Z
+16621,16770,Revisar politica de retentativa e polling da consulta de lote,New,,Deployment,3,,2026-05-07T17:07:01.09Z,2026-05-07T17:07:34.433Z
+16621,16772,Realizar code review da implementacao,New,Luiz Fernando Rodrigues Pereira,CodeReview,1,,2026-05-07T17:08:32.547Z,2026-05-07T17:11:23.993Z
+16621,16775,Executar testes de qualidade e validar comportamento da funcionalidade,New,,Testing,4,,2026-05-07T17:13:21.15Z,2026-05-07T17:13:44.817Z
+13998,16973,Executar testes de qualidade e validar comportamento da funcionalidade,Closed,Julio Andreata,,,8,2026-05-11T13:37:14.957Z,2026-05-11T17:53:18.367Z
+14790,17008,Criar e ajustar plano de ação e estimativas da User Story,Closed,Luiz Fernando Rodrigues Pereira,Requirements,3,3,2026-05-11T19:07:23.58Z,2026-05-11T19:23:38.047Z
+14790,17015,Coletar baseline de performance e analisar plano de execução do Relatório 369,Closed,Fabio Nobre,Development,2,1,2026-05-11T19:15:26.257Z,2026-05-12T12:05:33.347Z
+14790,17016,Refatorar TVF FN_EST_Relatorio369PosicaoAtualDuracaoEstoque (consulta principal),Closed,Fabio Nobre,Development,4,3,2026-05-11T19:17:12.823Z,2026-05-12T18:42:58.193Z
+14790,17017,Validar e criar índices necessários nas tabelas críticas,Closed,Fabio Nobre,Development,2,1,2026-05-11T19:20:05.08Z,2026-05-12T14:46:44.557Z
+14790,17018,Regressão e validação de aceite do fluxo,Closed,Fabio Nobre,TechnicalValidation,3,2,2026-05-11T19:20:58.163Z,2026-05-12T18:43:14.34Z
+14790,17019,Realizar code review da implementação,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,2,1,2026-05-11T19:21:48.64Z,2026-05-13T14:55:59.673Z
+14790,17020,Testes de Qualidade (QA),Closed,Julio Andreata,Testing,3,4,2026-05-11T19:22:31.877Z,2026-05-13T19:45:26.4Z
+17098,17099,Setup inicial,Closed,,,2,2,2026-05-12T18:27:56.267Z,2026-05-13T18:20:45.6Z
+17098,17100,Instrumentação de logs,Closed,,,2,2,2026-05-12T18:28:18.29Z,2026-05-13T18:22:21.557Z
+17098,17101,Instrumentação OpenTelemetry,Closed,,,1,1,2026-05-12T18:28:35.027Z,2026-05-13T18:23:07.93Z
+17098,17102,Cenário sintético,Closed,,,,,2026-05-12T18:29:23.317Z,2026-05-13T18:23:40.203Z
+17098,17103,Validação operacional,Closed,,,2,2,2026-05-12T18:29:47.687Z,2026-05-13T18:24:04.653Z
+17098,17104,Análise técnica,Closed,,,1,1,2026-05-12T18:29:59.743Z,2026-05-13T18:47:52.897Z
+17098,17105,Overhead,Closed,,,1,1,2026-05-12T18:30:13.247Z,2026-05-13T18:54:40.827Z
+17098,17106,Readout técnico,Closed,,,,,2026-05-12T18:30:28.357Z,2026-05-13T19:00:11.953Z
+17098,17107,Entregáveis,Closed,,,,,2026-05-12T18:30:40.01Z,2026-05-13T19:03:56.967Z

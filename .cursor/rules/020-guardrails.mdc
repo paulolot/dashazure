@@ -1,0 +1,29 @@
+---
+description: Operational guardrails for high-risk ERP maintenance.
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Operational Guardrails 
+
+Prohibited without explicit human approval:
+
+- production database operations;
+- destructive scripts;
+- schema, SP, FN or trigger changes;
+- fiscal rule changes;
+- DFe XML/emission changes;
+- PDV/TEF/NFCe/SAT flow changes;
+- finance/accounting changes;
+- WCF public contract changes;
+- broad refactoring in critical hubs.
+
+Low-risk automatic changes require:
+
+- local scope;
+- known consumers;
+- no critical fiscal/financial/PDV/schema effect;
+- possible local validation;
+- simple rollback.
+

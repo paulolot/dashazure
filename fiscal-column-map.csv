@@ -1,0 +1,13 @@
+BoardColumn,State,TipoFluxo,ContaCycleTime,ContaLeadTime
+Idéias,New,fila,Nao,Sim
+Backlog,New,fila,Nao,Sim
+Fazendo Análise,New,trabalho,Sim,Sim
+Disponível para Dev,New,aguardando,Nao,Sim
+Dev implementando,Active,trabalho,Sim,Sim
+Disponível Revisão de Código,Active,aguardando,Sim,Sim
+Realizando Revisão de Código,Active,trabalho,Sim,Sim
+Disponível para Teste,Active,aguardando,Sim,Sim
+Testando,Active,trabalho,Sim,Sim
+Aguardando pipeline,Active,trabalho,Sim,Sim
+Pronto pra Release,Resolved,pre_release,Nao,Sim
+Concluído,Closed,done,Nao,Nao

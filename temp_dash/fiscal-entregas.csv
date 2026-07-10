@@ -1,0 +1,100 @@
+Id,Tipo,Titulo,DataFechamento,ResponsavelNoFechamento,LeadTimeDias,CycleTimeDias,DataPrimeiroActive
+6499,User Story,EVENTO - Fornecimento não realizado com pagamento antecipado,2026-05-15T10:56:59.367Z,Fabio Nobre,272.75,14.98,2026-04-30T11:22:08.653Z
+7505,User Story,Refatorar Relatório 335,2026-05-15T11:00:01.240Z,Fabio Nobre,233.64,17.99,2026-04-27T11:20:45.993Z
+12618,User Story,Redução de complexidade,2026-05-07T10:42:28.590Z,Paulo A. Lot,91.75,,
+13070,Bug,Falha na consulta rápida da base do Compliance Fiscal,2026-05-14T18:34:38.680Z,Julio Andreata,85.19,9.16,2026-05-05T14:44:03.623Z
+13111,User Story,Arquivos não estão subindo automaticamente no portal do contador,2026-05-15T10:57:29.310Z,maykon.elias,85,17.47,2026-04-27T23:38:02.453Z
+13282,Bug,Consulta rápida de dados - Consulta SQL dispara exceção apenas no ambiente web,2026-05-05T10:47:43.943Z,maykon.elias,70.65,10.83,2026-04-24T14:58:25.690Z
+13344,User Story,Visualizar preços por combustível e empresa em relatório unificado,2026-05-07T14:02:30.117Z,Fabio Nobre,71.75,9.05,2026-04-28T12:55:07.970Z
+13674,User Story,Exibição de Versionamento Completo do Sistema MetaNet,2026-05-15T10:56:36.743Z,maykon.elias,71.7,3.95,2026-05-11T12:01:53.883Z
+13789,Bug,[Testes release Alfa 03/03/2026] - Metaposto/Mdfe - Após cria uma cópia de um MDFE e tentar salvar ou salvar/processar dispara exceção,2026-05-21T14:41:08.783Z,Fabio Nobre,75.72,8.1,2026-05-13T12:21:36.800Z
+13998,User Story,Ajustar tratamento de CNPJ/Documento para aceitar identificadores alfanuméricos,2026-05-11T19:57:32.887Z,maykon.elias,60.25,6.28,2026-05-05T13:14:35.507Z
+14367,Bug,"Falha na emissão de NF-e de venda futura com tipo de preço ""ultimo custo""",2026-04-28T11:37:54.620Z,Rodolfo Caceraghi dos Santos,39.61,5.87,2026-04-22T14:39:12.500Z
+14432,User Story,PDV/NFCE- NFCE em contingência(ns) - REJ 558 xml de retorno,2026-05-11T19:34:18.740Z,NENHUM,51.88,,
+14436,User Story,Otimizar exclusão de local de estoque e exibir confirmação de sucesso,2026-05-04T12:19:22.923Z,Julio Andreata,44.46,9.97,2026-04-24T12:59:52.643Z
+14790,User Story,Refatorar consulta do Relatório 369 para otimização de performance,2026-05-15T11:00:48.673Z,Fabio Nobre,45.94,3,2026-05-12T10:57:31.713Z
+14846,Bug,NF-e de devolução - Não houve estorno de estoque do insumo (produto composto),2026-04-22T17:53:47.053Z,Luiz Fernando Rodrigues Pereira,22.81,22.03,2026-03-31T17:07:49.497Z
+14847,Bug,Ao salvar e processar NF-e de Transferência de saldo credor de ICMS o valor é zerado,2026-04-22T17:54:32.250Z,Rodolfo Caceraghi dos Santos,22.8,15.25,2026-04-07T11:51:07.517Z
+14849,User Story,Diferença LMC x Sped Fiscal - Registro 1310,2026-05-15T11:01:52.097Z,Leandro Andrade,45.51,38.51,2026-04-06T22:46:17.740Z
+15052,User Story,Inclusão de mensagem obrigatória na NF-e,2026-04-22T17:58:34.953Z,Fabio Nobre,20.82,14.27,2026-04-08T11:24:21.960Z
+15053,User Story,Ajustes na geração do SPED Contribuições,2026-04-28T11:39:14.380Z,Fabio Nobre,26.55,19.97,2026-04-08T12:27:44.533Z
+15206,Bug,Quebra de Sequencia de NF-e - Modulo emissor PDV,2026-05-05T10:46:26.653Z,Paulo A. Lot,28.89,7.92,2026-04-27T12:43:11.173Z
+15215,Bug,"Exceção procedure CargaMovimentacao.PC_AdaptarSalvarCupomFiscalEletronico - ""Análise XML: linha 1, caractere 3574, caractere xml ilegal""",2026-04-22T17:54:52.783Z,Julio Andreata,16.17,15.03,2026-04-07T17:12:19.077Z
+15221,Bug,Bloqueio ao cadastrar CPF/CNPJ já existente mesmo com permissão habilitada,2026-04-22T17:54:43.397Z,Leandro Andrade,16.01,12.8,2026-04-09T22:41:02.817Z
+15227,User Story,Implementar tratamento para tela de Listagem de certificado listar certificados instalados na máquina,2026-05-19T12:43:28.293Z,Julio Andreata,42.77,4.92,2026-05-14T14:34:41.490Z
+15251,Bug,Inventário - ERRO AO editar INVENTÁRIO - CONVERSÃO DE DBNULL PARA DATETIME,2026-04-22T17:53:56.793Z,Fabio Nobre,15.91,14.26,2026-04-08T11:39:03.163Z
+15252,Bug,Notas de cupom geradas pelo faturamento automático estão permanecendo em memória,2026-04-22T17:54:05.427Z,Ivan Pionelli Junior,15.91,13.31,2026-04-09T10:32:04.180Z
+15304,Bug,Emissão de devolução NFC-e apresentando rejeição: 225,2026-04-28T11:38:01.420Z,Rodolfo Caceraghi dos Santos,20.72,5.66,2026-04-22T19:48:01.497Z
+15313,Bug,Emissão NFe Estorno / Ao salvar em memória e depois salvar e processar sistema não mantem referencia com nota estornada (Mesma Situação SO 648513),2026-04-22T17:54:12.050Z,Julio Andreata,14.96,12.25,2026-04-10T12:00:12.353Z
+15359,User Story,BUG - Informações Adicionais não salva na tabela  FAT_NotaFiscal  ao processar a NF-e,2026-04-22T17:55:02.327Z,Rodolfo Caceraghi dos Santos,14.13,11.96,2026-04-10T18:59:39.007Z
+15523,User Story,Diagnosticar e otimizar performance no cadastro de Mercadorias,2026-05-08T19:58:47.887Z,Rodolfo Caceraghi dos Santos,28.09,8.12,2026-04-30T17:08:21.650Z
+15525,User Story,Diagnosticar e otimizar performance no cadastro de Parceiro de Negócio,2026-05-07T14:02:43.333Z,Rodolfo Caceraghi dos Santos,26.84,9.1,2026-04-28T11:44:44.800Z
+15557,Bug,Exceção de GUID na atualização de oficial 13/01/26 Rev. 30/03/26,2026-04-22T17:58:19.130Z,Leandro Andrade,9.19,5.68,2026-04-17T01:36:22.520Z
+15564,Bug,Carga de movimentação apresentando erro de divisão por zero,2026-04-28T11:37:41.340Z,Rodolfo Caceraghi dos Santos,14.92,4.88,2026-04-23T14:32:45.610Z
+15594,User Story,Tornar o job de integração com Domínio resiliente a falhas por empresa,2026-04-28T11:37:12.287Z,Ivan Pionelli Junior,14.76,13.76,2026-04-14T17:27:33.830Z
+15608,User Story,Implementar opção de Abortar NF-e na Rejeição 302 (Contingencia),2026-05-15T10:56:50.043Z,Paulo A. Lot,31.63,7.99,2026-05-07T11:18:17.550Z
+15671,Bug,Recalculo de Estoque: Após executar ferramenta sistema duplica dados de estoque gerando diferenças no LMC,2026-04-28T11:37:04.000Z,Rodolfo Caceraghi dos Santos,14,13.7,2026-04-14T18:46:28.460Z
+15676,Bug,Entrada por Lista de documentos -Erro na tarefa destinadas,2026-04-22T17:54:18.780Z,Rodolfo Caceraghi dos Santos,8.23,8.01,2026-04-14T17:40:51.843Z
+15727,Bug,Cadastro de Mercadoria/Serviço / Unidade de Venda e Unidade Tributável não são exibidas,2026-04-28T11:38:23.810Z,Fabio Nobre,13.58,10.92,2026-04-17T13:36:57.380Z
+15753,User Story,Relatório 038 - Não exibe todos os grupos de mercadorias,2026-04-24T12:07:28.523Z,Fabio Nobre,8.81,,
+15755,Bug,"Recalculo de estoque retornando erro ""Não é possível inserir produtos com local estoque de combustível... Entre em contato com suporte. SO621922 / CARD 12350. """,2026-04-28T11:36:58.577Z,Ivan Pionelli Junior,12.74,7.8,2026-04-20T16:27:02.607Z
+15786,Bug,"[Legado][Testes release Alfa 13/04/2026] - Emissão CTe > Aba Rodoviário > Sistema não carrega veículo de acordo com configuração ""Especificar dados padrões""",2026-04-28T11:38:10.070Z,Leandro Andrade,11.94,6.54,2026-04-21T22:40:56.150Z
+15821,Bug,"[Legado][Testes release Alfa 13/04/2026] - Compras > Conciliação entre Pedido e Nota de Entrada, ao acessar e teclar ESC retorna exceção",2026-05-14T18:50:42.763Z,Julio Andreata,28.01,1.95,2026-05-12T19:56:54.690Z
+15824,User Story,Ajustar envio de combustíveis como posição livre na integração BR Mania,2026-04-28T14:11:09.957Z,Rodolfo Caceraghi dos Santos,11.8,4.05,2026-04-24T12:52:26.040Z
+15831,Bug,"[Testes release Alfa 13/04/2026] - Inventário > Nota de Sobra - Sistema retorna mensagem ""Erro no cálculo do imposto de substituição tributária do produto SEM GTIN.""",2026-04-28T11:37:49.277Z,Leandro Andrade,11.64,4.51,2026-04-23T23:23:09.600Z
+15875,User Story,Sistema não emite NFe pela tela de impressão na fatura: 'NHibernateGenericADOSystemMetaException',2026-04-28T11:38:59.537Z,Julio Andreata,10.71,7.77,2026-04-20T17:14:14.510Z
+15876,Bug,"[Legado][Testes release Alfa 13/04/2026] - Emissão de NFe Tipo Operacao 62 / nota pendente com mensagem ""Não é possível vender com o CFOP 405 para fora do estado! O CFOP 6405 da mercadoria PROD II 160426 não Existe! """,2026-04-28T11:38:33.190Z,Julio Andreata,10.7,5.73,2026-04-22T18:03:00.940Z
+15878,User Story,[Testes release Alfa 13/04/2026] - Gerenciamento de Documentos Fiscais,2026-05-15T10:58:00.940Z,Leandro Andrade,27.67,23.49,2026-04-21T23:12:14.550Z
+15923,User Story,"Relatório 279 Não apresenta dados para colunas Ult. Compra, Qtd. Compra, Qtd. Venda, Fornecedor",2026-04-27T10:49:08.007Z,Ivan Pionelli Junior,6.73,,
+15924,Bug,"[Legado][Testes release Alfa 13/04/2026] Cadastro de Empresa > F11 - Sistema não apresenta tela ""Informações de Replicações de Empresa""",2026-05-15T10:59:48.427Z,Rodolfo Caceraghi dos Santos,24.74,22.59,2026-04-22T20:50:22.490Z
+15970,Bug,SIMP - Saldo inicial gera duplicidades na EST_EstoqueSIMP e replica valores em períodos,2026-05-05T10:46:47.810Z,maykon.elias,12.96,5.84,2026-04-29T14:37:00.450Z
+15971,User Story,Emissão de NFCe e NFe Contingência - sistema não retorna para modo emissão normal automaticamente,2026-04-28T13:44:00.460Z,NENHUM,6.08,,
+16002,User Story,Atualização do Instalador do Atualizador Automático,2026-04-28T11:38:47.723Z,maykon.elias,5.77,5.49,2026-04-23T00:00:03.430Z
+16033,User Story,Atualizador - Mitigar falhas de runtime,2026-05-15T10:58:43.897Z,maykon.elias,21.96,21.96,2026-04-23T11:57:55.177Z
+16040,Bug,[Teste Automatizado Release]  - Falha ao atualizar global,2026-04-28T12:02:50.610Z,Fabio Nobre,4.96,3.9,2026-04-24T14:23:30.413Z
+16061,Bug,"ControllerNotaFiscalEletronica, a aba ""Dados' nao ta carregando os componentes",2026-04-28T12:02:55.107Z,Fabio Nobre,4.86,3.9,2026-04-24T14:23:25.343Z
+16117,User Story,Metaposto/Inventario - Lentidão na abertura de inventario.,2026-05-15T11:00:39.167Z,Rodolfo Caceraghi dos Santos,21.58,17.66,2026-04-27T19:10:45.640Z
+16147,Bug,Relatório 247 - Não apresenta código de barras e descrição mercadoria para NF-e de Perdas,2026-05-05T10:47:32.987Z,Rodolfo Caceraghi dos Santos,10.83,7.61,2026-04-27T20:02:40.597Z
+16149,Bug,"[Testes release Alfa 13/04/2026] - Cancelar NFe Contingência - Exceção ""Serviço Recepção de Evento não configurado/implementado para o estado PA",2026-05-05T10:46:59.073Z,Julio Andreata,10.82,5.83,2026-04-29T14:50:58.830Z
+16159,Bug,Erro 500 (Internal Server Error) ao excluir cliente no Portal do Parceiro,2026-05-11T10:34:11.640Z,maykon.elias,16.68,10.81,2026-04-30T15:09:01.513Z
+16292,User Story,Lentidão na inicialização do Global,2026-05-14T18:31:27.087Z,Leandro Andrade,16.04,8.9,2026-05-05T20:53:17.610Z
+16306,Bug,"Relatório 279 / Não apresenta dados para colunas Ult. Compra, Qtd. Compra, Qtd. Venda, Fornecedor",2026-05-14T18:37:30.310Z,Leandro Andrade,15.99,14.29,2026-04-30T11:44:09.660Z
+16315,Bug,Utilitários > Configurações > NFC-e: ao clicar na configuração dispara exceção,2026-05-05T10:46:05.810Z,Fabio Nobre,6.62,5.95,2026-04-29T12:02:24.533Z
+16340,Bug,Cadastro de Mercadoria - Lentidão ao acessar cadastro e erro “Ocorreu um erro inesperado no MetaPosto” com ausência de empresas na aba MultiEmpresa,2026-05-14T18:31:08.143Z,Rodolfo Caceraghi dos Santos,15.22,7.22,2026-05-07T13:16:33.490Z
+16420,Bug,Erro ao tentar registrar novo parceiro,2026-05-11T10:34:13.397Z,maykon.elias,10.73,10.66,2026-04-30T18:48:49.487Z
+16466,Bug,"Retaguarda: MDF-e Aquaviário: Erro ao abrir o menu ""Fiscal > Emissão de Manifestação de Documento Fiscal"" : Referência de objeto não definida para uma instância de um objeto.",2026-05-14T18:32:06.230Z,Rodolfo Caceraghi dos Santos,10.26,2.28,2026-05-12T11:54:57.370Z
+16468,User Story,"Rede Cacique - NFe Devolução de Compra - Rejeição ""Ocorreu um erro na consulta de Status NFe. Código do Erro: 545 e Motivo Rejeição: NF-e de devolução com valor total superior a NF-e devolvida retornado pelo SEFAZ""",2026-05-14T18:32:56.750Z,Julio Andreata,10.26,8.16,2026-05-06T14:45:17.483Z
+16473,User Story,Ajuste SINIEf 49/2025,2026-05-15T10:57:16.730Z,Paulo A. Lot,10.87,10.86,2026-05-04T14:14:28.100Z
+16495,Bug,Atualização para release Oficial 04/03 Rev 29/04 - Exceção no PDV na GUID: 02E47728-BE8C-4346-B24C-1620B66D7A81,2026-05-14T18:32:33.883Z,Fabio Nobre,9.98,8.25,2026-05-06T12:37:43.053Z
+16557,User Story,Extensão da mensagem da LC 224/2025 para NFC-e (Modelo 65),2026-05-06T10:34:04.620Z,Paulo A. Lot,0.83,0.7,2026-05-05T17:46:06.443Z
+16558,User Story,Extensão dos ajustes do SPED Contribuições para operações de NFC-e,2026-05-06T10:33:48.820Z,Paulo A. Lot,0.83,0.7,2026-05-05T17:46:05.270Z
+16572,Bug,Pedido de compra (consulta resumida): exceção “índice fora dos limites da matriz” ao montar parâmetros da consulta Dapper,2026-05-14T18:33:29.980Z,Fabio Nobre,8.98,8.16,2026-05-06T14:44:47.073Z
+16616,User Story,Inclusão da mensagem da LC 224/2025 na NF-e e NFC-e,2026-05-08T19:59:03.690Z,Paulo A. Lot,2.28,2.13,2026-05-06T16:48:16.543Z
+16618,User Story,Adequação do SPED Contribuições à LC 224/2025,2026-05-08T19:59:04.317Z,Paulo A. Lot,2.28,2.13,2026-05-06T16:48:23.977Z
+16621,User Story,"Emissão Normal do Estado SP: Notas processada Sefaz e pendente no PDV com rejeição 105 = ""Lote em processamento""",2026-05-12T18:59:21.380Z,Fabio Nobre,6.22,4.04,2026-05-08T17:58:29.410Z
+16622,Bug,Problema na Entrada por Lista de Documentos - Erro ao visualizar DANFE da NFe de Emitente CPF,2026-05-14T18:50:55.297Z,Julio Andreata,8.21,7.18,2026-05-07T14:35:11.870Z
+16734,Bug,"Nota pendente com mensagem ""NFe emitida em contingência FS-DA, aguarde a resolução dos problemas""",2026-05-21T14:41:50.577Z,Julio Andreata,14.12,9.85,2026-05-11T18:12:12.553Z
+16743,Bug,Rejeição 701 - Não informado Nota Fiscal referenciada - Por conta de NFCe sem ChaveAcesso na tabela FAT_NotaFiscal,2026-05-14T18:32:47.197Z,Julio Andreata,7.22,6.16,2026-05-08T14:37:29.647Z
+16908,User Story,Replicar correções de lentidão,2026-05-11T10:49:15.407Z,Rodolfo Caceraghi dos Santos,2.63,2.63,2026-05-08T19:47:52.283Z
+16958,Bug,NFe esta sendo emitida com numeração em sequencia que não existe na Sefaz,2026-05-12T12:04:58.107Z,Luiz Fernando Rodrigues Pereira,1,,
+17003,Bug,"Ao acessar o campo ""Editar Estoque"" é apresentada a mensagem: ""Ocorreu um erro inesperado no MetaPosto""",2026-05-14T18:31:34.860Z,Rodolfo Caceraghi dos Santos,2.99,2.05,2026-05-12T17:26:16.440Z
+17004,Bug,Alteração Rápida de Dados de Mercadoria - Filtro Subgrupo não funciona,2026-05-14T18:50:25.740Z,maykon.elias,3,2.94,2026-05-11T20:19:04.870Z
+17098,User Story,PoC de Observabilidade (Serilog + OpenTelemetry em .NET FW 4.8),2026-05-14T20:04:17.330Z,maykon.elias,2.07,1.89,2026-05-12T22:45:57.527Z
+17246,User Story,Conciliação Nota de Entrada e Pedido de Compra - Sistema permitir prosseguir com conciliação e entrada sem validar todas as críticas,2026-05-15T18:22:30.183Z,Diogo M. Fontolan,2.06,,
+17248,Bug,MetaPosto: Alteração Rápida de Dados Mercadoria / Sistema não permite definir ZERO para Comissão por Porcentagem e Valor,2026-05-21T14:42:05.767Z,Leandro Andrade,7.9,7.56,2026-05-14T01:16:42.240Z
+17269,Bug,"Exceção ao exportar Sped - ""Registro A010 não satisfaz validação IDENTIFICAÇÃO DO ESTABELECIMENTO.""",2026-05-21T14:42:36.090Z,Julio Andreata,7.76,7.14,2026-05-14T11:19:16.187Z
+17272,User Story,Relatório 282 - Não exibe informações se utilizar filtro de data maior do que 1 dia,2026-05-21T14:43:03.140Z,Julio Andreata,7.75,6.84,2026-05-14T18:33:53.067Z
+17314,User Story,POC – Assistente de IA via app de mensagens para consultas de faturamento e indicadores operacionais do posto,2026-05-19T13:30:03.710Z,maykon.elias,5,4.76,2026-05-14T19:09:11.477Z
+17760,Bug,SPED Contribuições: Conta contábil não exportada no registro M225/625,2026-05-21T14:40:47.867Z,Fabio Nobre,2.79,1.72,2026-05-19T21:19:52.727Z
+17803,User Story,POC – Assistente de IA via app de mensagens para consultas de faturamento e indicadores operacionais do posto,2026-05-19T13:36:59.477Z,maykon.elias,0.01,,
+17806,User Story,Catálogo Inteligente de Indicadores,2026-05-21T12:54:17.313Z,maykon.elias,1.98,0.01,2026-05-21T12:43:45.037Z
+17808,User Story,Memória Conversacional por Usuário,2026-05-21T12:12:59.733Z,Julio Andreata,1.95,,
+17809,User Story,Comandos Operacionais do Assistente,2026-05-21T12:13:22.427Z,Julio Andreata,1.95,,
+17810,User Story,Histórico de Consultas do Usuário,2026-05-21T12:14:08.057Z,Julio Andreata,1.95,,
+17816,User Story,Refinamento Conversacional de Intenção Antes da Consulta,2026-05-21T12:15:21.700Z,Julio Andreata,1.95,,
+14483,User Story,Teste Automatizado - Sugestão Compra Combustível,2026-04-22T10:42:23.670Z,Rodolfo Caceraghi dos Santos,29.66,12.95,2026-04-09T11:56:23.257Z
+15122,User Story,Verificar a pipe de geração do arquivo MetaAtualizador esta com erro CoreCLR,2026-04-22T12:02:51.373Z,maykon.elias,19.9,19.78,2026-04-02T17:23:12.230Z
+15305,User Story,SCANC / Duplicidade do registro tipo 20,2026-04-22T19:09:58.897Z,Ivan Pionelli Junior,15.04,,
+15785,User Story,"[Testes release Alfa 13/04/2026] - Sugestão de Compra de Combustível - Exceção ""OCORREU UM ERRO EM UMA OU MAIS CONSULTAS REALIZADAS PELO LMC""",2026-04-24T11:48:59.843Z,Ivan Pionelli Junior,7.95,,
+15877,User Story,"[Testes release Alfa 13/04/2026] - Gerenciador de Documentos /Ao preencher Filtro Parceiro Negócio e clicar em consultar sistema limpa o filtro, e não considera Parceiro informado.",2026-04-22T17:48:26.593Z,Rodolfo Caceraghi dos Santos,4.96,,
+15941,User Story,Inclusão de mensagem fiscal sobre desoneração de PIS/COFINS (Diesel/Biodiesel),2026-04-22T16:56:58.217Z,Julio Andreata,1.94,0.19,2026-04-22T12:21:08.620Z

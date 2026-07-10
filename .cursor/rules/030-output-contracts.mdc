@@ -1,0 +1,33 @@
+---
+description: Output contract policy for auditable responses.
+globs:
+  - "**/*"
+alwaysApply: false
+---
+
+# Output Contracts 
+
+Use structured outputs for:
+
+- bug analysis;
+- root cause;
+- impact analysis;
+- correction proposal;
+- code review;
+- SQL review;
+- fiscal validation;
+- test generation;
+- refactoring;
+- troubleshooting;
+- debugging.
+
+Every technical conclusion must include:
+
+- evidence;
+- facts vs inferences vs hypotheses;
+- risk;
+- validation;
+- confidence;
+- human approval requirement;
+- pending questions.
+

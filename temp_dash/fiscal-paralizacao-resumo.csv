@@ -1,0 +1,20 @@
+Id,Tipo,QtdPeriodosParado,TotalHorasParado,TotalDiasParado,TempoParadoExibicao,ParadoAgora,StatusAtual
+13070,Bug,3,141.08,5.88,5.88 d,Nao,
+13282,Bug,1,41.35,1.72,1.72 d,Nao,
+15227,User Story,1,63.6,2.65,2.65 d,Nao,
+15923,User Story,1,2.35,0.1,2.35 h,Nao,
+16147,Bug,1,74.62,3.11,3.11 d,Nao,
+16468,User Story,2,0.93,0.04,0.93 h,Nao,
+16621,User Story,1,24.63,01.03,1.03 d,Nao,
+16743,Bug,2,6.39,0.27,6.39 h,Nao,
+16961,User Story,1,03.04,0.13,3.04 h,Sim,Retorno solicitante
+17182,User Story,1,23.44,0.98,23.44 h,Nao,
+17245,User Story,1,16.28,0.68,16.28 h,Nao,
+17270,User Story,2,265.11,11.05,11.05 d,Sim,Retorno solicitante
+17272,User Story,1,0.14,0.01,0.14 h,Nao,
+17508,Bug,1,26.69,1.11,1.11 d,Nao,
+17759,Bug,1,120.63,05.03,5.03 d,Sim,Retorno solicitante
+17768,User Story,1,24.25,01.01,1.01 d,Nao,
+18037,Bug,1,1.59,0.07,1.59 h,Sim,Retorno solicitante
+18246,User Story,1,01.09,0.05,1.09 h,Nao,
+18256,User Story,1,2.36,0.1,2.36 h,Nao,

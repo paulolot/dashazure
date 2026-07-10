@@ -1,0 +1,19 @@
+{
+  "backlog_aging_days": 30,
+  "bug_yellow_days": 5,
+  "bug_red_use_mttr": true,
+  "bug_red_days_fallback": 15,
+  "card_max_days_same_column": 2,
+  "dev_task_max_hours": 16,
+  "dev_column_max_hours": 16,
+  "person_hours_per_day": 8,
+  "max_wip_per_developer": 2,
+  "large_us_task_hours_limit": 20,
+  "large_us_active_hours_limit": 100,
+  "blocked_alert_threshold_hours": 168,
+  "activity_column_map": {
+    "Desenvolvimento": "Dev implementando",
+    "Testes": "Testando",
+    "Revisão de Código": "Realizando Revisão de Código"
+  }
+}

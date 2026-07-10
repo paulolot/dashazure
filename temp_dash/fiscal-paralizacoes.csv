@@ -1,0 +1,25 @@
+Id,Tipo,Status,DataInicio,DataFim,DuracaoHoras,DuracaoDias,DuracaoExibicao,Ativo,MarcadoPor,LiberadoPor
+18246,User Story,Retorno solicitante,2026-05-25T17:03:20.180Z,2026-05-25T18:08:42.280Z,01.09,0.05,1.09 h,Nao,Paulo A. Lot,Ivan Pionelli Junior
+17272,User Story,Retorno solicitante,2026-05-14T11:23:32.990Z,2026-05-14T11:31:57.060Z,0.14,0.01,0.14 h,Nao,Paulo A. Lot,Gabriel Seiji
+13070,Bug,Retorno solicitante,2026-04-23T14:39:19.220Z,2026-04-24T11:54:49.653Z,21.26,0.89,21.26 h,Nao,Julio Andreata,Paulo A. Lot
+13070,Bug,Retorno solicitante,2026-04-24T11:56:00.090Z,2026-04-24T11:56:48.840Z,0.01,0,0.01 h,Nao,Julio Andreata,Paulo A. Lot
+13070,Bug,Retorno solicitante,2026-04-24T11:59:24.127Z,2026-04-29T11:47:44.007Z,119.81,4.99,4.99 d,Nao,Paulo A. Lot,Diogo M. Fontolan
+16468,User Story,Retorno solicitante,2026-05-04T13:27:59.117Z,2026-05-04T14:23:14.917Z,0.92,0.04,0.92 h,Nao,Paulo A. Lot,Paulo A. Lot
+16468,User Story,Retorno solicitante,2026-05-05T18:52:54.200Z,2026-05-05T18:53:15.933Z,0.01,0,0.01 h,Nao,Luiz Fernando Rodrigues Pereira,Luiz Fernando Rodrigues Pereira
+16743,Bug,Retorno solicitante,2026-05-07T14:34:56.960Z,2026-05-07T20:55:48.153Z,6.35,0.26,6.35 h,Nao,Luiz Fernando Rodrigues Pereira,Paulo A. Lot
+16743,Bug,Retorno solicitante,2026-05-08T11:53:44.980Z,2026-05-08T11:56:04.857Z,0.04,0,0.04 h,Nao,Luiz Fernando Rodrigues Pereira,Paulo A. Lot
+18037,Bug,Retorno solicitante,2026-05-25T16:35:13.773Z,,1.59,0.07,1.59 h,Sim,Luiz Fernando Rodrigues Pereira,
+17768,User Story,Retorno solicitante,2026-05-19T14:28:37.523Z,2026-05-20T14:43:19.913Z,24.25,01.01,1.01 d,Nao,Luiz Fernando Rodrigues Pereira,Diogo M. Fontolan
+16961,User Story,Retorno solicitante,2026-05-25T15:07:52.500Z,,03.04,0.13,3.04 h,Sim,Julio Andreata,
+18256,User Story,Retorno solicitante,2026-05-25T12:30:28.430Z,2026-05-25T14:51:57.067Z,2.36,0.1,2.36 h,Nao,Ivan Pionelli Junior,Paulo A. Lot
+17270,User Story,Retorno solicitante,2026-05-14T10:52:56.350Z,2026-05-20T13:40:37.407Z,146.79,6.12,6.12 d,Nao,Paulo A. Lot,Diogo M. Fontolan
+17270,User Story,Retorno solicitante,2026-05-20T19:51:26.513Z,,118.32,4.93,4.93 d,Sim,Paulo A. Lot,
+17759,Bug,Retorno solicitante,2026-05-20T17:32:21.953Z,,120.63,05.03,5.03 d,Sim,Luiz Fernando Rodrigues Pereira,
+17508,Bug,Retorno solicitante,2026-05-18T10:48:30.187Z,2026-05-19T13:29:36.447Z,26.69,1.11,1.11 d,Nao,Paulo A. Lot,Paulo A. Lot
+17182,User Story,Retorno solicitante,2026-05-21T14:55:36.633Z,2026-05-22T14:21:54.933Z,23.44,0.98,23.44 h,Nao,Luiz Fernando Rodrigues Pereira,Luiz Fernando Rodrigues Pereira
+17245,User Story,Retorno solicitante,2026-05-13T19:13:51.457Z,2026-05-14T11:30:38.430Z,16.28,0.68,16.28 h,Nao,Luiz Fernando Rodrigues Pereira,Paulo A. Lot
+15227,User Story,Retorno solicitante,2026-05-11T20:02:56.943Z,2026-05-14T11:38:53.963Z,63.6,2.65,2.65 d,Nao,Luiz Fernando Rodrigues Pereira,Gabriel Seiji
+13282,Bug,Retorno solicitante,2026-04-27T23:37:46.740Z,2026-04-29T16:58:39.243Z,41.35,1.72,1.72 d,Nao,maykon.elias,Diogo M. Fontolan
+16147,Bug,Retorno solicitante,2026-04-24T17:14:49.480Z,2026-04-27T19:52:02.673Z,74.62,3.11,3.11 d,Nao,Diogo M. Fontolan,Ivan Pionelli Junior
+16621,User Story,Retorno solicitante,2026-05-11T19:34:43.127Z,2026-05-12T20:12:15.990Z,24.63,01.03,1.03 d,Nao,Fabio Nobre,Paulo A. Lot
+15923,User Story,Retorno solicitante,2026-04-23T11:06:11.650Z,2026-04-23T13:27:11.660Z,2.35,0.1,2.35 h,Nao,Ivan Pionelli Junior,Gabriel Seiji
