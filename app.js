@@ -722,7 +722,8 @@ function setupSyncButtonListener() {
   btnSync.addEventListener('click', async () => {
     // Open modal
     modal.classList.remove('hidden');
-    txtPat.value = '';
+    const savedPat = localStorage.getItem('azure_pat') || '';
+    txtPat.value = savedPat;
     
     if (lblPatStatus) {
       lblPatStatus.textContent = "Buscando status das credenciais...";
@@ -773,6 +774,9 @@ function setupSyncButtonListener() {
   
   btnConfirm.addEventListener('click', async () => {
     const patVal = txtPat.value.trim();
+    if (patVal) {
+      localStorage.setItem('azure_pat', patVal);
+    }
     
     // Hide modal first
     hideModal();
