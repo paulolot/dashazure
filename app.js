@@ -897,7 +897,7 @@ function processData() {
     }
     
     // Normalizar severidade/classificação
-    row.Severity = row.Severidade || row.Severity || '';
+    row.Severity = row.Severidade || row.Severity || row.Priority || row.Prioridade || row.Classificacao || row['Classificação'] || row['Custom.Classificacao'] || row['Custom.Classificação'] || row['Microsoft.VSTS.Common.Severity'] || row['Microsoft.VSTS.Common.Priority'] || '';
     row.Severidade = row.Severity;
     
     g_data.bugsMap.set(id, row);
@@ -1044,7 +1044,7 @@ function processData() {
     }
     
     // Normalizar severidade/classificação
-    row.Severidade = row.Severity || row.Severidade || '';
+    row.Severidade = row.Severity || row.Severidade || row.Priority || row.Prioridade || row.Classificacao || row['Classificação'] || row['Custom.Classificacao'] || row['Custom.Classificação'] || row['Microsoft.VSTS.Common.Severity'] || row['Microsoft.VSTS.Common.Priority'] || '';
     row.Severity = row.Severidade;
     
     g_data.workItemsMap.set(id, row);
@@ -1174,6 +1174,12 @@ function clearSelectOptions(selectElement) {
 }
 
 function setupFilterPanelListeners() {
+  const areaFilterSelect = document.getElementById('filter-area');
+  if (areaFilterSelect) {
+    areaFilterSelect.addEventListener('change', () => {
+      renderActivePage();
+    });
+  }
   const btnToggle = document.getElementById('btn-toggle-filters');
   const filterPanel = document.getElementById('filter-panel');
   const btnClear = document.getElementById('btn-clear-filters');
@@ -1282,6 +1288,7 @@ function setupFilterPanelListeners() {
  * Filters the master workItems dataset based on the current active UI filters.
  */
 function getFilteredWorkItems() {
+  
   const dateRange = document.getElementById('filter-date-range').value;
   const wiType = document.getElementById('filter-wi-type').value;
   const flowType = document.getElementById('filter-flow-type').value;
@@ -1305,6 +1312,7 @@ function getFilteredWorkItems() {
     // 0. Exclude items currently in 'Ideias' column
     if (wi.BoardColumn === 'Ideias') return false;
     
+
     // 1. Filter by Type
     if (wiType !== 'all' && wi.Tipo !== wiType) return false;
     
@@ -1390,11 +1398,13 @@ function getFilteredWorkItems() {
 }
 
 function getFilteredAtendimentos() {
+  
   const dateRange = document.getElementById('filter-date-range').value;
   const assignee = document.getElementById('filter-assignee').value;
   const todayMs = TODAY_ANCHOR.getTime();
   
   return g_raw.atendimentosConcluidos.filter(row => {
+
     // 1. Filter by Assignee
     if (assignee !== 'all' && row.Responsavel !== assignee) return false;
     
@@ -2567,13 +2577,16 @@ function renderOverview(filteredWIs) {
     
     if (prevLimits.start && prevLimits.end && currentRateVal !== null) {
       const prevClosedStories = [];
+      const prevBugs = [];
       const wiType = document.getElementById('filter-wi-type').value;
       const iteration = document.getElementById('filter-iteration').value;
       const assignee = document.getElementById('filter-assignee').value;
       const qa = document.getElementById('filter-qa').value;
+      const area = document.getElementById('filter-area') ? document.getElementById('filter-area').value : 'all';
       
       g_raw.workItems.forEach(wi => {
         if (wi.BoardColumn === 'Ideias') return;
+        if (area !== 'all' && !(wi.AreaPath || '').includes(area)) return;
         if (wiType !== 'all' && wi.Tipo !== wiType) return;
         if (iteration !== 'all' && wi.IterationPath !== iteration) return;
         if (assignee !== 'all' && wi.Responsavel !== assignee) return;
@@ -2592,10 +2605,23 @@ function renderOverview(filteredWIs) {
             prevClosedStories.push(wi);
           }
         }
+        if (wi.Tipo === 'Bug' && wi.State !== 'Resolved') {
+          if (wi.DataCriacao) {
+            const createdDate = new Date(wi.DataCriacao);
+            if (createdDate <= prevLimits.end) {
+              const isClosedInPeriod = wi.DataFechamento && new Date(wi.DataFechamento) >= prevLimits.start && new Date(wi.DataFechamento) <= prevLimits.end;
+              const isOpenAtEnd = !wi.DataFechamento || new Date(wi.DataFechamento) > prevLimits.end;
+              
+              if (isClosedInPeriod || isOpenAtEnd) {
+                prevBugs.push(wi);
+              }
+            }
+          }
+        }
       });
       
       if (prevClosedStories.length > 0) {
-        const prevRateVal = ((filteredBugs.length / prevClosedStories.length) * 100);
+        const prevRateVal = ((prevBugs.length / prevClosedStories.length) * 100);
         const diff = currentRateVal - prevRateVal;
         
         if (Math.abs(diff) > 0.01) {
@@ -2703,7 +2729,7 @@ function renderWipByColumnChart(openWIs, filteredWIs) {
   const counts = {};
   flowColumns.forEach(c => counts[c] = 0);
   
-  const allActiveWIs = (filteredWIs || openWIs).filter(wi => wi.State !== 'Closed' && wi.State !== 'Removed' && wi.State !== 'Resolved' && wi.BoardColumn !== 'Concluído' && wi.BoardColumn !== 'Pronto pra Release' && wi.BoardColumn !== 'Ideias' && wi.BoardColumn !== 'Removed');
+  const allActiveWIs = (filteredWIs || openWIs).filter(wi => wi.State !== 'Closed' && wi.State !== 'Removed' && (wi.State !== 'Resolved' || wi.BoardColumn === 'Pronto pra Release') && wi.BoardColumn !== 'Concluído' && wi.BoardColumn !== 'Ideias' && wi.BoardColumn !== 'Removed');
   
   allActiveWIs.forEach(wi => {
     let col = wi.BoardColumn;
@@ -6300,6 +6326,10 @@ function renderQuality(filteredWIs) {
   const pageBugsOpen = pageBugs.filter(b => b.State !== 'Closed' && b.BoardColumn !== 'Concluído' && b.State !== 'Resolved');
   renderBugsComparisonChart(pageBugsOpen.length, pageBugsClosed.length, bugs);
   
+  // Render new charts
+  renderBugsWeeklyEvolutionChart(pageBugs);
+  renderBugRateWeeklyChart(pageBugs, stories);
+  
   // Setup Quick Filter buttons
   setupBugQuickFilters(bugs);
   
@@ -6321,6 +6351,393 @@ function renderQuality(filteredWIs) {
   // PDF-2: Taxa Bug → US via !BUG
   renderBugToUSRate();
 }
+
+function getStartOfWeek(date) {
+  const d = new Date(date);
+  const day = d.getDay();
+  const diff = d.getDate() - day + (day === 0 ? -6 : 1);
+  d.setDate(diff);
+  d.setHours(0,0,0,0);
+  return d;
+}
+
+function formatShortDatePt(dateStr) {
+  const [year, month, day] = dateStr.split('-');
+  const months = ['jan.','fev.','mar.','abr.','mai.','jun.','jul.','ago.','set.','out.','nov.','dez.'];
+  return `${parseInt(day, 10)} ${months[parseInt(month, 10) - 1]}`;
+}
+
+function getGlobalDateRange() {
+  const dateRange = document.getElementById('filter-date-range') ? document.getElementById('filter-date-range').value : 'all';
+  
+  if (dateRange === 'all') {
+    return { minDate: null, maxDate: new Date(TODAY_ANCHOR) };
+  }
+  
+  let startDate = new Date(2000, 0, 1);
+  let endDate = new Date(TODAY_ANCHOR);
+  
+  if (dateRange === 'this-month') {
+    startDate = new Date(TODAY_ANCHOR.getFullYear(), TODAY_ANCHOR.getMonth(), 1);
+    endDate = new Date(TODAY_ANCHOR.getFullYear(), TODAY_ANCHOR.getMonth() + 1, 0);
+  } else if (dateRange === 'last-month') {
+    let targetYear = TODAY_ANCHOR.getFullYear();
+    let targetMonth = TODAY_ANCHOR.getMonth() - 1;
+    if (targetMonth < 0) {
+      targetMonth = 11;
+      targetYear -= 1;
+    }
+    startDate = new Date(targetYear, targetMonth, 1);
+    endDate = new Date(targetYear, targetMonth + 1, 0);
+  } else if (dateRange === 'this-year') {
+    startDate = new Date(TODAY_ANCHOR.getFullYear(), 0, 1);
+    endDate = new Date(TODAY_ANCHOR.getFullYear(), 11, 31);
+  } else if (dateRange === 'last-year') {
+    startDate = new Date(TODAY_ANCHOR.getFullYear() - 1, 0, 1);
+    endDate = new Date(TODAY_ANCHOR.getFullYear() - 1, 11, 31);
+  } else {
+    const windowDays = parseInt(dateRange, 10);
+    startDate = new Date(TODAY_ANCHOR.getFullYear(), TODAY_ANCHOR.getMonth(), TODAY_ANCHOR.getDate() - windowDays);
+  }
+  return { minDate: startDate, maxDate: endDate };
+}
+
+function toLocalISOString(d) {
+  const year = d.getFullYear();
+  const month = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
+function attachGlobalTooltip(container) {
+  let tooltip = document.getElementById('global-tooltip');
+  if (!tooltip) {
+    tooltip = document.createElement('div');
+    tooltip.id = 'global-tooltip';
+    tooltip.style.position = 'absolute';
+    tooltip.style.display = 'none';
+    tooltip.style.backgroundColor = 'var(--bg-panel)';
+    tooltip.style.color = 'var(--text-main)';
+    tooltip.style.border = '1px solid var(--border-color)';
+    tooltip.style.padding = '8px 12px';
+    tooltip.style.borderRadius = '4px';
+    tooltip.style.fontSize = '12px';
+    tooltip.style.zIndex = '9999';
+    tooltip.style.pointerEvents = 'none';
+    tooltip.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+    document.body.appendChild(tooltip);
+  }
+  
+  container.querySelectorAll('.chart-tooltip-trigger').forEach(el => {
+    el.addEventListener('mousemove', e => {
+      tooltip.innerHTML = decodeURIComponent(el.getAttribute('data-tooltip'));
+      tooltip.style.display = 'block';
+      tooltip.style.left = e.pageX + 10 + 'px';
+      tooltip.style.top = e.pageY + 10 + 'px';
+    });
+    
+    el.addEventListener('mouseleave', () => {
+      tooltip.style.display = 'none';
+    });
+  });
+}
+
+function renderBugsWeeklyEvolutionChart(bugs) {
+  const container = document.getElementById('chart-quality-bugs-evolution');
+  if (!container) return;
+  container.innerHTML = '';
+
+  if (bugs.length === 0) {
+    container.innerHTML = `<span class="placeholder-text">Nenhum bug encontrado para o período</span>`;
+    return;
+  }
+
+  // Encontrar data min e max
+  const globalRange = getGlobalDateRange();
+  let minDate = globalRange.minDate;
+  let maxDate = globalRange.maxDate;
+  
+  if (!minDate) {
+    minDate = new Date();
+    bugs.forEach(b => {
+      if (b.DataCriacao) {
+        const d = new Date(b.DataCriacao);
+        if (d < minDate) minDate = d;
+      }
+    });
+  }
+
+  // Gerar todas as semanas no intervalo
+  const weeksData = {};
+  const startW = getStartOfWeek(minDate);
+  const endW = getStartOfWeek(maxDate);
+  
+  let curr = new Date(startW);
+  while (curr <= endW) {
+    const key = toLocalISOString(curr);
+    weeksData[key] = { created: 0, closed: 0, date: key };
+    curr.setDate(curr.getDate() + 7);
+  }
+
+  bugs.forEach(b => {
+    if (b.DataCriacao) {
+      const dC = new Date(b.DataCriacao);
+      if (dC >= minDate && dC <= maxDate) {
+        const wC = toLocalISOString(getStartOfWeek(dC));
+        if (weeksData[wC]) weeksData[wC].created++;
+      }
+    }
+    
+    if (b.DataFechamento && (b.State === 'Closed' || b.BoardColumn === 'Concluído' || b.State === 'Resolved')) {
+      const dF = new Date(b.DataFechamento);
+      if (dF >= minDate && dF <= maxDate) {
+        const wF = toLocalISOString(getStartOfWeek(dF));
+        if (weeksData[wF]) weeksData[wF].closed++;
+      }
+    }
+  });
+
+  const sortedWeeks = Object.keys(weeksData).sort();
+
+  if (sortedWeeks.length === 0) {
+    container.innerHTML = `<span class="placeholder-text">Dados insuficientes para gráfico evolutivo</span>`;
+    return;
+  }
+
+  const maxVal = Math.max(1, ...sortedWeeks.map(w => Math.max(weeksData[w].created, weeksData[w].closed)));
+
+  // SVG dimensions
+  const svgW = 800;
+  const svgH = 300;
+  const padL = 40;
+  const padR = 20;
+  const padT = 20;
+  const padB = 40;
+  const chartW = svgW - padL - padR;
+  const chartH = svgH - padT - padB;
+  const slotW = chartW / Math.max(1, sortedWeeks.length - 1);
+
+  let createdPts = [];
+  let closedPts = [];
+  let circlesHtml = '';
+
+  let html = `<svg viewBox="0 0 ${svgW} ${svgH}" width="100%" height="100%" style="overflow:visible;">`;
+
+  // Y-axis grid
+  const ticks = 4;
+  for (let i = 0; i <= ticks; i++) {
+    const val = (maxVal / ticks) * i;
+    const y = padT + chartH - (val / maxVal) * chartH;
+    html += `<line x1="${padL}" y1="${y}" x2="${padL + chartW}" y2="${y}" stroke="var(--border-color)" stroke-dasharray="4 4" stroke-opacity="0.3"/>`;
+    html += `<text x="${padL - 8}" y="${y + 4}" text-anchor="end" fill="var(--text-muted)" font-size="11">${Math.round(val)}</text>`;
+  }
+
+  sortedWeeks.forEach((w, i) => {
+    const d = weeksData[w];
+    const cx = padL + i * slotW;
+    
+    const cyCreated = padT + chartH - (d.created / maxVal) * chartH;
+    const cyClosed = padT + chartH - (d.closed / maxVal) * chartH;
+    
+    createdPts.push(`${cx},${cyCreated}`);
+    closedPts.push(`${cx},${cyClosed}`);
+    
+    // X-axis label
+    const label = formatShortDatePt(w);
+    
+    // Rotate label if many weeks
+    if (sortedWeeks.length > 10) {
+      html += `<text x="${cx}" y="${svgH - 25}" text-anchor="end" transform="rotate(-45 ${cx},${svgH - 25})" fill="var(--text-muted)" font-size="11">${label}</text>`;
+    } else {
+      html += `<text x="${cx}" y="${svgH - 25}" text-anchor="middle" fill="var(--text-muted)" font-size="11">${label}</text>`;
+    }
+    
+    // Data points
+    circlesHtml += `<circle cx="${cx}" cy="${cyCreated}" r="5" fill="var(--color-danger)"></circle>`;
+    circlesHtml += `<circle cx="${cx}" cy="${cyClosed}" r="5" fill="var(--color-flow-done)"></circle>`;
+    
+    // Transparent rect for hover tooltip
+    const tooltipHtml = `<strong>Semana ${label}</strong><br><span style="color:var(--color-danger)">■</span> Bugs criados: ${d.created}<br><span style="color:var(--color-flow-done)">■</span> Bugs resolvidos: ${d.closed}`;
+    circlesHtml += `<rect x="${cx - slotW/2}" y="0" width="${slotW}" height="${svgH}" fill="transparent" class="chart-tooltip-trigger" data-tooltip="${encodeURIComponent(tooltipHtml)}" style="cursor: pointer;"></rect>`;
+  });
+
+  if (sortedWeeks.length > 1) {
+    html += `<polyline points="${createdPts.join(' ')}" fill="none" stroke="var(--color-danger)" stroke-width="2" />`;
+    html += `<polyline points="${closedPts.join(' ')}" fill="none" stroke="var(--color-flow-done)" stroke-width="2" />`;
+  }
+  
+  html += circlesHtml;
+
+  // Legend
+  html += `
+    <rect x="${padL + 20}" y="${svgH - 10}" width="12" height="12" fill="var(--color-danger)" rx="2"/>
+    <text x="${padL + 38}" y="${svgH}" fill="var(--text-main)" font-size="12">Bugs Criados</text>
+    <rect x="${padL + 140}" y="${svgH - 10}" width="12" height="12" fill="var(--color-flow-done)" rx="2"/>
+    <text x="${padL + 158}" y="${svgH}" fill="var(--text-main)" font-size="12">Bugs Resolvidos</text>
+  `;
+
+  html += `</svg>`;
+  container.innerHTML = html;
+  
+  attachGlobalTooltip(container);
+}
+
+function renderBugRateWeeklyChart(bugs, stories) {
+  const container = document.getElementById('chart-quality-bug-rate-weekly');
+  if (!container) return;
+  container.innerHTML = '';
+
+  const globalRange = getGlobalDateRange();
+  let minDate = globalRange.minDate;
+  let maxDate = globalRange.maxDate;
+
+  if (!minDate) {
+    minDate = new Date();
+    bugs.forEach(b => {
+      if (b.DataCriacao) {
+        const d = new Date(b.DataCriacao);
+        if (d < minDate) minDate = d;
+      }
+    });
+    stories.forEach(s => {
+      if (s.DataFechamento) {
+        const d = new Date(s.DataFechamento);
+        if (d < minDate) minDate = d;
+      }
+    });
+  }
+
+  const weeksData = {};
+  if (minDate <= maxDate) {
+    const startW = getStartOfWeek(minDate);
+    const endW = getStartOfWeek(maxDate);
+    let curr = new Date(startW);
+    while (curr <= endW) {
+      const key = toLocalISOString(curr);
+      weeksData[key] = { created: 0, closed: 0, stories: 0, date: key };
+      curr.setDate(curr.getDate() + 7);
+    }
+  }
+
+  bugs.forEach(b => {
+    if (b.DataCriacao) {
+      const dC = new Date(b.DataCriacao);
+      if (dC >= minDate && dC <= maxDate) {
+        const wC = toLocalISOString(getStartOfWeek(dC));
+        if (weeksData[wC]) weeksData[wC].created++;
+      }
+    }
+    
+    if (b.DataFechamento && (b.State === 'Closed' || b.BoardColumn === 'Concluído' || b.State === 'Resolved')) {
+      const dF = new Date(b.DataFechamento);
+      if (dF >= minDate && dF <= maxDate) {
+        const wF = toLocalISOString(getStartOfWeek(dF));
+        if (weeksData[wF]) weeksData[wF].closed++;
+      }
+    }
+  });
+
+  stories.forEach(s => {
+    if (s.DataFechamento) {
+      const dF = new Date(s.DataFechamento);
+      if (dF >= minDate && dF <= maxDate) {
+        const wF = toLocalISOString(getStartOfWeek(dF));
+        if (weeksData[wF]) weeksData[wF].stories++;
+      }
+    }
+  });
+
+  const sortedWeeks = Object.keys(weeksData).sort();
+
+  if (sortedWeeks.length === 0) {
+    container.innerHTML = `<span class="placeholder-text">Dados insuficientes para visualização semanal</span>`;
+    return;
+  }
+
+  const maxVal = Math.max(1, ...sortedWeeks.map(w => Math.max(weeksData[w].created, weeksData[w].closed, weeksData[w].stories)));
+
+  const svgW = 800;
+  const svgH = 200;
+  const padL = 40;
+  const padR = 20;
+  const padT = 20;
+  const padB = 40;
+  const chartW = svgW - padL - padR;
+  const chartH = svgH - padT - padB;
+  const slotW = chartW / Math.max(1, sortedWeeks.length - 1);
+
+  let createdPts = [];
+  let closedPts = [];
+  let storiesPts = [];
+  let circlesHtml = '';
+  
+  let html = `<svg viewBox="0 0 ${svgW} ${svgH}" width="100%" height="100%" style="overflow:visible;">`;
+
+  const ticks = 2;
+  for (let i = 0; i <= ticks; i++) {
+    const val = (maxVal / ticks) * i;
+    const y = padT + chartH - (val / maxVal) * chartH;
+    html += `<line x1="${padL}" y1="${y}" x2="${padL + chartW}" y2="${y}" stroke="var(--border-color)" stroke-dasharray="4 4" stroke-opacity="0.3"/>`;
+    html += `<text x="${padL - 8}" y="${y + 4}" text-anchor="end" fill="var(--text-muted)" font-size="11">${Math.round(val)}</text>`;
+  }
+
+  sortedWeeks.forEach((w, i) => {
+    const d = weeksData[w];
+    const cx = padL + i * slotW;
+    
+    const cyCreated = padT + chartH - (d.created / maxVal) * chartH;
+    const cyClosed = padT + chartH - (d.closed / maxVal) * chartH;
+    const cyStories = padT + chartH - (d.stories / maxVal) * chartH;
+    
+    createdPts.push(`${cx},${cyCreated}`);
+    closedPts.push(`${cx},${cyClosed}`);
+    storiesPts.push(`${cx},${cyStories}`);
+    
+    const label = formatShortDatePt(w);
+    
+    if (sortedWeeks.length > 10) {
+      html += `<text x="${cx}" y="${svgH - 25}" text-anchor="end" transform="rotate(-45 ${cx},${svgH - 25})" fill="var(--text-muted)" font-size="11">${label}</text>`;
+    } else {
+      html += `<text x="${cx}" y="${svgH - 25}" text-anchor="middle" fill="var(--text-muted)" font-size="11">${label}</text>`;
+    }
+    
+    const bugRate = d.stories > 0 ? (((d.created + d.closed) / d.stories) * 100).toFixed(1) + '%' : (d.created + d.closed > 0 ? 'Infinito (0 US)' : '0%');
+    
+    circlesHtml += `<circle cx="${cx}" cy="${cyCreated}" r="5" fill="var(--color-danger)"></circle>`;
+    circlesHtml += `<circle cx="${cx}" cy="${cyClosed}" r="5" fill="var(--color-flow-done)"></circle>`;
+    circlesHtml += `<circle cx="${cx}" cy="${cyStories}" r="5" fill="var(--color-primary)"></circle>`;
+    
+    // Transparent rect for hover tooltip
+    const tooltipHtml = `<strong>Semana ${label}</strong><br><span style="color:var(--color-danger)">■</span> Bugs criados: ${d.created}<br><span style="color:var(--color-flow-done)">■</span> Bugs resolvidos: ${d.closed}<br><span style="color:var(--color-primary)">■</span> US Concluídas: ${d.stories}<br><br><strong>Bug Rate:</strong> ${bugRate}`;
+    circlesHtml += `<rect x="${cx - slotW/2}" y="0" width="${slotW}" height="${svgH}" fill="transparent" class="chart-tooltip-trigger" data-tooltip="${encodeURIComponent(tooltipHtml)}" style="cursor: pointer;"></rect>`;
+  });
+
+  if (sortedWeeks.length > 1) {
+    html += `<polyline points="${createdPts.join(' ')}" fill="none" stroke="var(--color-danger)" stroke-width="2" />`;
+    html += `<polyline points="${closedPts.join(' ')}" fill="none" stroke="var(--color-flow-done)" stroke-width="2" />`;
+    html += `<polyline points="${storiesPts.join(' ')}" fill="none" stroke="var(--color-primary)" stroke-width="2" />`;
+  }
+  
+  html += circlesHtml;
+  
+  // Legend
+  html += `
+    <rect x="${padL + 20}" y="${svgH - 10}" width="12" height="12" fill="var(--color-danger)" rx="2"/>
+    <text x="${padL + 38}" y="${svgH}" fill="var(--text-main)" font-size="12">Bugs Criados</text>
+    
+    <rect x="${padL + 130}" y="${svgH - 10}" width="12" height="12" fill="var(--color-flow-done)" rx="2"/>
+    <text x="${padL + 148}" y="${svgH}" fill="var(--text-main)" font-size="12">Bugs Resolvidos</text>
+    
+    <rect x="${padL + 260}" y="${svgH - 10}" width="12" height="12" fill="var(--color-primary)" rx="2"/>
+    <text x="${padL + 278}" y="${svgH}" fill="var(--text-main)" font-size="12">US Concluídas</text>
+  `;
+
+  html += `</svg>`;
+  container.innerHTML = html;
+  
+  attachGlobalTooltip(container);
+}
+
 
 function renderBugsComparisonChart(openCount, closedCount, allBugs) {
   const container = document.getElementById('chart-quality-bugs-comparison');
@@ -6823,7 +7240,7 @@ function renderDrillDownWI(wi) {
   
   document.getElementById('drill-wi-title').textContent = wi.Titulo;
   
-  document.getElementById('drill-wi-area').textContent = wi.AreaPath || 'Metanet\\Squad Fiscal';
+  document.getElementById('drill-wi-area').textContent = wi.AreaPath || '';
   document.getElementById('drill-wi-iteration').textContent = wi.IterationPath || '-';
   document.getElementById('drill-wi-assignee').textContent = wi.Responsavel || 'NENHUM';
   

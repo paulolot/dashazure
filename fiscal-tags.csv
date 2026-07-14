@@ -425,7 +425,6 @@ Id,Tag
 4789,Reforma Tributária
 4827,Nota Técnica
 4874,Reforma Tributária
-4939,Contingência
 4942,Teste Geral
 4943,CT-e
 4943,Teste Geral
@@ -469,6 +468,7 @@ Id,Tag
 6500,Reforma Tributária
 6502,Reforma Tributária
 6503,Reforma Tributária
+6504,Reforma Tributária
 6506,Reforma Tributária
 6507,Reforma Tributária
 6508,Reforma Tributária
@@ -585,6 +585,8 @@ Id,Tag
 9013,Pipeline
 9589,Melhoria
 9785,Reforma Tributária
+9943,Nota Débito
+9943,Reforma Tributária
 10242,Atualizador automático
 10274,Melhoria
 10274,Preço
@@ -615,8 +617,13 @@ Id,Tag
 11516,Compliance
 11793,Débito Técnico
 12024,NFSe Nacional
+12228,Nota Débito
+12228,Reforma Tributária
 12321,Débito Técnico
 12321,Melhoria
+12333,Nota Débito
+12333,Reforma Tributária
+12682,Reforma Tributária
 13077,Atualizador automático
 13078,Atualizador automático
 13122,Contingência
@@ -627,12 +634,18 @@ Id,Tag
 13686,MetaServerGlobal
 13859,Integracao Organiza
 13860,Integracao Organiza
+13861,Integracao Organiza
+13862,Integracao Organiza
+13863,Integracao Organiza
+13864,Integracao Organiza
 13925,Contingência
 13985,Atualizador automático
 14000,B.I
 14192,Integracao Organiza
 14235,Atualizador automático
 14236,Atualizador automático
+14293,BRMania
+14293,Companhia
 14354,Cacique
 14354,Prioridade - Suporte
 14360,Arquitetura
@@ -694,6 +707,8 @@ Id,Tag
 15291,Versionamento Sistema
 15292,Arquitetura
 15292,Versionamento Sistema
+15480,Prioridade Fiscal
+15480,Reforma Tributária
 15570,Observabilidade
 15571,Observabilidade
 15572,Observabilidade
@@ -725,53 +740,37 @@ Id,Tag
 17053,Teste Automatizado
 17054,Teste Automatizado
 17182,Entra em vigor em 01/07/2026
+17324,Débito Técnico
 17371,B.I
 17387,B.I
 17410,Nota Técnica
-17428,Legado
-17429,Legado
-17508,!BUG
-17759,!BUG
-17759,TechLead
 17764,!Reproduce
 17764,Legado
 17768,!BUG
 17804,I.A
 17805,I.A
-17807,I.A
 17811,I.A
 17812,I.A
 17813,I.A
-17814,I.A
 17815,I.A
-18035,Legado
-18037,!BUG
-18037,Legado
+17920,Integracao Organiza
+17952,Débito Técnico
+17952,Melhoria
 18177,!BUG
-18231,Cacique
-18246,Impeditivo release
 18256,!BUG
-18257,!Reproduce
-18257,Legado
-18258,Legado
-18259,!BUG
-18260,!BUG
 18278,Legado
 18342,Legado
-18448,GeradoPorUS
 18500,!BUG
 18500,!Reproduce
 18500,Cacique
-18539,GeradoPorUS
-18539,Impeditivo release
-18539,Teste Automatizado
+18524,Nota Técnica
 18603,Reforma Tributária
 18642,Legado
 18676,Legado
 18686,Predecessor Card Vendas
-18720,Script
 18723,Script
 18856,!BUG
+19061,Cacique
 19063,GeradoPorUS
 19150,Atendimento Suporte
 19209,!BUG
@@ -780,90 +779,24 @@ Id,Tag
 19213,Ciapetro
 19214,GeradoPorUS
 19215,!BUG
+19229,Reforma Tributária
+19230,Reforma Tributária
 19231,Reforma Tributária
 19232,Reforma Tributária
 19233,Reforma Tributária
+19234,Reforma Tributária
+19235,Reforma Tributária
+19236,Reforma Tributária
 19247,!BUG
 19370,Cacique
 19374,Legado
 19566,Replicação Oficial
-19632,GeradoPorUS
-19634,Cacique
-19764,Nota Técnica
-19764,NT 2026.002
-19884,Alfanumerico
-19886,Alfanumerico
-19887,Alfanumerico
-19947,Integracao Organiza
-19983,Reforma Tributária
-19984,Reforma Tributária
-19985,Reforma Tributária
-20064,Nota Técnica
-20064,NT 2026.002
-20111,B.I
-20429,Compliance
-20429,Melhoria
-20429,Performance
-20539,Reforma Tributária
-20540,Reforma Tributária
-20611,Cacique
-20645,Legado
-20681,Atualizador automático
-20713,Cacique
-20713,Importação
-20713,NFe
-20713,SO660407
-20848,GeradoPorUS
-20924,Melhoria
-21012,Legado
-21080,Entrada de Mercadorias
-21080,ICMS ST
-21080,Melhoria
-21133,Outra Squad
-21152,Débito Técnico
-21152,Teste Unitário
-21431,Observabilidade
-21654,Melhoria de Produto
-21774,I.A
-21849,Cacique
-21849,Legado
-13861,Integracao Organiza
-19229,Reforma Tributária
-20712,Cacique
-20712,Importação
-20712,NFe
-20743,Melhoria de Produto
-21132,Legado
-21494,Legado
-21852,GeradoPorUS
-22331,Interno
-6504,Reforma Tributária
-9943,Nota Débito
-9943,Reforma Tributária
-12228,Nota Débito
-12228,Reforma Tributária
-12333,Nota Débito
-12333,Reforma Tributária
-12682,Reforma Tributária
-13862,Integracao Organiza
-13863,Integracao Organiza
-13864,Integracao Organiza
-15480,Prioridade Fiscal
-15480,Reforma Tributária
-17324,Débito Técnico
-17920,Integracao Organiza
-17952,Débito Técnico
-17952,Melhoria
-18524,Nota Técnica
-19061,Cacique
-19230,Reforma Tributária
-19234,Reforma Tributária
-19235,Reforma Tributária
-19236,Reforma Tributária
 19630,Melhoria Suporte
 19631,!BUG
 19631,!Reproduce
 19631,Débito Técnico
+19632,GeradoPorUS
+19634,Cacique
 19758,Nota Técnica
 19758,NT 2026.002
 19759,Nota Técnica
@@ -872,6 +805,8 @@ Id,Tag
 19760,NT 2026.002
 19761,Nota Técnica
 19761,NT 2026.002
+19764,Nota Técnica
+19764,NT 2026.002
 19765,Nota Técnica
 19765,NT 2026.002
 19766,Nota Técnica
@@ -882,20 +817,55 @@ Id,Tag
 19769,NT 2026.002
 19770,Nota Técnica
 19770,NT 2026.002
+19884,Alfanumerico
+19886,Alfanumerico
+19887,Alfanumerico
+19947,Integracao Organiza
 19948,Integracao Organiza
 19949,Integracao Organiza
 19950,Integracao Organiza
 19951,Integracao Organiza
 19952,Integracao Organiza
+19983,Reforma Tributária
+19984,Reforma Tributária
+19985,Reforma Tributária
 20056,Nota Técnica
 20056,NT 2026.002
+20064,Nota Técnica
+20064,NT 2026.002
+20111,B.I
 20211,Entrada
 20211,Legado
 20298,Legado
-20609,Cacique
+20429,Compliance
+20429,Melhoria
+20429,Performance
+20539,Reforma Tributária
+20540,Reforma Tributária
+20611,Cacique
+20645,Legado
+20681,Atualizador automático
+20712,Cacique
+20712,Importação
+20712,NFe
+20713,Cacique
+20713,Importação
+20713,NFe
+20713,SO660407
+20743,Melhoria de Produto
 20756,!BUG
 20831,!BUG
+20848,GeradoPorUS
+20924,Melhoria
+21012,Legado
+21080,Entrada de Mercadorias
+21080,ICMS ST
+21080,Melhoria
+21132,Legado
+21133,Outra Squad
 21135,GeradoPorUS
+21152,Débito Técnico
+21152,Teste Unitário
 21162,CIOT
 21171,CIOT
 21180,CIOT
@@ -910,10 +880,20 @@ Id,Tag
 21314,CIOT
 21325,Reforma Tributária
 21414,GeradoPorUS
+21431,Observabilidade
+21494,Legado
 21575,GeradoPorUS
+21654,Melhoria de Produto
+21774,I.A
+21849,Cacique
+21849,Legado
+21852,GeradoPorUS
+21869,GeradoPorUS
 21869,Outra Squad
 21962,Obrigação Fiscal
 22054,Legado
+22055,GeradoPorUS
+22331,Interno
 22354,GeradoPorUS
 22354,Impeditivo release
 22354,Interno
@@ -923,3 +903,14 @@ Id,Tag
 22375,Impeditivo release
 22377,!BUG
 22407,!BUG
+22509,!BUG
+22567,Gerado DLL
+22618,!BUG
+22710,!BUG
+22714,!BUG
+22738,AtualizacaoBD
+22738,BRMania
+22738,Global
+22738,Impeditivo release
+22789,Nota Técnica
+22789,Obrigação Fiscal

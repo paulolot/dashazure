@@ -264,7 +264,31 @@ def main():
             ids = [item["id"] for item in witems]
             print(f"Cards totais recarregados para modo completo: {len(ids)}")
 
-    if not ids and is_delta:
+    deleted_active_ids = set()
+    if is_delta and old_data and "fiscal-workitems.csv" in old_data:
+        try:
+            print("Verificando itens deletados ou movidos...")
+            csv_active_ids = {str(r["Id"]) for r in old_data["fiscal-workitems.csv"] if r.get("State") not in ("Closed", "Removed")}
+            if csv_active_ids:
+                active_wiql = """
+                SELECT [System.Id]
+                FROM WorkItems
+                WHERE [System.TeamProject] = 'Metanet'
+                  AND [System.AreaPath] UNDER 'Metanet\\Squad Fiscal'
+                  AND [System.WorkItemType] IN ('User Story', 'Bug', 'Atendimento')
+                  AND [System.State] <> 'Closed'
+                  AND [System.State] <> 'Removed'
+                """
+                active_result = ado_tool.query_work_items(active_wiql)
+                if active_result and "workItems" in active_result:
+                    current_active_ids = {str(item["id"]) for item in active_result["workItems"]}
+                    deleted_active_ids = csv_active_ids - current_active_ids
+                    if deleted_active_ids:
+                        print(f"Detectados {len(deleted_active_ids)} itens ativos que foram deletados ou movidos. Eles serão removidos do dashboard.")
+        except Exception as e:
+            print(f"Aviso: Não foi possível verificar itens deletados ({e})")
+
+    if not ids and not deleted_active_ids and is_delta:
         print("Nenhuma alteração detectada. Dashboard está atualizado.")
         # Atualiza a data de última execução mesmo assim
         with open(METADATA_FILE, "w", encoding="utf-8") as f:
@@ -278,7 +302,7 @@ def main():
         "System.ChangedDate", "Microsoft.VSTS.Common.ClosedDate", "Microsoft.VSTS.Common.ResolvedDate", "Microsoft.VSTS.Common.Priority",
         "Microsoft.VSTS.Common.Severity", "System.Tags", "System.Parent", "Custom.AnalistaQA",
         "Custom.Status", "Custom.a2f3a34e-63a9-4c1e-a465-0b97571cf26e", "System.Description",
-        "Microsoft.VSTS.Scheduling.CompletedWork"
+        "Microsoft.VSTS.Scheduling.CompletedWork", "Custom.94603fbe-76de-42e6-837e-fa72005de734"
     ]
     
     print("Baixando detalhes dos cards...")
@@ -499,7 +523,7 @@ def main():
             closed_date_raw = fields.get("Microsoft.VSTS.Common.ClosedDate", "")
         
         priority = fields.get("Microsoft.VSTS.Common.Priority", "")
-        severity = fields.get("Microsoft.VSTS.Common.Severity", "")
+        severity = fields.get("Custom.94603fbe-76de-42e6-837e-fa72005de734") or fields.get("Microsoft.VSTS.Common.Severity") or ""
         parent_id = fields.get("System.Parent", "")
         
         created_dt = parse_date(created_date_raw)
@@ -752,6 +776,8 @@ def main():
 
     # Identificadores modificados de pais e de tasks
     modified_parent_ids = {str(wi_id) for wi_id in ids}
+    if is_delta:
+        modified_parent_ids.update(deleted_active_ids)
     modified_task_ids = {str(task["id"]) for task in all_tasks}
 
     # Mescla cada tabela

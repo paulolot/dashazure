@@ -144,7 +144,6 @@
           <!-- Filtros Expansíveis -->
           <div id="filter-panel" class="filter-panel hidden">
             <div class="filter-grid">
-              
               <!-- Filtro de Datas -->
               <div class="filter-group">
                 <label for="filter-date-range">Período (Fechamento/Criação)</label>
@@ -924,6 +923,27 @@
                 <h3>Bugs Abertos Totais vs Fechados Recentes (Últimos 30 Dias)</h3>
               </div>
               <div class="panel-body chart-container" id="chart-quality-bugs-comparison" style="height:520px;">
+                <!-- SVG dinâmico -->
+              </div>
+            </div>
+          </div>
+          
+          <!-- NOVO: Evolução de Bugs e Bug Rate -->
+          <div class="dashboard-grid" style="margin-top: 10px;">
+            <div class="panel">
+              <div class="panel-header">
+                <h3>Evolução de Bugs por Semana (Criados vs Resolvidos)</h3>
+              </div>
+              <div class="panel-body chart-container" id="chart-quality-bugs-evolution">
+                <!-- SVG dinâmico -->
+              </div>
+            </div>
+            
+            <div class="panel">
+              <div class="panel-header">
+                <h3>Volume Semanal: Bugs vs US Concluídas</h3>
+              </div>
+              <div class="panel-body chart-container" id="chart-quality-bug-rate-weekly">
                 <!-- SVG dinâmico -->
               </div>
             </div>
