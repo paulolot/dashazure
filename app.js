@@ -96,6 +96,8 @@ let g_computedAlerts = [];
 let g_productivityGaps = [];
 let g_bugsActiveOriginFilter = 'all'; // 'all', 'Legado', '!BUG', 'GeradoPorUS', 'Geral'
 let g_throughputViewMode = 'weekly'; // 'weekly', 'monthly'
+let g_bugsEvolutionViewMode = 'weekly'; // 'weekly', 'daily'
+let g_bugRateViewMode = 'weekly'; // 'weekly', 'daily'
 
 // Validação local de alertas individuais
 let g_validatedAlertKeys = new Set();   // chaves de linhas de alerta marcadas como validadas
@@ -413,6 +415,7 @@ function getWiTypeIcon(type) {
 document.addEventListener('DOMContentLoaded', () => {
   setupNavigation();
   setupThemeToggle();
+  setupSidebarCollapse();
   loadValidatedAlerts(); // carrega alertas validados do localStorage
   
   // Auth Logic
@@ -424,6 +427,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
   tryAutoFetch();
 });
+
+function setupSidebarCollapse() {
+  const sidebar = document.querySelector('.sidebar');
+  const toggleBtn = document.getElementById('btn-toggle-sidebar');
+  
+  if (!sidebar || !toggleBtn) return;
+  
+  // Restore state from localStorage
+  const isCollapsed = localStorage.getItem('sidebar-collapsed') === 'true';
+  if (isCollapsed) {
+    sidebar.classList.add('collapsed');
+    toggleBtn.setAttribute('title', 'Expandir painel');
+    toggleBtn.setAttribute('aria-label', 'Expandir painel');
+  }
+  
+  toggleBtn.addEventListener('click', () => {
+    const willCollapse = !sidebar.classList.contains('collapsed');
+    if (willCollapse) {
+      sidebar.classList.add('collapsed');
+      localStorage.setItem('sidebar-collapsed', 'true');
+      toggleBtn.setAttribute('title', 'Expandir painel');
+      toggleBtn.setAttribute('aria-label', 'Expandir painel');
+    } else {
+      sidebar.classList.remove('collapsed');
+      localStorage.setItem('sidebar-collapsed', 'false');
+      toggleBtn.setAttribute('title', 'Recolher painel');
+      toggleBtn.setAttribute('aria-label', 'Recolher painel');
+    }
+  });
+}
 
 async function promptLogin() {
   const token = prompt("Digite a senha do Gestor/Scrum Master:");
@@ -690,6 +723,7 @@ async function initializeDashboard() {
   setupSyncButtonListener();
   setupAlertTabsListeners();
   setupThroughputToggleListeners();
+  setupQualityToggleListeners();
 
   
   // Set last execution timestamp in footer
@@ -6468,44 +6502,54 @@ function renderBugsWeeklyEvolutionChart(bugs) {
     });
   }
 
-  // Gerar todas as semanas no intervalo
-  const weeksData = {};
-  const startW = getStartOfWeek(minDate);
-  const endW = getStartOfWeek(maxDate);
+  const isWeekly = g_bugsEvolutionViewMode === 'weekly';
+  const getGroupDate = (date) => {
+    if (isWeekly) return getStartOfWeek(date);
+    const d = new Date(date);
+    d.setHours(0,0,0,0);
+    return d;
+  };
+
+  // Gerar datas no intervalo
+  const datesData = {};
+  const startW = getGroupDate(minDate);
+  const endW = getGroupDate(maxDate);
   
   let curr = new Date(startW);
   while (curr <= endW) {
     const key = toLocalISOString(curr);
-    weeksData[key] = { created: 0, closed: 0, date: key };
-    curr.setDate(curr.getDate() + 7);
+    datesData[key] = { created: 0, closed: 0, date: key };
+    curr.setDate(curr.getDate() + (isWeekly ? 7 : 1));
   }
 
   bugs.forEach(b => {
     if (b.DataCriacao) {
       const dC = new Date(b.DataCriacao);
       if (dC >= minDate && dC <= maxDate) {
-        const wC = toLocalISOString(getStartOfWeek(dC));
-        if (weeksData[wC]) weeksData[wC].created++;
+        const wC = toLocalISOString(getGroupDate(dC));
+        if (datesData[wC]) datesData[wC].created++;
       }
     }
     
     if (b.DataFechamento && (b.State === 'Closed' || b.BoardColumn === 'Concluído' || b.State === 'Resolved')) {
       const dF = new Date(b.DataFechamento);
       if (dF >= minDate && dF <= maxDate) {
-        const wF = toLocalISOString(getStartOfWeek(dF));
-        if (weeksData[wF]) weeksData[wF].closed++;
+        const wF = toLocalISOString(getGroupDate(dF));
+        if (datesData[wF]) datesData[wF].closed++;
       }
     }
   });
 
-  const sortedWeeks = Object.keys(weeksData).sort();
+  const sortedDates = Object.keys(datesData).sort();
 
-  if (sortedWeeks.length === 0) {
+  if (sortedDates.length === 0) {
     container.innerHTML = `<span class="placeholder-text">Dados insuficientes para gráfico evolutivo</span>`;
     return;
   }
 
-  const maxVal = Math.max(1, ...sortedWeeks.map(w => Math.max(weeksData[w].created, weeksData[w].closed)));
+  const maxVal = Math.max(1, ...sortedDates.map(w => Math.max(datesData[w].created, datesData[w].closed)));
+  const maxCreated = Math.max(0, ...sortedDates.map(w => datesData[w].created));
+  const maxClosed = Math.max(0, ...sortedDates.map(w => datesData[w].closed));
 
   // SVG dimensions
   const svgW = 800;
@@ -6513,10 +6557,10 @@ function renderBugsWeeklyEvolutionChart(bugs) {
   const padL = 40;
   const padR = 20;
   const padT = 20;
-  const padB = 40;
+  const padB = 70; // increased for rotated text
   const chartW = svgW - padL - padR;
   const chartH = svgH - padT - padB;
-  const slotW = chartW / Math.max(1, sortedWeeks.length - 1);
+  const slotW = chartW / Math.max(1, sortedDates.length - 1);
 
   let createdPts = [];
   let closedPts = [];
@@ -6533,8 +6577,8 @@ function renderBugsWeeklyEvolutionChart(bugs) {
     html += `<text x="${padL - 8}" y="${y + 4}" text-anchor="end" fill="var(--text-muted)" font-size="11">${Math.round(val)}</text>`;
   }
 
-  sortedWeeks.forEach((w, i) => {
-    const d = weeksData[w];
+  sortedDates.forEach((w, i) => {
+    const d = datesData[w];
     const cx = padL + i * slotW;
     
     const cyCreated = padT + chartH - (d.created / maxVal) * chartH;
@@ -6546,11 +6590,12 @@ function renderBugsWeeklyEvolutionChart(bugs) {
     // X-axis label
     const label = formatShortDatePt(w);
     
-    // Rotate label if many weeks
-    if (sortedWeeks.length > 10) {
-      html += `<text x="${cx}" y="${svgH - 25}" text-anchor="end" transform="rotate(-45 ${cx},${svgH - 25})" fill="var(--text-muted)" font-size="11">${label}</text>`;
+    // Rotate label if many dates
+    const textY = padT + chartH + 20;
+    if (sortedDates.length > 10) {
+      html += `<text x="${cx}" y="${textY}" text-anchor="end" transform="rotate(-45 ${cx},${textY})" fill="var(--text-muted)" font-size="11">${label}</text>`;
     } else {
-      html += `<text x="${cx}" y="${svgH - 25}" text-anchor="middle" fill="var(--text-muted)" font-size="11">${label}</text>`;
+      html += `<text x="${cx}" y="${textY}" text-anchor="middle" fill="var(--text-muted)" font-size="11">${label}</text>`;
     }
     
     // Data points
@@ -6558,11 +6603,12 @@ function renderBugsWeeklyEvolutionChart(bugs) {
     circlesHtml += `<circle cx="${cx}" cy="${cyClosed}" r="5" fill="var(--color-flow-done)"></circle>`;
     
     // Transparent rect for hover tooltip
-    const tooltipHtml = `<strong>Semana ${label}</strong><br><span style="color:var(--color-danger)">■</span> Bugs criados: ${d.created}<br><span style="color:var(--color-flow-done)">■</span> Bugs resolvidos: ${d.closed}`;
+    const periodLabel = isWeekly ? 'Semana' : 'Dia';
+    const tooltipHtml = `<strong>${periodLabel} ${label}</strong><br><span style="color:var(--color-danger)">■</span> Bugs criados: ${d.created}<br><span style="color:var(--color-flow-done)">■</span> Bugs resolvidos: ${d.closed}`;
     circlesHtml += `<rect x="${cx - slotW/2}" y="0" width="${slotW}" height="${svgH}" fill="transparent" class="chart-tooltip-trigger" data-tooltip="${encodeURIComponent(tooltipHtml)}" style="cursor: pointer;"></rect>`;
   });
 
-  if (sortedWeeks.length > 1) {
+  if (sortedDates.length > 1) {
     html += `<polyline points="${createdPts.join(' ')}" fill="none" stroke="var(--color-danger)" stroke-width="2" />`;
     html += `<polyline points="${closedPts.join(' ')}" fill="none" stroke="var(--color-flow-done)" stroke-width="2" />`;
   }
@@ -6572,9 +6618,9 @@ function renderBugsWeeklyEvolutionChart(bugs) {
   // Legend
   html += `
     <rect x="${padL + 20}" y="${svgH - 10}" width="12" height="12" fill="var(--color-danger)" rx="2"/>
-    <text x="${padL + 38}" y="${svgH}" fill="var(--text-main)" font-size="12">Bugs Criados</text>
-    <rect x="${padL + 140}" y="${svgH - 10}" width="12" height="12" fill="var(--color-flow-done)" rx="2"/>
-    <text x="${padL + 158}" y="${svgH}" fill="var(--text-main)" font-size="12">Bugs Resolvidos</text>
+    <text x="${padL + 38}" y="${svgH}" fill="var(--text-main)" font-size="12">Bugs Criados (Pico: ${maxCreated})</text>
+    <rect x="${padL + 210}" y="${svgH - 10}" width="12" height="12" fill="var(--color-flow-done)" rx="2"/>
+    <text x="${padL + 228}" y="${svgH}" fill="var(--text-main)" font-size="12">Bugs Resolvidos (Pico: ${maxClosed})</text>
   `;
 
   html += `</svg>`;
@@ -6608,15 +6654,23 @@ function renderBugRateWeeklyChart(bugs, stories) {
     });
   }
 
-  const weeksData = {};
+  const isWeekly = g_bugRateViewMode === 'weekly';
+  const getGroupDate = (date) => {
+    if (isWeekly) return getStartOfWeek(date);
+    const d = new Date(date);
+    d.setHours(0,0,0,0);
+    return d;
+  };
+
+  const datesData = {};
   if (minDate <= maxDate) {
-    const startW = getStartOfWeek(minDate);
-    const endW = getStartOfWeek(maxDate);
+    const startW = getGroupDate(minDate);
+    const endW = getGroupDate(maxDate);
     let curr = new Date(startW);
     while (curr <= endW) {
       const key = toLocalISOString(curr);
-      weeksData[key] = { created: 0, closed: 0, stories: 0, date: key };
-      curr.setDate(curr.getDate() + 7);
+      datesData[key] = { created: 0, closed: 0, stories: 0, date: key };
+      curr.setDate(curr.getDate() + (isWeekly ? 7 : 1));
     }
   }
 
@@ -6624,16 +6678,16 @@ function renderBugRateWeeklyChart(bugs, stories) {
     if (b.DataCriacao) {
       const dC = new Date(b.DataCriacao);
       if (dC >= minDate && dC <= maxDate) {
-        const wC = toLocalISOString(getStartOfWeek(dC));
-        if (weeksData[wC]) weeksData[wC].created++;
+        const wC = toLocalISOString(getGroupDate(dC));
+        if (datesData[wC]) datesData[wC].created++;
       }
     }
     
     if (b.DataFechamento && (b.State === 'Closed' || b.BoardColumn === 'Concluído' || b.State === 'Resolved')) {
       const dF = new Date(b.DataFechamento);
       if (dF >= minDate && dF <= maxDate) {
-        const wF = toLocalISOString(getStartOfWeek(dF));
-        if (weeksData[wF]) weeksData[wF].closed++;
+        const wF = toLocalISOString(getGroupDate(dF));
+        if (datesData[wF]) datesData[wF].closed++;
       }
     }
   });
@@ -6642,30 +6696,33 @@ function renderBugRateWeeklyChart(bugs, stories) {
     if (s.DataFechamento) {
       const dF = new Date(s.DataFechamento);
       if (dF >= minDate && dF <= maxDate) {
-        const wF = toLocalISOString(getStartOfWeek(dF));
-        if (weeksData[wF]) weeksData[wF].stories++;
+        const wF = toLocalISOString(getGroupDate(dF));
+        if (datesData[wF]) datesData[wF].stories++;
       }
     }
   });
 
-  const sortedWeeks = Object.keys(weeksData).sort();
+  const sortedDates = Object.keys(datesData).sort();
 
-  if (sortedWeeks.length === 0) {
-    container.innerHTML = `<span class="placeholder-text">Dados insuficientes para visualização semanal</span>`;
+  if (sortedDates.length === 0) {
+    container.innerHTML = `<span class="placeholder-text">Dados insuficientes para visualização</span>`;
     return;
   }
 
-  const maxVal = Math.max(1, ...sortedWeeks.map(w => Math.max(weeksData[w].created, weeksData[w].closed, weeksData[w].stories)));
+  const maxVal = Math.max(1, ...sortedDates.map(w => Math.max(datesData[w].created, datesData[w].closed, datesData[w].stories)));
+  const maxCreated = Math.max(0, ...sortedDates.map(w => datesData[w].created));
+  const maxClosed = Math.max(0, ...sortedDates.map(w => datesData[w].closed));
+  const maxStories = Math.max(0, ...sortedDates.map(w => datesData[w].stories));
 
   const svgW = 800;
-  const svgH = 200;
+  const svgH = 220; // increased height to accommodate legend
   const padL = 40;
   const padR = 20;
   const padT = 20;
-  const padB = 40;
+  const padB = 70; // increased for rotated text
   const chartW = svgW - padL - padR;
   const chartH = svgH - padT - padB;
-  const slotW = chartW / Math.max(1, sortedWeeks.length - 1);
+  const slotW = chartW / Math.max(1, sortedDates.length - 1);
 
   let createdPts = [];
   let closedPts = [];
@@ -6682,8 +6739,8 @@ function renderBugRateWeeklyChart(bugs, stories) {
     html += `<text x="${padL - 8}" y="${y + 4}" text-anchor="end" fill="var(--text-muted)" font-size="11">${Math.round(val)}</text>`;
   }
 
-  sortedWeeks.forEach((w, i) => {
-    const d = weeksData[w];
+  sortedDates.forEach((w, i) => {
+    const d = datesData[w];
     const cx = padL + i * slotW;
     
     const cyCreated = padT + chartH - (d.created / maxVal) * chartH;
@@ -6696,10 +6753,12 @@ function renderBugRateWeeklyChart(bugs, stories) {
     
     const label = formatShortDatePt(w);
     
-    if (sortedWeeks.length > 10) {
-      html += `<text x="${cx}" y="${svgH - 25}" text-anchor="end" transform="rotate(-45 ${cx},${svgH - 25})" fill="var(--text-muted)" font-size="11">${label}</text>`;
+    if (sortedDates.length > 10) {
+      const textY = padT + chartH + 20;
+      html += `<text x="${cx}" y="${textY}" text-anchor="end" transform="rotate(-45 ${cx},${textY})" fill="var(--text-muted)" font-size="11">${label}</text>`;
     } else {
-      html += `<text x="${cx}" y="${svgH - 25}" text-anchor="middle" fill="var(--text-muted)" font-size="11">${label}</text>`;
+      const textY = padT + chartH + 20;
+      html += `<text x="${cx}" y="${textY}" text-anchor="middle" fill="var(--text-muted)" font-size="11">${label}</text>`;
     }
     
     const bugRate = d.stories > 0 ? (((d.created + d.closed) / d.stories) * 100).toFixed(1) + '%' : (d.created + d.closed > 0 ? 'Infinito (0 US)' : '0%');
@@ -6709,11 +6768,12 @@ function renderBugRateWeeklyChart(bugs, stories) {
     circlesHtml += `<circle cx="${cx}" cy="${cyStories}" r="5" fill="var(--color-primary)"></circle>`;
     
     // Transparent rect for hover tooltip
-    const tooltipHtml = `<strong>Semana ${label}</strong><br><span style="color:var(--color-danger)">■</span> Bugs criados: ${d.created}<br><span style="color:var(--color-flow-done)">■</span> Bugs resolvidos: ${d.closed}<br><span style="color:var(--color-primary)">■</span> US Concluídas: ${d.stories}<br><br><strong>Bug Rate:</strong> ${bugRate}`;
+    const periodLabel = isWeekly ? 'Semana' : 'Dia';
+    const tooltipHtml = `<strong>${periodLabel} ${label}</strong><br><span style="color:var(--color-danger)">■</span> Bugs criados: ${d.created}<br><span style="color:var(--color-flow-done)">■</span> Bugs resolvidos: ${d.closed}<br><span style="color:var(--color-primary)">■</span> US Concluídas: ${d.stories}<br><br><strong>Bug Rate:</strong> ${bugRate}`;
     circlesHtml += `<rect x="${cx - slotW/2}" y="0" width="${slotW}" height="${svgH}" fill="transparent" class="chart-tooltip-trigger" data-tooltip="${encodeURIComponent(tooltipHtml)}" style="cursor: pointer;"></rect>`;
   });
 
-  if (sortedWeeks.length > 1) {
+  if (sortedDates.length > 1) {
     html += `<polyline points="${createdPts.join(' ')}" fill="none" stroke="var(--color-danger)" stroke-width="2" />`;
     html += `<polyline points="${closedPts.join(' ')}" fill="none" stroke="var(--color-flow-done)" stroke-width="2" />`;
     html += `<polyline points="${storiesPts.join(' ')}" fill="none" stroke="var(--color-primary)" stroke-width="2" />`;
@@ -6723,14 +6783,14 @@ function renderBugRateWeeklyChart(bugs, stories) {
   
   // Legend
   html += `
-    <rect x="${padL + 20}" y="${svgH - 10}" width="12" height="12" fill="var(--color-danger)" rx="2"/>
-    <text x="${padL + 38}" y="${svgH}" fill="var(--text-main)" font-size="12">Bugs Criados</text>
+    <rect x="${padL + 10}" y="${svgH - 10}" width="12" height="12" fill="var(--color-danger)" rx="2"/>
+    <text x="${padL + 28}" y="${svgH}" fill="var(--text-main)" font-size="12">Bugs Criados (Pico: ${maxCreated})</text>
     
-    <rect x="${padL + 130}" y="${svgH - 10}" width="12" height="12" fill="var(--color-flow-done)" rx="2"/>
-    <text x="${padL + 148}" y="${svgH}" fill="var(--text-main)" font-size="12">Bugs Resolvidos</text>
+    <rect x="${padL + 200}" y="${svgH - 10}" width="12" height="12" fill="var(--color-flow-done)" rx="2"/>
+    <text x="${padL + 218}" y="${svgH}" fill="var(--text-main)" font-size="12">Bugs Resolvidos (Pico: ${maxClosed})</text>
     
-    <rect x="${padL + 260}" y="${svgH - 10}" width="12" height="12" fill="var(--color-primary)" rx="2"/>
-    <text x="${padL + 278}" y="${svgH}" fill="var(--text-main)" font-size="12">US Concluídas</text>
+    <rect x="${padL + 400}" y="${svgH - 10}" width="12" height="12" fill="var(--color-primary)" rx="2"/>
+    <text x="${padL + 418}" y="${svgH}" fill="var(--text-main)" font-size="12">US Concluídas (Pico: ${maxStories})</text>
   `;
 
   html += `</svg>`;
@@ -6862,7 +6922,7 @@ function renderBugsComparisonChart(openCount, closedCount, allBugs) {
 }
 
 function setupBugQuickFilters(bugs) {
-  const quickFilters = document.querySelectorAll('.btn-quick-filter');
+  const quickFilters = document.querySelectorAll('button[data-severity]');
   
   quickFilters.forEach(btn => {
     // Remove previous listeners
@@ -6870,7 +6930,7 @@ function setupBugQuickFilters(bugs) {
     btn.parentNode.replaceChild(newBtn, btn);
     
     newBtn.addEventListener('click', () => {
-      document.querySelectorAll('.btn-quick-filter').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('button[data-severity]').forEach(b => b.classList.remove('active'));
       newBtn.classList.add('active');
       
       g_bugsActiveSeverityFilter = newBtn.getAttribute('data-severity');
@@ -8235,6 +8295,50 @@ function setupAlertTabsListeners() {
       });
     }
   });
+}
+
+function setupQualityToggleListeners() {
+  const btnEvolDaily = document.getElementById('btn-bugs-evolution-daily');
+  const btnEvolWeekly = document.getElementById('btn-bugs-evolution-weekly');
+  
+  if (btnEvolDaily && btnEvolWeekly && !btnEvolDaily.dataset.listenerBound) {
+    btnEvolDaily.dataset.listenerBound = "true";
+    btnEvolDaily.addEventListener('click', () => {
+      if (g_bugsEvolutionViewMode === 'daily') return;
+      g_bugsEvolutionViewMode = 'daily';
+      btnEvolDaily.classList.add('active');
+      btnEvolWeekly.classList.remove('active');
+      renderActivePage();
+    });
+    btnEvolWeekly.addEventListener('click', () => {
+      if (g_bugsEvolutionViewMode === 'weekly') return;
+      g_bugsEvolutionViewMode = 'weekly';
+      btnEvolWeekly.classList.add('active');
+      btnEvolDaily.classList.remove('active');
+      renderActivePage();
+    });
+  }
+
+  const btnRateDaily = document.getElementById('btn-bug-rate-daily');
+  const btnRateWeekly = document.getElementById('btn-bug-rate-weekly');
+  
+  if (btnRateDaily && btnRateWeekly && !btnRateDaily.dataset.listenerBound) {
+    btnRateDaily.dataset.listenerBound = "true";
+    btnRateDaily.addEventListener('click', () => {
+      if (g_bugRateViewMode === 'daily') return;
+      g_bugRateViewMode = 'daily';
+      btnRateDaily.classList.add('active');
+      btnRateWeekly.classList.remove('active');
+      renderActivePage();
+    });
+    btnRateWeekly.addEventListener('click', () => {
+      if (g_bugRateViewMode === 'weekly') return;
+      g_bugRateViewMode = 'weekly';
+      btnRateWeekly.classList.add('active');
+      btnRateDaily.classList.remove('active');
+      renderActivePage();
+    });
+  }
 }
 
 function setupThroughputToggleListeners() {

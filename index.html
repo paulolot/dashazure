@@ -63,52 +63,57 @@
           <h1>Squad Fiscal</h1>
           <span>Gestão & Fluxo</span>
         </div>
+        <button class="btn-toggle-sidebar" id="btn-toggle-sidebar" title="Recolher painel" aria-label="Recolher painel">
+          <svg class="icon-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
       </div>
 
       <nav class="sidebar-nav">
         <button class="nav-item active" data-page="overview">
           <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
-          Visão Geral
+          <span class="nav-label">Visão Geral</span>
         </button>
         <button class="nav-item admin-only" data-page="flow">
           <svg class="icon" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-          Fluxo e Gargalos
+          <span class="nav-label">Fluxo e Gargalos</span>
         </button>
         <button class="nav-item admin-only" data-page="deliveries">
           <svg class="icon" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          Entregas e Produtividade
+          <span class="nav-label">Entregas e Produtividade</span>
         </button>
         <button class="nav-item" data-page="capacity">
           <svg class="icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          Time e Capacidade
+          <span class="nav-label">Time e Capacidade</span>
         </button>
         <button class="nav-item" data-page="quality">
           <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg>
-          Qualidade e Bugs
+          <span class="nav-label">Qualidade e Bugs</span>
         </button>
         <button class="nav-item admin-only" data-page="alerts">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-          Sinalizações e Alertas
+          <span class="nav-label">Sinalizações e Alertas</span>
         </button>
         <button class="nav-item" data-page="atendimentos">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          Atendimentos
+          <span class="nav-label">Atendimentos</span>
         </button>
         <button class="nav-item" data-page="drilldown">
           <svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-          Detalhamento (Drill)
+          <span class="nav-label">Detalhamento (Drill)</span>
         </button>
       </nav>
 
       <div class="sidebar-auth" style="margin: 10px 16px; display: flex; align-items: center; justify-content: center; padding: 10px; border-radius: 8px; background: rgba(255, 255, 255, 0.05); cursor: pointer;" id="btn-admin-login">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        <span style="font-size: 0.85rem; font-weight: 500;">Acesso Gestor</span>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px; flex-shrink: 0;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <span class="auth-text" style="font-size: 0.85rem; font-weight: 500;">Acesso Gestor</span>
       </div>
 
       <div class="sidebar-footer">
         <div class="update-status">
-          <div class="pulse-indicator" style="background-color: #3b82f6; box-shadow: 0 0 8px #3b82f6;"></div>
-          <div>
+          <div class="pulse-indicator" style="background-color: #3b82f6; box-shadow: 0 0 8px #3b82f6; flex-shrink: 0;"></div>
+          <div class="status-info">
             <p id="lbl-connection-status">Conectando...</p>
             <span id="txt-last-execution">Carregando...</span>
           </div>
@@ -931,8 +936,12 @@
           <!-- NOVO: Evolução de Bugs e Bug Rate -->
           <div class="dashboard-grid" style="margin-top: 10px;">
             <div class="panel">
-              <div class="panel-header">
-                <h3>Evolução de Bugs por Semana (Criados vs Resolvidos)</h3>
+              <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <h3>Evolução de Bugs (Criados vs Resolvidos)</h3>
+                <div style="display: flex; gap: 6px;">
+                  <button id="btn-bugs-evolution-daily" class="btn btn-sm btn-quick-filter" style="padding: 3px 8px; font-size: 0.72rem;">Diária</button>
+                  <button id="btn-bugs-evolution-weekly" class="btn btn-sm btn-quick-filter active" style="padding: 3px 8px; font-size: 0.72rem;">Semanal</button>
+                </div>
               </div>
               <div class="panel-body chart-container" id="chart-quality-bugs-evolution">
                 <!-- SVG dinâmico -->
@@ -940,8 +949,12 @@
             </div>
             
             <div class="panel">
-              <div class="panel-header">
-                <h3>Volume Semanal: Bugs vs US Concluídas</h3>
+              <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <h3>Volume: Bugs vs US Concluídas</h3>
+                <div style="display: flex; gap: 6px;">
+                  <button id="btn-bug-rate-daily" class="btn btn-sm btn-quick-filter" style="padding: 3px 8px; font-size: 0.72rem;">Diária</button>
+                  <button id="btn-bug-rate-weekly" class="btn btn-sm btn-quick-filter active" style="padding: 3px 8px; font-size: 0.72rem;">Semanal</button>
+                </div>
               </div>
               <div class="panel-body chart-container" id="chart-quality-bug-rate-weekly">
                 <!-- SVG dinâmico -->
