@@ -2,25 +2,25 @@ Id,Tipo,Status,DataInicio,DataFim,DuracaoHoras,DuracaoDias,DuracaoExibicao,Ativo
 230,User Story,Retorno solicitante,2024-09-02T14:28:24.810Z,2024-09-23T14:38:07.397Z,504.16,21.01,21.01 d,Nao,Paulo A. Lot,Paulo A. Lot
 263,User Story,Retorno solicitante,2024-10-24T18:13:18.877Z,2024-10-31T19:48:28.557Z,169.59,07.07,7.07 d,Nao,Paulo A. Lot,Paulo A. Lot
 280,User Story,Retorno solicitante,2025-03-14T11:37:04.180Z,2025-04-04T19:22:38.393Z,511.76,21.32,21.32 d,Nao,Luiz Fernando Rodrigues Pereira,Ricardo Raquel
-292,User Story,Retorno solicitante,2024-09-03T13:48:31.990Z,,16300.38,679.18,679.18 d,Sim,Luiz Fernando Rodrigues Pereira,
-300,User Story,Retorno solicitante,2024-09-03T13:57:58.273Z,,16300.23,679.18,679.18 d,Sim,Luiz Fernando Rodrigues Pereira,
+292,User Story,Retorno solicitante,2025-10-31T14:41:54.607Z,,6190.23,257.93,257.93 d,Sim,Luiz Fernando Rodrigues Pereira,
+300,User Story,Retorno solicitante,2025-10-24T10:40:46.810Z,,6362.25,265.09,265.09 d,Sim,Paulo A. Lot,
 1036,User Story,Retorno solicitante,2024-11-26T17:21:12.997Z,2024-12-26T13:18:14.887Z,715.95,29.83,29.83 d,Nao,Luiz Fernando Rodrigues Pereira,Luiz Fernando Rodrigues Pereira
 1372,User Story,Parou para fazer outro ticket,2024-11-25T17:16:26.230Z,2025-03-13T17:15:19.330Z,2591.98,108.00,108.00 d,Nao,Paulo A. Lot,Paulo A. Lot
 1416,User Story,Parou para fazer outro ticket,2024-11-25T17:20:10.143Z,2024-12-06T13:41:28.947Z,260.36,10.85,10.85 d,Nao,Paulo A. Lot,Julio Andreata
 1874,User Story,Parou para fazer outro ticket,2025-01-02T17:18:53.783Z,2025-01-27T17:47:27.740Z,600.48,25.02,25.02 d,Nao,Julio Andreata,Paulo A. Lot
 1874,User Story,Parou para fazer outro ticket,2025-03-21T17:53:58.347Z,2025-04-10T18:35:54.140Z,480.70,20.03,20.03 d,Nao,Julio Andreata,Julio Andreata
-1923,User Story,Retorno solicitante,2025-01-06T13:49:48.220Z,2025-01-07T18:17:59.633Z,28.47,01.19,1.19 d,Nao,Paulo A. Lot,Paulo A. Lot
 1923,User Story,Parou para fazer outro ticket,2025-01-07T18:17:59.633Z,2025-02-13T19:41:11.173Z,889.39,37.06,37.06 d,Nao,Paulo A. Lot,Paulo A. Lot
 1923,User Story,Parou para fazer outro ticket,2025-02-14T16:27:47.187Z,2025-02-17T10:48:40.563Z,66.35,02.76,2.76 d,Nao,Paulo A. Lot,Ivan Pionelli Junior
 1923,User Story,Parou para fazer outro ticket,2025-02-17T11:09:26.650Z,2025-02-18T13:18:44.750Z,26.16,01.09,1.09 d,Nao,Ivan Pionelli Junior,Ivan Pionelli Junior
 1923,User Story,Parou para fazer outro ticket,2025-02-18T13:55:55.857Z,2025-02-19T12:02:54.973Z,22.12,00.92,22.12 h,Nao,Ivan Pionelli Junior,Paulo A. Lot
-1923,User Story,Retorno solicitante,2025-12-04T19:34:01.657Z,,5326.63,221.94,221.94 d,Sim,Gabriel Seiji,
+1923,User Story,Retorno solicitante,2025-12-04T19:34:01.657Z,,5369.36,223.72,223.72 d,Sim,Gabriel Seiji,
 2310,User Story,Parou para fazer outro ticket,2025-02-07T18:07:00.683Z,2025-02-19T10:30:00.103Z,280.38,11.68,11.68 d,Nao,Julio Andreata,Paulo A. Lot
 3666,User Story,Parou para fazer outro ticket,2026-06-10T17:05:01.443Z,2026-06-10T17:15:46.217Z,00.18,00.01,0.18 h,Nao,Fabio Nobre,Fabio Nobre
 3744,User Story,Parou para fazer outro ticket,2025-05-13T17:34:50.740Z,2025-07-09T11:14:27.950Z,1361.66,56.74,56.74 d,Nao,fabricio.sena,Paulo A. Lot
 3770,User Story,Parou para fazer outro ticket,2025-05-08T10:46:52.950Z,2025-05-08T10:48:18.657Z,00.02,00.00,0.02 h,Nao,Paulo A. Lot,Paulo A. Lot
 4621,User Story,Parou para fazer outro ticket,2025-07-17T02:28:28.367Z,2025-07-17T10:36:17.337Z,08.13,00.34,8.13 h,Nao,Rodolfo Caceraghi dos Santos,Paulo A. Lot
 4621,User Story,Parou para fazer outro ticket,2025-07-17T10:37:56.383Z,2025-07-29T14:05:21.660Z,291.46,12.14,12.14 d,Nao,Paulo A. Lot,Paulo A. Lot
+4939,User Story,Aguardando Revisão,2026-05-22T00:53:05.153Z,2026-05-26T12:06:37.637Z,107.23,04.47,4.47 d,Nao,Leandro Andrade,Fabio Nobre
 5421,User Story,Parou para fazer outro ticket,2025-07-07T10:48:53.370Z,2025-07-07T10:49:24.470Z,00.01,00.00,0.01 h,Nao,Paulo A. Lot,Paulo A. Lot
 6393,User Story,Retorno solicitante,2025-08-13T10:29:33.700Z,2025-09-22T22:08:32.777Z,971.65,40.49,40.49 d,Nao,Paulo A. Lot,Gabriel Seiji
 6504,User Story,Parou para fazer outro ticket,2026-07-08T13:34:27.747Z,2026-07-09T11:39:26.960Z,22.08,00.92,22.08 h,Nao,Fabio Nobre,Fabio Nobre
@@ -38,22 +38,20 @@ Id,Tipo,Status,DataInicio,DataFim,DuracaoHoras,DuracaoDias,DuracaoExibicao,Ativo
 13861,User Story,Aguardando Revisão,2026-06-26T19:02:33.680Z,2026-06-26T20:15:11.193Z,01.21,00.05,1.21 h,Nao,Luiz Fernando Rodrigues Pereira,maykon.elias
 13862,User Story,Parou para fazer outro ticket,2026-06-29T13:49:53.797Z,2026-06-30T17:18:54.237Z,27.48,01.15,1.15 d,Nao,maykon.elias,maykon.elias
 13862,User Story,Aguardando Revisão,2026-07-01T13:07:20.980Z,2026-07-01T14:35:57.710Z,01.48,00.06,1.48 h,Nao,Luiz Fernando Rodrigues Pereira,maykon.elias
-13863,User Story,Aguardando Conclusão de outro Card,2026-03-09T21:34:37.883Z,2026-07-01T13:09:41.197Z,2727.58,113.65,113.65 d,Nao,Diogo M. Fontolan,maykon.elias
 13863,User Story,Parou para fazer outro ticket,2026-07-01T13:09:41.197Z,2026-07-01T14:37:36.837Z,01.47,00.06,1.47 h,Nao,maykon.elias,maykon.elias
 13863,User Story,Aguardando Revisão,2026-07-03T18:18:49.053Z,2026-07-03T19:32:08.593Z,01.22,00.05,1.22 h,Nao,Luiz Fernando Rodrigues Pereira,maykon.elias
 13863,User Story,Aguardando Revisão,2026-07-08T16:01:57.313Z,2026-07-10T01:34:59.977Z,33.55,01.40,1.40 d,Nao,Julio Andreata,maykon.elias
-13863,User Story,Aguardando Conclusão de outro Card,2026-07-14T12:04:47.523Z,,06.11,00.25,6.11 h,Sim,Ivan Pionelli Junior,
-13864,User Story,Aguardando Conclusão de outro Card,2026-03-09T21:35:26.230Z,2026-07-07T12:49:34.810Z,2871.24,119.63,119.63 d,Nao,Diogo M. Fontolan,Luiz Fernando Rodrigues Pereira
+13863,User Story,Aguardando Conclusão de outro Card,2026-07-14T12:04:47.523Z,,48.85,02.04,2.04 d,Sim,Ivan Pionelli Junior,
 13864,User Story,Aguardando Revisão,2026-07-07T12:49:34.810Z,2026-07-07T14:39:39.980Z,01.83,00.08,1.83 h,Nao,Luiz Fernando Rodrigues Pereira,maykon.elias
 13864,User Story,Aguardando Revisão,2026-07-09T13:51:06.787Z,2026-07-10T02:08:08.567Z,12.28,00.51,12.28 h,Nao,Julio Andreata,maykon.elias
-13864,User Story,Aguardando Conclusão de outro Card,2026-07-14T12:04:44.763Z,,06.11,00.25,6.11 h,Sim,Ivan Pionelli Junior,
+13864,User Story,Aguardando Conclusão de outro Card,2026-07-14T12:04:44.763Z,,48.85,02.04,2.04 d,Sim,Ivan Pionelli Junior,
 13925,User Story,Aguardando Revisão,2026-06-02T12:56:59.390Z,2026-06-02T13:31:31.493Z,00.58,00.02,0.58 h,Nao,Luiz Fernando Rodrigues Pereira,Luiz Fernando Rodrigues Pereira
 13925,User Story,Parou para fazer outro ticket,2026-06-03T17:36:41.513Z,2026-06-05T13:38:38.230Z,44.03,01.83,1.83 d,Nao,Ivan Pionelli Junior,Ivan Pionelli Junior
 14192,User Story,Aguardando PO,2026-06-16T13:01:39.197Z,2026-06-16T14:17:03.390Z,01.26,00.05,1.26 h,Nao,maykon.elias,maykon.elias
 14192,User Story,Aguardando retorno de parceiro externo,2026-06-16T14:47:19.737Z,2026-06-16T17:42:02.947Z,02.91,00.12,2.91 h,Nao,maykon.elias,maykon.elias
 14192,User Story,Aguardando Conclusão de outro Card,2026-06-16T17:42:39.817Z,2026-06-16T17:50:32.277Z,00.13,00.01,0.13 h,Nao,maykon.elias,maykon.elias
 14192,User Story,Aguardando Revisão,2026-06-17T17:42:51.037Z,2026-06-17T20:20:01.380Z,02.62,00.11,2.62 h,Nao,Luiz Fernando Rodrigues Pereira,maykon.elias
-15572,User Story,Parou para fazer outro ticket,2026-04-13T14:30:52.417Z,,2211.68,92.15,92.15 d,Sim,Gabriel Seiji,
+15572,User Story,Parou para fazer outro ticket,2026-07-14T18:02:10.517Z,2026-07-15T21:30:45.333Z,27.48,01.14,1.14 d,Nao,maykon.elias,maykon.elias
 16274,User Story,Aguardando PO,2026-06-02T14:34:53.023Z,2026-06-02T16:58:48.900Z,02.40,00.10,2.40 h,Nao,Luiz Fernando Rodrigues Pereira,Paulo A. Lot
 16274,User Story,Retorno solicitante,2026-06-02T16:58:48.900Z,2026-06-02T16:59:03.050Z,00.00,00.00,0.00 h,Nao,Paulo A. Lot,Paulo A. Lot
 16274,User Story,Aguardando retorno de parceiro externo,2026-06-02T16:59:03.050Z,2026-06-02T16:59:06.580Z,00.00,00.00,0.00 h,Nao,Paulo A. Lot,Paulo A. Lot
@@ -72,12 +70,22 @@ Id,Tipo,Status,DataInicio,DataFim,DuracaoHoras,DuracaoDias,DuracaoExibicao,Ativo
 17410,User Story,Aguardando Revisão,2026-06-01T17:50:06.103Z,2026-06-01T20:32:23.957Z,02.70,00.11,2.70 h,Nao,Leandro Andrade,Leandro Andrade
 17410,User Story,Aguardando Revisão,2026-06-02T13:07:53.640Z,2026-06-02T13:30:38.640Z,00.38,00.02,0.38 h,Nao,Luiz Fernando Rodrigues Pereira,Luiz Fernando Rodrigues Pereira
 17410,User Story,Aguardando a correção do Dev,2026-06-02T22:22:56.747Z,2026-06-03T11:34:38.360Z,13.19,00.55,13.19 h,Nao,Fabio Nobre,Fabio Nobre
+17428,Bug,Aguardando Revisão,2026-05-18T13:01:42.803Z,2026-05-18T13:14:27.427Z,00.21,00.01,0.21 h,Nao,Luiz Fernando Rodrigues Pereira,Luiz Fernando Rodrigues Pereira
+17428,Bug,Parou para fazer outro ticket,2026-05-18T21:02:17.200Z,2026-05-19T19:07:53.160Z,22.09,00.92,22.09 h,Nao,Rodolfo Caceraghi dos Santos,Rodolfo Caceraghi dos Santos
+17428,Bug,Aguardando retorno de parceiro externo,2026-05-25T03:01:17.003Z,2026-05-25T12:02:54.990Z,09.03,00.38,9.03 h,Nao,Leandro Andrade,Paulo A. Lot
+17428,Bug,Aguardando Revisão,2026-05-25T12:02:54.990Z,2026-05-25T18:38:09.350Z,06.59,00.27,6.59 h,Nao,Paulo A. Lot,Rodolfo Caceraghi dos Santos
+17429,Bug,Aguardando Revisão,2026-05-21T18:05:14.303Z,2026-05-21T19:05:08.963Z,01.00,00.04,1.00 h,Nao,Luiz Fernando Rodrigues Pereira,Fabio Nobre
+17508,User Story,Retorno solicitante,2026-05-18T10:48:30.187Z,2026-05-19T13:29:36.447Z,26.69,01.11,1.11 d,Nao,Paulo A. Lot,Paulo A. Lot
+17508,User Story,Parou para fazer outro ticket,2026-05-21T21:31:35.047Z,2026-05-22T15:08:58.453Z,17.62,00.73,17.62 h,Nao,Rodolfo Caceraghi dos Santos,Rodolfo Caceraghi dos Santos
 17768,User Story,Retorno solicitante,2026-05-19T14:28:37.523Z,2026-05-20T14:43:19.913Z,24.25,01.01,1.01 d,Nao,Luiz Fernando Rodrigues Pereira,Diogo M. Fontolan
 17768,User Story,Parou para fazer outro ticket,2026-05-29T12:02:33.717Z,2026-05-29T18:30:22.030Z,06.46,00.27,6.46 h,Nao,Julio Andreata,Julio Andreata
 17768,User Story,Parou para fazer outro ticket,2026-06-02T11:53:30.147Z,2026-06-02T12:14:08.540Z,00.34,00.01,0.34 h,Nao,Julio Andreata,Julio Andreata
-17920,User Story,Aguardando Conclusão de outro Card,2026-05-20T14:52:49.370Z,,1323.31,55.14,55.14 d,Sim,Diogo M. Fontolan,
+17769,User Story,Parou para fazer outro ticket,2026-05-21T19:09:21.110Z,2026-05-21T19:09:23.987Z,00.00,00.00,0.00 h,Nao,Fabio Nobre,Fabio Nobre
+17920,User Story,Aguardando Conclusão de outro Card,2026-07-14T12:04:51.833Z,,48.85,02.04,2.04 d,Sim,Ivan Pionelli Junior,
 18220,User Story,Parou para fazer outro ticket,2026-07-10T14:34:03.017Z,2026-07-10T17:13:37.853Z,02.66,00.11,2.66 h,Nao,Fabio Nobre,Fabio Nobre
 18256,User Story,Retorno solicitante,2026-05-25T12:30:28.430Z,2026-05-25T14:51:57.067Z,02.36,00.10,2.36 h,Nao,Ivan Pionelli Junior,Paulo A. Lot
+18258,Bug,Aguardando Revisão,2026-05-27T12:05:21.807Z,2026-05-27T12:57:44.560Z,00.87,00.04,0.87 h,Nao,Luiz Fernando Rodrigues Pereira,Luiz Fernando Rodrigues Pereira
+18260,User Story,Aguardando Revisão,2026-05-28T00:32:42.900Z,2026-05-28T12:04:35.240Z,11.53,00.48,11.53 h,Nao,Leandro Andrade,Ivan Pionelli Junior
 18342,Bug,Aguardando Revisão,2026-06-16T12:22:45.010Z,2026-06-17T14:00:31.287Z,25.63,01.07,1.07 d,Nao,Luiz Fernando Rodrigues Pereira,Ivan Pionelli Junior
 18342,Bug,Aguardando Revisão,2026-06-18T15:04:44.853Z,2026-06-18T17:20:51.123Z,02.27,00.09,2.27 h,Nao,Julio Andreata,Ivan Pionelli Junior
 18342,Bug,Parou para fazer outro ticket,2026-06-18T17:20:51.123Z,2026-06-22T12:03:11.243Z,90.71,03.78,3.78 d,Nao,Ivan Pionelli Junior,Paulo A. Lot
@@ -91,19 +99,19 @@ Id,Tipo,Status,DataInicio,DataFim,DuracaoHoras,DuracaoDias,DuracaoExibicao,Ativo
 18857,User Story,Retorno solicitante,2026-06-15T18:13:18.730Z,2026-06-19T19:35:37.647Z,97.37,04.06,4.06 d,Nao,Julio Andreata,Paulo A. Lot
 18857,User Story,Parou para fazer outro ticket,2026-06-19T19:35:37.647Z,2026-06-22T17:55:08.960Z,70.33,02.93,2.93 d,Nao,Paulo A. Lot,Julio Andreata
 18857,User Story,Aguardando Revisão,2026-07-02T17:28:40.190Z,2026-07-03T14:15:40.910Z,20.78,00.87,20.78 h,Nao,Rodolfo Caceraghi dos Santos,Rodolfo Caceraghi dos Santos
+19205,Atendimento,Retorno solicitante,2026-06-03T14:14:01.993Z,,1030.70,42.95,42.95 d,Sim,Luiz Fernando Rodrigues Pereira,
 19209,User Story,Aguardando PO,2026-06-03T13:31:38.547Z,2026-06-03T18:56:22.993Z,05.41,00.23,5.41 h,Nao,Paulo A. Lot,Ivan Pionelli Junior
 19213,User Story,Aguardando PO,2026-06-03T13:36:08.677Z,2026-06-03T18:15:31.303Z,04.66,00.19,4.66 h,Nao,Ivan Pionelli Junior,Paulo A. Lot
 19213,User Story,Retorno solicitante,2026-06-03T18:15:31.303Z,2026-06-05T17:06:33.053Z,46.85,01.95,1.95 d,Nao,Paulo A. Lot,Diogo M. Fontolan
 19213,User Story,Aguardando PO,2026-06-05T18:22:45.590Z,2026-06-08T17:44:00.280Z,71.35,02.97,2.97 d,Nao,Ivan Pionelli Junior,Ivan Pionelli Junior
 19215,User Story,Aguardando PO,2026-06-03T18:55:05.727Z,2026-06-05T17:47:12.657Z,46.87,01.95,1.95 d,Nao,Ivan Pionelli Junior,Diogo M. Fontolan
 19229,User Story,Aguardando Revisão,2026-06-17T19:50:43.623Z,2026-06-18T11:09:34.633Z,15.31,00.64,15.31 h,Nao,Luiz Fernando Rodrigues Pereira,Rodolfo Caceraghi dos Santos
-19230,User Story,Aguardando Conclusão de outro Card,2026-06-03T14:50:57.610Z,2026-06-11T10:35:58.523Z,187.75,07.82,7.82 d,Nao,Paulo A. Lot,Ivan Pionelli Junior
 19230,User Story,Parou para fazer outro ticket,2026-06-11T10:35:58.523Z,2026-06-11T12:11:06.830Z,01.59,00.07,1.59 h,Nao,Ivan Pionelli Junior,Ivan Pionelli Junior
 19230,User Story,Aguardando retorno de parceiro externo,2026-06-17T12:06:47.843Z,2026-06-18T11:16:14.813Z,23.16,00.96,23.16 h,Nao,Ivan Pionelli Junior,Fabio Nobre
 19230,User Story,Parou para fazer outro ticket,2026-06-18T15:39:03.657Z,2026-06-23T20:18:44.400Z,124.66,05.19,5.19 d,Nao,Fabio Nobre,Fabio Nobre
 19230,User Story,Aguardando Revisão,2026-06-26T12:43:23.873Z,2026-06-26T13:40:50.850Z,00.96,00.04,0.96 h,Nao,Luiz Fernando Rodrigues Pereira,Fabio Nobre
 19230,User Story,Aguardando a correção do Dev,2026-07-06T13:51:11.730Z,2026-07-08T12:04:54.837Z,46.23,01.93,1.93 d,Nao,Fabio Nobre,Ivan Pionelli Junior
-19230,User Story,Aguardando Conclusão de outro Card,2026-07-08T12:04:54.837Z,,150.11,06.25,6.25 d,Sim,Ivan Pionelli Junior,
+19230,User Story,Aguardando Conclusão de outro Card,2026-07-08T12:04:54.837Z,,192.85,08.04,8.04 d,Sim,Ivan Pionelli Junior,
 19233,User Story,Aguardando Revisão,2026-06-17T19:04:49.460Z,2026-06-17T19:13:38.093Z,00.15,00.01,0.15 h,Nao,Luiz Fernando Rodrigues Pereira,Luiz Fernando Rodrigues Pereira
 19234,User Story,Parou para fazer outro ticket,2026-06-12T11:43:50.030Z,2026-06-15T17:23:21.110Z,77.66,03.24,3.24 d,Nao,Ivan Pionelli Junior,Ivan Pionelli Junior
 19234,User Story,Parou para fazer outro ticket,2026-06-26T13:12:23.767Z,2026-06-26T13:40:44.190Z,00.47,00.02,0.47 h,Nao,Fabio Nobre,Fabio Nobre
@@ -124,23 +132,28 @@ Id,Tipo,Status,DataInicio,DataFim,DuracaoHoras,DuracaoDias,DuracaoExibicao,Ativo
 19355,User Story,Aguardando retorno de parceiro externo,2026-06-05T17:58:59.450Z,2026-06-08T01:25:04.273Z,55.43,02.31,2.31 d,Nao,Fabio Nobre,Paulo A. Lot
 19355,User Story,Retorno solicitante,2026-06-08T01:25:04.273Z,2026-07-03T16:42:33.037Z,615.29,25.64,25.64 d,Nao,Paulo A. Lot,Paulo A. Lot
 19370,User Story,Retorno solicitante,2026-06-08T14:46:57.893Z,2026-06-08T17:42:23.530Z,02.92,00.12,2.92 h,Nao,Luiz Fernando Rodrigues Pereira,Ivan Pionelli Junior
-19758,User Story,Aguardando Conclusão de outro Card,2026-06-09T12:29:45.107Z,2026-07-09T13:47:28.060Z,721.30,30.05,30.05 d,Nao,Paulo A. Lot,Ivan Pionelli Junior
 19758,User Story,Parou para fazer outro ticket,2026-07-09T13:47:28.060Z,2026-07-10T11:21:45.997Z,21.57,00.90,21.57 h,Nao,Ivan Pionelli Junior,Ivan Pionelli Junior
-19758,User Story,Aguardando Conclusão de outro Card,2026-07-10T18:28:32.107Z,,95.72,03.99,3.99 d,Sim,Ivan Pionelli Junior,
-19759,User Story,Aguardando Conclusão de outro Card,2026-06-09T12:29:45.303Z,,845.70,35.24,35.24 d,Sim,Paulo A. Lot,
+19758,User Story,Aguardando Conclusão de outro Card,2026-07-10T18:28:32.107Z,,138.46,05.77,5.77 d,Sim,Ivan Pionelli Junior,
+19759,User Story,Aguardando Conclusão de outro Card,2026-07-14T12:09:40.667Z,,48.77,02.03,2.03 d,Sim,Ivan Pionelli Junior,
 19760,User Story,Parou para fazer outro ticket,2026-07-14T12:57:26.960Z,2026-07-14T14:34:40.843Z,01.62,00.07,1.62 h,Nao,Ivan Pionelli Junior,Ivan Pionelli Junior
+19760,User Story,Aguardando Conclusão de outro Card,2026-07-15T11:49:30.273Z,,25.11,01.05,1.05 d,Sim,Ivan Pionelli Junior,
+19761,User Story,Aguardando Conclusão de outro Card,2026-07-16T10:51:46.160Z,,02.07,00.09,2.07 h,Sim,Ivan Pionelli Junior,
+19765,User Story,Aguardando Conclusão de outro Card,2026-07-16T10:52:56.773Z,,02.05,00.09,2.05 h,Sim,Ivan Pionelli Junior,
+19767,User Story,Aguardando Conclusão de outro Card,2026-07-15T13:55:57.243Z,,23.00,00.96,23.00 h,Sim,Ivan Pionelli Junior,
+19769,User Story,Aguardando Conclusão de outro Card,2026-07-15T20:01:44.730Z,,16.90,00.70,16.90 h,Sim,Ivan Pionelli Junior,
 19947,User Story,Aguardando retorno de parceiro externo,2026-06-16T21:18:53.053Z,2026-06-17T13:32:05.313Z,16.22,00.68,16.22 h,Nao,maykon.elias,maykon.elias
-19948,User Story,Aguardando Conclusão de outro Card,2026-06-09T14:01:31.400Z,2026-07-07T13:30:30.773Z,671.48,27.98,27.98 d,Nao,Luiz Fernando Rodrigues Pereira,maykon.elias
 19948,User Story,Parou para fazer outro ticket,2026-07-07T13:30:30.773Z,2026-07-07T14:39:46.523Z,01.15,00.05,1.15 h,Nao,maykon.elias,maykon.elias
 19948,User Story,Aguardando Revisão,2026-07-07T18:56:09.387Z,2026-07-07T23:50:24.630Z,04.90,00.20,4.90 h,Nao,Luiz Fernando Rodrigues Pereira,maykon.elias
 19948,User Story,Retorno solicitante,2026-07-13T18:26:13.323Z,2026-07-13T19:25:24.570Z,00.99,00.04,0.99 h,Nao,Julio Andreata,Julio Andreata
-19948,User Story,Aguardando Conclusão de outro Card,2026-07-14T13:58:04.180Z,,04.22,00.18,4.22 h,Sim,maykon.elias,
+19948,User Story,Aguardando Conclusão de outro Card,2026-07-14T13:58:04.180Z,,46.96,01.96,1.96 d,Sim,maykon.elias,
 19949,User Story,Parou para fazer outro ticket,2026-07-09T12:48:32.667Z,2026-07-09T13:06:48.780Z,00.30,00.01,0.30 h,Nao,maykon.elias,maykon.elias
 19949,User Story,Aguardando Revisão,2026-07-09T14:29:34.087Z,2026-07-11T03:22:56.917Z,36.89,01.54,1.54 d,Nao,Luiz Fernando Rodrigues Pereira,maykon.elias
+19949,User Story,Aguardando Conclusão de outro Card,2026-07-15T20:23:13.943Z,,16.54,00.69,16.54 h,Sim,maykon.elias,
 19950,User Story,Parou para fazer outro ticket,2026-07-09T13:06:59.490Z,2026-07-10T02:08:21.280Z,13.02,00.54,13.02 h,Nao,maykon.elias,maykon.elias
-20056,User Story,Aguardando Conclusão de outro Card,2026-06-09T18:47:41.560Z,2026-07-07T17:36:47.577Z,670.82,27.95,27.95 d,Nao,Paulo A. Lot,Ivan Pionelli Junior
+19950,User Story,Aguardando a correção do Dev,2026-07-15T13:13:06.767Z,,23.71,00.99,23.71 h,Sim,Julio Andreata,
+19952,User Story,Aguardando Conclusão de outro Card,2026-07-16T12:02:20.967Z,,00.89,00.04,0.89 h,Sim,Ivan Pionelli Junior,
 20056,User Story,Parou para fazer outro ticket,2026-07-07T17:36:47.577Z,2026-07-08T13:11:01.960Z,19.57,00.82,19.57 h,Nao,Ivan Pionelli Junior,Ivan Pionelli Junior
-20056,User Story,Aguardando Conclusão de outro Card,2026-07-08T18:08:46.083Z,,144.05,06.00,6.00 d,Sim,Ivan Pionelli Junior,
+20056,User Story,Aguardando Conclusão de outro Card,2026-07-08T18:08:46.083Z,,186.79,07.78,7.78 d,Sim,Ivan Pionelli Junior,
 20211,User Story,Aguardando PO,2026-06-11T17:22:05.130Z,2026-06-15T10:54:53.523Z,89.55,03.73,3.73 d,Nao,Luiz Fernando Rodrigues Pereira,Paulo A. Lot
 20211,User Story,Retorno solicitante,2026-06-15T10:54:53.523Z,2026-06-15T19:18:34.590Z,08.39,00.35,8.39 h,Nao,Paulo A. Lot,Paulo A. Lot
 20211,User Story,Aguardando Revisão,2026-06-17T18:26:39.640Z,2026-06-17T18:44:01.637Z,00.29,00.01,0.29 h,Nao,Luiz Fernando Rodrigues Pereira,Julio Andreata
@@ -150,7 +163,7 @@ Id,Tipo,Status,DataInicio,DataFim,DuracaoHoras,DuracaoDias,DuracaoExibicao,Ativo
 20483,User Story,Aguardando PO,2026-06-30T13:43:28.653Z,2026-07-07T12:29:15.847Z,166.76,06.95,6.95 d,Nao,Luiz Fernando Rodrigues Pereira,Gabriel Seiji
 20517,User Story,Aguardando PO,2026-06-16T18:06:55.803Z,2026-06-24T18:43:08.387Z,192.60,08.03,8.03 d,Nao,Paulo A. Lot,Paulo A. Lot
 20578,User Story,Aguardando Revisão,2026-06-19T12:30:06.053Z,2026-06-19T19:25:37.057Z,06.93,00.29,6.93 h,Nao,Luiz Fernando Rodrigues Pereira,Rodolfo Caceraghi dos Santos
-20611,User Story,Aguardando PO,2026-06-17T17:55:34.703Z,,648.27,27.01,27.01 d,Sim,Diogo M. Fontolan,
+20611,User Story,Aguardando PO,2026-06-19T13:27:03.703Z,,647.48,26.98,26.98 d,Sim,Ivan Pionelli Junior,
 20645,Bug,Aguardando Revisão,2026-06-23T19:35:19.197Z,2026-06-23T20:17:09.743Z,00.70,00.03,0.70 h,Nao,Luiz Fernando Rodrigues Pereira,Fabio Nobre
 20756,User Story,Aguardando Revisão,2026-06-24T17:29:33.927Z,2026-06-25T14:21:00.590Z,20.86,00.87,20.86 h,Nao,Luiz Fernando Rodrigues Pereira,Rodolfo Caceraghi dos Santos
 20756,User Story,Retorno solicitante,2026-06-26T17:40:20.547Z,2026-07-01T13:10:25.750Z,115.50,04.81,4.81 d,Nao,Julio Andreata,Ivan Pionelli Junior
@@ -160,6 +173,7 @@ Id,Tipo,Status,DataInicio,DataFim,DuracaoHoras,DuracaoDias,DuracaoExibicao,Ativo
 21132,Bug,Aguardando Revisão,2026-06-30T12:17:06.453Z,2026-06-30T17:29:23.177Z,05.20,00.22,5.20 h,Nao,Luiz Fernando Rodrigues Pereira,Julio Andreata
 21162,User Story,Aguardando Revisão,2026-07-06T14:00:34.490Z,2026-07-06T16:56:33.200Z,02.93,00.12,2.93 h,Nao,Paulo A. Lot,Luiz Fernando Rodrigues Pereira
 21171,User Story,Aguardando Revisão,2026-07-14T10:43:00.160Z,2026-07-14T12:40:09.120Z,01.95,00.08,1.95 h,Nao,Paulo A. Lot,Luiz Fernando Rodrigues Pereira
+21171,User Story,Aguardando a correção do Dev,2026-07-14T20:31:57.403Z,2026-07-14T20:32:04.253Z,00.00,00.00,0.00 h,Nao,Rodolfo Caceraghi dos Santos,Luiz Fernando Rodrigues Pereira
 21305,User Story,Parou para fazer outro ticket,2026-07-08T16:10:48.213Z,2026-07-08T16:43:20.190Z,00.54,00.02,0.54 h,Nao,Luiz Fernando Rodrigues Pereira,Luiz Fernando Rodrigues Pereira
 21305,User Story,Aguardando Conclusão de outro Card,2026-07-09T12:33:29.943Z,2026-07-09T12:33:45.410Z,00.00,00.00,0.00 h,Nao,Luiz Fernando Rodrigues Pereira,Luiz Fernando Rodrigues Pereira
 21305,User Story,Parou para fazer outro ticket,2026-07-09T12:33:45.410Z,2026-07-09T17:04:06.887Z,04.51,00.19,4.51 h,Nao,Luiz Fernando Rodrigues Pereira,Luiz Fernando Rodrigues Pereira
@@ -170,6 +184,8 @@ Id,Tipo,Status,DataInicio,DataFim,DuracaoHoras,DuracaoDias,DuracaoExibicao,Ativo
 21325,User Story,Aguardando Revisão,2026-07-09T12:36:38.277Z,2026-07-09T19:16:48.547Z,06.67,00.28,6.67 h,Nao,Luiz Fernando Rodrigues Pereira,Fabio Nobre
 21325,User Story,Aguardando Revisão,2026-07-10T12:13:08.547Z,2026-07-10T14:19:37.877Z,02.11,00.09,2.11 h,Nao,Luiz Fernando Rodrigues Pereira,Fabio Nobre
 21325,User Story,Aguardando a correção do Dev,2026-07-13T17:30:25.740Z,2026-07-14T17:55:53.777Z,24.42,01.02,1.02 d,Nao,Rodolfo Caceraghi dos Santos,Fabio Nobre
+21325,User Story,Aguardando a correção do Dev,2026-07-15T17:39:13.660Z,2026-07-15T20:22:31.217Z,02.72,00.11,2.72 h,Nao,Rodolfo Caceraghi dos Santos,Fabio Nobre
+21325,User Story,Parou para fazer outro ticket,2026-07-16T12:16:43.527Z,,00.65,00.03,0.65 h,Sim,Ivan Pionelli Junior,
 21414,Bug,Aguardando Revisão,2026-06-30T12:37:31.530Z,2026-06-30T14:47:49.630Z,02.17,00.09,2.17 h,Nao,Luiz Fernando Rodrigues Pereira,Ivan Pionelli Junior
 21485,User Story,Aguardando Revisão,2026-07-02T14:22:43.117Z,2026-07-02T17:18:17.880Z,02.93,00.12,2.93 h,Nao,Luiz Fernando Rodrigues Pereira,Rodolfo Caceraghi dos Santos
 21494,Bug,Aguardando Revisão,2026-07-02T14:05:29.480Z,2026-07-02T18:03:33.780Z,03.97,00.17,3.97 h,Nao,Luiz Fernando Rodrigues Pereira,Ivan Pionelli Junior
@@ -186,8 +202,8 @@ Id,Tipo,Status,DataInicio,DataFim,DuracaoHoras,DuracaoDias,DuracaoExibicao,Ativo
 22508,Bug,Aguardando Revisão,2026-07-14T13:33:48.117Z,2026-07-14T14:31:02.263Z,00.95,00.04,0.95 h,Nao,Luiz Fernando Rodrigues Pereira,Rodolfo Caceraghi dos Santos
 22509,User Story,Aguardando PO,2026-07-13T11:34:39.423Z,2026-07-13T16:38:37.737Z,05.07,00.21,5.07 h,Nao,Paulo A. Lot,Paulo A. Lot
 22515,Bug,Aguardando Revisão,2026-07-13T12:36:33.890Z,2026-07-13T14:39:03.650Z,02.04,00.09,2.04 h,Nao,Luiz Fernando Rodrigues Pereira,Paulo A. Lot
-22567,User Story,Retorno solicitante,2026-07-10T17:27:55.887Z,2026-07-13T11:34:46.130Z,66.11,02.75,2.75 d,Nao,Diogo M. Fontolan,Paulo A. Lot
-22567,User Story,Aguardando PO,2026-07-13T11:34:46.130Z,2026-07-13T14:17:41.103Z,02.72,00.11,2.72 h,Nao,Paulo A. Lot,Paulo A. Lot
-22567,User Story,Retorno solicitante,2026-07-13T14:17:41.103Z,,27.90,01.16,1.16 d,Sim,Paulo A. Lot,
-22618,User Story,Aguardando PO,2026-07-10T20:12:21.343Z,,93.99,03.92,3.92 d,Sim,Gabriel Seiji,
+22618,User Story,Aguardando PO,2026-07-14T16:19:01.210Z,2026-07-14T19:51:57.167Z,03.55,00.15,3.55 h,Nao,Luiz Fernando Rodrigues Pereira,Diogo M. Fontolan
+22710,User Story,Aguardando PO,2026-07-14T19:41:23.217Z,2026-07-14T19:41:54.243Z,00.01,00.00,0.01 h,Nao,Paulo A. Lot,Diogo M. Fontolan
+22714,User Story,Aguardando retorno de parceiro externo,2026-07-14T18:35:38.357Z,2026-07-15T17:07:25.987Z,22.53,00.94,22.53 h,Nao,Paulo A. Lot,Paulo A. Lot
 22738,User Story,Aguardando Revisão,2026-07-14T16:39:38.437Z,2026-07-14T16:46:51.887Z,00.12,00.01,0.12 h,Nao,Luiz Fernando Rodrigues Pereira,Ivan Pionelli Junior
+22977,User Story,Aguardando retorno de parceiro externo,2026-07-16T00:10:01.807Z,,12.76,00.53,12.76 h,Sim,Diogo M. Fontolan,

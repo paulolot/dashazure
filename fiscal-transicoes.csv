@@ -1641,6 +1641,20 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 4874,BoardColumn,Ideia,Ideias,Saulo Lima,2025-06-17T19:50:28.623Z,1.67,0.07
 4874,BoardColumn,Ideias,Backlog,Paulo A. Lot,2025-08-07T18:57:34.163Z,1223.12,50.96
 4874,BoardColumn,Backlog,Ideias,Paulo A. Lot,2025-08-07T19:00:02.683Z,0.04,0.0
+4939,BoardColumn,Ideias,Backlog,Gabriel Seiji,2026-05-14T13:32:28.007Z,7867.95,327.83
+4939,BoardColumn,Backlog,Disponível para Dev,Ivan Pionelli Junior,2026-05-19T14:12:27.987Z,120.67,5.03
+4939,BoardColumn,Disponível para Dev,Dev implementando,Fabio Nobre,2026-05-19T14:13:00.507Z,0.01,0.0
+4939,BoardColumn,Dev implementando,Disponível Revisão de Código,Fabio Nobre,2026-05-19T20:26:18.653Z,6.22,0.26
+4939,BoardColumn,Disponível Revisão de Código,Realizando Revisão de Código,Luiz Fernando Rodrigues Pereira,2026-05-20T11:49:57.893Z,15.39,0.64
+4939,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-05-20T12:24:15.100Z,0.57,0.02
+4939,BoardColumn,Disponível para Teste,Testando,Leandro Andrade,2026-05-20T22:27:08.570Z,10.05,0.42
+4939,BoardColumn,Testando,Aguardando pipeline,Leandro Andrade,2026-05-26T17:40:36.277Z,139.22,5.8
+4939,BoardColumn,Aguardando pipeline,Pronto pra Release,Paulo A. Lot,2026-05-27T12:07:10.047Z,18.44,0.77
+4939,BoardColumn,Pronto pra Release,Concluído,Paulo A. Lot,2026-06-23T13:00:59.830Z,648.9,27.04
+4939,AssignedTo,NENHUM,Fabio Nobre,Ivan Pionelli Junior,2026-05-19T14:12:35.560Z,7988.62,332.86
+4939,State,New,Active,Fabio Nobre,2026-05-19T14:13:00.507Z,7988.62,332.86
+4939,State,Active,Resolved,Paulo A. Lot,2026-05-27T12:07:10.047Z,189.9,7.91
+4939,State,Resolved,Closed,Paulo A. Lot,2026-06-23T13:00:59.830Z,648.9,27.04
 4944,AssignedTo,NENHUM,Luiz Fernando Rodrigues Pereira,Paulo A. Lot,2025-07-31T19:34:47.407Z,985.81,41.08
 5069,AssignedTo,NENHUM,fabricio.sena,fabricio.sena,2025-06-25T13:38:48.477Z,0.02,0.0
 5104,BoardColumn,Ideias,Fazendo Análise,Paulo A. Lot,2025-07-18T16:53:26.740Z,526.84,21.95
@@ -2174,6 +2188,63 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 17410,State,New,Active,Paulo A. Lot,2026-06-01T12:29:22.637Z,334.79,13.95
 17410,State,Active,Resolved,Fabio Nobre,2026-06-03T12:20:38.347Z,47.85,1.99
 17410,State,Resolved,Closed,Gabriel Seiji,2026-06-05T11:28:05.050Z,47.12,1.96
+17428,BoardColumn,Ideias,Backlog,Gabriel Seiji,2026-05-15T13:12:50.797Z,0.0,0.0
+17428,BoardColumn,Backlog,Fazendo Análise,Luiz Fernando Rodrigues Pereira,2026-05-18T13:14:35.143Z,72.03,3.0
+17428,BoardColumn,Fazendo Análise,Disponível para Dev,Luiz Fernando Rodrigues Pereira,2026-05-18T13:16:55.217Z,0.04,0.0
+17428,BoardColumn,Disponível para Dev,Dev implementando,Rodolfo Caceraghi dos Santos,2026-05-18T21:01:40.753Z,7.75,0.32
+17428,BoardColumn,Dev implementando,Disponível Revisão de Código,Rodolfo Caceraghi dos Santos,2026-05-20T19:35:55.173Z,46.57,1.94
+17428,BoardColumn,Disponível Revisão de Código,Realizando Revisão de Código,Luiz Fernando Rodrigues Pereira,2026-05-21T12:41:10.657Z,17.09,0.71
+17428,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-05-21T14:49:11.283Z,2.13,0.09
+17428,BoardColumn,Disponível para Teste,Testando,Leandro Andrade,2026-05-22T00:53:34.440Z,10.07,0.42
+17428,BoardColumn,Testando,Disponível para Teste,Leandro Andrade,2026-05-22T00:58:24.920Z,0.08,0.0
+17428,BoardColumn,Disponível para Teste,Testando,Leandro Andrade,2026-05-25T01:01:29.057Z,72.05,3.0
+17428,BoardColumn,Testando,Aguardando pipeline,Leandro Andrade,2026-05-25T19:09:24.937Z,18.13,0.76
+17428,BoardColumn,Aguardando pipeline,Pronto pra Release,Paulo A. Lot,2026-05-26T11:44:41.650Z,16.59,0.69
+17428,BoardColumn,Pronto pra Release,Concluído,Paulo A. Lot,2026-06-02T10:14:44.873Z,166.5,6.94
+17428,AssignedTo,NENHUM,Paulo A. Lot,Paulo A. Lot,2026-05-15T19:54:57.013Z,6.7,0.28
+17428,AssignedTo,Paulo A. Lot,Luiz Fernando Rodrigues Pereira,Paulo A. Lot,2026-05-15T20:10:57.937Z,0.27,0.01
+17428,AssignedTo,Luiz Fernando Rodrigues Pereira,NENHUM,Luiz Fernando Rodrigues Pereira,2026-05-18T13:23:04.637Z,65.2,2.72
+17428,AssignedTo,NENHUM,Rodolfo Caceraghi dos Santos,Paulo A. Lot,2026-05-18T13:38:51.263Z,0.26,0.01
+17428,State,New,Active,Rodolfo Caceraghi dos Santos,2026-05-18T21:01:40.753Z,79.81,3.33
+17428,State,Active,Resolved,Paulo A. Lot,2026-05-26T11:44:41.650Z,182.72,7.61
+17428,State,Resolved,Closed,Paulo A. Lot,2026-06-02T10:14:44.873Z,166.5,6.94
+17429,BoardColumn,Ideias,Backlog,Gabriel Seiji,2026-05-15T13:13:48.280Z,0.0,0.0
+17429,BoardColumn,Backlog,Fazendo Análise,Luiz Fernando Rodrigues Pereira,2026-05-18T13:29:44.013Z,72.27,3.01
+17429,BoardColumn,Fazendo Análise,Disponível para Dev,Luiz Fernando Rodrigues Pereira,2026-05-18T13:35:19.317Z,0.09,0.0
+17429,BoardColumn,Disponível para Dev,Dev implementando,Fabio Nobre,2026-05-20T19:22:27.730Z,53.79,2.24
+17429,BoardColumn,Dev implementando,Disponível Revisão de Código,Fabio Nobre,2026-05-21T17:14:39.000Z,21.87,0.91
+17429,BoardColumn,Disponível Revisão de Código,Realizando Revisão de Código,Luiz Fernando Rodrigues Pereira,2026-05-21T17:15:11.353Z,0.01,0.0
+17429,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-05-22T12:28:56.580Z,19.23,0.8
+17429,BoardColumn,Disponível para Teste,Testando,Leandro Andrade,2026-05-25T22:51:49.603Z,82.38,3.43
+17429,BoardColumn,Testando,Aguardando pipeline,Leandro Andrade,2026-05-26T14:48:02.560Z,15.94,0.66
+17429,BoardColumn,Aguardando pipeline,Pronto pra Release,Paulo A. Lot,2026-05-27T12:07:07.347Z,21.32,0.89
+17429,BoardColumn,Pronto pra Release,Concluído,Paulo A. Lot,2026-06-02T10:15:12.340Z,142.13,5.92
+17429,AssignedTo,NENHUM,Luiz Fernando Rodrigues Pereira,Paulo A. Lot,2026-05-15T14:51:53.790Z,1.64,0.07
+17429,AssignedTo,Luiz Fernando Rodrigues Pereira,Rodolfo Caceraghi dos Santos,Paulo A. Lot,2026-05-18T16:40:47.347Z,73.81,3.08
+17429,AssignedTo,Rodolfo Caceraghi dos Santos,Fabio Nobre,Paulo A. Lot,2026-05-20T19:01:56.183Z,50.35,2.1
+17429,State,New,Active,Fabio Nobre,2026-05-20T19:22:27.730Z,126.14,5.26
+17429,State,Active,Resolved,Paulo A. Lot,2026-05-27T12:07:07.347Z,160.74,6.7
+17429,State,Resolved,Closed,Paulo A. Lot,2026-06-02T10:15:12.340Z,142.13,5.92
+17508,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-05-15T20:53:27.883Z,0.0,0.0
+17508,BoardColumn,Backlog,Fazendo Análise,Luiz Fernando Rodrigues Pereira,2026-05-19T17:28:34.573Z,92.59,3.86
+17508,BoardColumn,Fazendo Análise,Disponível para Dev,Luiz Fernando Rodrigues Pereira,2026-05-19T17:43:55.143Z,0.26,0.01
+17508,BoardColumn,Disponível para Dev,Dev implementando,Rodolfo Caceraghi dos Santos,2026-05-20T19:35:57.767Z,25.87,1.08
+17508,BoardColumn,Dev implementando,Disponível Revisão de Código,Rodolfo Caceraghi dos Santos,2026-05-26T20:46:18.493Z,145.17,6.05
+17508,BoardColumn,Disponível Revisão de Código,Realizando Revisão de Código,Luiz Fernando Rodrigues Pereira,2026-05-27T12:18:56.293Z,15.54,0.65
+17508,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-05-27T12:52:13.530Z,0.55,0.02
+17508,BoardColumn,Disponível para Teste,Testando,Ivan Pionelli Junior,2026-05-28T01:58:03.527Z,13.1,0.55
+17508,BoardColumn,Testando,Aguardando pipeline,Ivan Pionelli Junior,2026-05-29T01:48:33.100Z,23.84,0.99
+17508,BoardColumn,Aguardando pipeline,Pronto pra Release,Paulo A. Lot,2026-05-29T10:29:54.120Z,8.69,0.36
+17508,BoardColumn,Pronto pra Release,Concluído,Paulo A. Lot,2026-06-02T10:11:47.173Z,95.7,3.99
+17508,AssignedTo,NENHUM,Luiz Fernando Rodrigues Pereira,Paulo A. Lot,2026-05-18T10:46:57.780Z,61.89,2.58
+17508,AssignedTo,Luiz Fernando Rodrigues Pereira,Paulo A. Lot,Paulo A. Lot,2026-05-18T10:48:30.187Z,0.03,0.0
+17508,AssignedTo,Paulo A. Lot,Diogo M. Fontolan,Paulo A. Lot,2026-05-18T11:12:47.077Z,0.4,0.02
+17508,AssignedTo,Diogo M. Fontolan,Luiz Fernando Rodrigues Pereira,Paulo A. Lot,2026-05-19T13:29:36.447Z,26.28,1.1
+17508,AssignedTo,Luiz Fernando Rodrigues Pereira,NENHUM,Luiz Fernando Rodrigues Pereira,2026-05-19T17:44:00.047Z,4.24,0.18
+17508,AssignedTo,NENHUM,Rodolfo Caceraghi dos Santos,Paulo A. Lot,2026-05-19T18:50:27.590Z,1.11,0.05
+17508,State,New,Active,Rodolfo Caceraghi dos Santos,2026-05-20T19:35:57.767Z,118.71,4.95
+17508,State,Active,Resolved,Paulo A. Lot,2026-05-29T10:29:54.120Z,206.9,8.62
+17508,State,Resolved,Closed,Paulo A. Lot,2026-06-02T10:11:47.173Z,95.7,3.99
 17764,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-05-18T20:22:16.513Z,0.0,0.0
 17764,BoardColumn,Backlog,Ideias,Mateus Bahis,2026-05-19T14:31:42.220Z,18.16,0.76
 17764,BoardColumn,Ideias,Backlog,Paulo A. Lot,2026-05-28T14:43:17.080Z,216.19,9.01
@@ -2209,6 +2280,26 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 17768,State,New,Active,Julio Andreata,2026-05-25T15:07:57.030Z,162.58,6.77
 17768,State,Active,Resolved,Paulo A. Lot,2026-06-03T11:12:21.447Z,212.07,8.84
 17768,State,Resolved,Closed,Paulo A. Lot,2026-06-23T12:54:32.503Z,481.7,20.07
+17769,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-05-18T20:39:42.897Z,0.0,0.0
+17769,BoardColumn,Backlog,Fazendo Análise,Luiz Fernando Rodrigues Pereira,2026-05-20T18:54:54.967Z,46.25,1.93
+17769,BoardColumn,Fazendo Análise,Disponível para Dev,Luiz Fernando Rodrigues Pereira,2026-05-20T18:56:10.813Z,0.02,0.0
+17769,BoardColumn,Disponível para Dev,Dev implementando,Fabio Nobre,2026-05-21T17:22:37.827Z,22.44,0.94
+17769,BoardColumn,Dev implementando,Disponível para Dev,Fabio Nobre,2026-05-21T19:09:25.160Z,1.78,0.07
+17769,BoardColumn,Disponível para Dev,Dev implementando,Fabio Nobre,2026-05-25T17:09:11.063Z,94.0,3.92
+17769,BoardColumn,Dev implementando,Disponível Revisão de Código,Fabio Nobre,2026-05-25T17:09:42.257Z,0.01,0.0
+17769,BoardColumn,Disponível Revisão de Código,Realizando Revisão de Código,Luiz Fernando Rodrigues Pereira,2026-05-26T11:53:08.010Z,18.72,0.78
+17769,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-05-26T12:02:30.990Z,0.16,0.01
+17769,BoardColumn,Disponível para Teste,Testando,Leandro Andrade,2026-05-26T17:41:48.777Z,5.65,0.24
+17769,BoardColumn,Testando,Aguardando pipeline,Leandro Andrade,2026-05-27T19:32:28.340Z,25.84,1.08
+17769,BoardColumn,Aguardando pipeline,Pronto pra Release,Paulo A. Lot,2026-05-28T11:15:39.787Z,15.72,0.65
+17769,BoardColumn,Pronto pra Release,Concluído,Paulo A. Lot,2026-06-23T12:59:39.217Z,625.73,26.07
+17769,AssignedTo,NENHUM,Luiz Fernando Rodrigues Pereira,Paulo A. Lot,2026-05-19T14:24:11.637Z,17.74,0.74
+17769,AssignedTo,Luiz Fernando Rodrigues Pereira,Fabio Nobre,Paulo A. Lot,2026-05-20T20:01:14.360Z,29.62,1.23
+17769,State,New,Active,Fabio Nobre,2026-05-21T17:22:37.827Z,68.72,2.86
+17769,State,Active,New,Fabio Nobre,2026-05-21T19:09:25.160Z,1.78,0.07
+17769,State,New,Active,Fabio Nobre,2026-05-25T17:09:11.063Z,94.0,3.92
+17769,State,Active,Resolved,Paulo A. Lot,2026-05-28T11:15:39.787Z,66.11,2.75
+17769,State,Resolved,Closed,Paulo A. Lot,2026-06-23T12:59:39.217Z,625.73,26.07
 17813,BoardColumn,Ideias,Backlog,maykon.elias,2026-05-19T13:46:33.763Z,0.34,0.01
 17813,BoardColumn,Backlog,Ideias,Paulo A. Lot,2026-05-25T14:42:08.580Z,144.93,6.04
 17813,AssignedTo,maykon.elias,NENHUM,Paulo A. Lot,2026-05-25T12:18:34.560Z,142.87,5.95
@@ -2227,6 +2318,36 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 17920,AssignedTo,Luiz Fernando Rodrigues Pereira,NENHUM,Luiz Fernando Rodrigues Pereira,2026-06-15T17:17:20.833Z,430.25,17.93
 17920,AssignedTo,NENHUM,maykon.elias,Paulo A. Lot,2026-06-15T19:28:30.857Z,2.19,0.09
 17920,State,New,Active,maykon.elias,2026-07-06T18:04:44.537Z,1131.2,47.13
+18035,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-05-21T17:23:35.427Z,0.0,0.0
+18035,BoardColumn,Backlog,Fazendo Análise,Luiz Fernando Rodrigues Pereira,2026-05-22T14:26:01.237Z,21.04,0.88
+18035,BoardColumn,Fazendo Análise,Disponível para Dev,Luiz Fernando Rodrigues Pereira,2026-05-22T14:38:18.980Z,0.2,0.01
+18035,BoardColumn,Disponível para Dev,Dev implementando,Rodolfo Caceraghi dos Santos,2026-05-26T20:46:21.840Z,102.13,4.26
+18035,BoardColumn,Dev implementando,Disponível Revisão de Código,Rodolfo Caceraghi dos Santos,2026-05-27T20:26:26.190Z,23.67,0.99
+18035,BoardColumn,Disponível Revisão de Código,Realizando Revisão de Código,Luiz Fernando Rodrigues Pereira,2026-05-28T10:55:48.640Z,14.49,0.6
+18035,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-05-28T16:26:00.643Z,5.5,0.23
+18035,BoardColumn,Disponível para Teste,Testando,Fabio Nobre,2026-05-28T17:42:01.987Z,1.27,0.05
+18035,BoardColumn,Testando,Aguardando pipeline,Fabio Nobre,2026-05-29T17:49:07.093Z,24.12,1.0
+18035,BoardColumn,Aguardando pipeline,Pronto pra Release,Fabio Nobre,2026-05-29T17:54:16.613Z,0.09,0.0
+18035,BoardColumn,Pronto pra Release,Concluído,Paulo A. Lot,2026-06-02T10:13:33.830Z,88.32,3.68
+18035,AssignedTo,NENHUM,Luiz Fernando Rodrigues Pereira,Paulo A. Lot,2026-05-21T17:39:47.107Z,0.27,0.01
+18035,AssignedTo,Luiz Fernando Rodrigues Pereira,NENHUM,Luiz Fernando Rodrigues Pereira,2026-05-22T14:52:13.720Z,21.21,0.88
+18035,AssignedTo,NENHUM,Rodolfo Caceraghi dos Santos,Paulo A. Lot,2026-05-22T17:26:49.203Z,2.58,0.11
+18035,State,New,Active,Rodolfo Caceraghi dos Santos,2026-05-26T20:46:21.840Z,123.38,5.14
+18035,State,Active,Resolved,Fabio Nobre,2026-05-29T17:54:16.613Z,69.13,2.88
+18035,State,Resolved,Closed,Paulo A. Lot,2026-06-02T10:13:33.830Z,88.32,3.68
+18167,BoardColumn,Ideias,Backlog,Ivan Pionelli Junior,2026-05-22T14:21:40.960Z,0.04,0.0
+18167,BoardColumn,Backlog,Disponível para Dev,Ivan Pionelli Junior,2026-05-22T14:22:13.980Z,0.01,0.0
+18167,BoardColumn,Disponível para Dev,Dev implementando,maykon.elias,2026-05-25T14:08:04.343Z,71.76,2.99
+18167,BoardColumn,Dev implementando,Disponível Revisão de Código,maykon.elias,2026-05-25T18:52:25.077Z,4.74,0.2
+18167,BoardColumn,Disponível Revisão de Código,Realizando Revisão de Código,Luiz Fernando Rodrigues Pereira,2026-05-26T11:55:10.810Z,17.05,0.71
+18167,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-05-26T12:05:37.653Z,0.17,0.01
+18167,BoardColumn,Disponível para Teste,Testando,Leandro Andrade,2026-05-26T22:04:46.507Z,9.99,0.42
+18167,BoardColumn,Testando,Aguardando pipeline,Leandro Andrade,2026-05-26T22:12:35.470Z,0.13,0.01
+18167,BoardColumn,Aguardando pipeline,Pronto pra Release,Paulo A. Lot,2026-05-27T12:07:08.567Z,13.91,0.58
+18167,BoardColumn,Pronto pra Release,Concluído,Paulo A. Lot,2026-06-23T12:53:01.850Z,648.76,27.03
+18167,State,New,Active,maykon.elias,2026-05-25T14:08:04.343Z,71.81,2.99
+18167,State,Active,Resolved,Paulo A. Lot,2026-05-27T12:07:08.567Z,45.98,1.92
+18167,State,Resolved,Closed,Paulo A. Lot,2026-06-23T12:53:01.850Z,648.76,27.03
 18177,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-05-22T15:01:23.853Z,0.0,0.0
 18177,BoardColumn,Backlog,Fazendo Análise,Luiz Fernando Rodrigues Pereira,2026-05-27T17:21:07.197Z,122.33,5.1
 18177,BoardColumn,Fazendo Análise,Disponível para Dev,Luiz Fernando Rodrigues Pereira,2026-05-27T17:35:09.597Z,0.23,0.01
@@ -2277,6 +2398,65 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 18256,State,New,Active,Fabio Nobre,2026-05-28T12:28:11.337Z,72.61,3.03
 18256,State,Active,Resolved,Paulo A. Lot,2026-06-02T17:16:34.507Z,124.81,5.2
 18256,State,Resolved,Closed,Paulo A. Lot,2026-06-23T12:59:18.520Z,499.71,20.82
+18257,BoardColumn,Ideias,Backlog,Gabriel Seiji,2026-05-25T11:53:07.857Z,0.0,0.0
+18257,BoardColumn,Backlog,Fazendo Análise,Luiz Fernando Rodrigues Pereira,2026-05-25T14:28:30.397Z,2.59,0.11
+18257,BoardColumn,Fazendo Análise,Disponível para Dev,Luiz Fernando Rodrigues Pereira,2026-05-25T14:31:39.567Z,0.05,0.0
+18257,BoardColumn,Disponível para Dev,Dev implementando,maykon.elias,2026-05-26T20:46:25.027Z,30.25,1.26
+18257,BoardColumn,Dev implementando,Disponível Revisão de Código,maykon.elias,2026-05-27T14:58:59.090Z,18.21,0.76
+18257,BoardColumn,Disponível Revisão de Código,Realizando Revisão de Código,Luiz Fernando Rodrigues Pereira,2026-05-27T17:34:02.513Z,2.58,0.11
+18257,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-05-27T23:37:04.943Z,6.05,0.25
+18257,BoardColumn,Disponível para Teste,Testando,Leandro Andrade,2026-05-29T11:19:26.377Z,35.71,1.49
+18257,BoardColumn,Testando,Aguardando pipeline,Leandro Andrade,2026-05-29T11:55:24.173Z,0.6,0.02
+18257,BoardColumn,Aguardando pipeline,Pronto pra Release,maykon.elias,2026-05-29T11:55:48.597Z,0.01,0.0
+18257,BoardColumn,Pronto pra Release,Aguardando pipeline,Leandro Andrade,2026-05-29T11:56:14.200Z,0.01,0.0
+18257,BoardColumn,Aguardando pipeline,Pronto pra Release,Ivan Pionelli Junior,2026-05-29T12:02:41.613Z,0.11,0.0
+18257,BoardColumn,Pronto pra Release,Concluído,Paulo A. Lot,2026-06-02T10:13:02.093Z,94.17,3.92
+18257,AssignedTo,NENHUM,Luiz Fernando Rodrigues Pereira,Paulo A. Lot,2026-05-25T12:32:56.010Z,0.67,0.03
+18257,AssignedTo,Luiz Fernando Rodrigues Pereira,NENHUM,Luiz Fernando Rodrigues Pereira,2026-05-25T14:31:44.067Z,1.98,0.08
+18257,AssignedTo,NENHUM,Fabio Nobre,Paulo A. Lot,2026-05-25T14:40:36.427Z,0.15,0.01
+18257,AssignedTo,Fabio Nobre,Luiz Fernando Rodrigues Pereira,Paulo A. Lot,2026-05-25T14:42:56.667Z,0.04,0.0
+18257,AssignedTo,Luiz Fernando Rodrigues Pereira,NENHUM,Luiz Fernando Rodrigues Pereira,2026-05-26T12:05:46.123Z,21.38,0.89
+18257,AssignedTo,NENHUM,Rodolfo Caceraghi dos Santos,Ivan Pionelli Junior,2026-05-26T14:02:20.210Z,1.94,0.08
+18257,AssignedTo,Rodolfo Caceraghi dos Santos,maykon.elias,Ivan Pionelli Junior,2026-05-26T20:01:59.760Z,5.99,0.25
+18257,State,New,Active,maykon.elias,2026-05-26T20:46:25.027Z,32.89,1.37
+18257,State,Active,Resolved,maykon.elias,2026-05-29T11:55:48.597Z,63.16,2.63
+18257,State,Resolved,Active,Leandro Andrade,2026-05-29T11:56:14.200Z,0.01,0.0
+18257,State,Active,Resolved,Ivan Pionelli Junior,2026-05-29T12:02:41.613Z,0.11,0.0
+18257,State,Resolved,Closed,Paulo A. Lot,2026-06-02T10:13:02.093Z,94.17,3.92
+18258,BoardColumn,Ideias,Backlog,Gabriel Seiji,2026-05-25T11:54:10.263Z,0.0,0.0
+18258,BoardColumn,Backlog,Fazendo Análise,Ivan Pionelli Junior,2026-05-25T12:39:37.630Z,0.76,0.03
+18258,BoardColumn,Fazendo Análise,Disponível para Dev,Ivan Pionelli Junior,2026-05-25T12:39:43.747Z,0.0,0.0
+18258,BoardColumn,Disponível para Dev,Dev implementando,Fabio Nobre,2026-05-25T17:11:50.297Z,4.54,0.19
+18258,BoardColumn,Dev implementando,Disponível Revisão de Código,Fabio Nobre,2026-05-26T17:15:25.170Z,24.06,1.0
+18258,BoardColumn,Disponível Revisão de Código,Realizando Revisão de Código,Luiz Fernando Rodrigues Pereira,2026-05-27T11:38:19.360Z,18.38,0.77
+18258,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-05-27T12:57:49.923Z,1.33,0.06
+18258,BoardColumn,Disponível para Teste,Testando,Ivan Pionelli Junior,2026-05-27T19:59:17.670Z,7.02,0.29
+18258,BoardColumn,Testando,Aguardando pipeline,Ivan Pionelli Junior,2026-05-28T01:56:32.307Z,5.95,0.25
+18258,BoardColumn,Aguardando pipeline,Pronto pra Release,Paulo A. Lot,2026-05-28T18:02:50.913Z,16.11,0.67
+18258,BoardColumn,Pronto pra Release,Concluído,Paulo A. Lot,2026-06-02T10:14:28.477Z,112.19,4.67
+18258,AssignedTo,NENHUM,Fabio Nobre,Ivan Pionelli Junior,2026-05-25T12:34:12.330Z,0.67,0.03
+18258,State,New,Active,Fabio Nobre,2026-05-25T17:11:50.297Z,5.3,0.22
+18258,State,Active,Resolved,Paulo A. Lot,2026-05-28T18:02:50.913Z,72.85,3.04
+18258,State,Resolved,Closed,Paulo A. Lot,2026-06-02T10:14:28.477Z,112.19,4.67
+18260,BoardColumn,Ideias,Backlog,Gabriel Seiji,2026-05-25T12:00:02.953Z,0.0,0.0
+18260,BoardColumn,Backlog,Fazendo Análise,Luiz Fernando Rodrigues Pereira,2026-05-26T12:13:44.847Z,24.23,1.01
+18260,BoardColumn,Fazendo Análise,Disponível para Dev,Ivan Pionelli Junior,2026-05-26T14:10:48.163Z,1.95,0.08
+18260,BoardColumn,Disponível para Dev,Dev implementando,maykon.elias,2026-05-26T14:53:04.570Z,0.7,0.03
+18260,BoardColumn,Dev implementando,Disponível Revisão de Código,maykon.elias,2026-05-26T17:57:20.583Z,3.07,0.13
+18260,BoardColumn,Disponível Revisão de Código,Realizando Revisão de Código,Luiz Fernando Rodrigues Pereira,2026-05-27T11:38:26.517Z,17.68,0.74
+18260,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-05-27T12:14:12.250Z,0.6,0.02
+18260,BoardColumn,Disponível para Teste,Testando,Leandro Andrade,2026-05-27T20:02:51.260Z,7.81,0.33
+18260,BoardColumn,Testando,Aguardando pipeline,Leandro Andrade,2026-05-29T11:19:16.623Z,39.27,1.64
+18260,BoardColumn,Aguardando pipeline,Pronto pra Release,Paulo A. Lot,2026-05-29T14:01:31.053Z,2.7,0.11
+18260,BoardColumn,Pronto pra Release,Concluído,Paulo A. Lot,2026-06-23T12:54:44.873Z,598.89,24.95
+18260,AssignedTo,NENHUM,Ivan Pionelli Junior,Paulo A. Lot,2026-05-25T12:42:22.437Z,0.71,0.03
+18260,AssignedTo,Ivan Pionelli Junior,Luiz Fernando Rodrigues Pereira,Ivan Pionelli Junior,2026-05-25T16:58:59.210Z,4.28,0.18
+18260,AssignedTo,Luiz Fernando Rodrigues Pereira,maykon.elias,Paulo A. Lot,2026-05-26T13:59:41.260Z,21.01,0.88
+18260,AssignedTo,maykon.elias,Luiz Fernando Rodrigues Pereira,Paulo A. Lot,2026-05-26T13:59:48.243Z,0.0,0.0
+18260,AssignedTo,Luiz Fernando Rodrigues Pereira,maykon.elias,Ivan Pionelli Junior,2026-05-26T14:16:03.673Z,0.27,0.01
+18260,State,New,Active,maykon.elias,2026-05-26T14:53:04.570Z,26.89,1.12
+18260,State,Active,Resolved,Paulo A. Lot,2026-05-29T14:01:31.053Z,71.14,2.96
+18260,State,Resolved,Closed,Paulo A. Lot,2026-06-23T12:54:44.873Z,598.89,24.95
 18278,BoardColumn,Ideias,Backlog,Gabriel Seiji,2026-05-25T13:11:24.693Z,0.0,0.0
 18278,BoardColumn,Backlog,Fazendo Análise,Luiz Fernando Rodrigues Pereira,2026-05-25T18:47:27.643Z,5.6,0.23
 18278,BoardColumn,Fazendo Análise,Disponível para Dev,Luiz Fernando Rodrigues Pereira,2026-05-25T18:51:36.390Z,0.07,0.0
@@ -2316,6 +2496,27 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 18342,State,New,Active,Ivan Pionelli Junior,2026-06-12T13:40:34.833Z,427.54,17.81
 18342,State,Active,Resolved,Paulo A. Lot,2026-06-22T16:33:18.713Z,242.88,10.12
 18342,State,Resolved,Closed,Paulo A. Lot,2026-06-23T11:19:15.897Z,18.77,0.78
+18448,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-05-26T17:18:56.450Z,0.0,0.0
+18448,BoardColumn,Backlog,Fazendo Análise,Ivan Pionelli Junior,2026-05-27T17:48:34.737Z,24.49,1.02
+18448,BoardColumn,Fazendo Análise,Disponível para Dev,Ivan Pionelli Junior,2026-05-27T18:00:55.850Z,0.21,0.01
+18448,BoardColumn,Disponível para Dev,Dev implementando,maykon.elias,2026-05-27T18:24:34.870Z,0.39,0.02
+18448,BoardColumn,Dev implementando,Pronto pra Release,maykon.elias,2026-05-28T14:27:19.300Z,20.05,0.84
+18448,BoardColumn,Pronto pra Release,Dev implementando,maykon.elias,2026-05-28T14:28:57.797Z,0.03,0.0
+18448,BoardColumn,Dev implementando,Realizando Revisão de Código,maykon.elias,2026-05-28T14:30:57.443Z,0.03,0.0
+18448,BoardColumn,Realizando Revisão de Código,Disponível Revisão de Código,maykon.elias,2026-05-28T14:30:59.067Z,0.0,0.0
+18448,BoardColumn,Disponível Revisão de Código,Realizando Revisão de Código,Luiz Fernando Rodrigues Pereira,2026-05-28T17:34:37.837Z,3.06,0.13
+18448,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-05-28T18:51:02.573Z,1.27,0.05
+18448,BoardColumn,Disponível para Teste,Pronto pra Release,Paulo A. Lot,2026-05-28T19:02:54.770Z,0.2,0.01
+18448,BoardColumn,Pronto pra Release,Concluído,Paulo A. Lot,2026-06-02T10:12:10.980Z,111.15,4.63
+18448,AssignedTo,NENHUM,Ivan Pionelli Junior,Ivan Pionelli Junior,2026-05-26T17:26:14.290Z,0.12,0.01
+18448,AssignedTo,Ivan Pionelli Junior,Luiz Fernando Rodrigues Pereira,Ivan Pionelli Junior,2026-05-26T17:58:39.913Z,0.54,0.02
+18448,AssignedTo,Luiz Fernando Rodrigues Pereira,Ivan Pionelli Junior,Paulo A. Lot,2026-05-27T10:58:47.697Z,17.0,0.71
+18448,AssignedTo,Ivan Pionelli Junior,maykon.elias,Ivan Pionelli Junior,2026-05-27T18:04:41.950Z,7.1,0.3
+18448,State,New,Active,maykon.elias,2026-05-27T18:24:34.870Z,25.09,1.05
+18448,State,Active,Resolved,maykon.elias,2026-05-28T14:27:19.300Z,20.05,0.84
+18448,State,Resolved,Active,maykon.elias,2026-05-28T14:28:57.797Z,0.03,0.0
+18448,State,Active,Resolved,Paulo A. Lot,2026-05-28T19:02:54.770Z,4.57,0.19
+18448,State,Resolved,Closed,Paulo A. Lot,2026-06-02T10:12:10.980Z,111.15,4.63
 18464,BoardColumn,Ideias,Backlog,Gabriel Seiji,2026-06-29T14:13:29.093Z,811.99,33.83
 18464,AssignedTo,Paulo A. Lot,NENHUM,Paulo A. Lot,2026-07-06T14:51:40.500Z,980.63,40.86
 18467,BoardColumn,Ideias,Backlog,Ivan Pionelli Junior,2026-06-02T17:53:15.230Z,167.58,6.98
@@ -2345,6 +2546,19 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 18500,State,Active,New,Rodolfo Caceraghi dos Santos,2026-06-02T11:02:38.327Z,0.0,0.0
 18500,State,New,Active,Rodolfo Caceraghi dos Santos,2026-06-02T12:32:54.467Z,1.5,0.06
 18500,State,Active,Resolved,Paulo A. Lot,2026-06-11T18:53:57.737Z,222.35,9.26
+18539,BoardColumn,Ideias,Backlog,Bruno Oliveira,2026-05-27T13:48:01.160Z,0.06,0.0
+18539,BoardColumn,Backlog,Fazendo Análise,Ivan Pionelli Junior,2026-05-27T15:05:40.783Z,1.29,0.05
+18539,BoardColumn,Fazendo Análise,Dev implementando,Ivan Pionelli Junior,2026-05-27T15:10:54.637Z,0.09,0.0
+18539,BoardColumn,Dev implementando,Disponível Revisão de Código,Ivan Pionelli Junior,2026-05-27T19:28:50.743Z,4.3,0.18
+18539,BoardColumn,Disponível Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-05-27T19:37:00.580Z,0.14,0.01
+18539,BoardColumn,Disponível para Teste,Testando,maykon.elias,2026-05-28T12:29:01.363Z,16.87,0.7
+18539,BoardColumn,Testando,Aguardando pipeline,maykon.elias,2026-05-28T12:29:26.273Z,0.01,0.0
+18539,BoardColumn,Aguardando pipeline,Pronto pra Release,Paulo A. Lot,2026-05-28T18:02:55.770Z,5.56,0.23
+18539,BoardColumn,Pronto pra Release,Concluído,Paulo A. Lot,2026-06-02T10:12:19.057Z,112.16,4.67
+18539,AssignedTo,NENHUM,Ivan Pionelli Junior,Ivan Pionelli Junior,2026-05-27T13:52:51.407Z,0.14,0.01
+18539,State,New,Active,Ivan Pionelli Junior,2026-05-27T15:10:54.637Z,1.44,0.06
+18539,State,Active,Resolved,Paulo A. Lot,2026-05-28T18:02:55.770Z,26.87,1.12
+18539,State,Resolved,Closed,Paulo A. Lot,2026-06-02T10:12:19.057Z,112.16,4.67
 18603,BoardColumn,Ideias,Backlog,Ivan Pionelli Junior,2026-05-29T15:00:54.647Z,42.66,1.78
 18603,BoardColumn,Backlog,Fazendo Análise,Ivan Pionelli Junior,2026-06-01T13:20:51.733Z,70.33,2.93
 18603,BoardColumn,Fazendo Análise,Disponível para Dev,Ivan Pionelli Junior,2026-06-01T16:56:41.200Z,3.6,0.15
@@ -2408,6 +2622,18 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 18686,State,New,Active,Rodolfo Caceraghi dos Santos,2026-06-08T20:12:12.030Z,263.99,11.0
 18686,State,Active,Resolved,Paulo A. Lot,2026-06-18T10:37:46.610Z,230.43,9.6
 18686,State,Resolved,Closed,Paulo A. Lot,2026-06-23T13:01:45.007Z,122.4,5.1
+18720,BoardColumn,Ideias,Fazendo Análise,Diogo M. Fontolan,2026-05-29T12:18:55.373Z,0.02,0.0
+18720,BoardColumn,Fazendo Análise,Disponível Revisão de Código,Julio Andreata,2026-05-29T17:32:18.483Z,5.22,0.22
+18720,BoardColumn,Disponível Revisão de Código,Pronto pra Release,Julio Andreata,2026-05-29T17:32:47.230Z,0.01,0.0
+18720,BoardColumn,Pronto pra Release,Aguardando pipeline,Julio Andreata,2026-05-29T17:32:50.860Z,0.0,0.0
+18720,BoardColumn,Aguardando pipeline,Pronto pra Release,Julio Andreata,2026-05-29T17:32:52.100Z,0.0,0.0
+18720,BoardColumn,Pronto pra Release,Concluído,Paulo A. Lot,2026-06-02T10:11:29.860Z,88.64,3.69
+18720,AssignedTo,NENHUM,Julio Andreata,Diogo M. Fontolan,2026-05-29T12:18:47.880Z,0.01,0.0
+18720,State,New,Active,Julio Andreata,2026-05-29T17:32:18.483Z,5.24,0.22
+18720,State,Active,Resolved,Julio Andreata,2026-05-29T17:32:47.230Z,0.01,0.0
+18720,State,Resolved,Active,Julio Andreata,2026-05-29T17:32:50.860Z,0.0,0.0
+18720,State,Active,Resolved,Julio Andreata,2026-05-29T17:32:52.100Z,0.0,0.0
+18720,State,Resolved,Closed,Paulo A. Lot,2026-06-02T10:11:29.860Z,88.64,3.69
 18723,BoardColumn,Ideias,Fazendo Análise,Diogo M. Fontolan,2026-05-29T12:18:53.140Z,0.01,0.0
 18723,BoardColumn,Fazendo Análise,Backlog,Paulo A. Lot,2026-06-02T10:55:42.870Z,94.61,3.94
 18723,BoardColumn,Backlog,Concluído,Paulo A. Lot,2026-06-08T10:46:20.563Z,143.84,5.99
@@ -2449,6 +2675,9 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 18932,State,Active,Resolved,maykon.elias,2026-06-02T17:41:41.040Z,28.57,1.19
 18932,State,Resolved,Closed,Paulo A. Lot,2026-06-10T11:03:26.937Z,185.36,7.72
 18981,AssignedTo,Ivan Pionelli Junior,NENHUM,Ivan Pionelli Junior,2026-06-01T16:56:47.427Z,0.0,0.0
+19034,BoardColumn,Ideias,Fazendo Análise,Julio Andreata,2026-06-01T19:27:51.323Z,0.01,0.0
+19034,BoardColumn,Fazendo Análise,Concluído,Paulo A. Lot,2026-06-02T10:16:54.027Z,14.82,0.62
+19034,State,New,Closed,Paulo A. Lot,2026-06-02T10:16:54.027Z,14.82,0.62
 19063,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-06-02T12:24:27.417Z,0.0,0.0
 19063,BoardColumn,Backlog,Fazendo Análise,Paulo A. Lot,2026-06-02T12:40:58.803Z,0.28,0.01
 19063,BoardColumn,Fazendo Análise,Disponível para Dev,Paulo A. Lot,2026-06-02T14:27:34.197Z,1.78,0.07
@@ -2475,6 +2704,11 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 19152,State,New,Active,maykon.elias,2026-06-02T18:27:42.220Z,0.0,0.0
 19152,State,Active,Resolved,maykon.elias,2026-06-03T18:03:00.210Z,23.59,0.98
 19152,State,Resolved,Closed,Paulo A. Lot,2026-06-16T10:35:26.370Z,304.54,12.69
+19205,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-06-02T23:33:11.427Z,0.0,0.0
+19205,BoardColumn,Backlog,Fazendo Análise,Luiz Fernando Rodrigues Pereira,2026-06-03T12:22:14.210Z,12.82,0.53
+19205,BoardColumn,Fazendo Análise,Concluído,Paulo A. Lot,2026-06-03T17:53:40.710Z,5.52,0.23
+19205,AssignedTo,NENHUM,Luiz Fernando Rodrigues Pereira,Paulo A. Lot,2026-06-03T11:26:42.117Z,11.89,0.5
+19205,State,New,Closed,Paulo A. Lot,2026-06-03T17:53:40.710Z,18.34,0.76
 19209,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-06-03T11:45:39.257Z,0.0,0.0
 19209,BoardColumn,Backlog,Concluído,Ivan Pionelli Junior,2026-06-05T10:54:20.063Z,47.14,1.96
 19209,AssignedTo,NENHUM,Diogo M. Fontolan,Ivan Pionelli Junior,2026-06-03T13:27:15.710Z,1.69,0.07
@@ -2535,6 +2769,7 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 19230,BoardColumn,Disponível Revisão de Código,Realizando Revisão de Código,Luiz Fernando Rodrigues Pereira,2026-06-26T12:02:04.710Z,16.27,0.68
 19230,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-06-26T16:56:52.733Z,4.91,0.2
 19230,BoardColumn,Disponível para Teste,Testando,Rodolfo Caceraghi dos Santos,2026-07-06T13:02:15.533Z,236.09,9.84
+19230,BoardColumn,Testando,Aguardando pipeline,Rodolfo Caceraghi dos Santos,2026-07-15T17:40:10.093Z,220.63,9.19
 19230,AssignedTo,NENHUM,Ivan Pionelli Junior,Paulo A. Lot,2026-06-09T12:07:55.603Z,141.28,5.89
 19230,AssignedTo,Ivan Pionelli Junior,Fabio Nobre,Ivan Pionelli Junior,2026-06-11T16:38:32.857Z,52.51,2.19
 19230,State,New,Active,Fabio Nobre,2026-06-15T11:09:16.670Z,284.31,11.85
@@ -2570,9 +2805,11 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 19234,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-07-01T12:06:54.147Z,48.01,2.0
 19234,BoardColumn,Disponível para Teste,Testando,Julio Andreata,2026-07-03T19:23:42.937Z,55.28,2.3
 19234,BoardColumn,Testando,Aguardando pipeline,Julio Andreata,2026-07-13T19:24:50.920Z,240.02,10.0
+19234,BoardColumn,Aguardando pipeline,Pronto pra Release,Paulo A. Lot,2026-07-14T19:32:41.963Z,24.13,1.01
 19234,AssignedTo,NENHUM,Ivan Pionelli Junior,Paulo A. Lot,2026-06-09T12:08:23.843Z,141.27,5.89
 19234,AssignedTo,Ivan Pionelli Junior,Fabio Nobre,Ivan Pionelli Junior,2026-06-15T18:57:02.347Z,150.81,6.28
 19234,State,New,Active,Fabio Nobre,2026-06-25T19:46:28.643Z,532.9,22.2
+19234,State,Active,Resolved,Paulo A. Lot,2026-07-14T19:32:41.963Z,455.77,18.99
 19235,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-06-08T11:08:50.910Z,116.27,4.84
 19235,BoardColumn,Backlog,Fazendo Análise,Ivan Pionelli Junior,2026-06-16T18:28:55.377Z,199.33,8.31
 19235,BoardColumn,Fazendo Análise,Disponível para Dev,Ivan Pionelli Junior,2026-06-17T18:16:48.410Z,23.8,0.99
@@ -2641,6 +2878,10 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 19354,AssignedTo,Diogo M. Fontolan,Ivan Pionelli Junior,Ivan Pionelli Junior,2026-06-08T19:52:27.750Z,73.61,3.07
 19354,State,New,Active,Ivan Pionelli Junior,2026-06-08T19:59:59.160Z,74.35,3.1
 19354,State,Active,Closed,Ivan Pionelli Junior,2026-06-09T11:08:17.507Z,15.14,0.63
+19356,BoardColumn,Ideias,Fazendo Análise,Fabio Nobre,2026-06-05T18:06:18.783Z,0.0,0.0
+19356,BoardColumn,Fazendo Análise,Concluído,Fabio Nobre,2026-06-05T18:07:14.580Z,0.02,0.0
+19356,AssignedTo,NENHUM,Fabio Nobre,Fabio Nobre,2026-06-05T18:06:12.960Z,0.0,0.0
+19356,State,New,Closed,Fabio Nobre,2026-06-05T18:07:14.580Z,0.02,0.0
 19370,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-06-05T20:19:26.450Z,0.01,0.0
 19370,BoardColumn,Backlog,Concluído,Paulo A. Lot,2026-06-09T10:56:46.037Z,86.62,3.61
 19370,AssignedTo,NENHUM,Luiz Fernando Rodrigues Pereira,Paulo A. Lot,2026-06-08T11:52:09.467Z,63.55,2.65
@@ -2713,6 +2954,10 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 19632,State,Resolved,Closed,Paulo A. Lot,2026-06-16T10:33:57.247Z,118.59,4.94
 19634,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-06-08T19:48:16.403Z,0.0,0.0
 19634,BoardColumn,Backlog,Ideias,Rafael Cavicchioli,2026-06-09T13:03:03.013Z,17.25,0.72
+19651,BoardColumn,Ideias,Fazendo Análise,Fabio Nobre,2026-06-08T20:18:38.493Z,0.0,0.0
+19651,BoardColumn,Fazendo Análise,Concluído,Fabio Nobre,2026-06-08T20:20:34.510Z,0.03,0.0
+19651,AssignedTo,NENHUM,Fabio Nobre,Fabio Nobre,2026-06-08T20:20:30.263Z,0.03,0.0
+19651,State,New,Closed,Fabio Nobre,2026-06-08T20:20:34.510Z,0.03,0.0
 19758,BoardColumn,Ideias,Backlog,Gabriel Seiji,2026-06-09T20:24:31.000Z,7.91,0.33
 19758,BoardColumn,Backlog,Fazendo Análise,Paulo A. Lot,2026-07-02T11:08:51.840Z,542.74,22.61
 19758,BoardColumn,Fazendo Análise,Disponível para Dev,Paulo A. Lot,2026-07-02T17:12:00.087Z,6.05,0.25
@@ -2731,34 +2976,47 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 19760,BoardColumn,Backlog,Fazendo Análise,Paulo A. Lot,2026-07-02T11:08:58.230Z,542.77,22.62
 19760,BoardColumn,Fazendo Análise,Disponível para Dev,Paulo A. Lot,2026-07-02T17:12:01.390Z,6.05,0.25
 19760,BoardColumn,Disponível para Dev,Dev implementando,Ivan Pionelli Junior,2026-07-13T13:26:26.650Z,260.24,10.84
+19760,BoardColumn,Dev implementando,Disponível Revisão de Código,Paulo A. Lot,2026-07-15T17:06:58.070Z,51.68,2.15
+19760,BoardColumn,Disponível Revisão de Código,Realizando Revisão de Código,Luiz Fernando Rodrigues Pereira,2026-07-16T10:37:03.173Z,17.5,0.73
+19760,BoardColumn,Realizando Revisão de Código,Dev implementando,Ivan Pionelli Junior,2026-07-16T10:41:56.153Z,0.08,0.0
 19760,AssignedTo,NENHUM,Paulo A. Lot,Paulo A. Lot,2026-07-02T11:09:00.737Z,550.65,22.94
 19760,AssignedTo,Paulo A. Lot,Ivan Pionelli Junior,Paulo A. Lot,2026-07-02T18:11:46.960Z,7.05,0.29
 19760,State,New,Active,Ivan Pionelli Junior,2026-07-13T13:26:26.650Z,816.94,34.04
 19761,BoardColumn,Ideias,Backlog,Gabriel Seiji,2026-06-09T20:22:47.197Z,7.88,0.33
 19761,BoardColumn,Backlog,Fazendo Análise,Paulo A. Lot,2026-07-02T10:58:15.090Z,542.59,22.61
 19761,BoardColumn,Fazendo Análise,Disponível para Dev,Paulo A. Lot,2026-07-02T17:12:01.690Z,6.23,0.26
+19761,BoardColumn,Disponível para Dev,Dev implementando,Ivan Pionelli Junior,2026-07-15T16:58:50.850Z,311.78,12.99
 19761,AssignedTo,NENHUM,Paulo A. Lot,Paulo A. Lot,2026-07-02T10:58:11.303Z,550.47,22.94
 19761,AssignedTo,Paulo A. Lot,Ivan Pionelli Junior,Paulo A. Lot,2026-07-02T18:12:12.683Z,7.23,0.3
+19761,State,New,Active,Ivan Pionelli Junior,2026-07-15T16:58:50.850Z,868.48,36.19
 19765,BoardColumn,Ideias,Backlog,Gabriel Seiji,2026-06-09T20:18:04.117Z,7.8,0.33
 19765,BoardColumn,Backlog,Fazendo Análise,Paulo A. Lot,2026-07-02T11:18:54.967Z,543.01,22.63
 19765,BoardColumn,Fazendo Análise,Disponível para Dev,Paulo A. Lot,2026-07-02T17:12:02.443Z,5.89,0.25
+19765,BoardColumn,Disponível para Dev,Dev implementando,Ivan Pionelli Junior,2026-07-16T10:52:29.557Z,329.67,13.74
 19765,AssignedTo,NENHUM,Paulo A. Lot,Paulo A. Lot,2026-07-02T11:18:52.520Z,550.82,22.95
 19765,AssignedTo,Paulo A. Lot,Ivan Pionelli Junior,Paulo A. Lot,2026-07-02T18:12:34.040Z,6.89,0.29
+19765,State,New,Active,Ivan Pionelli Junior,2026-07-16T10:52:29.557Z,886.38,36.93
 19766,BoardColumn,Ideias,Backlog,Gabriel Seiji,2026-06-09T20:18:20.117Z,7.81,0.33
 19766,BoardColumn,Backlog,Fazendo Análise,Paulo A. Lot,2026-07-01T14:54:53.840Z,522.61,21.78
 19766,BoardColumn,Fazendo Análise,Disponível para Dev,Paulo A. Lot,2026-07-02T17:12:01.970Z,26.29,1.1
+19766,BoardColumn,Disponível para Dev,Dev implementando,Ivan Pionelli Junior,2026-07-14T18:28:46.153Z,289.28,12.05
 19766,AssignedTo,NENHUM,Paulo A. Lot,Paulo A. Lot,2026-07-01T14:54:56.223Z,530.42,22.1
 19766,AssignedTo,Paulo A. Lot,Ivan Pionelli Junior,Paulo A. Lot,2026-07-02T18:12:21.280Z,27.29,1.14
+19766,State,New,Active,Ivan Pionelli Junior,2026-07-14T18:28:46.153Z,845.98,35.25
 19767,BoardColumn,Ideias,Backlog,Gabriel Seiji,2026-06-09T20:18:37.050Z,7.81,0.33
 19767,BoardColumn,Backlog,Fazendo Análise,Paulo A. Lot,2026-07-02T10:57:47.060Z,542.65,22.61
 19767,BoardColumn,Fazendo Análise,Disponível para Dev,Paulo A. Lot,2026-07-02T17:12:02.750Z,6.24,0.26
+19767,BoardColumn,Disponível para Dev,Dev implementando,Ivan Pionelli Junior,2026-07-15T11:49:58.930Z,306.63,12.78
 19767,AssignedTo,NENHUM,Paulo A. Lot,Paulo A. Lot,2026-07-02T10:57:45.427Z,550.47,22.94
 19767,AssignedTo,Paulo A. Lot,Ivan Pionelli Junior,Paulo A. Lot,2026-07-02T18:11:55.610Z,7.24,0.3
+19767,State,New,Active,Ivan Pionelli Junior,2026-07-15T11:49:58.930Z,863.34,35.97
 19769,BoardColumn,Ideias,Backlog,Gabriel Seiji,2026-06-09T20:18:54.080Z,7.82,0.33
 19769,BoardColumn,Backlog,Fazendo Análise,Paulo A. Lot,2026-07-02T11:19:17.857Z,543.01,22.63
 19769,BoardColumn,Fazendo Análise,Disponível para Dev,Paulo A. Lot,2026-07-02T17:12:03.063Z,5.88,0.24
+19769,BoardColumn,Disponível para Dev,Dev implementando,Ivan Pionelli Junior,2026-07-15T13:56:06.730Z,308.73,12.86
 19769,AssignedTo,NENHUM,Paulo A. Lot,Paulo A. Lot,2026-07-02T11:19:12.987Z,550.82,22.95
 19769,AssignedTo,Paulo A. Lot,Ivan Pionelli Junior,Paulo A. Lot,2026-07-02T18:12:04.860Z,6.88,0.29
+19769,State,New,Active,Ivan Pionelli Junior,2026-07-15T13:56:06.730Z,865.44,36.06
 19770,BoardColumn,Ideias,Backlog,Gabriel Seiji,2026-06-09T20:19:27.143Z,7.83,0.33
 19770,BoardColumn,Backlog,Fazendo Análise,Paulo A. Lot,2026-07-02T12:53:07.180Z,544.56,22.69
 19770,BoardColumn,Fazendo Análise,Disponível para Dev,Paulo A. Lot,2026-07-02T17:12:03.063Z,4.32,0.18
@@ -2855,6 +3113,7 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 19949,BoardColumn,Disponível Revisão de Código,Realizando Revisão de Código,Luiz Fernando Rodrigues Pereira,2026-07-09T14:04:48.627Z,12.49,0.52
 19949,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-07-13T19:28:53.960Z,101.4,4.23
 19949,BoardColumn,Disponível para Teste,Testando,Julio Andreata,2026-07-14T13:58:30.677Z,18.49,0.77
+19949,BoardColumn,Testando,Aguardando pipeline,Julio Andreata,2026-07-14T19:04:39.733Z,5.1,0.21
 19949,AssignedTo,Luiz Fernando Rodrigues Pereira,NENHUM,Luiz Fernando Rodrigues Pereira,2026-06-19T18:43:11.490Z,244.69,10.2
 19949,AssignedTo,NENHUM,maykon.elias,Paulo A. Lot,2026-06-22T11:29:51.547Z,64.78,2.7
 19949,State,New,Active,maykon.elias,2026-07-07T18:28:33.353Z,676.45,28.19
@@ -2865,6 +3124,7 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 19950,BoardColumn,Dev implementando,Disponível Revisão de Código,maykon.elias,2026-07-11T14:06:12.690Z,60.51,2.52
 19950,BoardColumn,Disponível Revisão de Código,Realizando Revisão de Código,Luiz Fernando Rodrigues Pereira,2026-07-11T21:47:24.420Z,7.69,0.32
 19950,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-07-13T19:28:45.890Z,45.69,1.9
+19950,BoardColumn,Disponível para Teste,Testando,Julio Andreata,2026-07-14T19:04:41.193Z,23.6,0.98
 19950,AssignedTo,Luiz Fernando Rodrigues Pereira,NENHUM,Luiz Fernando Rodrigues Pereira,2026-06-16T17:15:21.143Z,171.23,7.13
 19950,AssignedTo,NENHUM,maykon.elias,Paulo A. Lot,2026-06-17T12:16:15.750Z,19.02,0.79
 19950,State,New,Active,maykon.elias,2026-07-09T01:35:43.020Z,707.57,29.48
@@ -2875,6 +3135,7 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 19951,BoardColumn,Dev implementando,Disponível Revisão de Código,maykon.elias,2026-07-11T21:22:33.093Z,21.12,0.88
 19951,BoardColumn,Disponível Revisão de Código,Realizando Revisão de Código,Luiz Fernando Rodrigues Pereira,2026-07-11T21:47:24.420Z,0.41,0.02
 19951,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-07-13T19:29:04.283Z,45.69,1.9
+19951,BoardColumn,Disponível para Teste,Testando,Julio Andreata,2026-07-15T17:09:31.307Z,45.67,1.9
 19951,AssignedTo,Luiz Fernando Rodrigues Pereira,maykon.elias,Luiz Fernando Rodrigues Pereira,2026-06-22T13:15:28.597Z,311.23,12.97
 19951,State,New,Active,maykon.elias,2026-07-11T00:15:27.953Z,754.23,31.43
 19952,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-06-09T14:12:12.073Z,0.18,0.01
@@ -2886,6 +3147,8 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 19952,BoardColumn,Dev implementando,Disponível Revisão de Código,maykon.elias,2026-07-11T21:41:16.703Z,21.43,0.89
 19952,BoardColumn,Disponível Revisão de Código,Realizando Revisão de Código,Luiz Fernando Rodrigues Pereira,2026-07-11T21:46:58.127Z,0.09,0.0
 19952,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-07-13T19:28:59.040Z,45.7,1.9
+19952,BoardColumn,Disponível para Teste,Testando,Julio Andreata,2026-07-15T14:36:07.773Z,43.12,1.8
+19952,BoardColumn,Testando,Aguardando pipeline,Julio Andreata,2026-07-15T14:36:11.990Z,0.0,0.0
 19952,AssignedTo,Luiz Fernando Rodrigues Pereira,maykon.elias,Luiz Fernando Rodrigues Pereira,2026-06-22T17:41:37.117Z,315.67,13.15
 19952,State,New,Active,maykon.elias,2026-07-11T00:15:28.050Z,754.23,31.43
 20056,BoardColumn,Ideias,Backlog,Gabriel Seiji,2026-06-09T18:47:43.647Z,0.0,0.0
@@ -2991,6 +3254,11 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 20584,BoardColumn,Ideias,Backlog,Gabriel Seiji,2026-06-29T13:48:08.860Z,287.67,11.99
 20584,BoardColumn,Backlog,Concluído,Ivan Pionelli Junior,2026-07-06T12:02:49.780Z,166.24,6.93
 20584,State,New,Closed,Ivan Pionelli Junior,2026-07-06T12:02:49.780Z,453.92,18.91
+20609,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-06-17T17:52:11.057Z,0.0,0.0
+20609,BoardColumn,Backlog,Fazendo Análise,Luiz Fernando Rodrigues Pereira,2026-06-18T14:36:08.057Z,20.73,0.86
+20609,BoardColumn,Fazendo Análise,Concluído,Luiz Fernando Rodrigues Pereira,2026-06-18T18:50:29.573Z,4.24,0.18
+20609,AssignedTo,NENHUM,Luiz Fernando Rodrigues Pereira,Paulo A. Lot,2026-06-17T18:04:27.443Z,0.21,0.01
+20609,State,New,Closed,Luiz Fernando Rodrigues Pereira,2026-06-18T18:50:29.573Z,24.97,1.04
 20611,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-06-17T17:55:38.087Z,0.0,0.0
 20611,BoardColumn,Backlog,Fazendo Análise,Ivan Pionelli Junior,2026-06-17T18:25:47.743Z,0.5,0.02
 20611,BoardColumn,Fazendo Análise,Concluído,Ivan Pionelli Junior,2026-06-19T17:21:28.013Z,46.93,1.96
@@ -3029,9 +3297,12 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 20712,BoardColumn,Ideias,Backlog,Gabriel Seiji,2026-07-07T17:10:14.047Z,454.33,18.93
 20712,BoardColumn,Backlog,Fazendo Análise,Paulo A. Lot,2026-07-08T10:40:30.853Z,17.5,0.73
 20712,BoardColumn,Fazendo Análise,Disponível para Dev,Paulo A. Lot,2026-07-08T12:20:25.953Z,1.67,0.07
+20712,BoardColumn,Disponível para Dev,Dev implementando,Luiz Fernando Rodrigues Pereira,2026-07-15T14:12:42.917Z,169.87,7.08
 20712,AssignedTo,Luiz Fernando Rodrigues Pereira,NENHUM,Luiz Fernando Rodrigues Pereira,2026-06-18T18:51:46.867Z,0.02,0.0
 20712,AssignedTo,NENHUM,Paulo A. Lot,Paulo A. Lot,2026-07-07T17:42:30.313Z,454.85,18.95
 20712,AssignedTo,Paulo A. Lot,Ivan Pionelli Junior,Paulo A. Lot,2026-07-08T12:20:14.530Z,18.63,0.78
+20712,AssignedTo,Ivan Pionelli Junior,Luiz Fernando Rodrigues Pereira,Paulo A. Lot,2026-07-13T14:44:51.900Z,122.41,5.1
+20712,State,New,Active,Luiz Fernando Rodrigues Pereira,2026-07-15T14:12:42.917Z,643.37,26.81
 20713,AssignedTo,Luiz Fernando Rodrigues Pereira,NENHUM,Luiz Fernando Rodrigues Pereira,2026-06-18T18:52:37.257Z,0.04,0.0
 20743,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-07-07T17:42:13.383Z,436.32,18.18
 20747,BoardColumn,Ideias,Backlog,Paulo A. Lot,2026-06-19T14:01:50.210Z,0.06,0.0
@@ -3105,6 +3376,20 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 20870,State,New,Active,maykon.elias,2026-06-22T13:42:53.033Z,0.0,0.0
 20870,State,Active,Resolved,maykon.elias,2026-06-23T18:17:20.630Z,28.57,1.19
 20870,State,Resolved,Closed,maykon.elias,2026-06-23T18:17:38.897Z,0.01,0.0
+20923,BoardColumn,Ideias,Dev implementando,maykon.elias,2026-06-22T17:18:24.800Z,0.02,0.0
+20923,BoardColumn,Dev implementando,Disponível Revisão de Código,maykon.elias,2026-06-22T18:21:27.763Z,1.05,0.04
+20923,BoardColumn,Disponível Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-06-22T19:02:33.257Z,0.68,0.03
+20923,BoardColumn,Disponível para Teste,Concluído,Paulo A. Lot,2026-06-23T11:23:03.993Z,16.34,0.68
+20923,AssignedTo,NENHUM,maykon.elias,maykon.elias,2026-06-22T17:17:10.877Z,0.0,0.0
+20923,State,New,Active,maykon.elias,2026-06-22T17:18:24.800Z,0.02,0.0
+20923,State,Active,Closed,Paulo A. Lot,2026-06-23T11:23:03.993Z,18.08,0.75
+20944,BoardColumn,Ideias,Dev implementando,maykon.elias,2026-06-22T18:04:55.280Z,0.0,0.0
+20944,BoardColumn,Dev implementando,Disponível Revisão de Código,maykon.elias,2026-06-22T18:21:26.440Z,0.28,0.01
+20944,BoardColumn,Disponível Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-06-22T19:02:22.440Z,0.68,0.03
+20944,BoardColumn,Disponível para Teste,Concluído,Paulo A. Lot,2026-06-23T11:23:00.790Z,16.34,0.68
+20944,AssignedTo,NENHUM,maykon.elias,maykon.elias,2026-06-22T18:04:53.243Z,0.0,0.0
+20944,State,New,Active,maykon.elias,2026-06-22T18:04:55.280Z,0.0,0.0
+20944,State,Active,Closed,Paulo A. Lot,2026-06-23T11:23:00.790Z,17.3,0.72
 21012,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-06-23T12:44:13.687Z,0.01,0.0
 21012,BoardColumn,Backlog,Fazendo Análise,Luiz Fernando Rodrigues Pereira,2026-06-24T19:03:27.220Z,30.32,1.26
 21012,BoardColumn,Fazendo Análise,Disponível para Dev,Luiz Fernando Rodrigues Pereira,2026-06-25T11:58:47.633Z,16.92,0.71
@@ -3124,6 +3409,11 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 21012,AssignedTo,NENHUM,Ivan Pionelli Junior,Paulo A. Lot,2026-06-25T18:42:17.553Z,5.27,0.22
 21012,State,New,Active,Ivan Pionelli Junior,2026-06-26T10:51:13.787Z,70.12,2.92
 21012,State,Active,Closed,Paulo A. Lot,2026-07-01T11:29:28.510Z,120.64,5.03
+21070,BoardColumn,Ideias,Fazendo Análise,Ivan Pionelli Junior,2026-06-23T20:09:33.633Z,0.0,0.0
+21070,BoardColumn,Fazendo Análise,Concluído,Rodolfo Caceraghi dos Santos,2026-06-24T13:41:48.647Z,17.54,0.73
+21070,AssignedTo,NENHUM,Ivan Pionelli Junior,Ivan Pionelli Junior,2026-06-23T20:09:29.787Z,0.0,0.0
+21070,AssignedTo,Ivan Pionelli Junior,Rodolfo Caceraghi dos Santos,Ivan Pionelli Junior,2026-06-24T11:55:23.023Z,15.76,0.66
+21070,State,New,Closed,Rodolfo Caceraghi dos Santos,2026-06-24T13:41:48.647Z,17.54,0.73
 21109,BoardColumn,Dev implementando,Aguardando pipeline,Luiz Fernando Rodrigues Pereira,2026-06-24T14:08:06.780Z,0.43,0.02
 21109,BoardColumn,Aguardando pipeline,Concluído,Paulo A. Lot,2026-06-24T17:08:42.230Z,3.01,0.13
 21109,State,Active,Closed,Paulo A. Lot,2026-06-24T17:08:42.230Z,3.44,0.14
@@ -3198,6 +3488,7 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 21171,BoardColumn,Disponível Revisão de Código,Realizando Revisão de Código,Paulo A. Lot,2026-07-14T10:14:20.780Z,10.97,0.46
 21171,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Paulo A. Lot,2026-07-14T12:54:17.540Z,2.67,0.11
 21171,BoardColumn,Disponível para Teste,Testando,Rodolfo Caceraghi dos Santos,2026-07-14T17:02:05.443Z,4.13,0.17
+21171,BoardColumn,Testando,Aguardando pipeline,Rodolfo Caceraghi dos Santos,2026-07-15T13:11:18.703Z,20.15,0.84
 21171,AssignedTo,NENHUM,Paulo A. Lot,Paulo A. Lot,2026-07-02T18:21:30.960Z,189.98,7.92
 21171,AssignedTo,Paulo A. Lot,Luiz Fernando Rodrigues Pereira,Paulo A. Lot,2026-07-02T18:24:57.770Z,0.06,0.0
 21171,State,New,Active,Luiz Fernando Rodrigues Pereira,2026-07-10T18:25:47.967Z,382.06,15.92
@@ -3250,9 +3541,11 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 21305,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Paulo A. Lot,2026-07-14T12:54:13.110Z,2.67,0.11
 21305,BoardColumn,Disponível para Teste,Testando,Rodolfo Caceraghi dos Santos,2026-07-14T14:32:22.200Z,1.64,0.07
 21305,BoardColumn,Testando,Aguardando pipeline,Rodolfo Caceraghi dos Santos,2026-07-14T15:16:48.377Z,0.74,0.03
+21305,BoardColumn,Aguardando pipeline,Pronto pra Release,Paulo A. Lot,2026-07-14T19:32:54.650Z,4.27,0.18
 21305,AssignedTo,NENHUM,Paulo A. Lot,Paulo A. Lot,2026-07-02T18:21:30.960Z,173.12,7.21
 21305,AssignedTo,Paulo A. Lot,Luiz Fernando Rodrigues Pereira,Paulo A. Lot,2026-07-02T18:24:49.310Z,0.06,0.0
 21305,State,New,Active,Luiz Fernando Rodrigues Pereira,2026-07-08T13:36:02.060Z,312.36,13.01
+21305,State,Active,Resolved,Paulo A. Lot,2026-07-14T19:32:54.650Z,149.95,6.25
 21314,BoardColumn,Ideias,Backlog,Gabriel Seiji,2026-06-29T13:44:48.217Z,96.5,4.02
 21314,BoardColumn,Backlog,Fazendo Análise,Paulo A. Lot,2026-07-02T18:22:44.323Z,76.63,3.19
 21314,BoardColumn,Fazendo Análise,Disponível para Dev,Paulo A. Lot,2026-07-02T18:27:35.960Z,0.08,0.0
@@ -3265,6 +3558,10 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 21325,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-07-10T18:07:42.910Z,71.87,2.99
 21325,BoardColumn,Disponível para Teste,Testando,Rodolfo Caceraghi dos Santos,2026-07-10T19:55:34.013Z,1.8,0.07
 21325,State,New,Active,Fabio Nobre,2026-06-30T17:39:42.620Z,123.8,5.16
+21399,BoardColumn,Ideias,Fazendo Análise,Ivan Pionelli Junior,2026-06-26T13:37:17.193Z,0.0,0.0
+21399,BoardColumn,Fazendo Análise,Concluído,Ivan Pionelli Junior,2026-06-26T14:54:22.997Z,1.28,0.05
+21399,AssignedTo,NENHUM,Ivan Pionelli Junior,Ivan Pionelli Junior,2026-06-26T13:37:13.873Z,0.0,0.0
+21399,State,New,Closed,Ivan Pionelli Junior,2026-06-26T14:54:22.997Z,1.29,0.05
 21414,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-06-26T17:20:17.283Z,0.0,0.0
 21414,BoardColumn,Backlog,Fazendo Análise,Ivan Pionelli Junior,2026-06-26T17:44:56.470Z,0.41,0.02
 21414,BoardColumn,Fazendo Análise,Dev implementando,Ivan Pionelli Junior,2026-06-29T12:49:43.773Z,67.08,2.79
@@ -3322,6 +3619,14 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 21494,State,New,Active,Ivan Pionelli Junior,2026-06-30T19:30:53.280Z,31.91,1.33
 21494,State,Active,Resolved,Paulo A. Lot,2026-07-03T14:15:24.290Z,66.74,2.78
 21494,State,Resolved,Closed,Paulo A. Lot,2026-07-08T11:57:57.650Z,117.71,4.9
+21504,BoardColumn,Ideias,Backlog,Paulo A. Lot,2026-06-29T12:47:53.053Z,0.0,0.0
+21504,BoardColumn,Backlog,Fazendo Análise,Paulo A. Lot,2026-06-29T12:47:54.697Z,0.0,0.0
+21504,BoardColumn,Fazendo Análise,Disponível para Dev,Paulo A. Lot,2026-06-29T12:47:57.163Z,0.0,0.0
+21504,BoardColumn,Disponível para Dev,Dev implementando,Paulo A. Lot,2026-06-29T12:47:58.780Z,0.0,0.0
+21504,BoardColumn,Dev implementando,Concluído,Paulo A. Lot,2026-06-29T13:49:45.080Z,1.03,0.04
+21504,AssignedTo,NENHUM,Paulo A. Lot,Paulo A. Lot,2026-06-29T12:47:50.990Z,0.0,0.0
+21504,State,New,Active,Paulo A. Lot,2026-06-29T12:47:58.780Z,0.0,0.0
+21504,State,Active,Closed,Paulo A. Lot,2026-06-29T13:49:45.080Z,1.03,0.04
 21516,BoardColumn,Ideias,Dev implementando,maykon.elias,2026-06-29T13:49:42.047Z,0.0,0.0
 21516,BoardColumn,Dev implementando,Pronto pra Release,maykon.elias,2026-07-01T11:39:19.360Z,45.83,1.91
 21516,BoardColumn,Pronto pra Release,Concluído,Paulo A. Lot,2026-07-02T14:48:47.270Z,27.16,1.13
@@ -3359,6 +3664,16 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 21575,State,Resolved,Closed,Paulo A. Lot,2026-07-14T10:49:21.290Z,163.56,6.82
 21600,AssignedTo,NENHUM,Ivan Pionelli Junior,Ivan Pionelli Junior,2026-07-01T11:32:18.650Z,20.96,0.87
 21654,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-07-01T12:03:07.900Z,0.0,0.0
+21725,BoardColumn,Ideias,Disponível para Dev,Fabio Nobre,2026-07-01T20:49:18.927Z,0.0,0.0
+21725,BoardColumn,Disponível para Dev,Disponível Revisão de Código,Fabio Nobre,2026-07-01T20:49:24.163Z,0.0,0.0
+21725,BoardColumn,Disponível Revisão de Código,Concluído,Fabio Nobre,2026-07-01T20:50:23.887Z,0.02,0.0
+21725,AssignedTo,NENHUM,Fabio Nobre,Fabio Nobre,2026-07-01T20:49:21.247Z,0.0,0.0
+21725,State,New,Active,Fabio Nobre,2026-07-01T20:49:24.163Z,0.0,0.0
+21725,State,Active,Closed,Fabio Nobre,2026-07-01T20:50:23.887Z,0.02,0.0
+21727,BoardColumn,Ideias,Fazendo Análise,Ivan Pionelli Junior,2026-07-02T10:45:17.510Z,0.0,0.0
+21727,BoardColumn,Fazendo Análise,Concluído,Ivan Pionelli Junior,2026-07-03T13:09:38.393Z,26.41,1.1
+21727,AssignedTo,NENHUM,Ivan Pionelli Junior,Ivan Pionelli Junior,2026-07-02T10:45:14.253Z,0.0,0.0
+21727,State,New,Closed,Ivan Pionelli Junior,2026-07-03T13:09:38.393Z,26.41,1.1
 21774,BoardColumn,Ideias,Backlog,Paulo A. Lot,2026-07-02T18:04:10.673Z,0.43,0.02
 21774,BoardColumn,Backlog,Fazendo Análise,Paulo A. Lot,2026-07-02T18:04:12.173Z,0.0,0.0
 21774,BoardColumn,Fazendo Análise,Disponível para Dev,Paulo A. Lot,2026-07-02T18:04:13.613Z,0.0,0.0
@@ -3480,6 +3795,10 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 22055,State,New,Active,Rodolfo Caceraghi dos Santos,2026-07-06T20:42:28.310Z,2.32,0.1
 22055,State,Active,Resolved,Paulo A. Lot,2026-07-10T12:03:39.953Z,87.35,3.64
 22055,State,Resolved,Closed,Paulo A. Lot,2026-07-14T10:48:34.523Z,94.75,3.95
+22172,BoardColumn,Ideias,Fazendo Análise,Paulo A. Lot,2026-07-07T14:48:25.120Z,0.0,0.0
+22172,BoardColumn,Fazendo Análise,Concluído,Paulo A. Lot,2026-07-08T13:48:12.553Z,23.0,0.96
+22172,AssignedTo,NENHUM,Paulo A. Lot,Paulo A. Lot,2026-07-07T14:48:17.870Z,0.0,0.0
+22172,State,New,Closed,Paulo A. Lot,2026-07-08T13:48:12.553Z,23.0,0.96
 22287,BoardColumn,Ideias,Backlog,Ivan Pionelli Junior,2026-07-08T10:56:16.180Z,0.0,0.0
 22287,BoardColumn,Backlog,Fazendo Análise,Rodolfo Caceraghi dos Santos,2026-07-10T17:00:10.633Z,54.07,2.25
 22287,BoardColumn,Fazendo Análise,Disponível para Dev,Rodolfo Caceraghi dos Santos,2026-07-10T19:29:34.247Z,2.49,0.1
@@ -3578,22 +3897,33 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 22508,BoardColumn,Dev implementando,Disponível Revisão de Código,Rodolfo Caceraghi dos Santos,2026-07-13T20:04:59.423Z,1.29,0.05
 22508,BoardColumn,Disponível Revisão de Código,Realizando Revisão de Código,Luiz Fernando Rodrigues Pereira,2026-07-14T12:43:12.690Z,16.64,0.69
 22508,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-07-14T16:27:42.823Z,3.74,0.16
+22508,BoardColumn,Disponível para Teste,Testando,Fabio Nobre,2026-07-15T13:02:21.923Z,20.58,0.86
+22508,BoardColumn,Testando,Aguardando pipeline,Fabio Nobre,2026-07-15T18:52:28.450Z,5.84,0.24
+22508,BoardColumn,Aguardando pipeline,Pronto pra Release,Fabio Nobre,2026-07-15T18:52:47.200Z,0.01,0.0
 22508,AssignedTo,NENHUM,Paulo A. Lot,Paulo A. Lot,2026-07-10T12:07:46.360Z,16.09,0.67
 22508,AssignedTo,Paulo A. Lot,Rodolfo Caceraghi dos Santos,Paulo A. Lot,2026-07-13T11:20:41.057Z,71.22,2.97
 22508,State,New,Active,Rodolfo Caceraghi dos Santos,2026-07-13T18:47:37.000Z,94.76,3.95
+22508,State,Active,Resolved,Fabio Nobre,2026-07-15T18:52:47.200Z,48.09,2.0
 22509,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-07-09T20:09:00.640Z,0.0,0.0
 22509,BoardColumn,Backlog,Fazendo Análise,Paulo A. Lot,2026-07-13T16:38:19.390Z,92.49,3.85
 22509,BoardColumn,Fazendo Análise,Disponível para Dev,Paulo A. Lot,2026-07-13T16:38:42.493Z,0.01,0.0
+22509,BoardColumn,Disponível para Dev,Dev implementando,Fabio Nobre,2026-07-16T11:20:50.193Z,66.7,2.78
 22509,AssignedTo,NENHUM,Diogo M. Fontolan,Paulo A. Lot,2026-07-13T12:10:53.870Z,88.03,3.67
 22509,AssignedTo,Diogo M. Fontolan,Paulo A. Lot,Paulo A. Lot,2026-07-13T16:38:17.163Z,4.46,0.19
 22509,AssignedTo,Paulo A. Lot,Rodolfo Caceraghi dos Santos,Paulo A. Lot,2026-07-13T16:38:46.370Z,0.01,0.0
+22509,AssignedTo,Rodolfo Caceraghi dos Santos,Fabio Nobre,Paulo A. Lot,2026-07-14T19:40:56.890Z,27.04,1.13
+22509,State,New,Active,Fabio Nobre,2026-07-16T11:20:50.193Z,159.2,6.63
 22510,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-07-09T20:17:01.010Z,0.0,0.0
 22510,BoardColumn,Backlog,Fazendo Análise,Paulo A. Lot,2026-07-13T11:41:15.553Z,87.4,3.64
 22510,BoardColumn,Fazendo Análise,Disponível para Dev,Paulo A. Lot,2026-07-13T12:30:40.617Z,0.82,0.03
+22510,BoardColumn,Disponível para Dev,Dev implementando,Rodolfo Caceraghi dos Santos,2026-07-15T17:42:39.917Z,53.2,2.22
 22510,AssignedTo,NENHUM,Rodolfo Caceraghi dos Santos,Ivan Pionelli Junior,2026-07-10T10:59:31.387Z,14.71,0.61
 22510,AssignedTo,Rodolfo Caceraghi dos Santos,Julio Andreata,Paulo A. Lot,2026-07-10T12:08:38.533Z,1.15,0.05
 22510,AssignedTo,Julio Andreata,Paulo A. Lot,Paulo A. Lot,2026-07-13T11:41:18.270Z,71.54,2.98
 22510,AssignedTo,Paulo A. Lot,Rodolfo Caceraghi dos Santos,Paulo A. Lot,2026-07-13T12:38:32.557Z,0.95,0.04
+22510,AssignedTo,Rodolfo Caceraghi dos Santos,Fabio Nobre,Ivan Pionelli Junior,2026-07-14T18:40:47.423Z,30.04,1.25
+22510,AssignedTo,Fabio Nobre,Rodolfo Caceraghi dos Santos,Paulo A. Lot,2026-07-14T19:40:26.127Z,0.99,0.04
+22510,State,New,Active,Rodolfo Caceraghi dos Santos,2026-07-15T17:42:39.917Z,141.43,5.89
 22515,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-07-09T20:31:14.020Z,0.0,0.0
 22515,BoardColumn,Backlog,Fazendo Análise,Paulo A. Lot,2026-07-10T11:32:02.910Z,15.01,0.63
 22515,BoardColumn,Fazendo Análise,Disponível para Dev,Paulo A. Lot,2026-07-13T10:58:08.407Z,71.43,2.98
@@ -3609,8 +3939,6 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 22515,State,New,Active,Paulo A. Lot,2026-07-13T10:58:09.850Z,86.45,3.6
 22515,State,Active,Resolved,maykon.elias,2026-07-14T14:05:56.353Z,27.13,1.13
 22515,State,Resolved,Closed,maykon.elias,2026-07-14T14:33:50.550Z,0.47,0.02
-22567,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-07-10T17:28:02.560Z,0.0,0.0
-22567,AssignedTo,NENHUM,Diogo M. Fontolan,Ivan Pionelli Junior,2026-07-13T11:53:32.503Z,66.43,2.77
 22618,BoardColumn,Ideias,Backlog,Gabriel Seiji,2026-07-10T20:12:25.197Z,0.0,0.0
 22618,AssignedTo,NENHUM,Luiz Fernando Rodrigues Pereira,Paulo A. Lot,2026-07-13T10:35:14.397Z,62.38,2.6
 22640,BoardColumn,Ideias,Dev implementando,maykon.elias,2026-07-13T11:41:23.317Z,0.0,0.0
@@ -3626,24 +3954,39 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 22640,State,Active,Resolved,Ivan Pionelli Junior,2026-07-14T12:01:48.250Z,24.34,1.01
 22640,State,Resolved,Closed,Paulo A. Lot,2026-07-14T12:03:15.130Z,0.02,0.0
 22710,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-07-13T18:41:10.610Z,0.0,0.0
+22710,AssignedTo,NENHUM,Paulo A. Lot,Paulo A. Lot,2026-07-14T18:38:16.373Z,23.95,1.0
+22710,AssignedTo,Paulo A. Lot,Diogo M. Fontolan,Paulo A. Lot,2026-07-14T19:41:15.200Z,1.05,0.04
+22710,AssignedTo,Diogo M. Fontolan,Ivan Pionelli Junior,Paulo A. Lot,2026-07-14T19:45:02.810Z,0.06,0.0
 22714,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-07-13T19:35:24.860Z,0.0,0.0
+22714,BoardColumn,Backlog,Fazendo Análise,Paulo A. Lot,2026-07-15T16:59:42.273Z,45.4,1.89
+22714,BoardColumn,Fazendo Análise,Disponível para Dev,Paulo A. Lot,2026-07-16T12:02:19.520Z,19.04,0.79
 22714,AssignedTo,NENHUM,Paulo A. Lot,Paulo A. Lot,2026-07-14T10:37:51.850Z,15.04,0.63
+22714,AssignedTo,Paulo A. Lot,Rodolfo Caceraghi dos Santos,Paulo A. Lot,2026-07-16T12:02:24.663Z,49.41,2.06
 22738,BoardColumn,Disponível para Dev,Dev implementando,Ivan Pionelli Junior,2026-07-14T12:56:52.037Z,12.87,0.54
 22738,BoardColumn,Dev implementando,Disponível Revisão de Código,Ivan Pionelli Junior,2026-07-14T14:33:31.883Z,1.61,0.07
 22738,BoardColumn,Disponível Revisão de Código,Realizando Revisão de Código,Luiz Fernando Rodrigues Pereira,2026-07-14T16:31:00.663Z,1.96,0.08
 22738,BoardColumn,Realizando Revisão de Código,Disponível para Teste,Luiz Fernando Rodrigues Pereira,2026-07-14T17:15:33.857Z,0.74,0.03
 22738,BoardColumn,Disponível para Teste,Testando,maykon.elias,2026-07-14T18:02:15.683Z,0.78,0.03
+22738,BoardColumn,Testando,Aguardando pipeline,maykon.elias,2026-07-15T13:26:02.680Z,19.4,0.81
+22738,BoardColumn,Aguardando pipeline,Pronto pra Release,maykon.elias,2026-07-15T20:22:48.730Z,6.95,0.29
 22738,AssignedTo,Fabio Nobre,Ivan Pionelli Junior,Ivan Pionelli Junior,2026-07-14T12:33:47.320Z,12.49,0.52
 22738,State,New,Active,Ivan Pionelli Junior,2026-07-14T12:56:52.037Z,12.87,0.54
+22738,State,Active,Resolved,maykon.elias,2026-07-15T20:22:48.730Z,31.43,1.31
 22757,BoardColumn,Ideias,Disponível para Dev,Ivan Pionelli Junior,2026-07-14T11:32:28.983Z,0.03,0.0
+22757,BoardColumn,Disponível para Dev,Dev implementando,Fabio Nobre,2026-07-14T11:35:20.567Z,0.05,0.0
+22757,BoardColumn,Dev implementando,Disponível para Teste,Fabio Nobre,2026-07-15T11:45:26.057Z,24.17,1.01
+22757,State,New,Active,Fabio Nobre,2026-07-14T11:35:20.567Z,0.08,0.0
 22779,BoardColumn,Ideias,Backlog,Vagner Rodrigues,2026-07-14T12:29:47.730Z,0.01,0.0
 22779,BoardColumn,Backlog,Ideias,Bruno Oliveira,2026-07-14T12:30:35.067Z,0.01,0.0
 22779,BoardColumn,Ideias,Concluído,Ivan Pionelli Junior,2026-07-14T12:34:18.603Z,0.06,0.0
+22779,AssignedTo,NENHUM,Ivan Pionelli Junior,Paulo A. Lot,2026-07-14T19:52:33.190Z,7.38,0.31
 22779,State,New,Closed,Ivan Pionelli Junior,2026-07-14T12:34:18.603Z,0.08,0.0
 22785,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-07-14T13:26:12.370Z,0.1,0.0
 22789,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-07-14T13:49:36.140Z,0.2,0.01
 22789,BoardColumn,Backlog,Fazendo Análise,Paulo A. Lot,2026-07-14T17:50:07.423Z,4.01,0.17
+22789,BoardColumn,Fazendo Análise,Disponível para Dev,Paulo A. Lot,2026-07-14T18:30:54.427Z,0.68,0.03
 22789,AssignedTo,NENHUM,Paulo A. Lot,Paulo A. Lot,2026-07-14T17:50:06.273Z,4.21,0.18
+22789,AssignedTo,Paulo A. Lot,Ivan Pionelli Junior,Paulo A. Lot,2026-07-14T18:31:00.030Z,0.68,0.03
 22825,BoardColumn,Ideias,Dev implementando,maykon.elias,2026-07-14T14:36:01.600Z,0.0,0.0
 22825,BoardColumn,Dev implementando,Pronto pra Release,maykon.elias,2026-07-14T14:36:15.287Z,0.0,0.0
 22825,BoardColumn,Pronto pra Release,Concluído,maykon.elias,2026-07-14T14:36:20.667Z,0.0,0.0
@@ -3651,3 +3994,9 @@ Id,Campo,De,Para,Por,DataMudanca,DuracaoHoras,DuracaoDias
 22825,State,New,Active,maykon.elias,2026-07-14T14:36:01.600Z,0.0,0.0
 22825,State,Active,Resolved,maykon.elias,2026-07-14T14:36:15.287Z,0.0,0.0
 22825,State,Resolved,Closed,maykon.elias,2026-07-14T14:36:20.667Z,0.0,0.0
+22960,BoardColumn,Ideias,Dev implementando,Rodolfo Caceraghi dos Santos,2026-07-15T20:11:38.330Z,0.01,0.0
+22960,BoardColumn,Dev implementando,Concluído,Rodolfo Caceraghi dos Santos,2026-07-15T20:11:44.857Z,0.0,0.0
+22960,AssignedTo,NENHUM,Rodolfo Caceraghi dos Santos,Rodolfo Caceraghi dos Santos,2026-07-15T20:11:05.200Z,0.0,0.0
+22960,State,New,Active,Rodolfo Caceraghi dos Santos,2026-07-15T20:11:38.330Z,0.01,0.0
+22960,State,Active,Closed,Rodolfo Caceraghi dos Santos,2026-07-15T20:11:44.857Z,0.0,0.0
+22968,BoardColumn,Ideias,Backlog,Diogo M. Fontolan,2026-07-15T22:07:35.510Z,0.01,0.0

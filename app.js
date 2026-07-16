@@ -2516,36 +2516,37 @@ function renderOverview(filteredWIs) {
     document.getElementById('kpi-bugs-critical').textContent = `${criticalBugs.length} de severidade alta`;
   }
   
-  // Render open bugs severity split bar
+  // Render all bugs severity split bar to match Quality Page
+  const allBugs = filteredWIs.filter(wi => wi.Tipo === 'Bug');
   const bugsSeveritySplit = document.getElementById('bugs-severity-split');
-  if (bugsOpen.length > 0) {
+  if (allBugs.length > 0) {
     let high = 0, med = 0, low = 0;
-    bugsOpen.forEach(b => {
+    allBugs.forEach(b => {
       const sev = (b.Severidade || '').toLowerCase();
       if (sev.includes('1') || sev.includes('crit') || sev.includes('bloq') || sev.includes('high') || sev.includes('alta') || sev.includes('alto')) high++;
       else if (sev.includes('2') || sev.includes('3') || sev.includes('med') || sev.includes('média') || sev.includes('media') || sev.includes('médio') || sev.includes('medio')) med++;
       else low++;
     });
     
-    const pctHigh = ((high / bugsOpen.length) * 100).toFixed(0);
-    const pctMed = ((med / bugsOpen.length) * 100).toFixed(0);
-    const pctLow = ((low / bugsOpen.length) * 100).toFixed(0);
+    const pctHigh = ((high / allBugs.length) * 100).toFixed(0);
+    const pctMed = ((med / allBugs.length) * 100).toFixed(0);
+    const pctLow = ((low / allBugs.length) * 100).toFixed(0);
     
     bugsSeveritySplit.innerHTML = `
-      <div style="margin-bottom: 12px; font-weight: 500;">Divisão por Severidade (${bugsOpen.length})</div>
+      <div style="margin-bottom: 12px; font-weight: 500;">Divisão por Severidade (${allBugs.length})</div>
       <div class="stacked-progress-track" style="margin: 8px 0; height: 16px;">
         <div class="stacked-segment" style="width: ${pctHigh}%; background-color: var(--color-danger);" title="Alta: ${high}"></div>
         <div class="stacked-segment" style="width: ${pctMed}%; background-color: var(--color-warning);" title="Média: ${med}"></div>
-        <div class="stacked-segment" style="width: ${pctLow}%; background-color: var(--color-info);" title="Baixa: ${low}"></div>
+        <div class="stacked-segment" style="width: ${pctLow}%; background-color: var(--text-muted);" title="Baixa: ${low}"></div>
       </div>
       <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted);">
-        <span>Crítico: ${high}</span>
-        <span>Médio: ${med}</span>
-        <span>Baixo: ${low}</span>
+        <span>Alta: ${high}</span>
+        <span>Média: ${med}</span>
+        <span>Baixa: ${low}</span>
       </div>
     `;
   } else {
-    bugsSeveritySplit.innerHTML = `<div class="placeholder-text" style="color: var(--text-muted); font-size: 0.85rem; padding: 20px 0;">Nenhum bug ativo para a seleção.</div>`;
+    bugsSeveritySplit.innerHTML = `<div class="placeholder-text" style="color: var(--text-muted); font-size: 0.85rem; padding: 20px 0;">Nenhum bug para a seleção.</div>`;
   }
   
   // 5. Bug Rate Geral
@@ -7592,7 +7593,7 @@ function renderAtendimentosPage() {
       tr.innerHTML = `
         <td style="font-weight: 600; color: var(--color-primary); width: 80px;">#${row.Id}</td>
         <td style="font-weight: 500;">${row.Responsavel || '-'}</td>
-        <td style="font-weight: 400; max-width: 450px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="${row.Descricao || ''}">${row.Descricao || '-'}</td>
+        <td style="font-weight: 400; max-width: 450px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="${row.Titulo || row.Descricao || ''}">${row.Titulo || row.Descricao || '-'}</td>
         <td>${row.Numero || '-'}</td>
         <td style="font-weight: 600;">${row.CompletedWork ? parseFloat(row.CompletedWork).toFixed(1) + 'h' : '-'}</td>
         <td>${closeDtStr}</td>

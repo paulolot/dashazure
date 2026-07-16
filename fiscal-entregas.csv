@@ -1,5 +1,6 @@
 Id,Tipo,Titulo,DataFechamento,ResponsavelNoFechamento,LeadTimeDias,CycleTimeDias,DataPrimeiroActive
 3666,User Story,Emissão de NFCe em contingência - Implementar tratamento para sistema refazer Xml para Imposto de ICMS (Complemento TK 558988 - Rejeição 382),2026-06-11T18:54:11.083Z,Rodolfo Caceraghi dos Santos,400.3,9.22,2026-06-02T13:42:50.047Z
+4939,User Story,PDV - Emissão NFe Contingência - Rejeição 303 - Destinatario nao habilitado a operar na UF - Implementar opção para abortar emissão(inutilizar numeração),2026-05-27T12:07:10.047Z,Fabio Nobre,340.77,7.91,2026-05-19T14:13:00.507Z
 6500,User Story,EVENTO - Solicitação de apropriação de crédito,2026-07-02T13:43:11.000Z,Ivan Pionelli Junior,320.87,,
 7314,User Story,Implementar tratamento para sistema não refazer DataHora das notas pendentes em contingência,2026-06-15T17:23:09.140Z,Fabio Nobre,273.28,16.97,2026-05-29T18:09:27.667Z
 7504,User Story,Tratamento automático da rejeição 704 — confirmação/autorização automática de NF-e/NFC-e,2026-06-10T12:15:32.843Z,Fabio Nobre,259.78,9.06,2026-06-01T10:46:07.803Z
@@ -10,22 +11,36 @@ Id,Tipo,Titulo,DataFechamento,ResponsavelNoFechamento,LeadTimeDias,CycleTimeDias
 17371,User Story,Projeto BI - Inclusão de dados de compras no extrator,2026-06-08T10:40:47.460Z,maykon.elias,24.67,23.89,2026-05-15T13:12:20.680Z
 17387,User Story,Projeto BI - Coleta saldo de estoque das mercadorias,2026-06-10T12:37:03.737Z,maykon.elias,26.71,8.95,2026-06-01T13:42:54.180Z
 17410,User Story,Realizar homologação do CNPJ Alfanumérico para CTe e MDFe,2026-06-03T12:20:38.347Z,Leandro Andrade,19.01,18.71,2026-05-15T19:19:11.263Z
+17428,Bug,Ocorreu um erro na consulta de Status CTe. Código do Erro: 519 e Motivo Rejeicao: CFOP invalido para operacao retornado pelo SEFAZ. CFOP no sistema enviando CFOP 6353,2026-05-26T11:44:41.650Z,Rodolfo Caceraghi dos Santos,10.94,7.94,2026-05-18T13:14:35.143Z
+17429,Bug,Registro de alteração/processamento/estorno na tela de inventário não esta sendo mostrado na tela de auditoria,2026-05-27T12:07:07.347Z,Fabio Nobre,11.95,8.94,2026-05-18T13:29:44.013Z
+17508,User Story,Algumas notas referente Faturamento Automático estão em memória e não aparece na tela (Mesma situação TK 644824 ),2026-05-29T10:29:54.120Z,Rodolfo Caceraghi dos Santos,13.57,9.71,2026-05-19T17:28:34.573Z
 17764,Bug,[Testes release Alfa 14/04/2026] NullReferenceException ao fechar tela de Parceiro de Negócio via menu Aviação,2026-06-02T13:39:44.120Z,maykon.elias,14.72,4.95,2026-05-28T14:51:03.260Z
 17768,User Story,[Testes release Alfa 13/04/2026] Gerar NF-e de Complemento de Valor/ICMS (Nota) obrigando o usuário preencher os valores complementares de impostos para todos os itens,2026-06-03T11:12:21.447Z,Julio Andreata,15.61,13.84,2026-05-20T15:04:23.873Z
+17769,User Story,"Erro ao Realizar entrada de CT-e "" O arquivo referente ao Conhecimento de Transporte Eletrônico selecionado é inválido!""",2026-05-28T11:15:39.787Z,Fabio Nobre,9.61,7.68,2026-05-20T18:54:54.967Z
+18035,Bug,Emissão de NFe: Desconto do IRRF não é calculado corretamente para PN com preço promocional,2026-05-29T17:54:16.613Z,Rodolfo Caceraghi dos Santos,8.02,7.14,2026-05-22T14:26:01.237Z
+18167,User Story,[Scripts] Ajustar o local do script da procedure [dbo].[PC_EST_SalvarEstoqueSIMP],2026-05-27T12:07:08.567Z,maykon.elias,4.91,1.92,2026-05-25T14:08:04.343Z
 18177,User Story,Ajustar SPED Contribuições: Registro M225 e M625 exportando NF-e com CFOP 929,2026-06-01T00:56:10.023Z,Rodolfo Caceraghi dos Santos,9.41,4.32,2026-05-27T17:21:07.197Z
 18256,User Story,Metaposto - SPED Contribuições: campo Valor Total dos Ajustes arredonda/trunca,2026-06-02T17:16:34.507Z,Fabio Nobre,8.23,7.21,2026-05-26T12:13:41.567Z
+18257,Bug,[Testes release Alfa 03/03/2026] - Metaposto / Emissão CTE Aquaviário > Btn New > Menu F11 - Ao clicar no menu F11 dispara exceção,2026-05-29T12:02:41.613Z,maykon.elias,4.01,3.9,2026-05-25T14:28:30.397Z
+18258,Bug,MetaPosto: LMC / Diferença entre Lançamento de Régua e Perdas e Ganhos por conta de Venda sem movimentação de estoque,2026-05-28T18:02:50.913Z,Fabio Nobre,3.26,3.22,2026-05-25T12:39:37.630Z
+18260,User Story,MetaPosto: Relatório 308 / não exibe informações de documentos cancelados ao utilizar o status “Todos”,2026-05-29T14:01:31.053Z,maykon.elias,4.08,3.07,2026-05-26T12:13:44.847Z
 18278,Bug,"MetaPosto: Emissão NFe de Cupom(NFCe) / Ocorreram alguns erros na validação da Nota Fiscal Eletrônica. Veja abaixo os erros: ""O combutivel DIESEL S-10 () monfofásico está com sua alíquota AdRem Zerada.""",2026-06-01T12:02:10.843Z,Fabio Nobre,6.95,6.72,2026-05-25T18:47:27.643Z
 18342,Bug,Divergência de estoque offline entre Relatório 06 (PDV) e 024 (Retaguarda),2026-06-22T16:33:18.713Z,Ivan Pionelli Junior,27.93,27.22,2026-05-26T11:16:52.623Z
+18448,Bug,Integração Imends: Mercadorias não sendo auditadas após saneamento,2026-05-28T19:02:54.770Z,maykon.elias,2.07,1.05,2026-05-27T17:48:34.737Z
+18539,Bug,Teste Automatizado - Erro ao atualizar PDV - OFICIAL_14_04_2026 R.25-05-2026 & ALFA_14-05-2026 R.25-05-2026,2026-05-28T18:02:55.770Z,Ivan Pionelli Junior,1.18,1.12,2026-05-27T15:05:40.783Z
 18603,User Story,Validar Rejeição 845 na Emissão de Nota de Débito de Combustível,2026-06-16T18:51:43.620Z,Julio Andreata,19.94,15.23,2026-06-01T13:20:51.733Z
 18642,Bug,MetaPosto: Cadastro Parceiro de Negócio / Consulta SEFAZ estado BA retorna Inscrição Estadual com dígito “2” indevido no início,2026-06-03T14:09:56.330Z,maykon.elias,5.91,5.77,2026-05-28T19:45:34.633Z
 18676,Bug,Entrada de mercadoria sem persistir registros na tabela 'FAT_CustosMercadoriaDocumentoFiscal',2026-06-10T19:32:20.097Z,maykon.elias,13.01,12.21,2026-05-29T14:33:53.203Z
 18686,User Story,Permitir Vincular Fator de Pontuação BIGDIM em Mercadorias e Subgrupos,2026-06-18T10:37:46.610Z,Rodolfo Caceraghi dos Santos,20.6,14.69,2026-06-03T18:00:27.110Z
+18720,User Story,Atualizar Tabela IBPT Junho/2026,2026-05-29T17:32:52.100Z,Julio Andreata,0.22,0.22,2026-05-29T12:18:55.373Z
 18723,User Story,Atualizar Tabela FECOMBUSTÍVEIS Junho/2026,2026-06-08T10:46:20.563Z,Julio Andreata,9.94,9.94,2026-05-29T12:18:53.140Z
 18856,User Story,Filtro Data Emissão com valor padrão de 25/03/2016 a 05/05/2016,2026-06-02T16:51:23.630Z,Luiz Fernando Rodrigues Pereira,3.85,0.91,2026-06-01T18:56:32.320Z
 18932,Atendimento,[MetaNet] Geração de release da Oficial (14/04)  - Recompilição 01/06,2026-06-02T17:41:41.040Z,maykon.elias,1.19,1.19,2026-06-01T13:07:43.113Z
+19034,Atendimento,ATENDIMENTO SUPORTE FISCAL 01-06-2026,2026-06-02T10:16:54.027Z,Julio Andreata,0.62,0.62,2026-06-01T19:27:51.323Z
 19063,Bug,Gerenciador de documentos fiscais: NF-es de entradas processadas não estão sendo listadas na tela,2026-06-02T17:08:21.360Z,Paulo A. Lot,0.2,0.19,2026-06-02T12:40:58.803Z
 19150,Atendimento,ATENDIMENTO NFSE NACIONL 02-06-2026,2026-06-02T18:25:13.013Z,Julio Andreata,0.0,,
 19152,Atendimento,[MetaNet] Geração de release da Alfa (14/05)  - Recompilição 02/06,2026-06-03T18:03:00.210Z,maykon.elias,0.98,0.98,2026-06-02T18:27:42.220Z
+19205,Atendimento,Nota Fiscal de Cupom/NFCe/SAT/Fatura - Configurações de NFe referente NFCe ausentes,2026-06-03T17:53:40.710Z,Luiz Fernando Rodrigues Pereira,0.76,0.23,2026-06-03T12:22:14.210Z
 19209,User Story,Problema com quebra de sequência NF-e,2026-06-05T10:54:20.063Z,Ivan Pionelli Junior,1.96,,
 19213,User Story,NFC-e/NF-e com divergência - cancelada na Sefaz e autorizada no sistema,2026-06-08T17:44:09.530Z,Ivan Pionelli Junior,5.24,,
 19214,Bug,Falha na alteração de preço de mercadoria agendada,2026-06-10T13:15:30.207Z,Fabio Nobre,7.05,6.91,2026-06-03T15:22:04.673Z
@@ -34,11 +49,13 @@ Id,Tipo,Titulo,DataFechamento,ResponsavelNoFechamento,LeadTimeDias,CycleTimeDias
 19251,Atendimento,[MetaNet] Geração de release da Oficial (14/04)  - Recompilição 03/06,2026-06-05T17:42:49.710Z,maykon.elias,1.99,1.99,2026-06-03T18:03:21.670Z
 19290,User Story,TO NFCe em Homologacao  - Erro 878 - Endereço do site da UF da Consulta por chave de acesso diverge do previsto SEFAZ,2026-06-11T12:30:03.213Z,Fabio Nobre,7.01,0.81,2026-06-10T17:04:41.743Z
 19354,User Story,Carga Movimentação: erro “valor deve ser maior que zero” devido a itens de combo/kit duplicados,2026-06-09T11:08:17.507Z,Ivan Pionelli Junior,3.73,0.64,2026-06-08T19:52:39.410Z
+19356,Atendimento,"659514 Certificado do cliente era A1 e venceu, ele instalou um A3 e parou de emitir nfce.",2026-06-05T18:07:14.580Z,Fabio Nobre,0.0,0.0,2026-06-05T18:06:18.783Z
 19370,User Story,Lentidão - Consulta de NFC-e para montar NF-e - Copy SO 656273,2026-06-09T10:56:46.037Z,Luiz Fernando Rodrigues Pereira,3.61,,
 19374,Bug,NF-e de Devolução de Compra - Valor do Frete somando a Base do IPI,2026-06-15T17:23:00.553Z,Ivan Pionelli Junior,9.86,6.98,2026-06-08T17:53:23.887Z
 19566,User Story,Replicar alterações para Master dos cards 18177 e 18256  referentes a Sped Contribuições,2026-06-08T16:57:39.597Z,Paulo A. Lot,0.17,0.12,2026-06-08T14:10:03.670Z
 19613,User Story,[Ajuste NeverStop] Ajustar Geração de devoluçao automática para não movimentar estoque,2026-06-16T18:50:53.880Z,maykon.elias,8.04,8.04,2026-06-08T17:56:10.063Z
 19632,Bug,Ajuste de Estoque apresenta NullReferenceException devido à ausência de retorno do Local de Estoque na FN_EST_PegarSaldoMercadorias,2026-06-11T11:58:15.837Z,maykon.elias,2.69,2.03,2026-06-09T11:08:58.133Z
+19651,Atendimento,659259 - Falha api dominus,2026-06-08T20:20:34.510Z,Fabio Nobre,0.0,0.0,2026-06-08T20:18:38.493Z
 19771,Atendimento,[MetaNet] Geração de release da Oficial (14/04)  - Recompilição 09/06,2026-06-09T18:26:00.900Z,maykon.elias,0.24,0.24,2026-06-09T12:38:24.103Z
 19884,User Story,[NT2026.004-US02] Atualização schema XSD NF-e/NFC-e (PL_010d),2026-06-15T19:45:49.253Z,Paulo A. Lot,6.25,5.13,2026-06-10T16:40:20.323Z
 19886,User Story,[NT2026.004-US04] Validação de eventos fiscais (PL_Evento),2026-06-15T19:45:50.613Z,Paulo A. Lot,6.25,5.1,2026-06-10T17:16:11.240Z
@@ -54,6 +71,7 @@ Id,Tipo,Titulo,DataFechamento,ResponsavelNoFechamento,LeadTimeDias,CycleTimeDias
 20578,User Story,Ajustes no Cadastro do Parceiro de negócio - Integração Rodobank,2026-06-22T16:33:24.543Z,Rodolfo Caceraghi dos Santos,5.12,5.12,2026-06-17T13:42:30.533Z
 20581,User Story,Analisar os serviços em execução no servidor: 172.16.63.8,2026-06-19T14:34:35.837Z,Luiz Fernando Rodrigues Pereira,2.03,0.07,2026-06-19T12:59:18.613Z
 20584,User Story,01-B - Pacote normativo e vigencia NT v1.36/v1.40 [ Upload Schemas ],2026-07-06T12:02:49.780Z,Rodolfo Caceraghi dos Santos,18.91,,
+20609,Atendimento,NFE- Fluxo Entrada de nota de importação não considera o valor de imposto II,2026-06-18T18:55:20.967Z,Luiz Fernando Rodrigues Pereira,1.04,0.18,2026-06-18T14:36:08.057Z
 20611,User Story,Diferença de Dados entre FAT_DocumentoFiscal e ChaveAcesso/Xml - Número errado (recorrência TK 561556),2026-06-19T17:21:28.013Z,Ivan Pionelli Junior,1.98,1.96,2026-06-17T18:25:47.743Z
 20645,Bug,"MetaPosto: Cadastro de Parceiro > Consulta Contribuinte / Ao consultar CNPJ retorna ""Não foi possível consultar os dados do contribuinte"" (Situação persiste apenas na Hospedagem Imex)",2026-06-24T17:38:26.967Z,Fabio Nobre,6.24,5.17,2026-06-19T13:35:02.897Z
 20681,User Story,Ajustar tratamento de versão de distribuição com prefixos alfanuméricos no atualizador automático,2026-06-22T12:05:11.783Z,maykon.elias,3.92,3.92,2026-06-18T14:03:16.610Z
@@ -63,26 +81,35 @@ Id,Tipo,Titulo,DataFechamento,ResponsavelNoFechamento,LeadTimeDias,CycleTimeDias
 20831,User Story,Divergência na geração de ICMSST entre NF-e de Entrada e NF-e de Devolução deCompra,2026-07-07T10:41:18.393Z,Rodolfo Caceraghi dos Santos,17.62,14.0,2026-06-23T10:43:24.873Z
 20848,Bug,Valores de notas sendo gravados nulos ao processar a carga,2026-06-23T21:00:32.467Z,Ivan Pionelli Junior,1.35,1.35,2026-06-22T12:32:46.313Z
 20870,Atendimento,[Atualizador] - deploy api,2026-06-23T18:17:20.630Z,maykon.elias,1.19,1.19,2026-06-22T13:42:53.033Z
+20923,Atendimento,[MetaNet] Geração de release da Alfa (22/06),2026-06-23T11:23:03.993Z,maykon.elias,0.75,0.75,2026-06-22T17:18:24.800Z
+20944,Atendimento,[MetaNet] Geração de release da Oficial (14/04)  - Recompilição 22/06,2026-06-23T11:23:00.790Z,maykon.elias,0.72,0.72,2026-06-22T18:04:55.280Z
 21012,Bug,NFe permanece pendente em loop com erro 104 sem geração de XML e sem registro na SEFAZ,2026-07-01T11:29:28.510Z,Ivan Pionelli Junior,7.95,6.68,2026-06-24T19:03:27.220Z
+21070,Atendimento,[Auxilio Financeiro]Nota voltando a ficar pendente na emissão retaguarda,2026-06-24T13:41:48.647Z,Rodolfo Caceraghi dos Santos,0.73,0.73,2026-06-23T20:09:33.633Z
 21109,User Story,Nome dinâmico do banco nos testes de integração (pipeline multi-agente),2026-06-24T17:08:42.230Z,Luiz Fernando Rodrigues Pereira,0.14,0.14,2026-06-24T13:42:22.310Z
 21132,Bug,Erro ao transmitir NFe em contingência quando Descrição Natureza Operação diverge do cadastro,2026-07-06T13:35:21.197Z,Julio Andreata,11.84,11.11,2026-06-25T10:58:07.720Z
 21133,User Story,Rejeição 225 - Falha no Schema XML da NFe (Elemento: enviNFe/NFe[1]/infNFe/det[26]/prod/vOutro/) - (Recorrência TK 634468),2026-06-26T11:03:02.853Z,Ivan Pionelli Junior,1.73,0.76,2026-06-25T16:44:13.030Z
 21135,Bug,"CTe de Substituição - Exceção ao Importar Xml ou Carregar via Manifesto ""Referência de objeto não definida para uma instância de um objeto""",2026-07-02T15:01:38.133Z,Julio Andreata,7.89,6.09,2026-06-26T12:51:55.040Z
+21399,Atendimento,[Revisao PR] Revisar PR 6477 - Emissao de nfe de debito pagamento antecipado automatico de requisição,2026-06-26T14:54:22.997Z,Ivan Pionelli Junior,0.05,0.05,2026-06-26T13:37:17.193Z
 21414,Bug,Exceção ao Salvar ou Salvar e Processar Aquisição de CT-e de Substituição após correção do TK 661776,2026-07-02T15:00:51.507Z,Ivan Pionelli Junior,5.9,5.89,2026-06-26T17:44:56.470Z
 21445,Atendimento,ATENDIMENTO COMPLIANCE FISCAL REDE RM - JUNTO A CONTABILIDADE,2026-06-26T19:52:03.573Z,Julio Andreata,0.07,0.06,2026-06-26T18:18:29.577Z
 21494,Bug,Exceção na geração do SPED Unificado e inconsistências de validação,2026-07-03T14:15:24.290Z,Ivan Pionelli Junior,4.11,3.18,2026-06-30T10:01:49.900Z
+21504,Atendimento,Cacique - Correção de documentos emitidos em empresa errada,2026-06-29T13:49:45.080Z,Paulo A. Lot,0.04,0.04,2026-06-29T12:47:54.697Z
 21516,Atendimento,Gerar release Oficial [PRD],2026-07-01T11:39:19.360Z,maykon.elias,1.91,1.91,2026-06-29T13:49:42.047Z
 21575,Bug,"NFS-e - Nota sem cliente e sem Informações de Pagamento ""Referência de objeto não definida para uma instância de um objeto""",2026-07-07T15:15:38.670Z,Ivan Pionelli Junior,7.07,7.06,2026-06-30T13:51:53.130Z
+21725,Atendimento,662893 Release: Oficial R15-06,2026-07-01T20:50:23.887Z,Fabio Nobre,0.0,0.0,2026-07-01T20:49:24.163Z
+21727,Atendimento,[RASTREABILIDADE] 06/26 Processamento de dados coletados,2026-07-03T13:09:38.393Z,Ivan Pionelli Junior,1.1,1.1,2026-07-02T10:45:17.510Z
 21774,User Story,Padronizar harness para publicação de US no ADO,2026-07-06T11:31:36.107Z,Paulo A. Lot,3.75,3.73,2026-07-02T18:04:12.173Z
 21849,Bug,Estoque Offline - Divergência de saldo no Estoque Offline para Combustível durante consolidação de estoque,2026-07-07T17:41:35.113Z,Rodolfo Caceraghi dos Santos,3.99,1.23,2026-07-06T12:12:54.290Z
 21852,Bug,Metaposto - Erro na geração de NF-e pela tela de Controle de Perdas e Sobras,2026-07-08T13:10:23.370Z,Paulo A. Lot,4.79,2.02,2026-07-06T12:44:47.140Z
 21869,Bug,Cadastro de Cartão - sistema não carrega campos (Identificar PN na venda e Visualiza Cartão PDV) ao filtrar o PN pelo ID,2026-07-09T18:43:29.417Z,Rodolfo Caceraghi dos Santos,6.01,3.02,2026-07-06T18:14:52.567Z
 22055,Bug,"MetaPosto: NFe / Ao tentar abortar cancelamento de NFe sistema retorna exceção ""A subconsulta retornou mais de 1 valor."" (Recorrência Tk 655571)",2026-07-10T12:03:39.953Z,Rodolfo Caceraghi dos Santos,3.74,3.7,2026-07-06T19:09:55.430Z
+22172,Atendimento,Plano de Migração e Rollback — Portal do Contador,2026-07-08T13:48:12.553Z,Paulo A. Lot,0.96,0.96,2026-07-07T14:48:25.120Z
 22296,User Story,PDV/Emissão NFS-e - Código do Erro : E1235 - Mensagem : Falha no esquema XML do DF-e.,2026-07-08T19:31:48.023Z,Ivan Pionelli Junior,0.32,,
 22331,User Story,Padronizar testes de e-mail com SMTP headless e corrigir NRE em atualização de preço de mercadoria,2026-07-08T19:32:47.263Z,Luiz Fernando Rodrigues Pereira,0.24,0.24,2026-07-08T13:49:16.613Z
 22375,Bug,PDV: Falha na execução de GUIDs de atualização,2026-07-10T10:41:20.860Z,Rodolfo Caceraghi dos Santos,1.73,1.62,2026-07-08T19:54:55.587Z
 22378,Atendimento,NFC-e permanece pendente após rejeição 290 e o documento já está autorizado na SEFAZ,2026-07-09T18:15:38.170Z,Paulo A. Lot,1.03,0.0,2026-07-09T18:15:34.103Z
 22515,Bug,Portal WEB do Atualizador Automático - Tela de Clientes limita exibição aos 20 primeiros registros,2026-07-14T14:05:56.353Z,Paulo A. Lot,4.73,4.11,2026-07-10T11:32:02.910Z
 22640,Atendimento,Promoção da branch ALFA para novo release Oficial [PRD],2026-07-14T12:01:48.250Z,maykon.elias,1.01,1.01,2026-07-13T11:41:23.317Z
-22779,User Story,Atualização de banco falha em bases zeradas por dependência não declarada da FN_ValidarEAN14_V2,2026-07-14T12:34:18.603Z,NENHUM,0.0,,
+22779,User Story,Atualização de banco falha em bases zeradas por dependência não declarada da FN_ValidarEAN14_V2,2026-07-14T12:34:18.603Z,Ivan Pionelli Junior,0.0,,
 22825,Atendimento,[Atualizador] - deploy portal web,2026-07-14T14:36:15.287Z,maykon.elias,0.0,0.0,2026-07-14T14:36:01.600Z
+22960,Atendimento,Henrique > Integração Imends Dúvidas,2026-07-15T20:11:44.857Z,Rodolfo Caceraghi dos Santos,0.0,0.0,2026-07-15T20:11:38.330Z

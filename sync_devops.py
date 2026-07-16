@@ -108,7 +108,7 @@ def build_field_history(field_name, current_value, created_dt, created_by_name, 
         else:
             initial_val = first_change["old"]
             
-        if not initial_val and current_value:
+        if not initial_val and current_value and field_name != "Custom.Status":
             initial_val = current_value
             
         if created_dt:
@@ -210,6 +210,7 @@ def main():
           AND (
             [System.State] <> 'Closed'
             OR [Microsoft.VSTS.Common.ResolvedDate] >= '{last_sync_query}'
+            OR [Microsoft.VSTS.Common.ClosedDate] >= '{last_sync_query}'
           )
         ORDER BY [System.Id]
         """
@@ -724,10 +725,14 @@ def main():
             ticket_num = fields.get("Custom.a2f3a34e-63a9-4c1e-a465-0b97571cf26e", "")
             completed_work = fields.get("Microsoft.VSTS.Scheduling.CompletedWork", "")
             description = fields.get("System.Description", "")
+            real_closed_date = fields.get("Microsoft.VSTS.Common.ClosedDate", "")
+            if not real_closed_date:
+                real_closed_date = closed_date_raw
             new_atendimentos.append({
-                "Id": str(wi_id), "Responsavel": assigned_name, "Descricao": clean_html(description),
-                "Numero": str(ticket_num), "CompletedWork": str(completed_work), "ClosedDate": closed_date_raw
+                "Id": str(wi_id), "Titulo": title, "Responsavel": assigned_name, "Descricao": clean_html(description),
+                "Numero": str(ticket_num), "CompletedWork": str(completed_work), "ClosedDate": real_closed_date
             })
+
 
     # J) Tasks
     for task in all_tasks:

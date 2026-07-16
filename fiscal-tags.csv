@@ -425,6 +425,7 @@ Id,Tag
 4789,Reforma Tributária
 4827,Nota Técnica
 4874,Reforma Tributária
+4939,Contingência
 4942,Teste Geral
 4943,CT-e
 4943,Teste Geral
@@ -744,6 +745,9 @@ Id,Tag
 17371,B.I
 17387,B.I
 17410,Nota Técnica
+17428,Legado
+17429,Legado
+17508,!BUG
 17764,!Reproduce
 17764,Legado
 17768,!BUG
@@ -756,23 +760,36 @@ Id,Tag
 17920,Integracao Organiza
 17952,Débito Técnico
 17952,Melhoria
+18035,Legado
 18177,!BUG
 18256,!BUG
+18257,!Reproduce
+18257,Legado
+18258,Legado
+18260,!BUG
 18278,Legado
 18342,Legado
+18448,GeradoPorUS
 18500,!BUG
 18500,!Reproduce
 18500,Cacique
 18524,Nota Técnica
+18539,GeradoPorUS
+18539,Impeditivo release
+18539,Teste Automatizado
 18603,Reforma Tributária
 18642,Legado
 18676,Legado
 18686,Predecessor Card Vendas
+18720,Script
 18723,Script
 18856,!BUG
+19034,Atendimento Suporte
 19061,Cacique
 19063,GeradoPorUS
 19150,Atendimento Suporte
+19205,!BUG
+19205,Impeditivo release
 19209,!BUG
 19209,Cacique
 19213,!BUG
@@ -842,7 +859,9 @@ Id,Tag
 20429,Performance
 20539,Reforma Tributária
 20540,Reforma Tributária
+20609,Cacique
 20611,Cacique
+20621,Sucessor
 20645,Legado
 20681,Atualizador automático
 20712,Cacique
@@ -882,13 +901,13 @@ Id,Tag
 21414,GeradoPorUS
 21431,Observabilidade
 21494,Legado
+21504,Cacique
 21575,GeradoPorUS
 21654,Melhoria de Produto
 21774,I.A
 21849,Cacique
 21849,Legado
 21852,GeradoPorUS
-21869,GeradoPorUS
 21869,Outra Squad
 21962,Obrigação Fiscal
 22054,Legado
@@ -904,13 +923,31 @@ Id,Tag
 22377,!BUG
 22407,!BUG
 22509,!BUG
-22567,Gerado DLL
+22515,GeradoPorUS
 22618,!BUG
-22710,!BUG
 22714,!BUG
 22738,AtualizacaoBD
 22738,BRMania
 22738,Global
 22738,Impeditivo release
+22789,DANFE Simplificado
 22789,Nota Técnica
+22789,NT 2026.002
+22789,NT 2026.003
 22789,Obrigação Fiscal
+22789,Schema 010e
+22825,Atualizador automático
+22825,Deploy
+22936,Estoque
+22960,Atendimento N3
+22968,Ajuste Sinief 49/25
+22968,Entra em vigor em 03/08/2026
+22968,Reforma Tributária
+22972,Entra em vigor em 05/10/2026
+22972,Reforma Tributária
+22974,Entra em vigor em 01/10/2026
+22974,Obrigação Fiscal
+22976,Entra em vigor em 05/10/2026
+22976,Obrigação Fiscal
+22977,Dependência normativa
+22977,Obrigação Fiscal

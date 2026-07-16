@@ -2,18 +2,19 @@ Id,Tipo,QtdPeriodosParado,TotalHorasParado,TotalDiasParado,TempoParadoExibicao,P
 230,User Story,1,504.16,21.01,21.01 d,Nao,
 263,User Story,1,169.59,7.07,7.07 d,Nao,
 280,User Story,1,511.76,21.32,21.32 d,Nao,
-292,User Story,1,16300.38,679.18,679.18 d,Sim,Retorno solicitante
-300,User Story,1,16300.23,679.18,679.18 d,Sim,Retorno solicitante
+292,User Story,1,6190.23,257.93,257.93 d,Sim,Retorno solicitante
+300,User Story,1,6362.25,265.09,265.09 d,Sim,Retorno solicitante
 1036,User Story,1,715.95,29.83,29.83 d,Nao,
 1372,User Story,1,2591.98,108.0,108.00 d,Nao,
 1416,User Story,1,260.36,10.85,10.85 d,Nao,
 1874,User Story,2,1081.18,45.05,45.05 d,Nao,
-1923,User Story,6,6359.12,264.96,264.96 d,Sim,Retorno solicitante
+1923,User Story,5,6373.38,265.55,265.55 d,Sim,Retorno solicitante
 2310,User Story,1,280.38,11.68,11.68 d,Nao,
 3666,User Story,1,0.18,0.01,0.18 h,Nao,
 3744,User Story,1,1361.66,56.74,56.74 d,Nao,
 3770,User Story,1,0.02,0.0,0.02 h,Nao,
 4621,User Story,2,299.59,12.48,12.48 d,Nao,
+4939,User Story,1,107.23,4.47,4.47 d,Nao,
 5421,User Story,1,0.01,0.0,0.01 h,Nao,
 6393,User Story,1,971.65,40.49,40.49 d,Nao,
 6504,User Story,2,88.21,3.68,3.68 d,Nao,
@@ -25,32 +26,39 @@ Id,Tipo,QtdPeriodosParado,TotalHorasParado,TotalDiasParado,TempoParadoExibicao,P
 13860,User Story,3,20.07,0.84,20.07 h,Nao,
 13861,User Story,3,3.03,0.13,3.03 h,Nao,
 13862,User Story,2,28.96,1.21,1.21 d,Nao,
-13863,User Story,5,2769.93,115.41,115.41 d,Sim,Aguardando Conclusão de outro Card
-13864,User Story,4,2891.46,120.47,120.47 d,Sim,Aguardando Conclusão de outro Card
+13863,User Story,4,85.09,3.55,3.55 d,Sim,Aguardando Conclusão de outro Card
+13864,User Story,3,62.96,2.63,2.63 d,Sim,Aguardando Conclusão de outro Card
 13925,User Story,2,44.61,1.85,1.85 d,Nao,
 14192,User Story,4,6.92,0.29,6.92 h,Nao,
-15572,User Story,1,2211.68,92.15,92.15 d,Sim,Parou para fazer outro ticket
+15572,User Story,1,27.48,1.14,1.14 d,Nao,
 16274,User Story,5,4.64,0.19,4.64 h,Nao,
 16961,User Story,1,98.42,4.1,4.10 d,Nao,
 17182,User Story,6,127.46,5.32,5.32 d,Nao,
 17371,User Story,1,100.26,4.18,4.18 d,Nao,
 17387,User Story,1,167.01,6.96,6.96 d,Nao,
 17410,User Story,4,85.77,3.58,3.58 d,Nao,
+17428,Bug,4,37.92,1.58,1.58 d,Nao,
+17429,Bug,1,1.0,0.04,1.00 h,Nao,
+17508,User Story,2,44.31,1.84,1.84 d,Nao,
 17768,User Story,3,31.05,1.29,1.29 d,Nao,
-17920,User Story,1,1323.31,55.14,55.14 d,Sim,Aguardando Conclusão de outro Card
+17769,User Story,1,0.0,0.0,0.00 h,Nao,
+17920,User Story,1,48.85,2.04,2.04 d,Sim,Aguardando Conclusão de outro Card
 18220,User Story,1,2.66,0.11,2.66 h,Nao,
 18256,User Story,1,2.36,0.1,2.36 h,Nao,
+18258,Bug,1,0.87,0.04,0.87 h,Nao,
+18260,User Story,1,11.53,0.48,11.53 h,Nao,
 18342,Bug,3,118.61,4.94,4.94 d,Nao,
 18500,User Story,1,21.63,0.9,21.63 h,Nao,
 18642,Bug,3,0.69,0.03,0.69 h,Nao,
 18686,User Story,2,20.29,0.84,20.29 h,Nao,
 18723,User Story,1,23.77,0.99,23.77 h,Nao,
 18857,User Story,3,188.48,7.86,7.86 d,Nao,
+19205,Atendimento,1,1030.7,42.95,42.95 d,Sim,Retorno solicitante
 19209,User Story,1,5.41,0.23,5.41 h,Nao,
 19213,User Story,3,122.86,5.11,5.11 d,Nao,
 19215,User Story,1,46.87,1.95,1.95 d,Nao,
 19229,User Story,1,15.31,0.64,15.31 h,Nao,
-19230,User Story,7,534.46,22.26,22.26 d,Sim,Aguardando Conclusão de outro Card
+19230,User Story,6,389.45,16.23,16.23 d,Sim,Aguardando Conclusão de outro Card
 19233,User Story,1,0.15,0.01,0.15 h,Nao,
 19234,User Story,6,257.5,10.73,10.73 d,Nao,
 19235,User Story,4,23.44,0.98,23.44 h,Nao,
@@ -59,28 +67,33 @@ Id,Tipo,QtdPeriodosParado,TotalHorasParado,TotalDiasParado,TempoParadoExibicao,P
 19354,User Story,1,0.06,0.0,0.06 h,Nao,
 19355,User Story,2,670.72,27.95,27.95 d,Nao,
 19370,User Story,1,2.92,0.12,2.92 h,Nao,
-19758,User Story,3,838.59,34.94,34.94 d,Sim,Aguardando Conclusão de outro Card
-19759,User Story,1,845.7,35.24,35.24 d,Sim,Aguardando Conclusão de outro Card
-19760,User Story,1,1.62,0.07,1.62 h,Nao,
+19758,User Story,2,160.03,6.67,6.67 d,Sim,Aguardando Conclusão de outro Card
+19759,User Story,1,48.77,2.03,2.03 d,Sim,Aguardando Conclusão de outro Card
+19760,User Story,2,26.73,1.12,1.12 d,Sim,Aguardando Conclusão de outro Card
+19761,User Story,1,2.07,0.09,2.07 h,Sim,Aguardando Conclusão de outro Card
+19765,User Story,1,2.05,0.09,2.05 h,Sim,Aguardando Conclusão de outro Card
+19767,User Story,1,23.0,0.96,23.00 h,Sim,Aguardando Conclusão de outro Card
+19769,User Story,1,16.9,0.7,16.90 h,Sim,Aguardando Conclusão de outro Card
 19947,User Story,1,16.22,0.68,16.22 h,Nao,
-19948,User Story,5,682.74,28.45,28.45 d,Sim,Aguardando Conclusão de outro Card
-19949,User Story,2,37.19,1.55,1.55 d,Nao,
-19950,User Story,1,13.02,0.54,13.02 h,Nao,
-20056,User Story,3,834.44,34.77,34.77 d,Sim,Aguardando Conclusão de outro Card
+19948,User Story,4,54.0,2.25,2.25 d,Sim,Aguardando Conclusão de outro Card
+19949,User Story,3,53.73,2.24,2.24 d,Sim,Aguardando Conclusão de outro Card
+19950,User Story,2,36.73,1.53,1.53 d,Sim,Aguardando a correção do Dev
+19952,User Story,1,0.89,0.04,0.89 h,Sim,Aguardando Conclusão de outro Card
+20056,User Story,2,206.36,8.6,8.60 d,Sim,Aguardando Conclusão de outro Card
 20211,User Story,4,98.23,4.09,4.09 d,Nao,
 20483,User Story,3,473.5,19.74,19.74 d,Nao,
 20517,User Story,1,192.6,8.03,8.03 d,Nao,
 20578,User Story,1,6.93,0.29,6.93 h,Nao,
-20611,User Story,1,648.27,27.01,27.01 d,Sim,Aguardando PO
+20611,User Story,1,647.48,26.98,26.98 d,Sim,Aguardando PO
 20645,Bug,1,0.7,0.03,0.70 h,Nao,
 20756,User Story,3,164.73,6.86,6.86 d,Nao,
 20831,User Story,1,0.57,0.02,0.57 h,Nao,
 20848,Bug,1,0.75,0.03,0.75 h,Nao,
 21132,Bug,1,5.2,0.22,5.20 h,Nao,
 21162,User Story,1,2.93,0.12,2.93 h,Nao,
-21171,User Story,1,1.95,0.08,1.95 h,Nao,
+21171,User Story,2,1.95,0.08,1.95 h,Nao,
 21305,User Story,4,6.63,0.28,6.63 h,Nao,
-21325,User Story,6,170.49,7.11,7.11 d,Nao,
+21325,User Story,8,173.86,7.25,7.25 d,Sim,Parou para fazer outro ticket
 21414,Bug,1,2.17,0.09,2.17 h,Nao,
 21485,User Story,1,2.93,0.12,2.93 h,Nao,
 21494,Bug,1,3.97,0.17,3.97 h,Nao,
@@ -97,6 +110,8 @@ Id,Tipo,QtdPeriodosParado,TotalHorasParado,TotalDiasParado,TempoParadoExibicao,P
 22508,Bug,1,0.95,0.04,0.95 h,Nao,
 22509,User Story,1,5.07,0.21,5.07 h,Nao,
 22515,Bug,1,2.04,0.09,2.04 h,Nao,
-22567,User Story,3,96.73,4.02,4.02 d,Sim,Retorno solicitante
-22618,User Story,1,93.99,3.92,3.92 d,Sim,Aguardando PO
+22618,User Story,1,3.55,0.15,3.55 h,Nao,
+22710,User Story,1,0.01,0.0,0.01 h,Nao,
+22714,User Story,1,22.53,0.94,22.53 h,Nao,
 22738,User Story,1,0.12,0.01,0.12 h,Nao,
+22977,User Story,1,12.76,0.53,12.76 h,Sim,Aguardando retorno de parceiro externo
