@@ -712,7 +712,6 @@ Id,Tag
 15480,Reforma Tributária
 15570,Observabilidade
 15571,Observabilidade
-15572,Observabilidade
 15573,Observabilidade
 15574,Observabilidade
 15575,Observabilidade
@@ -797,7 +796,6 @@ Id,Tag
 19214,GeradoPorUS
 19215,!BUG
 19229,Reforma Tributária
-19230,Reforma Tributária
 19231,Reforma Tributária
 19232,Reforma Tributária
 19233,Reforma Tributária
@@ -814,40 +812,16 @@ Id,Tag
 19631,Débito Técnico
 19632,GeradoPorUS
 19634,Cacique
-19758,Nota Técnica
-19758,NT 2026.002
-19759,Nota Técnica
-19759,NT 2026.002
-19760,Nota Técnica
-19760,NT 2026.002
-19761,Nota Técnica
-19761,NT 2026.002
 19764,Nota Técnica
 19764,NT 2026.002
-19765,Nota Técnica
-19765,NT 2026.002
-19766,Nota Técnica
-19766,NT 2026.002
-19767,Nota Técnica
-19767,NT 2026.002
-19769,Nota Técnica
-19769,NT 2026.002
-19770,Nota Técnica
-19770,NT 2026.002
 19884,Alfanumerico
 19886,Alfanumerico
 19887,Alfanumerico
 19947,Integracao Organiza
 19948,Integracao Organiza
-19949,Integracao Organiza
-19950,Integracao Organiza
-19951,Integracao Organiza
-19952,Integracao Organiza
 19983,Reforma Tributária
 19984,Reforma Tributária
 19985,Reforma Tributária
-20056,Nota Técnica
-20056,NT 2026.002
 20064,Nota Técnica
 20064,NT 2026.002
 20111,B.I
@@ -861,12 +835,8 @@ Id,Tag
 20540,Reforma Tributária
 20609,Cacique
 20611,Cacique
-20621,Sucessor
 20645,Legado
 20681,Atualizador automático
-20712,Cacique
-20712,Importação
-20712,NFe
 20713,Cacique
 20713,Importação
 20713,NFe
@@ -882,11 +852,9 @@ Id,Tag
 21080,Melhoria
 21132,Legado
 21133,Outra Squad
-21135,GeradoPorUS
 21152,Débito Técnico
 21152,Teste Unitário
 21162,CIOT
-21171,CIOT
 21180,CIOT
 21189,CIOT
 21198,CIOT
@@ -897,7 +865,6 @@ Id,Tag
 21243,CIOT
 21305,CIOT
 21314,CIOT
-21325,Reforma Tributária
 21414,GeradoPorUS
 21431,Observabilidade
 21494,Legado
@@ -908,7 +875,6 @@ Id,Tag
 21849,Cacique
 21849,Legado
 21852,GeradoPorUS
-21869,Outra Squad
 21962,Obrigação Fiscal
 22054,Legado
 22055,GeradoPorUS
@@ -922,20 +888,54 @@ Id,Tag
 22375,Impeditivo release
 22377,!BUG
 22407,!BUG
-22509,!BUG
-22515,GeradoPorUS
 22618,!BUG
-22714,!BUG
-22738,AtualizacaoBD
-22738,BRMania
-22738,Global
-22738,Impeditivo release
 22789,DANFE Simplificado
 22789,Nota Técnica
 22789,NT 2026.002
 22789,NT 2026.003
 22789,Obrigação Fiscal
 22789,Schema 010e
+15572,Observabilidade
+19230,Reforma Tributária
+19758,Nota Técnica
+19758,NT 2026.002
+19759,Nota Técnica
+19759,NT 2026.002
+19760,Nota Técnica
+19760,NT 2026.002
+19761,Nota Técnica
+19761,NT 2026.002
+19765,Nota Técnica
+19765,NT 2026.002
+19766,Nota Técnica
+19766,NT 2026.002
+19767,Nota Técnica
+19767,NT 2026.002
+19769,Nota Técnica
+19769,NT 2026.002
+19770,Nota Técnica
+19770,NT 2026.002
+19949,Integracao Organiza
+19950,Integracao Organiza
+19951,Integracao Organiza
+19952,Integracao Organiza
+20056,Nota Técnica
+20056,NT 2026.002
+20621,Sucessor
+20712,Cacique
+20712,Importação
+20712,NFe
+21135,GeradoPorUS
+21171,CIOT
+21325,Reforma Tributária
+21869,Outra Squad
+22509,!BUG
+22515,GeradoPorUS
+22714,!BUG
+22738,AtualizacaoBD
+22738,BRMania
+22738,Global
+22738,Impeditivo release
 22825,Atualizador automático
 22825,Deploy
 22936,Estoque

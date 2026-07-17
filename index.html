@@ -152,18 +152,25 @@
               <!-- Filtro de Datas -->
               <div class="filter-group">
                 <label for="filter-date-range">Período (Fechamento/Criação)</label>
-                <select id="filter-date-range" class="filter-select">
-                  <option value="all">Toda a base (Histórico Completo)</option>
-                  <option value="7">Últimos 7 dias</option>
-                  <option value="15">Últimos 15 dias</option>
-                  <option value="30" selected>Últimos 30 dias</option>
-                  <option value="60">Últimos 60 dias</option>
-                  <option value="90">Últimos 90 dias</option>
-                  <option value="this-month">Este mês</option>
-                  <option value="last-month">Mês anterior</option>
-                  <option value="this-year">Este ano</option>
-                  <option value="last-year">Ano passado</option>
-                </select>
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                  <select id="filter-date-range" class="filter-select">
+                    <option value="all">Toda a base (Histórico Completo)</option>
+                    <option value="7">Últimos 7 dias</option>
+                    <option value="15">Últimos 15 dias</option>
+                    <option value="30" selected>Últimos 30 dias</option>
+                    <option value="60">Últimos 60 dias</option>
+                    <option value="90">Últimos 90 dias</option>
+                    <option value="this-month">Este mês</option>
+                    <option value="last-month">Mês anterior</option>
+                    <option value="this-year">Este ano</option>
+                    <option value="last-year">Ano passado</option>
+                    <option value="custom">Personalizado...</option>
+                  </select>
+                  <div id="custom-date-range-container" style="display: none; gap: 8px;">
+                    <input type="date" id="filter-date-start" class="filter-select" style="flex: 1;" title="Data Inicial">
+                    <input type="date" id="filter-date-end" class="filter-select" style="flex: 1;" title="Data Final">
+                  </div>
+                </div>
               </div>
 
               <!-- Filtro de Tipo -->
@@ -186,15 +193,6 @@
                   <option value="handoff">Handoff (Revisões/Testes)</option>
                   <option value="pre_release">Pronto para Release</option>
                   <option value="done">Concluído</option>
-                </select>
-              </div>
-
-              <!-- Filtro de Iteration -->
-              <div class="filter-group">
-                <label for="filter-iteration">Sprint (IterationPath)</label>
-                <select id="filter-iteration" class="filter-select">
-                  <option value="all" selected>Todas as Sprints</option>
-                  <!-- Injetado via JS -->
                 </select>
               </div>
 

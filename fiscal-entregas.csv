@@ -88,7 +88,6 @@ Id,Tipo,Titulo,DataFechamento,ResponsavelNoFechamento,LeadTimeDias,CycleTimeDias
 21109,User Story,Nome dinâmico do banco nos testes de integração (pipeline multi-agente),2026-06-24T17:08:42.230Z,Luiz Fernando Rodrigues Pereira,0.14,0.14,2026-06-24T13:42:22.310Z
 21132,Bug,Erro ao transmitir NFe em contingência quando Descrição Natureza Operação diverge do cadastro,2026-07-06T13:35:21.197Z,Julio Andreata,11.84,11.11,2026-06-25T10:58:07.720Z
 21133,User Story,Rejeição 225 - Falha no Schema XML da NFe (Elemento: enviNFe/NFe[1]/infNFe/det[26]/prod/vOutro/) - (Recorrência TK 634468),2026-06-26T11:03:02.853Z,Ivan Pionelli Junior,1.73,0.76,2026-06-25T16:44:13.030Z
-21135,Bug,"CTe de Substituição - Exceção ao Importar Xml ou Carregar via Manifesto ""Referência de objeto não definida para uma instância de um objeto""",2026-07-02T15:01:38.133Z,Julio Andreata,7.89,6.09,2026-06-26T12:51:55.040Z
 21399,Atendimento,[Revisao PR] Revisar PR 6477 - Emissao de nfe de debito pagamento antecipado automatico de requisição,2026-06-26T14:54:22.997Z,Ivan Pionelli Junior,0.05,0.05,2026-06-26T13:37:17.193Z
 21414,Bug,Exceção ao Salvar ou Salvar e Processar Aquisição de CT-e de Substituição após correção do TK 661776,2026-07-02T15:00:51.507Z,Ivan Pionelli Junior,5.9,5.89,2026-06-26T17:44:56.470Z
 21445,Atendimento,ATENDIMENTO COMPLIANCE FISCAL REDE RM - JUNTO A CONTABILIDADE,2026-06-26T19:52:03.573Z,Julio Andreata,0.07,0.06,2026-06-26T18:18:29.577Z
@@ -101,15 +100,17 @@ Id,Tipo,Titulo,DataFechamento,ResponsavelNoFechamento,LeadTimeDias,CycleTimeDias
 21774,User Story,Padronizar harness para publicação de US no ADO,2026-07-06T11:31:36.107Z,Paulo A. Lot,3.75,3.73,2026-07-02T18:04:12.173Z
 21849,Bug,Estoque Offline - Divergência de saldo no Estoque Offline para Combustível durante consolidação de estoque,2026-07-07T17:41:35.113Z,Rodolfo Caceraghi dos Santos,3.99,1.23,2026-07-06T12:12:54.290Z
 21852,Bug,Metaposto - Erro na geração de NF-e pela tela de Controle de Perdas e Sobras,2026-07-08T13:10:23.370Z,Paulo A. Lot,4.79,2.02,2026-07-06T12:44:47.140Z
-21869,Bug,Cadastro de Cartão - sistema não carrega campos (Identificar PN na venda e Visualiza Cartão PDV) ao filtrar o PN pelo ID,2026-07-09T18:43:29.417Z,Rodolfo Caceraghi dos Santos,6.01,3.02,2026-07-06T18:14:52.567Z
 22055,Bug,"MetaPosto: NFe / Ao tentar abortar cancelamento de NFe sistema retorna exceção ""A subconsulta retornou mais de 1 valor."" (Recorrência Tk 655571)",2026-07-10T12:03:39.953Z,Rodolfo Caceraghi dos Santos,3.74,3.7,2026-07-06T19:09:55.430Z
 22172,Atendimento,Plano de Migração e Rollback — Portal do Contador,2026-07-08T13:48:12.553Z,Paulo A. Lot,0.96,0.96,2026-07-07T14:48:25.120Z
 22296,User Story,PDV/Emissão NFS-e - Código do Erro : E1235 - Mensagem : Falha no esquema XML do DF-e.,2026-07-08T19:31:48.023Z,Ivan Pionelli Junior,0.32,,
 22331,User Story,Padronizar testes de e-mail com SMTP headless e corrigir NRE em atualização de preço de mercadoria,2026-07-08T19:32:47.263Z,Luiz Fernando Rodrigues Pereira,0.24,0.24,2026-07-08T13:49:16.613Z
 22375,Bug,PDV: Falha na execução de GUIDs de atualização,2026-07-10T10:41:20.860Z,Rodolfo Caceraghi dos Santos,1.73,1.62,2026-07-08T19:54:55.587Z
 22378,Atendimento,NFC-e permanece pendente após rejeição 290 e o documento já está autorizado na SEFAZ,2026-07-09T18:15:38.170Z,Paulo A. Lot,1.03,0.0,2026-07-09T18:15:34.103Z
-22515,Bug,Portal WEB do Atualizador Automático - Tela de Clientes limita exibição aos 20 primeiros registros,2026-07-14T14:05:56.353Z,Paulo A. Lot,4.73,4.11,2026-07-10T11:32:02.910Z
 22640,Atendimento,Promoção da branch ALFA para novo release Oficial [PRD],2026-07-14T12:01:48.250Z,maykon.elias,1.01,1.01,2026-07-13T11:41:23.317Z
 22779,User Story,Atualização de banco falha em bases zeradas por dependência não declarada da FN_ValidarEAN14_V2,2026-07-14T12:34:18.603Z,Ivan Pionelli Junior,0.0,,
+21135,Bug,"CTe de Substituição - Exceção ao Importar Xml ou Carregar via Manifesto ""Referência de objeto não definida para uma instância de um objeto""",2026-07-02T15:01:38.133Z,Julio Andreata,7.89,6.09,2026-06-26T12:51:55.040Z
+21869,Bug,Cadastro de Cartão - sistema não carrega campos (Identificar PN na venda e Visualiza Cartão PDV) ao filtrar o PN pelo ID,2026-07-09T18:43:29.417Z,Rodolfo Caceraghi dos Santos,6.01,3.02,2026-07-06T18:14:52.567Z
+22515,Bug,Portal WEB do Atualizador Automático - Tela de Clientes limita exibição aos 20 primeiros registros,2026-07-14T14:05:56.353Z,Paulo A. Lot,4.73,4.11,2026-07-10T11:32:02.910Z
 22825,Atendimento,[Atualizador] - deploy portal web,2026-07-14T14:36:15.287Z,maykon.elias,0.0,0.0,2026-07-14T14:36:01.600Z
 22960,Atendimento,Henrique > Integração Imends Dúvidas,2026-07-15T20:11:44.857Z,Rodolfo Caceraghi dos Santos,0.0,0.0,2026-07-15T20:11:38.330Z
+23027,Atendimento,Duvida CIOT MDFe,2026-07-16T15:50:32.540Z,Rodolfo Caceraghi dos Santos,0.03,0.03,2026-07-16T15:09:32.683Z

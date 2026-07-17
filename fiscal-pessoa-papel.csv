@@ -350,7 +350,6 @@ Id,Pessoa,Papel
 14614,Julio Andreata,Dev
 15570,maykon.elias,Dev
 15571,maykon.elias,Dev
-15572,maykon.elias,Dev
 15573,Luiz Fernando Rodrigues Pereira,Dev
 15574,Luiz Fernando Rodrigues Pereira,Dev
 15575,Luiz Fernando Rodrigues Pereira,Dev
@@ -462,8 +461,6 @@ Id,Pessoa,Papel
 19215,Ivan Pionelli Junior,Dev
 19229,Rodolfo Caceraghi dos Santos,Dev
 19229,Julio Andreata,QA
-19230,Fabio Nobre,Dev
-19230,Rodolfo Caceraghi dos Santos,QA
 19231,Ivan Pionelli Junior,Dev
 19232,Ivan Pionelli Junior,Dev
 19233,Julio Andreata,Dev
@@ -491,15 +488,6 @@ Id,Pessoa,Papel
 19632,maykon.elias,Dev
 19632,Ivan Pionelli Junior,QA
 19651,Fabio Nobre,Dev
-19758,Ivan Pionelli Junior,Dev
-19759,Ivan Pionelli Junior,Dev
-19760,Ivan Pionelli Junior,Dev
-19761,Ivan Pionelli Junior,Dev
-19765,Ivan Pionelli Junior,Dev
-19766,Ivan Pionelli Junior,Dev
-19767,Ivan Pionelli Junior,Dev
-19769,Ivan Pionelli Junior,Dev
-19770,Ivan Pionelli Junior,Dev
 19771,maykon.elias,Dev
 19884,Paulo A. Lot,Dev
 19884,Ivan Pionelli Junior,QA
@@ -510,19 +498,9 @@ Id,Pessoa,Papel
 19947,maykon.elias,Dev
 19948,maykon.elias,Dev
 19948,Julio Andreata,QA
-19949,maykon.elias,Dev
-19949,Julio Andreata,QA
-19950,maykon.elias,Dev
-19950,Julio Andreata,QA
-19951,maykon.elias,Dev
-19951,Julio Andreata,QA
-19952,maykon.elias,Dev
-19952,Julio Andreata,QA
 19983,Ivan Pionelli Junior,Dev
 19984,Ivan Pionelli Junior,Dev
 19985,Ivan Pionelli Junior,Dev
-20056,Ivan Pionelli Junior,Dev
-20056,Fabio Nobre,QA
 20064,Diogo M. Fontolan,Dev
 20111,maykon.elias,Dev
 20121,Ivan Pionelli Junior,Dev
@@ -546,7 +524,6 @@ Id,Pessoa,Papel
 20645,Fabio Nobre,Dev
 20645,maykon.elias,QA
 20681,maykon.elias,Dev
-20712,Luiz Fernando Rodrigues Pereira,Dev
 20743,Ivan Pionelli Junior,Dev
 20747,Paulo A. Lot,Dev
 20747,Luiz Fernando Rodrigues Pereira,QA
@@ -570,13 +547,9 @@ Id,Pessoa,Papel
 21132,Julio Andreata,Dev
 21132,Ivan Pionelli Junior,QA
 21133,Ivan Pionelli Junior,Dev
-21135,Julio Andreata,Dev
-21135,Rodolfo Caceraghi dos Santos,QA
 21152,Luiz Fernando Rodrigues Pereira,Dev
 21162,Luiz Fernando Rodrigues Pereira,Dev
 21162,Rodolfo Caceraghi dos Santos,QA
-21171,Luiz Fernando Rodrigues Pereira,Dev
-21171,Rodolfo Caceraghi dos Santos,QA
 21180,Luiz Fernando Rodrigues Pereira,Dev
 21189,Luiz Fernando Rodrigues Pereira,Dev
 21198,Luiz Fernando Rodrigues Pereira,Dev
@@ -588,8 +561,6 @@ Id,Pessoa,Papel
 21305,Luiz Fernando Rodrigues Pereira,Dev
 21305,Rodolfo Caceraghi dos Santos,QA
 21314,Luiz Fernando Rodrigues Pereira,Dev
-21325,Fabio Nobre,Dev
-21325,Rodolfo Caceraghi dos Santos,QA
 21399,Ivan Pionelli Junior,Dev
 21414,Ivan Pionelli Junior,Dev
 21414,Rodolfo Caceraghi dos Santos,QA
@@ -615,8 +586,6 @@ Id,Pessoa,Papel
 21851,Diogo M. Fontolan,Dev
 21852,Paulo A. Lot,Dev
 21852,Ivan Pionelli Junior,QA
-21869,Rodolfo Caceraghi dos Santos,Dev
-21869,Ivan Pionelli Junior,QA
 21962,Paulo A. Lot,Dev
 21962,Rodolfo Caceraghi dos Santos,QA
 22054,Rodolfo Caceraghi dos Santos,Dev
@@ -627,8 +596,6 @@ Id,Pessoa,Papel
 22287,Rodolfo Caceraghi dos Santos,Dev
 22287,Paulo A. Lot,QA
 22296,Ivan Pionelli Junior,Dev
-22299,Rodolfo Caceraghi dos Santos,Dev
-22299,Ivan Pionelli Junior,QA
 22331,Luiz Fernando Rodrigues Pereira,Dev
 22354,Luiz Fernando Rodrigues Pereira,Dev
 22354,Fabio Nobre,QA
@@ -639,6 +606,45 @@ Id,Pessoa,Papel
 22378,Paulo A. Lot,Dev
 22383,Ivan Pionelli Junior,Dev
 22383,Julio Andreata,QA
+22618,Luiz Fernando Rodrigues Pereira,Dev
+22640,maykon.elias,Dev
+22710,Ivan Pionelli Junior,Dev
+22779,Ivan Pionelli Junior,Dev
+22789,Ivan Pionelli Junior,Dev
+15572,maykon.elias,Dev
+19230,Fabio Nobre,Dev
+19230,Rodolfo Caceraghi dos Santos,QA
+19758,Ivan Pionelli Junior,Dev
+19759,Ivan Pionelli Junior,Dev
+19760,Ivan Pionelli Junior,Dev
+19761,Ivan Pionelli Junior,Dev
+19765,Ivan Pionelli Junior,Dev
+19766,Ivan Pionelli Junior,Dev
+19767,Ivan Pionelli Junior,Dev
+19769,Ivan Pionelli Junior,Dev
+19770,Fabio Nobre,Dev
+19949,maykon.elias,Dev
+19949,Julio Andreata,QA
+19950,maykon.elias,Dev
+19950,Julio Andreata,QA
+19951,maykon.elias,Dev
+19951,Julio Andreata,QA
+19952,maykon.elias,Dev
+19952,Julio Andreata,QA
+20056,Ivan Pionelli Junior,Dev
+20056,Fabio Nobre,QA
+20712,Luiz Fernando Rodrigues Pereira,Dev
+21135,Julio Andreata,Dev
+21135,Rodolfo Caceraghi dos Santos,QA
+21171,Luiz Fernando Rodrigues Pereira,Dev
+21171,Rodolfo Caceraghi dos Santos,QA
+21325,Fabio Nobre,Dev
+21325,Rodolfo Caceraghi dos Santos,QA
+21515,Gabriel Seiji,Dev
+21869,Rodolfo Caceraghi dos Santos,Dev
+21869,Ivan Pionelli Junior,QA
+22299,Rodolfo Caceraghi dos Santos,Dev
+22299,Ivan Pionelli Junior,QA
 22508,Rodolfo Caceraghi dos Santos,Dev
 22508,Fabio Nobre,QA
 22509,Fabio Nobre,Dev
@@ -647,14 +653,13 @@ Id,Pessoa,Papel
 22510,Julio Andreata,QA
 22515,Paulo A. Lot,Dev
 22515,maykon.elias,QA
-22618,Luiz Fernando Rodrigues Pereira,Dev
-22640,maykon.elias,Dev
-22710,Ivan Pionelli Junior,Dev
 22714,Rodolfo Caceraghi dos Santos,Dev
 22738,Ivan Pionelli Junior,Dev
 22738,maykon.elias,QA
 22757,Fabio Nobre,Dev
-22779,Ivan Pionelli Junior,Dev
-22789,Ivan Pionelli Junior,Dev
+22757,Julio Andreata,QA
 22825,maykon.elias,Dev
 22960,Rodolfo Caceraghi dos Santos,Dev
+23014,Diogo M. Fontolan,Dev
+23024,Ivan Pionelli Junior,Dev
+23027,Rodolfo Caceraghi dos Santos,Dev

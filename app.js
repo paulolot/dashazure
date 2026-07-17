@@ -1119,22 +1119,16 @@ function updateTagTriggerText() {
 }
 
 function buildGlobalFilters() {
-  const iterationSel = document.getElementById('filter-iteration');
   const assigneeSel = document.getElementById('filter-assignee');
   const qaSel = document.getElementById('filter-qa');
   
   // Clear previous options except "all"
-  clearSelectOptions(iterationSel);
+  
   clearSelectOptions(assigneeSel);
   clearSelectOptions(qaSel);
   
   // 1. Sprints
-  Array.from(g_data.iterations).sort().forEach(it => {
-    const opt = document.createElement('option');
-    opt.value = it;
-    opt.textContent = it.replace('Metanet\\', ''); // Shorten visual display
-    iterationSel.appendChild(opt);
-  });
+  
   
   // 2. Assignees
   Array.from(g_data.assignees).sort().forEach(person => {
@@ -1208,6 +1202,21 @@ function clearSelectOptions(selectElement) {
 }
 
 function setupFilterPanelListeners() {
+
+  const filterDateRange = document.getElementById('filter-date-range');
+  if (filterDateRange) {
+    filterDateRange.addEventListener('change', (e) => {
+      const customContainer = document.getElementById('custom-date-range-container');
+      if (customContainer) {
+        if (e.target.value === 'custom') {
+          customContainer.style.display = 'flex';
+        } else {
+          customContainer.style.display = 'none';
+        }
+      }
+    });
+  }
+
   const areaFilterSelect = document.getElementById('filter-area');
   if (areaFilterSelect) {
     areaFilterSelect.addEventListener('change', () => {
@@ -1258,7 +1267,6 @@ function setupFilterPanelListeners() {
     document.getElementById('filter-date-range').value = 'all';
     document.getElementById('filter-wi-type').value = 'all';
     document.getElementById('filter-flow-type').value = 'all';
-    document.getElementById('filter-iteration').value = 'all';
     document.getElementById('filter-assignee').value = 'all';
     document.getElementById('filter-qa').value = 'all';
     
@@ -1286,7 +1294,6 @@ function setupFilterPanelListeners() {
     if (document.getElementById('filter-date-range').value !== 'all') activeFiltersCount++;
     if (document.getElementById('filter-wi-type').value !== 'all') activeFiltersCount++;
     if (document.getElementById('filter-flow-type').value !== 'all') activeFiltersCount++;
-    if (document.getElementById('filter-iteration').value !== 'all') activeFiltersCount++;
     if (document.getElementById('filter-assignee').value !== 'all') activeFiltersCount++;
     if (document.getElementById('filter-qa').value !== 'all') activeFiltersCount++;
     
@@ -1326,7 +1333,6 @@ function getFilteredWorkItems() {
   const dateRange = document.getElementById('filter-date-range').value;
   const wiType = document.getElementById('filter-wi-type').value;
   const flowType = document.getElementById('filter-flow-type').value;
-  const iteration = document.getElementById('filter-iteration').value;
   const assignee = document.getElementById('filter-assignee').value;
   const qa = document.getElementById('filter-qa').value;
   
@@ -1340,6 +1346,9 @@ function getFilteredWorkItems() {
     endDateMs = new Date(TODAY_ANCHOR.getFullYear(), TODAY_ANCHOR.getMonth(), 0).getTime() + 86399000;
   } else if (dateRange === 'last-year') {
     endDateMs = new Date(TODAY_ANCHOR.getFullYear() - 1, 11, 31).getTime() + 86399000;
+  } else if (dateRange === 'custom') {
+    const customEnd = document.getElementById('filter-date-end').value;
+    if (customEnd) endDateMs = new Date(customEnd + 'T23:59:59').getTime();
   }
   
   return g_raw.workItems.filter(wi => {
@@ -1351,7 +1360,6 @@ function getFilteredWorkItems() {
     if (wiType !== 'all' && wi.Tipo !== wiType) return false;
     
     // 2. Filter by Iteration
-    if (iteration !== 'all' && wi.IterationPath !== iteration) return false;
     
     // 3. Filter by Assignee (Developer)
     if (assignee !== 'all' && wi.Responsavel !== assignee) return false;
@@ -1411,6 +1419,11 @@ function getFilteredWorkItems() {
         const closedYear = closedDateObj.getFullYear();
         const anchorYear = TODAY_ANCHOR.getFullYear() - 1;
         if (closedYear !== anchorYear) return false;
+      } else if (dateRange === 'custom') {
+        const customStart = document.getElementById('filter-date-start').value;
+        const customEnd = document.getElementById('filter-date-end').value;
+        if (customStart && closedTime < new Date(customStart + 'T00:00:00').getTime()) return false;
+        if (customEnd && closedTime > new Date(customEnd + 'T23:59:59').getTime()) return false;
       } else {
         const windowDays = parseInt(dateRange, 10);
         const limitDate = new Date(TODAY_ANCHOR.getFullYear(), TODAY_ANCHOR.getMonth(), TODAY_ANCHOR.getDate() - windowDays);
@@ -1475,7 +1488,12 @@ function getFilteredAtendimentos() {
       const closedYear = closedDateObj.getFullYear();
       const anchorYear = TODAY_ANCHOR.getFullYear() - 1;
       if (closedYear !== anchorYear) return false;
-    } else {
+    } else if (dateRange === 'custom') {
+        const customStart = document.getElementById('filter-date-start').value;
+        const customEnd = document.getElementById('filter-date-end').value;
+        if (customStart && closedTime < new Date(customStart + 'T00:00:00').getTime()) return false;
+        if (customEnd && closedTime > new Date(customEnd + 'T23:59:59').getTime()) return false;
+      } else {
       const windowDays = parseInt(dateRange, 10);
       const limitDate = new Date(TODAY_ANCHOR.getFullYear(), TODAY_ANCHOR.getMonth(), TODAY_ANCHOR.getDate() - windowDays);
       if (closedTime < limitDate.getTime()) return false;
@@ -2389,6 +2407,19 @@ function getPrevPeriodDateLimits(dateRange) {
   } else if (dateRange === 'last-year') {
     start = new Date(today.getFullYear() - 2, 0, 1);
     end = new Date(today.getFullYear() - 2, 11, 31, 23, 59, 59);
+  } else if (dateRange === 'custom') {
+    const customStart = document.getElementById('filter-date-start').value;
+    const customEnd = document.getElementById('filter-date-end').value;
+    if (customStart && customEnd) {
+      const s = new Date(customStart + 'T00:00:00').getTime();
+      const e = new Date(customEnd + 'T23:59:59').getTime();
+      const diff = e - s;
+      end = new Date(s - 1000);
+      start = new Date(s - diff - 1000);
+    } else {
+      start = new Date(0);
+      end = new Date(0);
+    }
   } else {
     const days = parseInt(dateRange, 10) || 30;
     end = new Date(today.getTime() - days * 24 * 60 * 60 * 1000);
@@ -2434,6 +2465,11 @@ function renderOverview(filteredWIs) {
   } else if (dateRange === 'last-year') {
     startDate = new Date(today.getFullYear() - 1, 0, 1);
     endDate = new Date(today.getFullYear() - 1, 11, 31);
+  } else if (typeof dateRange !== 'undefined' && dateRange === 'custom' || typeof dateRangeVal !== 'undefined' && dateRangeVal === 'custom') {
+    const customStart = document.getElementById('filter-date-start').value;
+    const customEnd = document.getElementById('filter-date-end').value;
+    startDate = customStart ? new Date(customStart + 'T00:00:00') : new Date(0);
+    endDate = customEnd ? new Date(customEnd + 'T23:59:59') : new Date();
   } else if (dateRange === 'this-month') {
     startDate = new Date(today.getFullYear(), today.getMonth(), 1);
     endDate = new Date(today);
@@ -2614,7 +2650,6 @@ function renderOverview(filteredWIs) {
       const prevClosedStories = [];
       const prevBugs = [];
       const wiType = document.getElementById('filter-wi-type').value;
-      const iteration = document.getElementById('filter-iteration').value;
       const assignee = document.getElementById('filter-assignee').value;
       const qa = document.getElementById('filter-qa').value;
       const area = document.getElementById('filter-area') ? document.getElementById('filter-area').value : 'all';
@@ -2623,7 +2658,6 @@ function renderOverview(filteredWIs) {
         if (wi.BoardColumn === 'Ideias') return;
         if (area !== 'all' && !(wi.AreaPath || '').includes(area)) return;
         if (wiType !== 'all' && wi.Tipo !== wiType) return;
-        if (iteration !== 'all' && wi.IterationPath !== iteration) return;
         if (assignee !== 'all' && wi.Responsavel !== assignee) return;
         
         if (qa !== 'all') {
@@ -3105,7 +3139,12 @@ function renderBlockingCausesChart(filteredWIs, activeWIs) {
     } else if (dateRange === 'last-year') {
       startDateMs = new Date(today.getFullYear() - 1, 0, 1).getTime();
       endDateMs = new Date(today.getFullYear() - 1, 11, 31, 23, 59, 59).getTime();
-    } else {
+    } else if (dateRange === 'custom') {
+    const customStart = document.getElementById('filter-date-start').value;
+    const customEnd = document.getElementById('filter-date-end').value;
+    startDateMs = customStart ? new Date(customStart + 'T00:00:00').getTime() : 0;
+    endDateMs = customEnd ? new Date(customEnd + 'T23:59:59').getTime() : Date.now();
+  } else {
       const days = parseInt(dateRange, 10);
       startDateMs = today.getTime() - days * 24 * 60 * 60 * 1000;
     }
@@ -4256,6 +4295,11 @@ function renderDeliveries(filteredWIs) {
   } else if (dateRangeVal === 'last-year') {
     startDate = new Date(today.getFullYear() - 1, 0, 1);
     endDate = new Date(today.getFullYear() - 1, 11, 31);
+  } else if (typeof dateRange !== 'undefined' && dateRange === 'custom' || typeof dateRangeVal !== 'undefined' && dateRangeVal === 'custom') {
+    const customStart = document.getElementById('filter-date-start').value;
+    const customEnd = document.getElementById('filter-date-end').value;
+    startDate = customStart ? new Date(customStart + 'T00:00:00') : new Date(0);
+    endDate = customEnd ? new Date(customEnd + 'T23:59:59') : new Date();
   } else {
     const days = parseInt(dateRangeVal, 10) || 30;
     startDate = new Date(today.getTime() - days * 24 * 60 * 60 * 1000);
@@ -4483,7 +4527,12 @@ function renderDeliveriesByCollaboratorTasks(filteredWIs) {
     } else if (dateRangeVal === 'last-year') {
       startDateMs = new Date(today.getFullYear() - 1, 0, 1).getTime();
       endDateMs = new Date(today.getFullYear() - 1, 11, 31, 23, 59, 59).getTime();
-    } else {
+    } else if (dateRangeVal === 'custom') {
+    const customStart = document.getElementById('filter-date-start').value;
+    const customEnd = document.getElementById('filter-date-end').value;
+    startDateMs = customStart ? new Date(customStart + 'T00:00:00').getTime() : 0;
+    endDateMs = customEnd ? new Date(customEnd + 'T23:59:59').getTime() : Date.now();
+  } else {
       const days = parseInt(dateRangeVal.replace('last-', ''), 10) || 30;
       startDateMs = today.getTime() - (days * 24 * 60 * 60 * 1000);
     }
@@ -6430,6 +6479,11 @@ function getGlobalDateRange() {
   } else if (dateRange === 'last-year') {
     startDate = new Date(TODAY_ANCHOR.getFullYear() - 1, 0, 1);
     endDate = new Date(TODAY_ANCHOR.getFullYear() - 1, 11, 31);
+  } else if (typeof dateRange !== 'undefined' && dateRange === 'custom' || typeof dateRangeVal !== 'undefined' && dateRangeVal === 'custom') {
+    const customStart = document.getElementById('filter-date-start').value;
+    const customEnd = document.getElementById('filter-date-end').value;
+    startDate = customStart ? new Date(customStart + 'T00:00:00') : new Date(0);
+    endDate = customEnd ? new Date(customEnd + 'T23:59:59') : new Date();
   } else {
     const windowDays = parseInt(dateRange, 10);
     startDate = new Date(TODAY_ANCHOR.getFullYear(), TODAY_ANCHOR.getMonth(), TODAY_ANCHOR.getDate() - windowDays);
@@ -9547,6 +9601,11 @@ function renderCollaboratorTimesAndGaps(filteredWIs) {
   } else if (dateRange === 'last-year') {
     startDate = new Date(today.getFullYear() - 1, 0, 1);
     endDate = new Date(today.getFullYear() - 1, 11, 31);
+  } else if (typeof dateRange !== 'undefined' && dateRange === 'custom' || typeof dateRangeVal !== 'undefined' && dateRangeVal === 'custom') {
+    const customStart = document.getElementById('filter-date-start').value;
+    const customEnd = document.getElementById('filter-date-end').value;
+    startDate = customStart ? new Date(customStart + 'T00:00:00') : new Date(0);
+    endDate = customEnd ? new Date(customEnd + 'T23:59:59') : new Date();
   } else {
     const days = parseInt(dateRange, 10);
     startDate = new Date(today.getTime() - days * 24 * 60 * 60 * 1000);

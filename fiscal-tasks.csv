@@ -265,10 +265,6 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 17387,19359,TechnicalValidation,Closed,maykon.elias,TechnicalValidation,2.0,2.0,2026-06-05T18:27:10.677Z,2026-07-03T18:05:12.933Z
 17387,19360,Documentation,Closed,maykon.elias,Documentation,1.0,1.0,2026-06-05T18:27:19.487Z,2026-07-03T18:05:03.403Z
 17387,19364,Erros em testes unitários e de integração que já existia antes das alterações,Closed,maykon.elias,DevelopmentTest,2.0,2.0,2026-06-05T19:10:19.07Z,2026-07-03T18:04:50.817Z
-19230,19464,3. TechnicalValidation,Closed,Fabio Nobre,TechnicalValidation,1.0,1.0,2026-06-08T10:56:05.963Z,2026-06-25T18:10:08.253Z
-19230,19465,4. Documentation - Documentação de implementações na Wiki,Closed,Fabio Nobre,Documentation,1.0,1.0,2026-06-08T10:56:06.147Z,2026-06-25T19:45:33.787Z
-19230,19466,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,1.0,2026-06-08T10:56:06.337Z,2026-06-26T18:14:41.297Z
-19230,19467,6. Testing,Closed,Rodolfo Caceraghi dos Santos,Testing,4.0,4.0,2026-06-08T10:56:08.907Z,2026-07-15T16:33:16.25Z
 19231,19476,3. TechnicalValidation,New,,TechnicalValidation,,,2026-06-08T11:02:04.247Z,2026-06-08T11:02:04.247Z
 19231,19477,4. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-06-08T11:02:04.417Z,2026-06-08T11:02:04.417Z
 19231,19478,5. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-08T11:02:04.8Z,2026-06-11T10:34:52.703Z
@@ -311,7 +307,6 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 19354,19641,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-08T19:59:58.807Z,2026-06-09T11:08:11.863Z
 19354,19642,6. Testing,Closed,,Testing,,,2026-06-08T19:59:59.16Z,2026-06-09T11:08:12.74Z
 19229,19986,2. Desenvolvimento,Closed,Rodolfo Caceraghi dos Santos,,,8.0,2026-06-09T18:19:04.05Z,2026-06-17T13:40:42.49Z
-19230,19987,2. Desenvolvimento,Closed,Ivan Pionelli Junior,Development,,,2026-06-09T18:19:04.363Z,2026-07-03T18:08:17.543Z
 19231,19988,2. Desenvolvimento,New,Ivan Pionelli Junior,,,,2026-06-09T18:19:04.637Z,2026-06-09T18:19:04.637Z
 19232,19989,2. Desenvolvimento,New,Ivan Pionelli Junior,,,,2026-06-09T18:19:04.923Z,2026-06-09T18:19:04.923Z
 19233,19990,2. Desenvolvimento,Closed,Julio Andreata,,,2.0,2026-06-09T18:19:05.187Z,2026-06-16T19:15:33.227Z
@@ -319,7 +314,6 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 19235,19992,2. Desenvolvimento,Closed,Rodolfo Caceraghi dos Santos,Development,,,2026-06-09T18:19:05.68Z,2026-07-03T18:06:25.337Z
 19236,19993,2. Desenvolvimento,New,Ivan Pionelli Junior,,,,2026-06-09T18:19:05.953Z,2026-06-09T18:19:05.953Z
 19229,20005,1. Análise,Closed,Ivan Pionelli Junior,,,,2026-06-09T18:28:49.183Z,2026-06-10T14:58:36.44Z
-19230,20007,1. Análise,Closed,Ivan Pionelli Junior,Requirements,,,2026-06-09T18:29:13.29Z,2026-07-03T18:08:52.433Z
 19231,20009,1. Análise,Closed,Ivan Pionelli Junior,Requirements,,,2026-06-09T18:29:15.703Z,2026-07-03T18:08:34.627Z
 19232,20011,1. Análise,New,Ivan Pionelli Junior,,,,2026-06-09T18:29:54.02Z,2026-06-09T18:29:54.02Z
 19233,20013,1. Análise,Closed,Paulo A. Lot,,,,2026-06-09T18:29:56.257Z,2026-06-15T19:05:52.66Z
@@ -335,11 +329,6 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 14192,20234,4. Documentation - Documentação de implementações na Wiki,Closed,maykon.elias,Documentation,1.0,,2026-06-11T14:42:16.363Z,2026-06-16T14:26:40.077Z
 14192,20235,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,1.0,2026-06-11T14:42:16.563Z,2026-06-18T13:36:19.213Z
 14192,20236,6. Testing,Closed,Julio Andreata,Testing,2.0,3.0,2026-06-11T14:42:16.83Z,2026-06-18T20:00:42.4Z
-19230,20240,Dev 02 — Persistência BD: compras governamentais em FAT_DocumentoFiscalDadosDestinatario,Closed,Fabio Nobre,Development,1.0,1.0,2026-06-11T14:49:04.53Z,2026-06-15T13:34:10.663Z
-19230,20241,"Dev 03 — Enum TEnteGov, CAD_ParceiroNegocio, tela Parceiro Negócio e conversores",Closed,Fabio Nobre,Development,,,2026-06-11T14:49:04.79Z,2026-06-18T15:38:40.9Z
-19230,20242,Dev 04 — Persistência refDFeAnt em FAT_DocumentoFiscalReferenciado,Closed,Fabio Nobre,Development,2.0,2.0,2026-06-11T14:49:05.03Z,2026-06-24T13:29:41.413Z
-19230,20243,"Dev 05 — Persistência cIndOp: tabela domínio, FK FAT_NotaFiscal e Combobox Emissão NFe",Closed,Fabio Nobre,Development,4.0,4.0,2026-06-11T14:49:05.543Z,2026-06-24T20:51:10.123Z
-19230,20244,"Dev 06 — Campo ISUFEmit: ACS_Empresa, Cadastro Empresa e conversor NFe retaguarda",Closed,Fabio Nobre,Development,,,2026-06-11T14:49:05.833Z,2026-06-25T13:47:33.14Z
 18342,20257,4. Documentation - Documentação de implementações na Wiki,Closed,,Documentation,1.0,,2026-06-11T16:53:10.133Z,2026-06-12T17:29:50.06Z
 18342,20258,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,1.0,2026-06-11T16:53:10.34Z,2026-06-17T17:20:34.31Z
 18342,20259,6. Testing,Closed,Julio Andreata,Testing,,4.0,2026-06-11T16:53:10.543Z,2026-06-22T11:58:53.12Z
@@ -424,14 +413,6 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 18857,21301,4. Documentation,Closed,Julio Andreata,Documentation,2.0,2.0,2026-06-25T12:26:53.737Z,2026-07-03T18:09:30.3Z
 18857,21302,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,1.0,2026-06-25T12:27:12.683Z,2026-07-03T18:05:55.86Z
 18857,21303,6. Testing,Closed,Rodolfo Caceraghi dos Santos,,,12.0,2026-06-25T12:27:34.72Z,2026-07-06T12:43:41.673Z
-15572,21348,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2.0,1.0,2026-06-25T15:44:40.743Z,2026-06-25T17:37:26.043Z
-15572,21349,2. Development,New,maykon.elias,Development,3.0,,2026-06-25T15:44:40.943Z,2026-07-15T21:30:51.823Z
-15572,21350,3. DevelopmentTests,New,,DevelopmentTest,3.0,,2026-06-25T15:44:41.123Z,2026-06-25T17:31:54.403Z
-15572,21351,4. TechnicalValidation,New,,TechnicalValidation,2.0,,2026-06-25T15:44:41.3Z,2026-06-25T17:32:06.463Z
-15572,21352,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,1.0,,2026-06-25T15:44:41.473Z,2026-06-25T17:32:13.083Z
-15572,21353,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,,2026-06-25T15:44:41.657Z,2026-06-25T17:32:20.41Z
-15572,21354,7. Testing,New,,Testing,3.0,,2026-06-25T15:44:41.887Z,2026-06-25T17:32:27.793Z
-19230,21397,[CodeAdjustment] Ajustes do code review — card 19230 / PR 7571,Closed,Fabio Nobre,CodeAdjustment,3.0,1.0,2026-06-26T12:43:23.873Z,2026-07-14T19:50:52.337Z
 13861,21478,[CodeAdjustment] Ajustes do code review — card 13861 / PR 7589,Closed,maykon.elias,CodeAdjustment,2.0,1.0,2026-06-26T19:02:33.68Z,2026-06-29T11:57:21.227Z
 19234,21503,[CodeAdjustment] Ajustes do code review — card 19234 / PR 7614,Closed,Fabio Nobre,CodeAdjustment,3.0,2.0,2026-06-29T12:29:47.827Z,2026-07-01T12:06:01.9Z
 19235,21564,[CodeAdjustment] Ajustes do code review — card 19235 / PR 7620,Closed,Rodolfo Caceraghi dos Santos,CodeAdjustment,2.0,0.3,2026-06-30T13:28:36.24Z,2026-06-30T14:53:17.143Z
@@ -538,72 +519,12 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 19757,19775,4. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-06-09T12:39:15.397Z,2026-06-09T12:39:15.397Z
 19757,19776,5. CodeReview,New,Paulo A. Lot,CodeReview,,,2026-06-09T12:39:15.57Z,2026-06-09T12:39:15.57Z
 19757,19777,6. Testing,New,,Testing,,,2026-06-09T12:39:16.947Z,2026-06-09T12:39:16.947Z
-19758,19779,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T12:39:18.033Z,2026-07-03T17:54:29.717Z
-19758,19780,2. Development,Closed,Ivan Pionelli Junior,Development,,,2026-06-09T12:39:18.247Z,2026-07-10T18:28:34.057Z
-19758,19781,4. TechnicalValidation,Closed,,TechnicalValidation,,,2026-06-09T12:39:18.43Z,2026-07-10T18:28:35.987Z
-19758,19782,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-06-09T12:39:19.15Z,2026-07-02T14:11:12.74Z
-19758,19783,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T12:39:19.36Z,2026-07-02T16:47:50.473Z
-19758,19784,7. Testing,New,,Testing,,,2026-06-09T12:39:19.573Z,2026-07-02T14:11:13.127Z
-19759,19786,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T12:39:21.11Z,2026-07-03T17:54:33.303Z
-19759,19787,2. Development,Closed,Ivan Pionelli Junior,Development,,,2026-06-09T12:39:21.33Z,2026-07-13T13:25:59.027Z
-19759,19788,4. TechnicalValidation,Closed,,TechnicalValidation,,,2026-06-09T12:39:22.92Z,2026-07-13T13:26:00.183Z
-19759,19789,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-06-09T12:39:23.1Z,2026-07-02T14:26:53.897Z
-19759,19790,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T12:39:23.28Z,2026-07-02T14:29:17.333Z
-19759,19791,7. Testing,New,,Testing,,,2026-06-09T12:39:24.873Z,2026-07-02T14:26:54.303Z
-19760,19793,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T12:39:29.74Z,2026-07-03T17:54:36.78Z
-19760,19794,2. Development,Closed,Ivan Pionelli Junior,Development,,,2026-06-09T12:39:29.93Z,2026-07-15T11:49:19.993Z
-19760,19795,4. TechnicalValidation,Closed,,TechnicalValidation,,,2026-06-09T12:39:30.12Z,2026-07-15T11:49:23.107Z
-19760,19796,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-06-09T12:39:30.313Z,2026-07-02T14:42:05.723Z
-19760,19797,6. CodeReview,Active,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T12:39:30.51Z,2026-07-16T10:37:58.57Z
-19760,19798,7. Testing,New,,Testing,,,2026-06-09T12:39:30.707Z,2026-07-02T14:42:06.047Z
-19761,19800,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T12:39:32.27Z,2026-07-03T17:54:44.637Z
-19761,19801,2. Development,Closed,Ivan Pionelli Junior,Development,,,2026-06-09T12:39:32.49Z,2026-07-16T10:51:17.89Z
-19761,19802,4. TechnicalValidation,Closed,,TechnicalValidation,,,2026-06-09T12:39:32.683Z,2026-07-16T10:51:20.147Z
-19761,19803,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-06-09T12:39:32.89Z,2026-07-02T14:49:40.007Z
-19761,19804,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T12:39:33.757Z,2026-07-02T14:59:43.79Z
-19761,19805,7. Testing,New,,Testing,,,2026-06-09T12:39:33.987Z,2026-07-02T14:49:40.33Z
-19763,19814,1. Requirements,New,Paulo A. Lot,Requirements,,1.0,2026-06-09T12:40:13.433Z,2026-07-02T16:48:11.88Z
-19763,19815,2. Development,New,,Development,,,2026-06-09T12:40:13.633Z,2026-06-09T12:40:13.633Z
-19763,19816,3. TechnicalValidation,New,,TechnicalValidation,,,2026-06-09T12:40:13.817Z,2026-06-09T12:40:13.817Z
-19763,19817,4. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-06-09T12:40:13.997Z,2026-06-09T12:40:13.997Z
-19763,19818,5. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T12:40:14.193Z,2026-07-02T16:48:08.38Z
-19763,19819,6. Testing,New,,Testing,,,2026-06-09T12:40:15.463Z,2026-06-09T12:40:15.463Z
 19764,19821,1. Requirements,New,Paulo A. Lot,Requirements,,,2026-06-09T12:40:16.75Z,2026-06-09T12:40:16.75Z
 19764,19822,2. Development,New,,Development,,,2026-06-09T12:40:16.96Z,2026-06-09T18:48:08.713Z
 19764,19823,3. TechnicalValidation,New,,TechnicalValidation,,,2026-06-09T12:40:19.08Z,2026-06-09T12:40:19.08Z
 19764,19824,4. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-06-09T12:40:19.253Z,2026-06-09T12:40:19.253Z
 19764,19825,5. CodeReview,New,Paulo A. Lot,CodeReview,,,2026-06-09T12:40:19.51Z,2026-06-09T12:40:19.51Z
 19764,19826,6. Testing,New,,Testing,,,2026-06-09T12:40:19.71Z,2026-06-09T12:40:19.71Z
-19765,19828,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T12:40:21.3Z,2026-07-03T17:54:50.32Z
-19765,19829,2. Development,Closed,,Development,,,2026-06-09T12:40:42.603Z,2026-07-16T10:52:36.127Z
-19765,19830,4. TechnicalValidation,Closed,,TechnicalValidation,,,2026-06-09T12:40:42.797Z,2026-07-16T10:52:49.853Z
-19765,19831,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-06-09T12:40:43.94Z,2026-07-02T16:44:00.157Z
-19765,19832,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T12:40:44.113Z,2026-07-02T16:45:25.197Z
-19765,19833,7. Testing,New,,Testing,,,2026-06-09T12:40:44.337Z,2026-07-02T16:44:00.527Z
-19766,19835,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T12:40:45.31Z,2026-07-03T17:54:47.13Z
-19766,19836,2. Development,Active,Ivan Pionelli Junior,Development,,,2026-06-09T12:40:45.513Z,2026-07-16T10:52:08.707Z
-19766,19837,4. TechnicalValidation,New,,TechnicalValidation,,,2026-06-09T12:40:45.687Z,2026-07-02T16:48:02.7Z
-19766,19838,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-06-09T12:40:45.87Z,2026-07-02T16:48:02.85Z
-19766,19839,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T12:41:07.157Z,2026-07-02T16:53:26.993Z
-19766,19840,7. Testing,New,,Testing,,,2026-06-09T12:41:07.373Z,2026-07-02T16:48:03.15Z
-19767,19842,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T12:41:10.627Z,2026-07-03T17:54:39.443Z
-19767,19843,2. Development,Closed,Ivan Pionelli Junior,Development,,,2026-06-09T12:41:10.827Z,2026-07-15T13:55:35.5Z
-19767,19844,4. TechnicalValidation,Closed,,TechnicalValidation,,,2026-06-09T12:41:11.043Z,2026-07-15T13:55:37.193Z
-19767,19845,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-06-09T12:41:32.817Z,2026-07-02T16:54:24.957Z
-19767,19846,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T12:41:33.11Z,2026-07-02T16:55:19.04Z
-19767,19847,7. Testing,New,,Testing,,,2026-06-09T12:41:33.347Z,2026-07-02T16:54:25.373Z
-19769,19856,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T12:41:36.603Z,2026-07-03T17:54:42.143Z
-19769,19857,2. Development,Closed,Ivan Pionelli Junior,Development,,,2026-06-09T12:41:36.803Z,2026-07-15T16:58:19.353Z
-19769,19858,4. TechnicalValidation,Closed,,TechnicalValidation,,,2026-06-09T12:41:36.993Z,2026-07-15T16:58:20.34Z
-19769,19859,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-06-09T12:41:37.21Z,2026-07-02T16:59:55.41Z
-19769,19860,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T12:41:37.39Z,2026-07-02T16:59:55.563Z
-19769,19861,7. Testing,New,,Testing,,,2026-06-09T12:41:37.643Z,2026-07-02T16:59:55.74Z
-19770,19863,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T12:41:38.673Z,2026-07-03T17:54:54.787Z
-19770,19864,2. Development,New,,Development,,,2026-06-09T12:41:38.88Z,2026-07-02T17:07:24.747Z
-19770,19865,4. TechnicalValidation,New,,TechnicalValidation,,,2026-06-09T12:41:39.077Z,2026-07-02T17:07:23.017Z
-19770,19866,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-06-09T12:41:39.253Z,2026-07-02T17:07:23.17Z
-19770,19867,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T12:41:39.45Z,2026-07-02T17:07:23.327Z
-19770,19868,7. Testing,New,,Testing,,,2026-06-09T12:41:40.13Z,2026-07-02T17:07:23.5Z
 19884,19898,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T13:50:35.917Z,2026-07-02T22:04:13.077Z
 19884,19899,2. Development,Closed,Paulo A. Lot,Development,2.0,2.0,2026-06-09T13:50:36.127Z,2026-07-02T22:04:19.68Z
 19884,19902,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,1.0,2026-06-09T13:50:39.06Z,2026-07-02T22:04:30.913Z
@@ -640,12 +561,6 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 20040,20044,4. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-06-09T18:47:03.6Z,2026-06-09T18:47:03.6Z
 20040,20045,5. CodeReview,New,Paulo A. Lot,CodeReview,,,2026-06-09T18:47:03.867Z,2026-06-09T18:47:03.867Z
 20040,20046,6. Testing,New,,Testing,,,2026-06-09T18:47:04.19Z,2026-06-09T18:47:04.19Z
-20056,20057,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T18:47:42.507Z,2026-07-03T17:54:26.747Z
-20056,20058,2. Development,Closed,Ivan Pionelli Junior,Development,,,2026-06-09T18:47:42.737Z,2026-07-08T18:00:34.79Z
-20056,20059,4. TechnicalValidation,Closed,Ivan Pionelli Junior,TechnicalValidation,,,2026-06-09T18:47:43.003Z,2026-07-08T18:00:36.123Z
-20056,20060,5. Documentation - Documentação de implementações na Wiki,Closed,Ivan Pionelli Junior,Documentation,,,2026-06-09T18:47:43.22Z,2026-07-08T18:08:35.58Z
-20056,20061,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T18:47:43.417Z,2026-07-02T13:56:21.777Z
-20056,20062,7. Testing,New,,Testing,,,2026-06-09T18:47:43.647Z,2026-07-02T14:02:18.353Z
 20064,20065,1. Requirements,New,Paulo A. Lot,Requirements,,,2026-06-09T18:48:10.09Z,2026-06-09T18:48:10.09Z
 20064,20066,2. Development,New,,Development,,,2026-06-09T18:48:10.353Z,2026-06-09T18:48:33.307Z
 20064,20067,3. TechnicalValidation,New,,TechnicalValidation,,,2026-06-09T18:48:10.573Z,2026-06-09T18:48:10.573Z
@@ -658,10 +573,6 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 20111,20115,[DEP-API-01] Solicitar VPN local — ParanaTI (Devair),Closed,,Requirements,1.0,1.0,2026-06-10T12:28:05.093Z,2026-06-11T19:42:09.133Z
 20111,20116,[DEP-API-02] Deploy da Integracao.Api — homologação e produção,Closed,,Deployment,4.0,,2026-06-10T12:28:05.29Z,2026-06-11T19:44:03.103Z
 20111,20117,[DEP-API-03] Smoke test pós-deploy — homologação e produção,Closed,,Testing,2.0,2.0,2026-06-10T12:28:05.497Z,2026-06-11T20:09:42.69Z
-21325,20239,Dev 01 — Serialização XML (Grupos B/BB/C) e XSD NT v1.40,Closed,Fabio Nobre,Development,1.0,1.0,2026-06-11T14:49:04.25Z,2026-07-02T19:46:26.98Z
-21325,20245,Dev 07 — UI Emissão NFe: campos compra governamental e integração com persistência,Closed,Fabio Nobre,Development,4.0,4.0,2026-06-11T14:49:06.107Z,2026-07-01T14:21:14.077Z
-21325,20246,Dev 08 — Fluxo F11: geração de NF-e derivadas (tpOperGov 1 → 2 ou 3),Closed,Fabio Nobre,Development,4.0,4.0,2026-06-11T14:49:06.37Z,2026-07-02T19:03:15.24Z
-21325,20247,Dev 09 — Validações pré-SEFAZ (ExtensionsValidacoesNFe.cs),Closed,Fabio Nobre,Development,2.0,2.0,2026-06-11T14:49:06.637Z,2026-07-02T19:45:57.247Z
 19947,20270,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,1.0,1.0,2026-06-11T18:09:26.29Z,2026-06-11T18:23:28.5Z
 19947,20271,2. Development,Closed,maykon.elias,Development,5.0,5.0,2026-06-11T18:09:26.573Z,2026-06-16T21:18:32.173Z
 19947,20272,3. TechnicalValidation,Closed,maykon.elias,TechnicalValidation,2.0,2.0,2026-06-11T18:09:26.83Z,2026-06-17T20:33:23.687Z
@@ -684,12 +595,6 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 20211,20509,4. Documentation - Documentação de implementações na Wiki,Closed,Julio Andreata,Documentation,1.0,1.0,2026-06-16T13:38:29.347Z,2026-06-17T13:21:31.343Z
 20211,20510,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,1.0,2026-06-16T13:38:29.56Z,2026-06-17T19:39:34.217Z
 20211,20511,6. Testing,Closed,Rodolfo Caceraghi dos Santos,Testing,1.0,4.0,2026-06-16T13:38:29.79Z,2026-06-22T18:53:48.89Z
-19950,20532,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,1.0,1.0,2026-06-16T17:12:07.277Z,2026-06-16T17:15:08.26Z
-19950,20533,2. Development,Closed,maykon.elias,Development,5.0,,2026-06-16T17:12:07.523Z,2026-07-11T13:49:27.917Z
-19950,20534,3. TechnicalValidation,Closed,maykon.elias,TechnicalValidation,2.0,2.0,2026-06-16T17:12:07.73Z,2026-07-11T14:05:31.88Z
-19950,20535,4. Documentation - Documentação de implementações na Wiki,Closed,maykon.elias,Documentation,1.0,1.0,2026-06-16T17:12:07.947Z,2026-07-11T14:06:08.52Z
-19950,20536,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,0.1,2026-06-16T17:12:08.153Z,2026-07-13T19:29:15.427Z
-19950,20537,6. Testing,Active,Julio Andreata,Testing,3.0,2.0,2026-06-16T17:12:08.383Z,2026-07-15T17:39:17.743Z
 20578,20589,1. Requirements,Closed,Paulo A. Lot,Requirements,,,2026-06-17T14:40:50.703Z,2026-06-17T19:17:11.077Z
 20578,20591,3. TechnicalValidation,Closed,Rodolfo Caceraghi dos Santos,TechnicalValidation,,,2026-06-17T14:40:51.173Z,2026-06-18T22:14:13.123Z
 20578,20593,5. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-17T14:40:51.64Z,2026-06-17T19:17:18.527Z
@@ -699,25 +604,6 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 20578,20598,2.3 — Validações de vínculo motorista/transportadora para Vale-Brinde Rodobank,Closed,Rodolfo Caceraghi dos Santos,Development,8.0,,2026-06-17T14:40:59.833Z,2026-06-18T22:17:11.603Z
 20578,20599,2.4 — Propagação dos campos Rodobank do PN para o PDV via carga de dados,Closed,Rodolfo Caceraghi dos Santos,Development,10.0,,2026-06-17T14:41:00.043Z,2026-06-18T22:17:56.06Z
 20578,20739,7. Code Adjustment - Corrigir erro crítico 1 do code review,Closed,Rodolfo Caceraghi dos Santos,CodeAdjustment,,,2026-06-19T12:30:06.053Z,2026-06-19T19:23:27.617Z
-19949,20778,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2.0,2.0,2026-06-19T18:29:51.737Z,2026-06-19T18:42:54.543Z
-19949,20779,2.1 Development - Nova DLL JobAuditoriaOrganiza (Quartz),Closed,maykon.elias,Development,8.0,4.0,2026-06-19T18:29:51.993Z,2026-07-13T17:42:24.697Z
-19949,20780,2.2 Development - Serviço de auditoria em lote (Repositório/Frequência Quartz),Closed,maykon.elias,Development,12.0,3.0,2026-06-19T18:29:52.217Z,2026-07-13T17:42:24.697Z
-19949,20781,2.3 Development - Disparo manual do Job Quartz (Atualizar dados agora),Closed,maykon.elias,Development,6.0,2.0,2026-06-19T18:29:52.48Z,2026-07-13T17:42:24.697Z
-19949,20782,2.4 Development - Monitoramento/progresso do Job (DadosJobs) e tela minimizável,Closed,maykon.elias,Development,8.0,2.0,2026-06-19T18:29:52.693Z,2026-07-13T17:42:24.697Z
-19949,20783,2.5 Development - Notificação de conclusão (log/erros parciais),Closed,maykon.elias,Development,4.0,2.0,2026-06-19T18:29:52.93Z,2026-07-13T17:42:24.697Z
-19949,20784,3. TechnicalValidation,Closed,maykon.elias,TechnicalValidation,2.0,2.0,2026-06-19T18:29:53.127Z,2026-07-13T19:32:32.773Z
-19949,20785,4. Documentation - Documentação de implementações na Wiki,Closed,maykon.elias,Documentation,1.0,1.0,2026-06-19T18:29:53.327Z,2026-07-09T01:35:38.45Z
-19949,20786,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,0.4,2026-06-19T18:29:53.55Z,2026-07-13T19:30:02.227Z
-19949,20787,6. Testing,Closed,Julio Andreata,Testing,3.0,4.0,2026-06-19T18:29:53.82Z,2026-07-14T19:07:29.55Z
-19951,20805,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2.0,2.0,2026-06-19T19:08:44.087Z,2026-06-22T13:15:13.21Z
-19951,20806,"2.1 Selecionar produtos ""em análise"" para reconsulta",Closed,maykon.elias,Development,1.0,1.0,2026-06-19T19:08:57.267Z,2026-07-11T20:49:45.983Z
-19951,20807,2.2 Reconsulta diária reaproveitando o serviço assíncrono da US 19949,Closed,maykon.elias,Development,1.0,1.0,2026-06-19T19:08:58.727Z,2026-07-11T20:49:41.98Z
-19951,20808,"2.3 Controle de tentativas (limite 10) e marcação ""sem sugestão""",Closed,maykon.elias,Development,1.0,1.0,2026-06-19T19:09:00.123Z,2026-07-11T20:49:38.73Z
-19951,20809,2.4 Indicador de reconsulta na grid de revisão (US 13862),Closed,maykon.elias,Development,1.0,1.0,2026-06-19T19:09:01.377Z,2026-07-11T21:04:39.963Z
-19951,20810,3. TechnicalValidation,Closed,maykon.elias,TechnicalValidation,1.0,1.0,2026-06-19T19:09:13.467Z,2026-07-11T21:22:30.083Z
-19951,20811,4. Documentation - Documentação de implementações na Wiki,Closed,maykon.elias,Documentation,1.0,1.0,2026-06-19T19:09:14.86Z,2026-07-11T21:06:46.857Z
-19951,20812,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,0.1,2026-06-19T19:09:16.307Z,2026-07-13T19:29:26.277Z
-19951,20813,6. Testing,Active,Julio Andreata,Testing,2.0,,2026-06-19T19:09:17.483Z,2026-07-15T17:09:35.61Z
 20645,20824,1. Requirements,Closed,Ivan Pionelli Junior,Requirements,,,2026-06-19T19:44:28.107Z,2026-06-19T19:47:57.917Z
 20645,20825,2. Development,Closed,Fabio Nobre,Development,3.0,3.0,2026-06-19T19:44:28.383Z,2026-06-23T18:15:53.43Z
 20645,20826,3. TechnicalValidation,Closed,Fabio Nobre,TechnicalValidation,1.0,1.0,2026-06-19T19:44:28.627Z,2026-06-23T18:24:03.647Z
@@ -730,12 +616,6 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 20756,20907,4. Documentation - Documentação de implementações na Wiki,Closed,Rodolfo Caceraghi dos Santos,Documentation,1.0,0.15,2026-06-22T14:33:56.03Z,2026-06-22T20:37:05.02Z
 20756,20908,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,1.0,2026-06-22T14:33:56.26Z,2026-06-25T19:12:36.28Z
 20756,20909,6. Testing,Closed,Julio Andreata,Testing,2.0,5.0,2026-06-22T14:33:56.487Z,2026-07-06T18:35:28.78Z
-19952,20925,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,1.0,1.0,2026-06-22T17:41:35.837Z,2026-06-22T17:45:46.96Z
-19952,20926,2. Development,Closed,maykon.elias,Development,2.0,0.0,2026-06-22T17:41:36.17Z,2026-07-11T21:41:03.703Z
-19952,20927,3. TechnicalValidation,Closed,maykon.elias,TechnicalValidation,1.0,1.0,2026-06-22T17:41:36.387Z,2026-07-11T21:41:11.487Z
-19952,20928,4. Documentation - Documentação de implementações na Wiki,Closed,maykon.elias,Documentation,1.0,1.0,2026-06-22T17:41:36.637Z,2026-07-11T21:24:37.86Z
-19952,20929,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,0.1,2026-06-22T17:41:36.883Z,2026-07-13T19:29:40.237Z
-19952,20930,6. Testing,Closed,Julio Andreata,Testing,,2.0,2026-06-22T17:41:37.117Z,2026-07-15T14:36:06.43Z
 20848,20972,1. Requirements,Closed,Ivan Pionelli Junior,Requirements,,,2026-06-22T19:09:39.043Z,2026-06-22T19:14:15.213Z
 20848,20973,2. Development,Closed,Ivan Pionelli Junior,Development,,,2026-06-22T19:09:39.33Z,2026-06-22T20:12:28.913Z
 20848,20974,3. TechnicalValidation,Closed,,TechnicalValidation,,,2026-06-22T19:09:39.56Z,2026-06-22T20:12:30.81Z
@@ -758,13 +638,6 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 21162,21167,5. Documentation - Documentação de implementações na Wiki,Closed,Luiz Fernando Rodrigues Pereira,Documentation,1.0,0.15,2026-06-24T20:22:28.783Z,2026-07-06T13:14:29.537Z
 21162,21168,6. CodeReview,Closed,Paulo A. Lot,CodeReview,1.0,0.5,2026-06-24T20:22:29.013Z,2026-07-06T17:52:36.15Z
 21162,21169,7. Testing,Closed,Luiz Fernando Rodrigues Pereira,Testing,1.0,0.15,2026-06-24T20:22:29.2Z,2026-07-06T13:15:17.09Z
-21171,21172,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-24T20:22:29.803Z,2026-07-03T17:54:04.837Z
-21171,21173,2. Development,Closed,Luiz Fernando Rodrigues Pereira,Development,,1.3,2026-06-24T20:22:30Z,2026-07-13T12:14:49.44Z
-21171,21174,3. DevelopmentTests,Closed,Luiz Fernando Rodrigues Pereira,DevelopmentTest,,0.25,2026-06-24T20:22:30.18Z,2026-07-13T17:48:03.383Z
-21171,21175,4. TechnicalValidation,Closed,Luiz Fernando Rodrigues Pereira,TechnicalValidation,,2.0,2026-06-24T20:22:30.363Z,2026-07-13T23:10:38.723Z
-21171,21176,5. Documentation - Documentação de implementações na Wiki,Closed,Luiz Fernando Rodrigues Pereira,Documentation,,0.2,2026-06-24T20:22:30.56Z,2026-07-13T23:12:44.797Z
-21171,21177,6. CodeReview,Active,Paulo A. Lot,CodeReview,2.0,,2026-06-24T20:22:30.76Z,2026-07-14T10:39:41.767Z
-21171,21178,7. Testing,Closed,Rodolfo Caceraghi dos Santos,Testing,2.0,3.3,2026-06-24T20:22:30.947Z,2026-07-15T13:11:10.473Z
 21180,21181,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-24T20:22:31.48Z,2026-07-03T17:54:04.837Z
 21180,21182,2. Development,New,,Development,,,2026-06-24T20:22:31.667Z,2026-06-25T16:40:24.617Z
 21180,21183,3. DevelopmentTests,New,,DevelopmentTest,,,2026-06-24T20:22:31.843Z,2026-06-24T20:22:31.843Z
@@ -842,13 +715,6 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 21314,21319,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-06-25T13:15:01.6Z,2026-06-25T16:19:48.783Z
 21314,21320,6. CodeReview,New,,CodeReview,,,2026-06-25T13:15:01.82Z,2026-06-25T13:15:01.82Z
 21314,21321,7. Testing,New,,Testing,,,2026-06-25T13:15:02.017Z,2026-06-25T14:55:50.733Z
-21325,21326,1. Requirements,Closed,Ivan Pionelli Junior,Requirements,,,2026-06-25T14:04:12.157Z,2026-06-25T18:16:10.653Z
-21325,21327,2. Development,Closed,Fabio Nobre,Development,,,2026-06-25T14:04:12.433Z,2026-07-06T18:12:56.8Z
-21325,21328,3. DevelopmentTests,Closed,Fabio Nobre,DevelopmentTest,,,2026-06-25T14:04:12.75Z,2026-07-07T14:17:00.93Z
-21325,21329,4. TechnicalValidation,Closed,Fabio Nobre,TechnicalValidation,4.0,4.0,2026-06-25T14:04:13.003Z,2026-07-07T14:12:00.167Z
-21325,21330,5. Documentation - Documentação de implementações na Wiki,Closed,Fabio Nobre,Documentation,,,2026-06-25T14:04:13.29Z,2026-07-07T14:22:45.933Z
-21325,21331,6. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,0.55,2026-06-25T14:04:13.557Z,2026-07-10T18:07:38.547Z
-21325,21332,7. Testing,Active,Rodolfo Caceraghi dos Santos,Testing,6.0,6.0,2026-06-25T14:04:13.953Z,2026-07-15T16:53:18.3Z
 21132,21334,1. Requirements,Closed,Ivan Pionelli Junior,Requirements,,,2026-06-25T14:39:32.15Z,2026-07-06T12:30:47.213Z
 21132,21335,2. Development,Closed,Julio Andreata,Development,,3.0,2026-06-25T14:39:32.433Z,2026-06-29T13:26:36.687Z
 21132,21337,4. TechnicalValidation,Closed,Julio Andreata,TechnicalValidation,,1.0,2026-06-25T14:39:32.98Z,2026-06-29T13:26:27.977Z
@@ -857,13 +723,6 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 21132,21340,7. Testing,Closed,,Testing,,,2026-06-25T14:39:33.69Z,2026-07-06T12:32:04.507Z
 21133,21372,1. Requirements,Closed,Ivan Pionelli Junior,Requirements,,,2026-06-25T18:13:16.85Z,2026-06-25T18:16:03.05Z
 21133,21373,2. Development,Closed,,Development,1.0,1.0,2026-06-25T18:13:17.11Z,2026-06-25T18:25:00.07Z
-21135,21402,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2.0,2.0,2026-06-26T14:47:26.04Z,2026-06-26T14:54:02.61Z
-21135,21403,2. Development,Closed,Julio Andreata,Development,3.0,3.0,2026-06-26T14:47:26.31Z,2026-06-29T18:25:08.667Z
-21135,21404,3. DevelopmentTests,New,,DevelopmentTest,3.0,,2026-06-26T14:47:26.54Z,2026-06-26T14:52:57.47Z
-21135,21405,4. TechnicalValidation,Closed,Julio Andreata,TechnicalValidation,1.0,1.0,2026-06-26T14:47:26.737Z,2026-06-29T18:25:13.123Z
-21135,21406,5. Documentation - Documentação de implementações na Wiki,Closed,Julio Andreata,Documentation,1.0,1.0,2026-06-26T14:47:26.94Z,2026-06-29T18:30:45.207Z
-21135,21407,6. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,1.0,2026-06-26T14:47:27.167Z,2026-06-30T13:04:09.287Z
-21135,21408,7. Testing,Closed,,Testing,2.0,1.0,2026-06-26T14:47:27.46Z,2026-07-01T20:21:15.107Z
 21431,21432,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2.0,2.0,2026-06-26T17:58:26.4Z,2026-06-26T18:40:10.797Z
 21431,21433,2. Development,Closed,Luiz Fernando Rodrigues Pereira,Development,3.0,1.22,2026-06-26T17:58:26.613Z,2026-07-07T12:07:29.637Z
 21431,21434,3. DevelopmentTests,Closed,Luiz Fernando Rodrigues Pereira,DevelopmentTest,3.0,0.4,2026-06-26T17:58:26.823Z,2026-07-07T12:07:29.637Z
@@ -895,18 +754,8 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 21494,21636,7. Testing,Closed,Julio Andreata,Testing,,2.0,2026-06-30T19:30:53.28Z,2026-07-03T13:55:29.373Z
 21518,21739,Atualizacao IBPT,Closed,Julio Andreata,,,4.0,2026-07-02T12:19:23.15Z,2026-07-02T12:19:40.867Z
 21518,21740,Atualizacao FE COMBUSTIVEIS,Closed,Julio Andreata,,,2.0,2026-07-02T12:19:28.69Z,2026-07-02T14:23:51.447Z
-20056,21748,3. DevelopmentTests,New,Ivan Pionelli Junior,DevelopmentTest,,,2026-07-02T13:48:00.787Z,2026-07-02T18:11:22.38Z
 21494,21751,[CodeAdjustment] Ajustes do code review — card 21494 / PR 7665,Closed,Ivan Pionelli Junior,CodeAdjustment,2.0,1.0,2026-07-02T14:05:29.48Z,2026-07-02T18:03:44.113Z
-19758,21752,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-02T14:11:11.973Z,2026-07-02T14:33:08.417Z
 21485,21754,[CodeAdjustment] Ajustes do code review — card 21485 / PR 7385,Closed,Rodolfo Caceraghi dos Santos,CodeAdjustment,2.0,0.3,2026-07-02T14:22:43.117Z,2026-07-02T19:09:46.827Z
-19759,21755,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-02T14:26:53.18Z,2026-07-02T14:33:46.593Z
-19760,21756,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-02T14:42:04.913Z,2026-07-02T14:44:06.967Z
-19761,21757,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-02T14:49:39.29Z,2026-07-02T14:59:34.56Z
-19765,21765,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-02T16:43:59.43Z,2026-07-02T16:45:15.147Z
-19766,21766,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-02T16:48:02.207Z,2026-07-02T16:53:34.49Z
-19767,21767,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-02T16:54:24.26Z,2026-07-02T16:55:25.403Z
-19769,21769,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-02T16:59:54.657Z,2026-07-02T17:04:18.427Z
-19770,21771,3. DevelopmentTests,New,,,,,2026-07-02T17:07:22.523Z,2026-07-03T17:55:01.507Z
 21575,21813,2. Development,Closed,Ivan Pionelli Junior,Development,,,2026-07-03T13:18:14.95Z,2026-07-06T18:44:41.513Z
 21575,21814,3. DevelopmentTests,Closed,,DevelopmentTest,,,2026-07-03T13:18:15.323Z,2026-07-03T18:16:02.107Z
 21575,21815,4. TechnicalValidation,Closed,,TechnicalValidation,,,2026-07-03T13:18:15.6Z,2026-07-06T18:46:07.813Z
@@ -914,11 +763,6 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 21575,21817,6. CodeReview,Closed,Ivan Pionelli Junior,CodeReview,1.0,0.15,2026-07-03T13:18:16.123Z,2026-07-06T12:17:05.81Z
 21575,21818,7. Testing,Closed,Julio Andreata,Testing,,3.0,2026-07-03T13:18:16.367Z,2026-07-07T14:47:51.627Z
 20831,21845,[CodeAdjustment] Ajustes do code review — card 20831 / PR 7722,Closed,Rodolfo Caceraghi dos Santos,CodeAdjustment,1.0,0.3,2026-07-03T17:27:06.443Z,2026-07-03T18:11:31.037Z
-21869,21876,1. Requirements,Closed,Paulo A. Lot,Requirements,1.0,1.0,2026-07-03T18:49:49.32Z,2026-07-07T12:06:34.28Z
-21869,21877,2. Development,Closed,Rodolfo Caceraghi dos Santos,Development,1.0,1.0,2026-07-03T18:49:49.553Z,2026-07-10T14:11:14.977Z
-21869,21879,4. TechnicalValidation,Closed,Rodolfo Caceraghi dos Santos,TechnicalValidation,0.5,0.3,2026-07-03T18:49:49.98Z,2026-07-10T14:11:24.27Z
-21869,21881,6. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,0.25,2026-07-03T18:49:50.443Z,2026-07-09T12:12:18.11Z
-21869,21882,7. Testing,Closed,Ivan Pionelli Junior,Testing,,,2026-07-03T18:49:50.68Z,2026-07-14T17:44:25.843Z
 21849,21940,1. Requirements,Closed,Ivan Pionelli Junior,Requirements,,,2026-07-06T12:19:59.99Z,2026-07-06T12:23:51.117Z
 21849,21941,2. Development,Closed,Rodolfo Caceraghi dos Santos,Development,3.0,3.0,2026-07-06T12:20:00.27Z,2026-07-13T17:57:40.66Z
 21849,21943,4. TechnicalValidation,Closed,Rodolfo Caceraghi dos Santos,TechnicalValidation,1.0,1.0,2026-07-06T12:20:00.79Z,2026-07-06T19:52:36.043Z
@@ -936,7 +780,6 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 21962,22021,6. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,0.23,2026-07-06T14:38:08.493Z,2026-07-07T17:15:56.28Z
 21962,22022,7. Testing,Closed,Rodolfo Caceraghi dos Santos,Testing,3.0,3.0,2026-07-06T14:38:08.897Z,2026-07-10T14:07:44.433Z
 21852,22036,[CodeAdjustment] Ajustes do code review — card 21852 / PR 7754,Closed,Paulo A. Lot,CodeAdjustment,1.0,0.5,2026-07-06T17:04:30.903Z,2026-07-07T12:03:46.627Z
-21325,22040,Dev 10 - Persistencia,Closed,Fabio Nobre,,4.0,4.0,2026-07-06T17:34:45.757Z,2026-07-06T18:12:49.473Z
 22055,22059,1. Requirements,Closed,Ivan Pionelli Junior,Requirements,,,2026-07-06T19:19:30.35Z,2026-07-06T19:22:07.747Z
 22055,22060,2. Development,Closed,Rodolfo Caceraghi dos Santos,Development,2.0,2.0,2026-07-06T19:19:30.633Z,2026-07-13T17:57:40.66Z
 22055,22062,4. TechnicalValidation,Closed,Rodolfo Caceraghi dos Santos,TechnicalValidation,1.0,0.3,2026-07-06T19:19:31.13Z,2026-07-07T14:07:41.27Z
@@ -951,20 +794,7 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 22054,22118,7. Testing,Closed,Fabio Nobre,Testing,4.0,4.0,2026-07-07T11:17:47.213Z,2026-07-08T22:50:39.97Z
 21962,22142,[CodeAdjustment] Ajustes do code review — card 21962 / PR 7761,Closed,Paulo A. Lot,CodeAdjustment,1.0,0.5,2026-07-07T12:20:58.32Z,2026-07-07T17:13:50.513Z
 22055,22197,[CodeAdjustment] Ajustes do code review — card 22055 / PR 7780,Closed,Rodolfo Caceraghi dos Santos,CodeAdjustment,2.0,1.0,2026-07-07T18:10:35.307Z,2026-07-09T12:05:25.903Z
-20712,22219,1. Requirements,Closed,Paulo A. Lot,Requirements,4.0,4.0,2026-07-07T18:36:41.937Z,2026-07-08T10:50:54.49Z
-20712,22221,3. DevelopmentTests,New,,DevelopmentTest,8.0,,2026-07-07T18:36:42.38Z,2026-07-08T10:35:25.133Z
-20712,22222,4. TechnicalValidation,New,,TechnicalValidation,4.0,,2026-07-07T18:36:42.573Z,2026-07-07T18:56:13.313Z
-20712,22223,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,2.0,,2026-07-07T18:36:42.76Z,2026-07-08T10:42:59.427Z
-20712,22224,6. CodeReview,New,Paulo A. Lot,CodeReview,4.0,,2026-07-07T18:36:42.973Z,2026-07-07T18:38:39.3Z
-20712,22225,7. Testing,New,,Testing,6.0,,2026-07-07T18:36:43.193Z,2026-07-08T10:33:31.367Z
-20712,22228,2.1 Development — Persistir e reabrir imposto de importação (II) no item,Active,Luiz Fernando Rodrigues Pereira,Development,4.0,0.3,2026-07-07T18:38:01.21Z,2026-07-16T12:12:14.58Z
-20712,22229,2.2 Development — Manter dados de importação ao editar item da nota,New,,Development,6.0,,2026-07-07T18:38:01.55Z,2026-07-08T10:50:55.383Z
-20712,22230,2.3 Development — Calcular impostos de compra importada (cenário fornecedor exterior),New,,Development,12.0,,2026-07-07T18:38:01.857Z,2026-07-08T10:50:55.763Z
-20712,22231,2.4 Development — Totalizar nota de compra importada conforme regra fiscal,New,,Development,8.0,,2026-07-07T18:38:02.197Z,2026-07-08T10:50:56.143Z
-20712,22232,"2.5 Development — Gerar XML fiscal de importação (DI, II e complementos)",New,,Development,6.0,,2026-07-07T18:38:02.593Z,2026-07-08T10:50:56.517Z
-21869,22242,[CodeAdjustment] Ajustes do code review — card 21869 / PR 7783,Closed,Rodolfo Caceraghi dos Santos,CodeAdjustment,2.0,1.0,2026-07-07T18:52:03.55Z,2026-07-08T18:10:47.787Z
 19948,22243,[CodeAdjustment] Ajustes do code review — card 19948 / PR 7786,Closed,maykon.elias,CodeAdjustment,3.0,,2026-07-07T18:56:09.387Z,2026-07-13T17:42:24.697Z
-21325,22244,[CodeAdjustment] Ajustes do code review — card 21325 / PR 7704,Closed,Fabio Nobre,CodeAdjustment,3.0,2.5,2026-07-07T18:57:27.447Z,2026-07-10T12:13:43.997Z
 22331,22332,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2.0,2.0,2026-07-08T13:50:32.427Z,2026-07-08T14:07:05.28Z
 22331,22333,2. Development,Closed,Luiz Fernando Rodrigues Pereira,Development,2.0,2.0,2026-07-08T13:50:32.673Z,2026-07-08T14:07:24.097Z
 22331,22334,3. DevelopmentTests,Closed,Luiz Fernando Rodrigues Pereira,DevelopmentTest,,,2026-07-08T13:50:32.903Z,2026-07-08T14:07:29.447Z
@@ -986,8 +816,6 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 22375,22413,5. Documentation - Documentação de implementações na Wiki,Closed,Rodolfo Caceraghi dos Santos,Documentation,0.5,0.1,2026-07-09T11:28:05.423Z,2026-07-10T14:10:57.34Z
 22375,22414,6. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,,0.2,2026-07-09T11:28:05.673Z,2026-07-09T13:52:06.193Z
 22375,22415,7. Testing,Closed,Fabio Nobre,Testing,1.0,1.0,2026-07-09T11:28:05.92Z,2026-07-09T21:56:03.72Z
-21325,22422,[CodeAdjustment] Re-review — ajustes pendentes card 21325 / PR 7704,Closed,Fabio Nobre,CodeAdjustment,3.0,2.0,2026-07-09T12:36:38.277Z,2026-07-10T12:13:43.997Z
-19949,22437,[CodeAdjustment] Ajustes do code review — card 19949 / PR 7821,Closed,maykon.elias,,,3.0,2026-07-09T14:29:34.087Z,2026-07-13T17:42:24.697Z
 22377,22447,1. Requirements,Closed,Ivan Pionelli Junior,Requirements,,,2026-07-09T17:28:12.723Z,2026-07-09T19:38:34.553Z
 22377,22448,2. Development,Closed,Rodolfo Caceraghi dos Santos,Development,5.0,5.0,2026-07-09T17:28:13.043Z,2026-07-13T19:45:26.163Z
 22377,22449,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-09T17:28:13.343Z,2026-07-09T19:39:48.587Z
@@ -995,32 +823,13 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 22377,22451,5. Documentation - Documentação de implementações na Wiki,Closed,Rodolfo Caceraghi dos Santos,Documentation,0.5,0.3,2026-07-09T17:28:14.107Z,2026-07-10T14:27:38.327Z
 22377,22452,6. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,0.25,2026-07-09T17:28:14.38Z,2026-07-10T18:13:45.42Z
 22377,22453,7. Testing,Closed,Fabio Nobre,Testing,5.0,5.0,2026-07-09T17:28:14.707Z,2026-07-13T19:13:42.907Z
-22515,22519,1. Requirements,Closed,Paulo A. Lot,Requirements,1.0,1.0,2026-07-10T11:36:59.85Z,2026-07-13T10:58:31.583Z
-22515,22520,2. Development,Closed,Paulo A. Lot,Development,1.0,1.0,2026-07-10T11:37:00.06Z,2026-07-13T14:32:53.427Z
-22515,22524,6. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,,0.25,2026-07-10T11:37:00.843Z,2026-07-13T18:17:37.977Z
-22515,22525,7. Testing,Closed,maykon.elias,Testing,,1.0,2026-07-10T11:37:01.063Z,2026-07-14T14:04:39.04Z
-21325,22531,[CodeAdjustment] Ajustes pendentes pós-tasks 22244/22422 — card 21325 / PR 7704,Closed,Fabio Nobre,CodeAdjustment,3.0,3.0,2026-07-10T12:13:08.547Z,2026-07-10T18:07:57.347Z
 22377,22532,[CodeAdjustment] Ajustes do code review — card 22377 / PR 7838,Closed,Rodolfo Caceraghi dos Santos,,1.0,0.5,2026-07-10T12:40:21.12Z,2026-07-10T14:27:47.037Z
 22287,22601,1. Requirements,Closed,Ivan Pionelli Junior,Requirements,,,2026-07-10T19:29:33.257Z,2026-07-14T10:31:38.447Z
 22287,22602,2. Development,Closed,Rodolfo Caceraghi dos Santos,Development,1.0,1.0,2026-07-10T19:29:33.52Z,2026-07-14T11:53:32.427Z
 22287,22603,4. TechnicalValidation,Closed,Rodolfo Caceraghi dos Santos,TechnicalValidation,0.3,0.3,2026-07-10T19:29:33.76Z,2026-07-10T19:49:50.147Z
 22287,22604,6. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,,0.3,2026-07-10T19:29:33.997Z,2026-07-13T17:38:25.19Z
-22508,22631,1. Requirements,Closed,Paulo A. Lot,Requirements,1.0,1.0,2026-07-13T11:07:30.363Z,2026-07-13T11:10:06.623Z
-22508,22632,2. Development,Closed,Rodolfo Caceraghi dos Santos,Development,1.0,1.0,2026-07-13T11:07:30.567Z,2026-07-13T19:48:45.9Z
-22508,22633,3. DevelopmentTests,Closed,Rodolfo Caceraghi dos Santos,DevelopmentTest,0.3,0.3,2026-07-13T11:07:30.743Z,2026-07-13T19:49:14.277Z
-22508,22634,4. TechnicalValidation,Closed,Rodolfo Caceraghi dos Santos,TechnicalValidation,0.3,0.3,2026-07-13T11:07:30.923Z,2026-07-13T20:04:49.623Z
-22508,22636,6. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,,1.0,2026-07-13T11:07:31.273Z,2026-07-14T16:27:32.92Z
-22508,22637,7. Testing,Closed,Fabio Nobre,Testing,5.0,5.0,2026-07-13T11:07:31.477Z,2026-07-15T18:52:22.667Z
 22640,22641,Verificando erro na pipe para o Rubens,Closed,maykon.elias,,,1.0,2026-07-13T11:51:03.58Z,2026-07-14T11:52:50.04Z
-22510,22649,1. Requirements,Closed,Paulo A. Lot,Requirements,1.0,1.0,2026-07-13T12:30:39.197Z,2026-07-13T12:37:45.723Z
-22510,22650,2. Development,Closed,Rodolfo Caceraghi dos Santos,Development,2.0,2.0,2026-07-13T12:30:39.44Z,2026-07-15T19:21:13.867Z
-22510,22651,3. DevelopmentTests,Closed,Rodolfo Caceraghi dos Santos,DevelopmentTest,0.3,0.3,2026-07-13T12:30:39.637Z,2026-07-15T19:35:07.19Z
-22510,22652,4. TechnicalValidation,Active,Rodolfo Caceraghi dos Santos,TechnicalValidation,,,2026-07-13T12:30:39.89Z,2026-07-16T11:39:44.847Z
-22510,22653,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-07-13T12:30:40.17Z,2026-07-13T12:30:40.17Z
-22510,22654,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-07-13T12:30:40.423Z,2026-07-13T12:38:00.89Z
-22510,22655,7. Testing,New,,Testing,,,2026-07-13T12:30:40.617Z,2026-07-13T12:31:31.657Z
 22287,22657,[CodeAdjustment] Ajustes do code review — card 22287 / PR 7862,Closed,Rodolfo Caceraghi dos Santos,CodeAdjustment,2.0,1.0,2026-07-13T12:34:00.593Z,2026-07-14T10:31:31.677Z
-22515,22659,[CodeAdjustment] Ajustes do code review — card 22515 / PR 7846,Closed,Paulo A. Lot,CodeAdjustment,2.0,0.2,2026-07-13T12:36:33.89Z,2026-07-13T18:00:43.133Z
 22383,22674,1. Requirements,Closed,Paulo A. Lot,Requirements,,,2026-07-13T13:42:07.953Z,2026-07-13T14:05:57.847Z
 22383,22675,2. Development,New,,Development,,,2026-07-13T13:42:08.203Z,2026-07-13T13:44:15.63Z
 22383,22676,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-13T13:42:08.393Z,2026-07-13T13:44:15.783Z
@@ -1028,16 +837,89 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 22383,22678,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-07-13T13:42:08.783Z,2026-07-13T13:42:08.783Z
 22383,22679,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-07-13T13:42:09.003Z,2026-07-13T13:48:37.693Z
 22383,22680,7. Testing,New,,Testing,,,2026-07-13T13:42:09.22Z,2026-07-13T13:44:16.077Z
+22640,22702,Ajustando data hora e versão em cada modulo antes de colocar para gerar o artefato,Closed,maykon.elias,,,1.0,2026-07-13T17:51:13.32Z,2026-07-14T11:53:20.123Z
+19948,22723,7. Rework,Closed,maykon.elias,,,1.0,2026-07-13T19:41:02.257Z,2026-07-14T13:42:14.21Z
+21305,22755,CodeAdjustment,Closed,Luiz Fernando Rodrigues Pereira,CodeAdjustment,,0.1,2026-07-14T10:34:20.607Z,2026-07-14T12:09:41.147Z
+22640,22766,Criar a branch depois do merge a tag,Closed,maykon.elias,,,1.0,2026-07-14T11:51:43.6Z,2026-07-14T11:53:06.587Z
+22640,22767,Fazer o download do azure para colocar no mega,Closed,maykon.elias,,,1.0,2026-07-14T11:52:26.25Z,2026-07-14T11:53:31.023Z
+22789,22851,1. Requirements,Closed,Paulo A. Lot,Requirements,4.0,1.0,2026-07-14T18:16:52.59Z,2026-07-14T18:30:35.647Z
+22789,22852,2. Development,New,,Development,16.0,,2026-07-14T18:16:52.863Z,2026-07-14T18:29:02.03Z
+22789,22853,3. DevelopmentTests,New,,DevelopmentTest,6.0,,2026-07-14T18:16:53.05Z,2026-07-14T18:29:02.343Z
+22789,22854,4. TechnicalValidation,New,,TechnicalValidation,4.0,,2026-07-14T18:16:53.333Z,2026-07-14T18:29:02.66Z
+22789,22855,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,2.0,,2026-07-14T18:16:53.54Z,2026-07-14T18:29:02.92Z
+22789,22856,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,3.0,,2026-07-14T18:16:53.733Z,2026-07-14T18:30:45.727Z
+22789,22857,7. Testing,New,,Testing,6.0,,2026-07-14T18:16:53.927Z,2026-07-14T18:29:03.533Z
+19950,20532,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,1.0,1.0,2026-06-16T17:12:07.277Z,2026-06-16T17:15:08.26Z
+19950,20533,2. Development,Closed,maykon.elias,Development,5.0,,2026-06-16T17:12:07.523Z,2026-07-11T13:49:27.917Z
+19950,20534,3. TechnicalValidation,Closed,maykon.elias,TechnicalValidation,2.0,2.0,2026-06-16T17:12:07.73Z,2026-07-11T14:05:31.88Z
+19950,20535,4. Documentation - Documentação de implementações na Wiki,Closed,maykon.elias,Documentation,1.0,1.0,2026-06-16T17:12:07.947Z,2026-07-11T14:06:08.52Z
+19950,20536,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,0.1,2026-06-16T17:12:08.153Z,2026-07-13T19:29:15.427Z
+19950,20537,6. Testing,Active,Julio Andreata,Testing,3.0,4.0,2026-06-16T17:12:08.383Z,2026-07-16T14:24:07.637Z
+19949,20778,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2.0,2.0,2026-06-19T18:29:51.737Z,2026-06-19T18:42:54.543Z
+19949,20779,2.1 Development - Nova DLL JobAuditoriaOrganiza (Quartz),Closed,maykon.elias,Development,8.0,4.0,2026-06-19T18:29:51.993Z,2026-07-13T17:42:24.697Z
+19949,20780,2.2 Development - Serviço de auditoria em lote (Repositório/Frequência Quartz),Closed,maykon.elias,Development,12.0,3.0,2026-06-19T18:29:52.217Z,2026-07-13T17:42:24.697Z
+19949,20781,2.3 Development - Disparo manual do Job Quartz (Atualizar dados agora),Closed,maykon.elias,Development,6.0,2.0,2026-06-19T18:29:52.48Z,2026-07-13T17:42:24.697Z
+19949,20782,2.4 Development - Monitoramento/progresso do Job (DadosJobs) e tela minimizável,Closed,maykon.elias,Development,8.0,2.0,2026-06-19T18:29:52.693Z,2026-07-13T17:42:24.697Z
+19949,20783,2.5 Development - Notificação de conclusão (log/erros parciais),Closed,maykon.elias,Development,4.0,2.0,2026-06-19T18:29:52.93Z,2026-07-13T17:42:24.697Z
+19949,20784,3. TechnicalValidation,Closed,maykon.elias,TechnicalValidation,2.0,2.0,2026-06-19T18:29:53.127Z,2026-07-13T19:32:32.773Z
+19949,20785,4. Documentation - Documentação de implementações na Wiki,Closed,maykon.elias,Documentation,1.0,1.0,2026-06-19T18:29:53.327Z,2026-07-09T01:35:38.45Z
+19949,20786,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,0.4,2026-06-19T18:29:53.55Z,2026-07-13T19:30:02.227Z
+19949,20787,6. Testing,Closed,Julio Andreata,Testing,3.0,4.0,2026-06-19T18:29:53.82Z,2026-07-14T19:07:29.55Z
+19951,20805,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2.0,2.0,2026-06-19T19:08:44.087Z,2026-06-22T13:15:13.21Z
+19951,20806,"2.1 Selecionar produtos ""em análise"" para reconsulta",Closed,maykon.elias,Development,1.0,1.0,2026-06-19T19:08:57.267Z,2026-07-11T20:49:45.983Z
+19951,20807,2.2 Reconsulta diária reaproveitando o serviço assíncrono da US 19949,Closed,maykon.elias,Development,1.0,1.0,2026-06-19T19:08:58.727Z,2026-07-11T20:49:41.98Z
+19951,20808,"2.3 Controle de tentativas (limite 10) e marcação ""sem sugestão""",Closed,maykon.elias,Development,1.0,1.0,2026-06-19T19:09:00.123Z,2026-07-11T20:49:38.73Z
+19951,20809,2.4 Indicador de reconsulta na grid de revisão (US 13862),Closed,maykon.elias,Development,1.0,1.0,2026-06-19T19:09:01.377Z,2026-07-11T21:04:39.963Z
+19951,20810,3. TechnicalValidation,Closed,maykon.elias,TechnicalValidation,1.0,1.0,2026-06-19T19:09:13.467Z,2026-07-11T21:22:30.083Z
+19951,20811,4. Documentation - Documentação de implementações na Wiki,Closed,maykon.elias,Documentation,1.0,1.0,2026-06-19T19:09:14.86Z,2026-07-11T21:06:46.857Z
+19951,20812,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,0.1,2026-06-19T19:09:16.307Z,2026-07-13T19:29:26.277Z
+19951,20813,6. Testing,Active,Julio Andreata,Testing,2.0,4.0,2026-06-19T19:09:17.483Z,2026-07-16T14:23:58.067Z
+19952,20925,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,1.0,1.0,2026-06-22T17:41:35.837Z,2026-06-22T17:45:46.96Z
+19952,20926,2. Development,Closed,maykon.elias,Development,2.0,0.0,2026-06-22T17:41:36.17Z,2026-07-11T21:41:03.703Z
+19952,20927,3. TechnicalValidation,Closed,maykon.elias,TechnicalValidation,1.0,1.0,2026-06-22T17:41:36.387Z,2026-07-11T21:41:11.487Z
+19952,20928,4. Documentation - Documentação de implementações na Wiki,Closed,maykon.elias,Documentation,1.0,1.0,2026-06-22T17:41:36.637Z,2026-07-11T21:24:37.86Z
+19952,20929,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,0.1,2026-06-22T17:41:36.883Z,2026-07-13T19:29:40.237Z
+19952,20930,6. Testing,Closed,Julio Andreata,Testing,,2.0,2026-06-22T17:41:37.117Z,2026-07-15T14:36:06.43Z
+21325,22531,[CodeAdjustment] Ajustes pendentes pós-tasks 22244/22422 — card 21325 / PR 7704,Closed,Fabio Nobre,CodeAdjustment,3.0,3.0,2026-07-10T12:13:08.547Z,2026-07-10T18:07:57.347Z
+21391,22548,2.1 Development — Persistência e carga da configuração de alerta sonoro,Active,Bruno Friedrich Raquel,Development,2.0,,2026-07-10T15:00:56.35Z,2026-07-16T18:26:46.147Z
+22384,22554,1. Requirements,Closed,Adan lucas,Requirements,1.0,1.0,2026-07-10T16:30:41.55Z,2026-07-16T18:57:01.623Z
+22384,22555,2.1 - Ajuste da consulta da mercadoria Coleta inventario,Closed,Adan lucas,Development,2.0,2.0,2026-07-10T16:30:42.1Z,2026-07-16T18:57:01.623Z
+22384,22556,2.2 - Remover itens inventario,Closed,Adan lucas,Development,1.0,1.0,2026-07-10T16:30:42.627Z,2026-07-16T18:57:01.623Z
+22384,22557,2.3 - Ajuste Visual New Smart,Closed,Adan lucas,Development,2.0,2.0,2026-07-10T16:30:43.08Z,2026-07-16T18:57:01.623Z
+22384,22559,4. TechnicalValidation,Closed,Adan lucas,TechnicalValidation,1.0,1.0,2026-07-10T16:30:44.09Z,2026-07-16T18:57:01.623Z
+22384,22560,5. Testing,New,,Testing,,,2026-07-10T16:30:44.687Z,2026-07-16T18:57:01.623Z
+21388,22572,3. DevelopmentTests,Closed,Bruno Friedrich Raquel,DevelopmentTest,4.0,4.0,2026-07-10T18:02:44.13Z,2026-07-16T12:19:45.663Z
+21388,22573,4. TechnicalValidation,Closed,Bruno Friedrich Raquel,TechnicalValidation,3.0,4.0,2026-07-10T18:02:44.39Z,2026-07-16T18:16:26.63Z
+21388,22574,5. Documentation - Documentação de implementações na Wiki,Closed,Bruno Friedrich Raquel,Documentation,,1.0,2026-07-10T18:02:44.593Z,2026-07-16T04:10:19.68Z
+21388,22588,2.3 Development — Aplicar fundo configurado no painel Modo de Preparo (PDV),Closed,Bruno Friedrich Raquel,Development,3.0,5.0,2026-07-10T18:03:52.053Z,2026-07-16T03:54:50.53Z
+22568,22608,2. Development,Closed,Vagner Rodrigues,Development,1.0,3.0,2026-07-10T19:38:49.7Z,2026-07-15T03:50:14.843Z
+22568,22609,3. DevelopmentTests,Closed,Vagner Rodrigues,DevelopmentTest,1.0,4.0,2026-07-10T19:38:49.91Z,2026-07-15T03:50:15.663Z
+22568,22610,4. TechnicalValidation,Closed,Vagner Rodrigues,TechnicalValidation,1.0,1.0,2026-07-10T19:38:50.133Z,2026-07-15T03:50:16.887Z
+22568,22611,5. Documentation - Documentação de implementações na Wiki,Closed,Vagner Rodrigues,Documentation,0.5,0.5,2026-07-10T19:38:50.38Z,2026-07-15T03:50:17.683Z
+22568,22612,6. CodeReview,Closed,Bruno Oliveira,CodeReview,0.5,0.5,2026-07-10T19:38:50.563Z,2026-07-15T12:23:28.793Z
+22508,22631,1. Requirements,Closed,Paulo A. Lot,Requirements,1.0,1.0,2026-07-13T11:07:30.363Z,2026-07-13T11:10:06.623Z
+22508,22632,2. Development,Closed,Rodolfo Caceraghi dos Santos,Development,1.0,1.0,2026-07-13T11:07:30.567Z,2026-07-13T19:48:45.9Z
+22508,22633,3. DevelopmentTests,Closed,Rodolfo Caceraghi dos Santos,DevelopmentTest,0.3,0.3,2026-07-13T11:07:30.743Z,2026-07-13T19:49:14.277Z
+22508,22634,4. TechnicalValidation,Closed,Rodolfo Caceraghi dos Santos,TechnicalValidation,0.3,0.3,2026-07-13T11:07:30.923Z,2026-07-13T20:04:49.623Z
+22508,22636,6. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,,1.0,2026-07-13T11:07:31.273Z,2026-07-14T16:27:32.92Z
+22508,22637,7. Testing,Closed,Fabio Nobre,Testing,5.0,5.0,2026-07-13T11:07:31.477Z,2026-07-15T18:52:22.667Z
+22510,22649,1. Requirements,Closed,Paulo A. Lot,Requirements,1.0,1.0,2026-07-13T12:30:39.197Z,2026-07-13T12:37:45.723Z
+22510,22650,2. Development,Closed,Rodolfo Caceraghi dos Santos,Development,2.0,2.0,2026-07-13T12:30:39.44Z,2026-07-15T19:21:13.867Z
+22510,22651,3. DevelopmentTests,Closed,Rodolfo Caceraghi dos Santos,DevelopmentTest,0.3,0.3,2026-07-13T12:30:39.637Z,2026-07-15T19:35:07.19Z
+22510,22652,4. TechnicalValidation,Closed,Rodolfo Caceraghi dos Santos,TechnicalValidation,3.3,3.3,2026-07-13T12:30:39.89Z,2026-07-16T13:37:26.703Z
+22510,22653,5. Documentation - Documentação de implementações na Wiki,Closed,Rodolfo Caceraghi dos Santos,Documentation,1.0,1.0,2026-07-13T12:30:40.17Z,2026-07-16T14:22:16.66Z
+22510,22654,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-07-13T12:30:40.423Z,2026-07-13T12:38:00.89Z
+22510,22655,7. Testing,New,,Testing,,,2026-07-13T12:30:40.617Z,2026-07-13T12:31:31.657Z
+22515,22659,[CodeAdjustment] Ajustes do code review — card 22515 / PR 7846,Closed,Paulo A. Lot,CodeAdjustment,2.0,0.2,2026-07-13T12:36:33.89Z,2026-07-13T18:00:43.133Z
+22619,22671,7. Testing,Closed,Vagner Rodrigues,Testing,2.0,2.0,2026-07-13T13:34:03.49Z,2026-07-15T22:46:00.913Z
 22509,22691,1. Requirements,Closed,Paulo A. Lot,Requirements,4.0,,2026-07-13T15:25:55.637Z,2026-07-13T16:34:35.423Z
-22509,22692,2. Development,New,,Development,8.0,,2026-07-13T15:25:55.843Z,2026-07-14T19:31:41.65Z
+22509,22692,2. Development,Active,Fabio Nobre,Development,8.0,,2026-07-13T15:25:55.843Z,2026-07-16T13:11:54.68Z
 22509,22693,3. DevelopmentTests,New,,DevelopmentTest,8.0,,2026-07-13T15:25:56.06Z,2026-07-13T15:28:11.5Z
 22509,22694,4. TechnicalValidation,New,,TechnicalValidation,4.0,,2026-07-13T15:25:56.28Z,2026-07-13T15:28:11.767Z
 22509,22695,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,2.0,,2026-07-13T15:25:56.477Z,2026-07-13T15:28:12.013Z
 22509,22696,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,4.0,,2026-07-13T15:25:56.653Z,2026-07-13T16:35:07.107Z
 22509,22697,7. Testing,New,,Testing,6.0,,2026-07-13T15:25:56.86Z,2026-07-13T15:28:12.56Z
 21325,22700,Rework,Closed,Fabio Nobre,Rework,4.0,4.0,2026-07-13T17:30:25.74Z,2026-07-14T18:07:35.783Z
-22640,22702,Ajustando data hora e versão em cada modulo antes de colocar para gerar o artefato,Closed,maykon.elias,,,1.0,2026-07-13T17:51:13.32Z,2026-07-14T11:53:20.123Z
-19948,22723,7. Rework,Closed,maykon.elias,,,1.0,2026-07-13T19:41:02.257Z,2026-07-14T13:42:14.21Z
 22738,22739,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,1.0,1.0,2026-07-14T00:04:30.79Z,2026-07-14T00:07:46.377Z
 22738,22740,2. Development,Closed,Ivan Pionelli Junior,Development,1.0,1.0,2026-07-14T00:04:31.043Z,2026-07-14T13:20:20.09Z
 22738,22741,3. DevelopmentTests,Closed,Ivan Pionelli Junior,DevelopmentTest,1.0,,2026-07-14T00:04:31.253Z,2026-07-14T12:57:22.667Z
@@ -1046,32 +928,59 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 22738,22744,6. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,0.2,2026-07-14T00:04:31.85Z,2026-07-14T17:15:16.117Z
 22738,22745,7. Testing,Closed,maykon.elias,Testing,1.0,,2026-07-14T00:04:32.07Z,2026-07-15T12:37:12.72Z
 22299,22747,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,1.0,,2026-07-14T00:48:32.457Z,2026-07-14T00:50:57.04Z
-22299,22748,2. Development,New,,Development,1.0,,2026-07-14T00:48:32.77Z,2026-07-14T00:51:16.777Z
-22299,22749,3. DevelopmentTests,New,,DevelopmentTest,1.0,,2026-07-14T00:48:32.967Z,2026-07-14T00:51:24.51Z
-22299,22750,4. TechnicalValidation,New,,TechnicalValidation,1.0,,2026-07-14T00:48:33.24Z,2026-07-14T00:51:30.4Z
-22299,22751,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,1.0,,2026-07-14T00:48:33.453Z,2026-07-14T00:51:35.593Z
+22299,22748,2. Development,Closed,Rodolfo Caceraghi dos Santos,Development,1.0,1.15,2026-07-14T00:48:32.77Z,2026-07-16T18:46:11.597Z
+22299,22749,3. DevelopmentTests,New,Rodolfo Caceraghi dos Santos,DevelopmentTest,1.0,,2026-07-14T00:48:32.967Z,2026-07-16T18:49:23.347Z
+22299,22750,4. TechnicalValidation,Closed,Rodolfo Caceraghi dos Santos,TechnicalValidation,1.0,1.0,2026-07-14T00:48:33.24Z,2026-07-16T20:28:16.933Z
+22299,22751,5. Documentation - Documentação de implementações na Wiki,Closed,Rodolfo Caceraghi dos Santos,Documentation,1.0,1.0,2026-07-14T00:48:33.453Z,2026-07-16T20:37:33.583Z
 22299,22752,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,,2026-07-14T00:48:33.67Z,2026-07-14T00:51:41.36Z
 22299,22753,7. Testing,New,,Testing,1.0,,2026-07-14T00:48:33.97Z,2026-07-14T00:52:00.497Z
-21305,22755,CodeAdjustment,Closed,Luiz Fernando Rodrigues Pereira,CodeAdjustment,,0.1,2026-07-14T10:34:20.607Z,2026-07-14T12:09:41.147Z
 21171,22756,CodeAdjustment — Ajustes do Code Review (PR #7863),Closed,Luiz Fernando Rodrigues Pereira,CodeAdjustment,,0.15,2026-07-14T10:41:12.38Z,2026-07-14T12:40:24.723Z
 22757,22758,1. Requirements,Closed,Ivan Pionelli Junior,Requirements,,,2026-07-14T11:35:18.95Z,2026-07-14T11:37:12.75Z
 22757,22761,4. TechnicalValidation,Closed,Fabio Nobre,TechnicalValidation,3.0,3.0,2026-07-14T11:35:19.737Z,2026-07-15T13:02:07.38Z
 22757,22764,7. Testing,New,,Testing,,,2026-07-14T11:35:20.567Z,2026-07-14T11:36:36.603Z
-22640,22766,Criar a branch depois do merge a tag,Closed,maykon.elias,,,1.0,2026-07-14T11:51:43.6Z,2026-07-14T11:53:06.587Z
-22640,22767,Fazer o download do azure para colocar no mega,Closed,maykon.elias,,,1.0,2026-07-14T11:52:26.25Z,2026-07-14T11:53:31.023Z
 22508,22787,[CodeAdjustment] Ajustes do code review — card 22508 / PR 7875,Closed,Rodolfo Caceraghi dos Santos,CodeAdjustment,2.0,0.3,2026-07-14T13:33:48.117Z,2026-07-14T14:30:53.933Z
+22782,22791,2. Development,Closed,Siryus Canuto,Development,6.0,6.0,2026-07-14T13:42:57.683Z,2026-07-16T19:08:05.007Z
+22782,22793,4. TechnicalValidation,Closed,Siryus Canuto,TechnicalValidation,1.0,1.0,2026-07-14T13:42:58.11Z,2026-07-16T19:08:16.21Z
+22782,22794,5. Documentation - Documentação de implementações na Wiki,Closed,Siryus Canuto,Documentation,0.35,0.35,2026-07-14T13:42:58.327Z,2026-07-16T19:18:23.617Z
+17887,22799,2. Development,Closed,Siryus Canuto,Development,8.0,6.0,2026-07-14T13:50:45.837Z,2026-07-15T13:14:19.803Z
+17887,22801,4. TechnicalValidation,Closed,Siryus Canuto,TechnicalValidation,1.0,1.0,2026-07-14T13:50:46.27Z,2026-07-15T14:15:23.773Z
+17887,22802,5. Documentation - Documentação de implementações na Wiki,Closed,Siryus Canuto,Documentation,2.0,1.0,2026-07-14T13:50:46.503Z,2026-07-15T13:24:51.203Z
+22812,22814,Development,Closed,Gabriel Castro,Development,2.0,2.0,2026-07-14T14:25:24.167Z,2026-07-16T16:53:13.13Z
+22812,22824,DevelopmentTests,Closed,Gabriel Castro,DevelopmentTest,2.0,2.0,2026-07-14T14:34:50.217Z,2026-07-16T16:53:19.27Z
 22738,22830,[CodeAdjustment] Ajustes do code review — card 22738 / PR 7902,Closed,Ivan Pionelli Junior,CodeAdjustment,1.0,,2026-07-14T16:39:38.437Z,2026-07-14T16:56:58.773Z
-22789,22851,1. Requirements,Closed,Paulo A. Lot,Requirements,4.0,1.0,2026-07-14T18:16:52.59Z,2026-07-14T18:30:35.647Z
-22789,22852,2. Development,New,,Development,16.0,,2026-07-14T18:16:52.863Z,2026-07-14T18:29:02.03Z
-22789,22853,3. DevelopmentTests,New,,DevelopmentTest,6.0,,2026-07-14T18:16:53.05Z,2026-07-14T18:29:02.343Z
-22789,22854,4. TechnicalValidation,New,,TechnicalValidation,4.0,,2026-07-14T18:16:53.333Z,2026-07-14T18:29:02.66Z
-22789,22855,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,2.0,,2026-07-14T18:16:53.54Z,2026-07-14T18:29:02.92Z
-22789,22856,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,3.0,,2026-07-14T18:16:53.733Z,2026-07-14T18:30:45.727Z
-22789,22857,7. Testing,New,,Testing,6.0,,2026-07-14T18:16:53.927Z,2026-07-14T18:29:03.533Z
+21693,22863,9. Rework,Closed,Bruno Friedrich Raquel,,,4.0,2026-07-14T18:36:06.147Z,2026-07-16T03:52:35.083Z
+21006,22878,2.1 Development - Bootstrap e Retomada de Sessão,Active,Adan lucas,Development,,,2026-07-14T19:11:17.587Z,2026-07-15T11:48:29.637Z
 21325,22888,[CodeAdjustment] Ajustes pós-rework #22700 — card 21325 / PR 7704,Closed,Fabio Nobre,CodeAdjustment,2.0,1.0,2026-07-14T19:26:48.177Z,2026-07-14T19:50:24.43Z
+22862,22893,2. Development — Correção Abastece Aí Dinheiro (sangria/Diferença),Closed,Willian Santos,Development,4.0,8.0,2026-07-14T19:57:30.427Z,2026-07-16T20:03:04.087Z
+22862,22895,4. TechnicalValidation,Closed,Willian Santos,TechnicalValidation,2.0,2.0,2026-07-14T19:57:30.923Z,2026-07-16T19:46:52.42Z
+22862,22896,5. Documentation - Documentação de implementações na Wiki,Closed,Willian Santos,Documentation,1.0,1.0,2026-07-14T19:57:31.12Z,2026-07-16T19:58:45.97Z
+22862,22898,7. Testing,New,,Testing,1.5,,2026-07-14T19:57:31.663Z,2026-07-16T19:53:24.313Z
+22861,22901,1. Requirements,Closed,Bruno Oliveira,Requirements,1.0,1.0,2026-07-14T20:30:48.46Z,2026-07-15T11:42:11.833Z
+22861,22902,2. Development — Desconciliar em lote OFX (Total Conciliado),New,,Development,3.0,,2026-07-14T20:30:48.693Z,2026-07-15T11:42:02.983Z
+22861,22904,4. TechnicalValidation,New,,TechnicalValidation,1.0,,2026-07-14T20:30:49.567Z,2026-07-15T11:42:58.523Z
+22861,22905,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,0.5,,2026-07-14T20:30:49.793Z,2026-07-15T11:43:05.07Z
+22861,22906,6. CodeReview,New,Bruno Oliveira,CodeReview,1.0,,2026-07-14T20:30:50.033Z,2026-07-15T11:43:08.85Z
+22861,22907,7. Testing,New,,Testing,22.0,,2026-07-14T20:30:50.393Z,2026-07-15T11:43:12.62Z
 21171,22909,Rework,Closed,Luiz Fernando Rodrigues Pereira,Rework,,0.3,2026-07-14T20:32:04.253Z,2026-07-15T12:44:13.473Z
+21006,22910,1. Requeriments,Closed,Adan lucas,Requirements,2.0,2.0,2026-07-14T21:30:41.31Z,2026-07-15T11:47:55.637Z
+22913,22915,2. Development,Closed,Bruno Oliveira,Development,2.0,2.0,2026-07-15T12:36:54.27Z,2026-07-15T12:40:25.42Z
+22194,22923,1. Requirements,Closed,fabio,Requirements,1.0,1.0,2026-07-15T13:01:31.247Z,2026-07-16T13:48:41.107Z
+22194,22924,2.1 Development — Disponibilizar ID e Código Rápido na configuração de etiquetas,Closed,Gabriel Castro,Development,2.0,2.0,2026-07-15T13:01:31.567Z,2026-07-16T13:48:41.4Z
+22194,22925,2.2 Development — Disponibilizar Código Rápido na origem de dados da impressão,Closed,Gabriel Castro,Development,2.0,2.0,2026-07-15T13:01:31.773Z,2026-07-16T13:48:41.703Z
+22194,22926,2.3 Development — Exibir ID e Código Rápido na pré-visualização,Closed,Gabriel Castro,Development,1.0,1.0,2026-07-15T13:01:31.997Z,2026-07-16T13:48:42.007Z
+22194,22927,2.4 Development — Binding de ID e Código Rápido em todos os adapters de impressão,Closed,Gabriel Castro,Development,2.0,2.0,2026-07-15T13:01:32.197Z,2026-07-16T13:48:42.303Z
+22194,22928,3. DevelopmentTests,Closed,Gabriel Castro,DevelopmentTest,1.0,1.0,2026-07-15T13:01:32.41Z,2026-07-16T13:48:42.613Z
+22194,22929,4. TechnicalValidation,Closed,Gabriel Castro,TechnicalValidation,4.0,3.0,2026-07-15T13:01:32.607Z,2026-07-16T14:37:39.42Z
+22194,22930,6. CodeReview,New,,CodeReview,2.0,,2026-07-15T13:01:32.8Z,2026-07-15T13:04:21.037Z
+22194,22931,7. Testing,New,,Testing,8.0,,2026-07-15T13:01:33.083Z,2026-07-15T13:01:33.083Z
 19950,22935,7. Rework,Closed,maykon.elias,,,4.0,2026-07-15T13:13:06.767Z,2026-07-15T20:21:15.407Z
 21325,22948,Rework,Closed,Fabio Nobre,Rework,1.0,1.0,2026-07-15T17:39:13.66Z,2026-07-15T20:21:55.467Z
+22941,22949,1. Requeriments,New,paulo.riechel,,,,2026-07-15T17:51:25.723Z,2026-07-15T17:51:25.723Z
+14622,22952,9.3 Re-work,Closed,Willian Santos,,4.0,4.0,2026-07-15T18:33:48.017Z,2026-07-15T18:34:00.053Z
+22955,22956,1. Requirements,Closed,Bruno Oliveira,Requirements,3.0,3.0,2026-07-15T19:56:21.43Z,2026-07-15T19:56:21.87Z
+22954,22963,1. Requirements,Closed,fabio,Requirements,1.0,1.0,2026-07-15T20:26:44.437Z,2026-07-15T20:38:51.25Z
+22954,22964,2. Development,Closed,Vandison Guelleri,Development,4.0,4.0,2026-07-15T20:26:47.943Z,2026-07-15T20:39:04.587Z
+22954,22965,6. CodeReview,Closed,fabio,CodeReview,1.0,1.0,2026-07-15T20:26:50.73Z,2026-07-15T20:39:29.2Z
 22714,22983,1. Requirements,Closed,Paulo A. Lot,Requirements,4.0,4.0,2026-07-16T11:43:04.523Z,2026-07-16T12:02:04.023Z
 22714,22984,2.1 Development - Configuração e redirecionamento DistDFe para empresa destinária,New,,Development,,,2026-07-16T11:43:04.723Z,2026-07-16T11:51:23.733Z
 22714,22985,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-16T11:43:04.903Z,2026-07-16T11:51:24.553Z
@@ -1080,5 +989,237 @@ ParentId,TaskId,Titulo,State,Responsavel,Activity,OriginalEstimate,CompletedWork
 22714,22988,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-07-16T11:43:05.473Z,2026-07-16T12:15:22.907Z
 22714,22989,7. Testing,New,,Testing,,,2026-07-16T11:43:05.677Z,2026-07-16T11:51:24.223Z
 22714,22991,2.2 Development - Consulta Id empresa via Dapper,New,,Development,,,2026-07-16T11:44:10.623Z,2026-07-16T11:51:23.917Z
-21325,22996,[CodeAdjustment] GUID PC_Salvar + cIndOp FN_Obter — card 21325 / PR 7704,New,Fabio Nobre,CodeAdjustment,2.0,,2026-07-16T12:55:15.873Z,2026-07-16T12:55:15.873Z
-21325,22997,[CodeReview] Re-review pós-ajuste cIndOp/PC GUID — card 21325 / PR 7704,New,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,,2026-07-16T12:55:16.253Z,2026-07-16T12:55:40.567Z
+21325,22996,[CodeAdjustment] GUID PC_Salvar + cIndOp FN_Obter — card 21325 / PR 7704,Closed,Fabio Nobre,CodeAdjustment,2.0,0.5,2026-07-16T12:55:15.873Z,2026-07-16T13:22:21.927Z
+21325,22997,[CodeReview] Re-review pós-ajuste cIndOp/PC GUID — card 21325 / PR 7704,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,0.5,2026-07-16T12:55:16.253Z,2026-07-16T13:22:22.547Z
+22660,22999,1. Requirements,Closed,fabio,Requirements,2.0,2.0,2026-07-16T13:03:04.57Z,2026-07-16T13:19:59.743Z
+None,23000,2.1 Development - Criar parâmetro Priorizar maior preço entre abastecimento e forma de pagamento,New,,,,,2026-07-16T13:03:07.523Z,2026-07-16T13:03:07.523Z
+22660,23001,2.1 Development - Criar parametro Priorizar maior preco entre abastecimento e forma de pagamento,New,,Development,1.0,,2026-07-16T13:03:26.623Z,2026-07-16T13:07:44.837Z
+22660,23002,2.2 Development - Aplicar maior total entre bomba e calculo da 1a finalizadora (PDV),New,,Development,16.0,,2026-07-16T13:03:29.433Z,2026-07-16T13:07:43.527Z
+22660,23003,2.3 Development - Convivencia com IdentifID (config 70) e cobertura dos fluxos de totalizacao (PDV),New,,Development,16.0,,2026-07-16T13:03:32.337Z,2026-07-16T13:07:42.197Z
+22660,23004,2.4 Development - Aplicar regra do maior preco na verificacao de preco do MetaLio (MetaNetPay),New,,Development,8.0,,2026-07-16T13:03:35.143Z,2026-07-16T13:07:40.827Z
+22660,23005,3. DevelopmentTests,New,,DevelopmentTest,6.0,,2026-07-16T13:03:38.053Z,2026-07-16T13:06:49.4Z
+22660,23006,4. TechnicalValidation,New,,TechnicalValidation,3.0,,2026-07-16T13:03:41.173Z,2026-07-16T13:06:50.943Z
+22660,23007,4.1 TechnicalValidation - Validacao com PO (antes do Code Review),New,,TechnicalValidation,2.0,,2026-07-16T13:03:43.963Z,2026-07-16T13:07:39.547Z
+22660,23008,5. Documentation - Documentacao de implementacoes na Wiki,New,,Documentation,2.0,,2026-07-16T13:03:47.013Z,2026-07-16T13:07:38.247Z
+22660,23009,6. CodeReview,New,fabio,CodeReview,3.0,,2026-07-16T13:03:50.08Z,2026-07-16T13:06:55.283Z
+22660,23010,7. Testing,New,,Testing,8.0,,2026-07-16T13:03:53.08Z,2026-07-16T13:06:56.773Z
+19951,23012,Merge com conflito,Closed,maykon.elias,,,3.0,2026-07-16T13:14:24.433Z,2026-07-16T16:04:06.247Z
+22962,23015,1. Requirements,Closed,Bruno Oliveira,Requirements,1.0,1.0,2026-07-16T13:33:20.667Z,2026-07-16T13:46:39.513Z
+22962,23016,2. Development,Closed,Bruno Oliveira,Development,1.0,1.0,2026-07-16T13:33:25.91Z,2026-07-16T13:46:15.75Z
+19951,23025,7. Rework,Closed,maykon.elias,,,,2026-07-16T15:02:28.973Z,2026-07-16T23:19:09.01Z
+14837,23028,1.0 - Development,Active,Neto Felix,Development,30.0,,2026-07-16T15:50:15.033Z,2026-07-16T15:50:37.78Z
+19761,23034,[CodeAdjustment] US05 — Gate tpEmis=9 exige tpImp=6 + aprovação DBA da trigger (PR 7685),New,Ivan Pionelli Junior,CodeAdjustment,,,2026-07-16T18:14:44.587Z,2026-07-16T18:21:38.443Z
+19767,23035,[CodeAdjustment] US09 — Corrigir ramo morto 382/386 (CFOP×CST/CSOSN) — PR 7685,New,Ivan Pionelli Junior,CodeAdjustment,,,2026-07-16T18:21:38.677Z,2026-07-16T18:21:38.677Z
+19759,23036,[CodeAdjustment] US03 — Decidir regras UF/facultativas (§4) e gaps 384/348 — PR 7685,New,Ivan Pionelli Junior,CodeAdjustment,,,2026-07-16T18:21:39.03Z,2026-07-16T18:21:39.03Z
+19766,23037,[CodeAdjustment] US08 — Anexar PL_010e no final do enum (evitar renumeração) — PR 7685,New,Ivan Pionelli Junior,CodeAdjustment,,,2026-07-16T18:21:39.25Z,2026-07-16T18:21:39.25Z
+20056,23038,[CodeAdjustment] US01 — Renumerar Gerenciado0329 (colisão PAFECF) — PR 7685,Active,Ivan Pionelli Junior,CodeAdjustment,,,2026-07-16T18:21:39.507Z,2026-07-17T11:15:52.52Z
+19765,23039,[CodeAdjustment] US07 — Validar cobertura Gerenciado1495 (IndicadorPresenca) — PR 7685,New,Ivan Pionelli Junior,CodeAdjustment,,,2026-07-16T18:21:39.76Z,2026-07-16T18:21:39.76Z
+21549,23041,7. CodeAdjustment,New,Siryus Canuto,CodeAdjustment,,,2026-07-16T18:37:45.203Z,2026-07-16T18:37:45.203Z
+22384,23043,CodeReview,Closed,Gabriel Castro,,1.0,1.0,2026-07-16T18:56:58.297Z,2026-07-16T19:12:34.503Z
+22384,23045,CodeAdjustment,Closed,Adan lucas,CodeAdjustment,2.0,2.0,2026-07-16T19:11:09.97Z,2026-07-16T20:06:47.103Z
+22704,23046,1. Requirements,Closed,Bruno Oliveira,Requirements,2.0,2.0,2026-07-16T19:20:35.63Z,2026-07-16T20:07:12.26Z
+22704,23047,2. Development — Backend (RNTRC veículo Portal Web),New,,Development,16.0,,2026-07-16T19:20:35.86Z,2026-07-16T20:10:48.927Z
+22704,23048,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-16T19:20:36.107Z,2026-07-16T20:04:59Z
+22704,23049,4. TechnicalValidation,New,,TechnicalValidation,,,2026-07-16T19:20:36.337Z,2026-07-16T19:20:36.337Z
+22704,23050,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-07-16T19:20:36.623Z,2026-07-16T19:20:36.623Z
+22704,23051,6. CodeReview,New,Bruno Oliveira,CodeReview,,,2026-07-16T19:20:36.843Z,2026-07-16T20:02:18.473Z
+22704,23052,7. Testing,New,,Testing,,,2026-07-16T19:20:37.07Z,2026-07-16T20:02:18.773Z
+14439,23057,1. Requirements,New,Siryus Canuto,Requirements,,,2026-07-16T19:23:36.663Z,2026-07-16T19:26:58Z
+14439,23058,2. Development,New,,Development,,,2026-07-16T19:23:36.9Z,2026-07-16T19:23:36.9Z
+14439,23059,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-16T19:23:37.177Z,2026-07-16T19:23:37.177Z
+14439,23060,4. TechnicalValidation,New,,TechnicalValidation,,,2026-07-16T19:23:37.38Z,2026-07-16T19:23:37.38Z
+14439,23061,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-07-16T19:23:37.61Z,2026-07-16T19:23:37.61Z
+14439,23062,6. CodeReview,New,Bruno Oliveira,CodeReview,,,2026-07-16T19:23:37.837Z,2026-07-16T19:23:37.837Z
+14439,23063,7. Testing,New,,Testing,,,2026-07-16T19:23:38.147Z,2026-07-16T19:23:38.147Z
+1648,23065,1. Requirements,Closed,Bruno Oliveira,Requirements,1.0,1.0,2026-07-16T19:28:23.95Z,2026-07-16T19:44:00.953Z
+1648,23066,2. Development,New,,Development,,,2026-07-16T19:28:24.25Z,2026-07-16T19:40:48.657Z
+1648,23068,4. TechnicalValidation,New,,TechnicalValidation,,,2026-07-16T19:28:24.65Z,2026-07-16T19:34:59.54Z
+1648,23069,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-07-16T19:28:24.86Z,2026-07-16T19:34:59.92Z
+1648,23070,6. CodeReview,New,Bruno Oliveira,CodeReview,,,2026-07-16T19:28:25.087Z,2026-07-16T19:38:08.547Z
+1648,23071,7. Testing,New,,Testing,,,2026-07-16T19:28:25.333Z,2026-07-16T19:31:09.477Z
+1648,23076,2.1 Development — FN_GetHistoricoParceiroNegocioCompleto → PC,New,,Development,,,2026-07-16T19:40:48.153Z,2026-07-16T19:41:23.58Z
+23077,23078,1. Requirements,Closed,Bruno Oliveira,Requirements,1.0,1.0,2026-07-16T19:46:43.687Z,2026-07-16T19:46:44.093Z
+22704,23079,2.1 Development — Frontend (RNTRC veículo Portal Web),New,,Development,12.0,,2026-07-16T20:01:56.027Z,2026-07-16T20:06:43.807Z
+21384,23081,1. Requirements,Closed,fabio,Requirements,1.0,1.0,2026-07-16T22:03:33.737Z,2026-07-16T22:09:55.55Z
+21384,23082,2.1 Development - Criar parâmetro de entrada automática em atendimento,New,,Development,3.0,,2026-07-16T22:03:37.303Z,2026-07-16T22:03:37.303Z
+21384,23083,2.2 Development - Iniciar e manter contador a partir de DataRealizado,New,,Development,8.0,,2026-07-16T22:03:40.297Z,2026-07-16T22:03:40.297Z
+21384,23084,2.3 Development - Entrada automática em RealizandoAtendimento,New,,Development,6.0,,2026-07-16T22:03:43.233Z,2026-07-16T22:09:15.66Z
+21384,23085,3. DevelopmentTests,New,,DevelopmentTest,4.0,,2026-07-16T22:03:46.18Z,2026-07-16T22:03:46.18Z
+21384,23086,4. TechnicalValidation,New,,TechnicalValidation,4.0,,2026-07-16T22:03:49.043Z,2026-07-16T22:03:49.043Z
+21384,23087,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,1.0,,2026-07-16T22:03:52.17Z,2026-07-16T22:03:52.17Z
+21384,23088,6. CodeReview,New,fabio,CodeReview,2.0,,2026-07-16T22:03:55.7Z,2026-07-16T22:03:55.7Z
+21384,23089,7. Testing,New,,Testing,4.0,,2026-07-16T22:03:58.663Z,2026-07-16T22:03:58.663Z
+7628,7685,1.Analise,Closed,Adan lucas,Requirements,,,2025-10-02T01:19:42.917Z,2026-07-16T19:13:42.497Z
+14281,17588,6. Testing,Closed,Rafael Cavicchioli,Testing,4.0,17.0,2026-05-18T13:15:46.203Z,2026-07-16T23:46:04.593Z
+14282,17594,6. Testing,Closed,Rafael Cavicchioli,Testing,1.0,1.0,2026-05-18T13:15:48.263Z,2026-07-16T23:45:50.67Z
+19230,19464,3. TechnicalValidation,Closed,Fabio Nobre,TechnicalValidation,1.0,1.0,2026-06-08T10:56:05.963Z,2026-06-25T18:10:08.253Z
+19230,19465,4. Documentation - Documentação de implementações na Wiki,Closed,Fabio Nobre,Documentation,1.0,1.0,2026-06-08T10:56:06.147Z,2026-06-25T19:45:33.787Z
+19230,19466,5. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,1.0,2026-06-08T10:56:06.337Z,2026-06-26T18:14:41.297Z
+19230,19467,6. Testing,Closed,Rodolfo Caceraghi dos Santos,Testing,4.0,4.0,2026-06-08T10:56:08.907Z,2026-07-15T16:33:16.25Z
+19758,19779,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T12:39:18.033Z,2026-07-03T17:54:29.717Z
+19758,19780,2. Development,Closed,Ivan Pionelli Junior,Development,,,2026-06-09T12:39:18.247Z,2026-07-10T18:28:34.057Z
+19758,19781,4. TechnicalValidation,Closed,Ivan Pionelli Junior,TechnicalValidation,,,2026-06-09T12:39:18.43Z,2026-07-16T17:14:45.143Z
+19758,19782,5. Documentation - Documentação de implementações na Wiki,Closed,Ivan Pionelli Junior,Documentation,,,2026-06-09T12:39:19.15Z,2026-07-16T17:14:50.19Z
+19758,19783,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T12:39:19.36Z,2026-07-02T16:47:50.473Z
+19758,19784,7. Testing,New,,Testing,,,2026-06-09T12:39:19.573Z,2026-07-02T14:11:13.127Z
+19759,19786,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T12:39:21.11Z,2026-07-03T17:54:33.303Z
+19759,19787,2. Development,Closed,Ivan Pionelli Junior,Development,,,2026-06-09T12:39:21.33Z,2026-07-13T13:25:59.027Z
+19759,19788,4. TechnicalValidation,Closed,Ivan Pionelli Junior,TechnicalValidation,,,2026-06-09T12:39:22.92Z,2026-07-16T17:15:07.457Z
+19759,19789,5. Documentation - Documentação de implementações na Wiki,Closed,Ivan Pionelli Junior,Documentation,,,2026-06-09T12:39:23.1Z,2026-07-16T17:15:15.707Z
+19759,19790,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T12:39:23.28Z,2026-07-02T14:29:17.333Z
+19759,19791,7. Testing,New,,Testing,,,2026-06-09T12:39:24.873Z,2026-07-02T14:26:54.303Z
+19760,19793,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T12:39:29.74Z,2026-07-03T17:54:36.78Z
+19760,19794,2. Development,Closed,Ivan Pionelli Junior,Development,,,2026-06-09T12:39:29.93Z,2026-07-15T11:49:19.993Z
+19760,19795,4. TechnicalValidation,Closed,Ivan Pionelli Junior,TechnicalValidation,,,2026-06-09T12:39:30.12Z,2026-07-16T17:14:20.787Z
+19760,19796,5. Documentation - Documentação de implementações na Wiki,Closed,Ivan Pionelli Junior,Documentation,,,2026-06-09T12:39:30.313Z,2026-07-16T17:14:26.097Z
+19760,19797,6. CodeReview,Active,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T12:39:30.51Z,2026-07-16T10:37:58.57Z
+19760,19798,7. Testing,New,,Testing,,,2026-06-09T12:39:30.707Z,2026-07-02T14:42:06.047Z
+19761,19800,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T12:39:32.27Z,2026-07-03T17:54:44.637Z
+19761,19801,2. Development,Closed,Ivan Pionelli Junior,Development,,,2026-06-09T12:39:32.49Z,2026-07-16T10:51:17.89Z
+19761,19802,4. TechnicalValidation,Closed,Ivan Pionelli Junior,TechnicalValidation,,,2026-06-09T12:39:32.683Z,2026-07-16T17:15:52.947Z
+19761,19803,5. Documentation - Documentação de implementações na Wiki,Closed,Ivan Pionelli Junior,Documentation,,,2026-06-09T12:39:32.89Z,2026-07-16T17:16:02.65Z
+19761,19804,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T12:39:33.757Z,2026-07-02T14:59:43.79Z
+19761,19805,7. Testing,New,,Testing,,,2026-06-09T12:39:33.987Z,2026-07-02T14:49:40.33Z
+19763,19814,1. Requirements,New,Paulo A. Lot,Requirements,,1.0,2026-06-09T12:40:13.433Z,2026-07-02T16:48:11.88Z
+19763,19815,2. Development,New,,Development,,,2026-06-09T12:40:13.633Z,2026-06-09T12:40:13.633Z
+19763,19816,3. TechnicalValidation,New,,TechnicalValidation,,,2026-06-09T12:40:13.817Z,2026-06-09T12:40:13.817Z
+19763,19817,4. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-06-09T12:40:13.997Z,2026-06-09T12:40:13.997Z
+19763,19818,5. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T12:40:14.193Z,2026-07-02T16:48:08.38Z
+19763,19819,6. Testing,New,,Testing,,,2026-06-09T12:40:15.463Z,2026-06-09T12:40:15.463Z
+19765,19828,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T12:40:21.3Z,2026-07-03T17:54:50.32Z
+19765,19829,2. Development,Closed,Ivan Pionelli Junior,Development,,,2026-06-09T12:40:42.603Z,2026-07-16T17:16:58.907Z
+19765,19830,4. TechnicalValidation,Closed,Ivan Pionelli Junior,TechnicalValidation,,,2026-06-09T12:40:42.797Z,2026-07-16T17:16:38.36Z
+19765,19831,5. Documentation - Documentação de implementações na Wiki,Closed,Ivan Pionelli Junior,Documentation,,,2026-06-09T12:40:43.94Z,2026-07-16T17:16:34.22Z
+19765,19832,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T12:40:44.113Z,2026-07-02T16:45:25.197Z
+19765,19833,7. Testing,New,,Testing,,,2026-06-09T12:40:44.337Z,2026-07-02T16:44:00.527Z
+19766,19835,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T12:40:45.31Z,2026-07-03T17:54:47.13Z
+19766,19836,2. Development,Closed,Ivan Pionelli Junior,Development,,,2026-06-09T12:40:45.513Z,2026-07-16T17:16:08.88Z
+19766,19837,4. TechnicalValidation,Closed,Ivan Pionelli Junior,TechnicalValidation,,,2026-06-09T12:40:45.687Z,2026-07-16T17:16:20.96Z
+19766,19838,5. Documentation - Documentação de implementações na Wiki,Closed,Ivan Pionelli Junior,Documentation,,,2026-06-09T12:40:45.87Z,2026-07-16T17:16:22.043Z
+19766,19839,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T12:41:07.157Z,2026-07-02T16:53:26.993Z
+19766,19840,7. Testing,New,,Testing,,,2026-06-09T12:41:07.373Z,2026-07-02T16:48:03.15Z
+19767,19842,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T12:41:10.627Z,2026-07-03T17:54:39.443Z
+19767,19843,2. Development,Closed,Ivan Pionelli Junior,Development,,,2026-06-09T12:41:10.827Z,2026-07-15T13:55:35.5Z
+19767,19844,4. TechnicalValidation,Closed,Ivan Pionelli Junior,TechnicalValidation,,,2026-06-09T12:41:11.043Z,2026-07-16T17:15:22.347Z
+19767,19845,5. Documentation - Documentação de implementações na Wiki,Closed,Ivan Pionelli Junior,Documentation,,,2026-06-09T12:41:32.817Z,2026-07-16T17:15:29.277Z
+19767,19846,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T12:41:33.11Z,2026-07-02T16:55:19.04Z
+19767,19847,7. Testing,New,,Testing,,,2026-06-09T12:41:33.347Z,2026-07-02T16:54:25.373Z
+19769,19856,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T12:41:36.603Z,2026-07-03T17:54:42.143Z
+19769,19857,2. Development,Closed,Ivan Pionelli Junior,Development,,,2026-06-09T12:41:36.803Z,2026-07-15T16:58:19.353Z
+19769,19858,4. TechnicalValidation,Closed,Ivan Pionelli Junior,TechnicalValidation,,,2026-06-09T12:41:36.993Z,2026-07-16T17:15:35.823Z
+19769,19859,5. Documentation - Documentação de implementações na Wiki,Closed,Ivan Pionelli Junior,Documentation,,,2026-06-09T12:41:37.21Z,2026-07-16T17:15:44.597Z
+19769,19860,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T12:41:37.39Z,2026-07-02T16:59:55.563Z
+19769,19861,7. Testing,New,,Testing,,,2026-06-09T12:41:37.643Z,2026-07-02T16:59:55.74Z
+19770,19863,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T12:41:38.673Z,2026-07-03T17:54:54.787Z
+19770,19864,2. Development,New,,Development,,,2026-06-09T12:41:38.88Z,2026-07-02T17:07:24.747Z
+19770,19865,4. TechnicalValidation,New,,TechnicalValidation,,,2026-06-09T12:41:39.077Z,2026-07-02T17:07:23.017Z
+19770,19866,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,,,2026-06-09T12:41:39.253Z,2026-07-02T17:07:23.17Z
+19770,19867,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T12:41:39.45Z,2026-07-02T17:07:23.327Z
+19770,19868,7. Testing,New,,Testing,,,2026-06-09T12:41:40.13Z,2026-07-02T17:07:23.5Z
+19230,19987,2. Desenvolvimento,Closed,Ivan Pionelli Junior,Development,,,2026-06-09T18:19:04.363Z,2026-07-03T18:08:17.543Z
+19230,20007,1. Análise,Closed,Ivan Pionelli Junior,Requirements,,,2026-06-09T18:29:13.29Z,2026-07-03T18:08:52.433Z
+20056,20057,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-09T18:47:42.507Z,2026-07-03T17:54:26.747Z
+20056,20058,2. Development,Closed,Ivan Pionelli Junior,Development,,,2026-06-09T18:47:42.737Z,2026-07-08T18:00:34.79Z
+20056,20059,4. TechnicalValidation,Closed,Ivan Pionelli Junior,TechnicalValidation,,,2026-06-09T18:47:43.003Z,2026-07-08T18:00:36.123Z
+20056,20060,5. Documentation - Documentação de implementações na Wiki,Closed,Ivan Pionelli Junior,Documentation,,,2026-06-09T18:47:43.22Z,2026-07-08T18:08:35.58Z
+20056,20061,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,,,2026-06-09T18:47:43.417Z,2026-07-02T13:56:21.777Z
+20056,20062,7. Testing,New,,Testing,,,2026-06-09T18:47:43.647Z,2026-07-02T14:02:18.353Z
+21325,20239,Dev 01 — Serialização XML (Grupos B/BB/C) e XSD NT v1.40,Closed,Fabio Nobre,Development,1.0,1.0,2026-06-11T14:49:04.25Z,2026-07-02T19:46:26.98Z
+19230,20240,Dev 02 — Persistência BD: compras governamentais em FAT_DocumentoFiscalDadosDestinatario,Closed,Fabio Nobre,Development,1.0,1.0,2026-06-11T14:49:04.53Z,2026-06-15T13:34:10.663Z
+19230,20241,"Dev 03 — Enum TEnteGov, CAD_ParceiroNegocio, tela Parceiro Negócio e conversores",Closed,Fabio Nobre,Development,,,2026-06-11T14:49:04.79Z,2026-06-18T15:38:40.9Z
+19230,20242,Dev 04 — Persistência refDFeAnt em FAT_DocumentoFiscalReferenciado,Closed,Fabio Nobre,Development,2.0,2.0,2026-06-11T14:49:05.03Z,2026-06-24T13:29:41.413Z
+19230,20243,"Dev 05 — Persistência cIndOp: tabela domínio, FK FAT_NotaFiscal e Combobox Emissão NFe",Closed,Fabio Nobre,Development,4.0,4.0,2026-06-11T14:49:05.543Z,2026-06-24T20:51:10.123Z
+19230,20244,"Dev 06 — Campo ISUFEmit: ACS_Empresa, Cadastro Empresa e conversor NFe retaguarda",Closed,Fabio Nobre,Development,,,2026-06-11T14:49:05.833Z,2026-06-25T13:47:33.14Z
+21325,20245,Dev 07 — UI Emissão NFe: campos compra governamental e integração com persistência,Closed,Fabio Nobre,Development,4.0,4.0,2026-06-11T14:49:06.107Z,2026-07-01T14:21:14.077Z
+21325,20246,Dev 08 — Fluxo F11: geração de NF-e derivadas (tpOperGov 1 → 2 ou 3),Closed,Fabio Nobre,Development,4.0,4.0,2026-06-11T14:49:06.37Z,2026-07-02T19:03:15.24Z
+21325,20247,Dev 09 — Validações pré-SEFAZ (ExtensionsValidacoesNFe.cs),Closed,Fabio Nobre,Development,2.0,2.0,2026-06-11T14:49:06.637Z,2026-07-02T19:45:57.247Z
+21171,21172,1. Requirements,Closed,Paulo A. Lot,Requirements,,1.0,2026-06-24T20:22:29.803Z,2026-07-03T17:54:04.837Z
+21171,21173,2. Development,Closed,Luiz Fernando Rodrigues Pereira,Development,,1.3,2026-06-24T20:22:30Z,2026-07-13T12:14:49.44Z
+21171,21174,3. DevelopmentTests,Closed,Luiz Fernando Rodrigues Pereira,DevelopmentTest,,0.25,2026-06-24T20:22:30.18Z,2026-07-13T17:48:03.383Z
+21171,21175,4. TechnicalValidation,Closed,Luiz Fernando Rodrigues Pereira,TechnicalValidation,,2.0,2026-06-24T20:22:30.363Z,2026-07-13T23:10:38.723Z
+21171,21176,5. Documentation - Documentação de implementações na Wiki,Closed,Luiz Fernando Rodrigues Pereira,Documentation,,0.2,2026-06-24T20:22:30.56Z,2026-07-13T23:12:44.797Z
+21171,21177,6. CodeReview,Active,Paulo A. Lot,CodeReview,2.0,,2026-06-24T20:22:30.76Z,2026-07-14T10:39:41.767Z
+21171,21178,7. Testing,Closed,Rodolfo Caceraghi dos Santos,Testing,2.0,3.3,2026-06-24T20:22:30.947Z,2026-07-15T13:11:10.473Z
+19032,21266,7. Testing,Closed,paulo.riechel,Testing,2.0,,2026-06-24T21:13:27.96Z,2026-07-16T12:03:40.78Z
+21325,21326,1. Requirements,Closed,Ivan Pionelli Junior,Requirements,,,2026-06-25T14:04:12.157Z,2026-06-25T18:16:10.653Z
+21325,21327,2. Development,Closed,Fabio Nobre,Development,,,2026-06-25T14:04:12.433Z,2026-07-16T15:01:13Z
+21325,21328,3. DevelopmentTests,Closed,Fabio Nobre,DevelopmentTest,,,2026-06-25T14:04:12.75Z,2026-07-07T14:17:00.93Z
+21325,21329,4. TechnicalValidation,Closed,Fabio Nobre,TechnicalValidation,4.0,4.0,2026-06-25T14:04:13.003Z,2026-07-07T14:12:00.167Z
+21325,21330,5. Documentation - Documentação de implementações na Wiki,Closed,Fabio Nobre,Documentation,,,2026-06-25T14:04:13.29Z,2026-07-07T14:22:45.933Z
+21325,21331,6. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,0.55,2026-06-25T14:04:13.557Z,2026-07-10T18:07:38.547Z
+21325,21332,7. Testing,Closed,Rodolfo Caceraghi dos Santos,Testing,7.0,7.0,2026-06-25T14:04:13.953Z,2026-07-16T15:01:02.39Z
+15572,21348,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2.0,1.0,2026-06-25T15:44:40.743Z,2026-06-25T17:37:26.043Z
+15572,21349,2. Development,New,maykon.elias,Development,3.0,,2026-06-25T15:44:40.943Z,2026-07-15T21:30:51.823Z
+15572,21350,3. DevelopmentTests,New,,DevelopmentTest,3.0,,2026-06-25T15:44:41.123Z,2026-06-25T17:31:54.403Z
+15572,21351,4. TechnicalValidation,New,,TechnicalValidation,2.0,,2026-06-25T15:44:41.3Z,2026-06-25T17:32:06.463Z
+15572,21352,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,1.0,,2026-06-25T15:44:41.473Z,2026-06-25T17:32:13.083Z
+15572,21353,6. CodeReview,New,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,,2026-06-25T15:44:41.657Z,2026-06-25T17:32:20.41Z
+15572,21354,7. Testing,New,,Testing,3.0,,2026-06-25T15:44:41.887Z,2026-06-25T17:32:27.793Z
+19230,21397,[CodeAdjustment] Ajustes do code review — card 19230 / PR 7571,Closed,Fabio Nobre,CodeAdjustment,3.0,1.0,2026-06-26T12:43:23.873Z,2026-07-14T19:50:52.337Z
+21135,21402,1. Requirements,Closed,Luiz Fernando Rodrigues Pereira,Requirements,2.0,2.0,2026-06-26T14:47:26.04Z,2026-06-26T14:54:02.61Z
+21135,21403,2. Development,Closed,Julio Andreata,Development,3.0,3.0,2026-06-26T14:47:26.31Z,2026-06-29T18:25:08.667Z
+21135,21404,3. DevelopmentTests,New,,DevelopmentTest,3.0,,2026-06-26T14:47:26.54Z,2026-06-26T14:52:57.47Z
+21135,21405,4. TechnicalValidation,Closed,Julio Andreata,TechnicalValidation,1.0,1.0,2026-06-26T14:47:26.737Z,2026-06-29T18:25:13.123Z
+21135,21406,5. Documentation - Documentação de implementações na Wiki,Closed,Julio Andreata,Documentation,1.0,1.0,2026-06-26T14:47:26.94Z,2026-06-29T18:30:45.207Z
+21135,21407,6. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,1.0,2026-06-26T14:47:27.167Z,2026-06-30T13:04:09.287Z
+21135,21408,7. Testing,Closed,,Testing,2.0,1.0,2026-06-26T14:47:27.46Z,2026-07-01T20:21:15.107Z
+21549,21709,5. CodeReview,New,Mateus Bahis,CodeReview,1.0,,2026-07-01T18:19:08.39Z,2026-07-16T18:38:21.72Z
+20056,21748,3. DevelopmentTests,New,Ivan Pionelli Junior,DevelopmentTest,,,2026-07-02T13:48:00.787Z,2026-07-02T18:11:22.38Z
+19758,21752,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-02T14:11:11.973Z,2026-07-02T14:33:08.417Z
+19759,21755,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-02T14:26:53.18Z,2026-07-02T14:33:46.593Z
+19760,21756,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-02T14:42:04.913Z,2026-07-02T14:44:06.967Z
+19761,21757,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-02T14:49:39.29Z,2026-07-02T14:59:34.56Z
+19765,21765,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-02T16:43:59.43Z,2026-07-02T16:45:15.147Z
+19766,21766,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-02T16:48:02.207Z,2026-07-02T16:53:34.49Z
+19767,21767,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-02T16:54:24.26Z,2026-07-02T16:55:25.403Z
+19769,21769,3. DevelopmentTests,New,,DevelopmentTest,,,2026-07-02T16:59:54.657Z,2026-07-02T17:04:18.427Z
+19770,21771,3. DevelopmentTests,New,,,,,2026-07-02T17:07:22.523Z,2026-07-03T17:55:01.507Z
+21693,21827,7. Testing,Closed,Gabriel Castro,Testing,6.0,6.0,2026-07-03T13:25:01.84Z,2026-07-16T18:37:48.843Z
+21869,21876,1. Requirements,Closed,Paulo A. Lot,Requirements,1.0,1.0,2026-07-03T18:49:49.32Z,2026-07-07T12:06:34.28Z
+21869,21877,2. Development,Closed,Rodolfo Caceraghi dos Santos,Development,1.0,1.0,2026-07-03T18:49:49.553Z,2026-07-10T14:11:14.977Z
+21869,21879,4. TechnicalValidation,Closed,Rodolfo Caceraghi dos Santos,TechnicalValidation,0.5,0.3,2026-07-03T18:49:49.98Z,2026-07-10T14:11:24.27Z
+21869,21881,6. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,1.0,0.25,2026-07-03T18:49:50.443Z,2026-07-09T12:12:18.11Z
+21869,21882,7. Testing,Closed,Ivan Pionelli Junior,Testing,,,2026-07-03T18:49:50.68Z,2026-07-14T17:44:25.843Z
+20845,21952,5. Documentation - Documentação de implementações na Wiki,Closed,Gabriel Castro,Documentation,,,2026-07-06T12:43:04.58Z,2026-07-16T19:07:16.52Z
+20845,21953,6. CodeReview,Closed,fabio,CodeReview,4.0,1.0,2026-07-06T12:43:04.8Z,2026-07-15T11:56:09.987Z
+21995,22002,7. Testing,Closed,Vagner Rodrigues,Testing,1.5,2.0,2026-07-06T13:52:15.09Z,2026-07-16T06:29:54.43Z
+21325,22040,Dev 10 - Persistencia,Closed,Fabio Nobre,,4.0,4.0,2026-07-06T17:34:45.757Z,2026-07-06T18:12:49.473Z
+22009,22049,7. Testing,New,Willian Santos,Testing,4.0,,2026-07-06T17:52:16.487Z,2026-07-16T20:35:21.733Z
+22181,22192,7. Testing,Closed,Vagner Rodrigues,Testing,2.0,4.0,2026-07-07T17:52:31.037Z,2026-07-17T05:26:48.383Z
+20718,22209,"2.2 Persistência, scripts de banco e carga da configuração Sanvitron para o PDV",Closed,Renan Malagutti,Development,4.0,5.0,2026-07-07T18:27:17.083Z,2026-07-15T18:18:04.513Z
+20718,22210,2.3 Cliente API Sanvitron e renovação automática de token,Closed,Renan Malagutti,Development,8.0,8.0,2026-07-07T18:27:17.29Z,2026-07-15T18:17:24.11Z
+20718,22211,2.4 Serviço background de baixa e cancelamento Sanvitron (padrão Value),Closed,Renan Malagutti,Development,8.0,8.0,2026-07-07T18:27:17.487Z,2026-07-17T11:54:20.847Z
+20718,22212,2.5 Tela PDV Consultar Ticket Sanvitron (F2 e exibição),Active,Renan Malagutti,Development,12.0,,2026-07-07T18:27:17.68Z,2026-07-16T14:16:26.677Z
+20712,22219,1. Requirements,Closed,Paulo A. Lot,Requirements,4.0,4.0,2026-07-07T18:36:41.937Z,2026-07-08T10:50:54.49Z
+20712,22221,3. DevelopmentTests,New,,DevelopmentTest,8.0,,2026-07-07T18:36:42.38Z,2026-07-08T10:35:25.133Z
+20712,22222,4. TechnicalValidation,New,,TechnicalValidation,4.0,,2026-07-07T18:36:42.573Z,2026-07-07T18:56:13.313Z
+20712,22223,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,2.0,,2026-07-07T18:36:42.76Z,2026-07-08T10:42:59.427Z
+20712,22224,6. CodeReview,New,Paulo A. Lot,CodeReview,4.0,,2026-07-07T18:36:42.973Z,2026-07-07T18:38:39.3Z
+20712,22225,7. Testing,New,,Testing,6.0,,2026-07-07T18:36:43.193Z,2026-07-08T10:33:31.367Z
+20712,22228,2.1 Development — Persistir e reabrir imposto de importação (II) no item,Closed,Luiz Fernando Rodrigues Pereira,Development,4.0,1.5,2026-07-07T18:38:01.21Z,2026-07-16T19:22:53.083Z
+20712,22229,2.2 Development — Manter dados de importação ao editar item da nota,Active,Luiz Fernando Rodrigues Pereira,Development,6.0,,2026-07-07T18:38:01.55Z,2026-07-17T10:33:36.047Z
+20712,22230,2.3 Development — Calcular impostos de compra importada (cenário fornecedor exterior),New,,Development,12.0,,2026-07-07T18:38:01.857Z,2026-07-08T10:50:55.763Z
+20712,22231,2.4 Development — Totalizar nota de compra importada conforme regra fiscal,New,,Development,8.0,,2026-07-07T18:38:02.197Z,2026-07-08T10:50:56.143Z
+20712,22232,"2.5 Development — Gerar XML fiscal de importação (DI, II e complementos)",New,,Development,6.0,,2026-07-07T18:38:02.593Z,2026-07-08T10:50:56.517Z
+21869,22242,[CodeAdjustment] Ajustes do code review — card 21869 / PR 7783,Closed,Rodolfo Caceraghi dos Santos,CodeAdjustment,2.0,1.0,2026-07-07T18:52:03.55Z,2026-07-08T18:10:47.787Z
+21325,22244,[CodeAdjustment] Ajustes do code review — card 21325 / PR 7704,Closed,Fabio Nobre,CodeAdjustment,3.0,2.5,2026-07-07T18:57:27.447Z,2026-07-10T12:13:43.997Z
+9409,22277,3. DevelopmentTests,Closed,Willian Santos,DevelopmentTest,4.0,4.0,2026-07-07T22:02:31.5Z,2026-07-15T13:14:00.37Z
+9409,22280,6. CodeReview,Closed,Bruno Oliveira,CodeReview,1.0,1.0,2026-07-07T22:02:32.163Z,2026-07-15T19:05:27.34Z
+9409,22281,7. Testing,Closed,Bruno Oliveira,Testing,0.1,0.1,2026-07-07T22:02:32.39Z,2026-07-15T19:06:11.733Z
+9410,22401,3. DevelopmentTests,New,Bruno Oliveira,DevelopmentTest,4.0,,2026-07-08T21:39:38.807Z,2026-07-15T19:10:05.227Z
+21325,22422,[CodeAdjustment] Re-review — ajustes pendentes card 21325 / PR 7704,Closed,Fabio Nobre,CodeAdjustment,3.0,2.0,2026-07-09T12:36:38.277Z,2026-07-10T12:13:43.997Z
+19949,22437,[CodeAdjustment] Ajustes do code review — card 19949 / PR 7821,Closed,maykon.elias,,,3.0,2026-07-09T14:29:34.087Z,2026-07-13T17:42:24.697Z
+15411,22478,7. Testing,Closed,Vagner Rodrigues,Testing,4.0,4.0,2026-07-09T18:52:55.57Z,2026-07-17T02:58:51.72Z
+22515,22519,1. Requirements,Closed,Paulo A. Lot,Requirements,1.0,1.0,2026-07-10T11:36:59.85Z,2026-07-13T10:58:31.583Z
+22515,22520,2. Development,Closed,Paulo A. Lot,Development,1.0,1.0,2026-07-10T11:37:00.06Z,2026-07-13T14:32:53.427Z
+22515,22524,6. CodeReview,Closed,Luiz Fernando Rodrigues Pereira,CodeReview,,0.25,2026-07-10T11:37:00.843Z,2026-07-13T18:17:37.977Z
+22515,22525,7. Testing,Closed,maykon.elias,Testing,,1.0,2026-07-10T11:37:01.063Z,2026-07-14T14:04:39.04Z
+21387,23092,1. Requirements,Closed,fabio,Requirements,2.0,2.0,2026-07-16T22:28:41.67Z,2026-07-16T22:32:59.103Z
+21387,23093,2.1 Development - Persistência e checkbox na config Restaurante,New,,Development,3.0,,2026-07-16T22:29:54.47Z,2026-07-16T22:29:57.337Z
+21387,23094,2.2 Development - Layout detalhado (itens + scroll + pizza completa),New,,Development,12.0,,2026-07-16T22:29:58.843Z,2026-07-16T22:30:01.74Z
+21387,23095,2.3 Development - Cores fixas e atraso no timer,New,,Development,4.0,,2026-07-16T22:30:03.143Z,2026-07-16T22:30:06.043Z
+21387,23096,3. DevelopmentTests,New,,DevelopmentTest,4.0,,2026-07-16T22:30:07.41Z,2026-07-16T22:30:10.637Z
+21387,23097,4. TechnicalValidation,New,,TechnicalValidation,3.0,,2026-07-16T22:30:12.167Z,2026-07-16T22:30:15.367Z
+21387,23098,5. Documentation - Documentação de implementações na Wiki,New,,Documentation,2.0,,2026-07-16T22:30:16.76Z,2026-07-16T22:30:19.77Z
+21387,23099,6. CodeReview,New,,CodeReview,3.0,,2026-07-16T22:30:21.14Z,2026-07-16T22:30:24.133Z
+21387,23100,7. Testing,New,,Testing,8.0,,2026-07-16T22:30:25.54Z,2026-07-16T22:30:28.587Z
